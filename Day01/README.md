@@ -34,8 +34,8 @@
 
 ###meta:utf
 - MIME TYPE을 통해 응답을 받을 때, 어떠한 컨텐츠를 가지고 있는지 파악.
-- 서버에서 셋팅되지 못한 값을 처리하는 것이므로 <title> 위에 작성한다.
-- html5부터 content="text/html"이 기본값으로 포함
+- 서버에서 셋팅되지 못한 값을 처리하는 것이므로 `<title>` 위에 작성한다.
+- html5부터 `content="text/html"`이 기본값으로 포함
 
 ```
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
