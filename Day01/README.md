@@ -16,7 +16,7 @@
 - http://wiki.gurubee.net/pages/viewpage.action?pageId=26739929
 
 ##3.HTML 기초 
-```
+```html
 <!DOCTYPE html>
 <html dir="ltr" lang="ko-KR">  # dir="ltr" left to right / rtl는 right to left (기본값은 ltr)
 <head> 						   # lang="ko-KR" 'KR'을 통해 위치를 표시 ex) en-US 미국 / en-GB 영국
@@ -37,7 +37,7 @@
 - 서버에서 셋팅되지 못한 값을 처리하는 것이므로 `<title>` 위에 작성한다.
 - html5부터 `content="text/html"`이 기본값으로 포함
 
-```
+```html
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta charset="UTF-8"> # 이와 같이 줄여서 표현 가능
 ```
