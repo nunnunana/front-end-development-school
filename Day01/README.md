@@ -150,9 +150,9 @@ document.compatMode
 
 ##### #3. meta:vp
 
-애플에서 safari를 위해 만든 비표준 코드이나 현재 많은 브라우저에서 제공하여, 모바일 브라우저에서 
+애플에서 safari를 위해 만든 비표준 코드이나 현재 많은 브라우저에서 제공하여, 모바일 브라우저에 최적화된 웹페이지를 구현할 수 있도록 하고 있다. 
 
->###### MDN Viewport 참고자료
+>###### Viewport 참고자료
 - [viewport meta 태그를 이용해 모바일 브라우저상에서 레이아웃 조종하는 법](https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag)
 - [A tale of two viewports — part two](http://www.quirksmode.org/mobile/viewports2.html)
 
