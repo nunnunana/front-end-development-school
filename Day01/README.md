@@ -1,7 +1,7 @@
 #Day 01
 
 ##1.HTML(HyperText Markup Language) 기초 
-###웹표준의 출발, DOCTYPE.
+### [1] DOCTYPE.
 ```html
 #!!!4t HTML4 관용 모드 표준 DTD
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 ```
 
-#### 1. 표준문서의 첫 단추.
+#### 1. 표준문서의 시작.
 DOCTYPE(DTD, Document Type Definition)은 웹표준의 시작과도 같다. 왜냐하면 DTD의 명시여부에 따라 해당 문서는 브라우저에서 [표준모드(Standard Mode)나 비표준모드(Quirk Mode)](http://naradesign.net/wp/2007/03/27/118/)로 인식되기 때문이다.
 
 
@@ -57,7 +57,7 @@ document.compatMode
 ------
 
 
-###HTML문서의 기본 구조
+### [2] HTML문서의 기본 구조
 
 #### 1. 기본 구조
 
