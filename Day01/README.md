@@ -1,5 +1,4 @@
 #Day 01
-------
 
 ##1.HTML(HyperText Markup Language) 기초 
 ###웹표준의 출발, DOCTYPE.
@@ -19,8 +18,10 @@
 #!!!  HTML5 표준 DTD
 <!DOCTYPE html>
 ```
+
 #### 1.표준문서의 첫 단추.
 DOCTYPE(DTD, Document Type Definition)은 웹표준의 시작과도 같다. 왜냐하면 DTD의 명시여부에 따라 해당 문서는 브라우저에서 [표준모드(Standard Mode)나 비표준모드(Quirk Mode)](http://naradesign.net/wp/2007/03/27/118/)로 인식되기 때문이다.
+
 
 #### 2.DTD 위에 아무것도 없다.
 IE 브라우저에 있어서 DTD 위에 `<!-- 주석 -->`이나 `<?php require'core/init.php';?>` 등 과 같은 코드가 있을 경우, 올바르지 않은 DTD로 인식하여 비표준으로 인식된다. 따라서 DTD위에는 아무것도 기입되지 않는 것이 좋다. 한편, DTD는 대소문자를 구분하지는 않는다.
@@ -28,7 +29,7 @@ IE 브라우저에 있어서 DTD 위에 `<!-- 주석 -->`이나 `<?php require'c
 ```php
 <?php require'core/init.php';?>
 <?php include_once 'include/IE8Etc.php';?>
-<!doctype html>
+<!doctype html> #<!DOCTYPE html>로 작성도 가능
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <html>
 <head>
@@ -37,10 +38,11 @@ IE 브라우저에 있어서 DTD 위에 `<!-- 주석 -->`이나 `<?php require'c
 ```
 
 >
-관련링크
+######관련링크
 - [DTD 위에 주석이 올 경우 발생하는 문제](http://f10024.tistory.com/1)
 - [IE renders my page in Quirks mode](http://stackoverflow.com/questions/18517290/ie-renders-my-page-in-quirks-mode?rq=1)
 >
+
 
 #### 3.표준모드로 렌더링되는지 확인하는 방법
 
@@ -54,8 +56,11 @@ document.compatMode
 
 ------
 
+
 ###HTML문서의 기본 구조
+
 #### 1.기본 구조
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -67,32 +72,36 @@ document.compatMode
 	</body>
 </html>
 ```
-HTML문서는 `<html>`을 Root요소로 가지는데, 이것은 `<head>`와 `<body>`만을 자식요소로 갖는다.
+
+HTML문서는 `<html>`을 Root 요소로 가지는데, 자식 요소로 `<head>`와 `<body>`만을 갖는다.
 `<head>`요소에는 반드시 `<title>` 요소가 포함되어야 하고, 이것은 브라우저 탭의 제목으로 표시된다.
 
 
-#### 문서에 관한 메타데이터를 담고 있는 `<Meta>` 요소 
-메타데이터란 데이터 관리상 필요한 작성자·목적·저장 장소 등 속성에 관한 데이터다.
+#### 2.문서에 관한 메타데이터를 담고 있는 `<Meta>` 요소 
+메타데이터란 데이터 관리상 필요한 작성자·목적 등 속성에 관한 데이터다.
 `<meta>` 요소는 title, base, link, style, script요소로 표현할 수 없는 다양한 메타데이터를 표시하며, head 또는 head의 자식요소인 noscript요소 아래 작성할 수 있다.
 
 ```html
 <!DOCTYPE html>
-<html lang="ko" dir="ltr"> #1
+<html lang="ko" dir="ltr"> #4
 <head>	
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> #2
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> #1
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> #2
 	<title>Document</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> #3
 </head>
 <body>
 	
 </body>
 </html>
 ```
-##### meta:utf
-네트워트 상에서 MIME TYPE을 통해 응답을 받을 때, 어떠한 컨텐츠를 가지고 있는지 파악.
+
+##### #1.meta:utf
+
+네트워트 상에서 MIME TYPE을 통해 응답을 받을 때, 어떠한 컨텐츠를 가지고 있는지 파악하는데,
 서버에서 셋팅되지 못한 값을 처리하는 것이므로 `<title>` 위에 작성한다.
 html5부터 `content="text/html"`이 기본값으로 포함
+
 
 ```html
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> #meta:utf
@@ -137,8 +146,8 @@ html5부터 `content="text/html"`이 기본값으로 포함
 
 
 
-## 더 알아보기
-####URL, URI의 차이 ?
+## 더 궁금한 점, 알아볼 것.
+<!-- ####URL, URI의 차이 ?
 - Uniform Resource Locator 통합 자원 위치표시
 - Uniform Resource Identifier 통합 자원 식별자
 - 
@@ -156,5 +165,5 @@ html5부터 `content="text/html"`이 기본값으로 포함
 #### 그래서 나오게 된 것 Open API, 그리고 그러한 발전 속에서 AJAX
 #### canvas와 svg의 차이
 
-#### 플래시가 없어진 가장 큰 이유는 모바일 환경에서 플래시가 잡아먹는 큰 리소스
+#### 플래시가 없어진 가장 큰 이유는 모바일 환경에서 플래시가 잡아먹는 큰 리소스 -->
  
