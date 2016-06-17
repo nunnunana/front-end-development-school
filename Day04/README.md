@@ -32,6 +32,7 @@
 - alternate text: alt
 
 ### Sublime Tip, 
-autoFileName : 폴더에 위치한 파일 주소를 간편히 넣을 수 있는 기능 제공.
-`control + w` : wrapping 하여 코드를 빠르게 작성할 수 있는 emmet 기능.
+- autoFileName : 폴더에 위치한 파일 주소를 간편히 넣을 수 있는 기능 제공.
+- `control + w` : wrapping 하여 코드를 빠르게 작성할 수 있는 emmet 기능.
+
 
