@@ -13,8 +13,7 @@
 ###### 잘쓰이지 않는 HTML 요소가 있다.
 `<dfn>`, `<var>`, `<code>`, `<ruby>`, `<abbr>`, `<q>`, `<blockqoute>` 등
 
-
-```
+```html
 <p><abbr title="abbreviation">&lt;abbr&gt;</abbr>은 약어 혹은 두문자어를 나타내는 요소입니다.
 </p>
 
@@ -100,7 +99,7 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 - 리스트 아이템 li (List Item)
 - 정의목록 dl (Definition List)
 
-```
+```html
 <ol>
   <li>순차 목록 리스트 1</li>
   <li>순차목록 리스트 2</li>
@@ -123,7 +122,7 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 `<tr>` : Table cell Row
 `<td>` : Table cell Data
 
-```
+```html
 <table summary="본 표는 2행 2열로 구성된 표이며..입니다.">
   <tr>
     <th>Element</th>
@@ -153,7 +152,7 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 
 `colgroup`,`col` : 컬럼의 스타일을 다룰때 사용할 수 있다. 
 
-```
+```html
 <table>
   <colgroup >
     <col span="1" style="background:cyan">
@@ -189,7 +188,7 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 ```
 
 
-```
+```html
 <p id="metadata-table-summary">본 표는 4행 3열로 구성된..</p>
 <table aria-describedby="metadata-table-summary"></table>
 ```
@@ -207,7 +206,7 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 `enctype="multipart/form-data"`는 텍스트가 아닌 데이터를 활용할 때 넣어준다.
 서버에 전송하기 위해서는 *name값이 필요*하다. 동시에 *접근성을 위해서는 id값이 필요*하다.
 
-```
+```html
 <form
     name="register_form"
     action="#"
