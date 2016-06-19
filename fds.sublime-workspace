@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ce",
+				"cellspacing	Attr"
+			],
+			[
 				"mat",
 				"Material-Theme-Lighter"
 			],
@@ -16,34 +20,45 @@
 	"buffers":
 	[
 		{
-			"file": "20160615/2016 6 15 Day 2",
+			"file": "Day04/README.md",
 			"settings":
 			{
-				"buffer_size": 179,
+				"buffer_size": 4675,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "20160615/practice.html",
+			"file": "Day01/README.md",
 			"settings":
 			{
-				"buffer_size": 100,
+				"buffer_size": 6506,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
+			"contents": "<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n	<meta charset=\"UTF-8\">\n	<title>HTML 폼(form) 디자인</title>\n</head>\n<body>\n	<h2>폼 디자인(설계)</h2>	\n	<!-- \n	<form action=\"데이터 전송 목적지\" method=\"POST\" enctype=\"multipart/form-data\">\n			\n	</form> \n	-->\n	 <!-- form요소에는 name속성을 넣어줘야 한다. name은 id로 변경된다? -->\n\n\n	<form\n		name=\"register_form\"\n		action=\"#\"\n		method=\"GET\n		\">\n		<p>\n			<!-- input요소에 암묵적 레이블 연결 : 일부스크린리더는 제대로 인식하지 못함 -->\n			<!-- <label>ID1: <input type=\"text\"></label> -->\n			<!-- input요소에 명시적 레이블 연결 -->\n			<label for=\"user_id\">ID2:</label>\n			<input id=\"user_id\" type=\"text\"> <!-- id은 label과 연결시키기 위해 존재 -->\n		</p>\n		<p>\n			<label for=\"user_password\">PASS:</label> \n			<input name=\"user_password\" id=\"user_password\" type=\"password\" >\n		</p>\n		<p>\n			<label for=\"user_email\">E-MAIL:</label>\n			<input name=\"user_email\" id=\"user_email\" type=\"email\">\n		<p>\n			<button type=\"submit\">전송</button> \n			<button >리셋</button>\n		</p>\n\n\n	</form>\n</body>\n</html>",
+			"file": "Day04/04-form.html",
+			"file_size": 1173,
+			"file_write_time": 131106274840000000,
 			"settings":
 			{
-				"buffer_size": 121,
+				"buffer_size": 994,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "20160614/2016 6 14 Day 1",
+			"file": "Day04/03-table.html",
 			"settings":
 			{
-				"buffer_size": 2485,
+				"buffer_size": 2511,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day04/02-lists.html",
+			"settings":
+			{
+				"buffer_size": 1704,
 				"line_ending": "Unix"
 			}
 		}
@@ -55,13 +70,57 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 167.0,
-		"last_filter": "html",
+		"height": 89.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
 				"html",
 				"Set Syntax: HTML"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"git cus",
+				"Git: Custom Command"
+			],
+			[
+				"git cust",
+				"Git: Custom Command"
+			],
+			[
+				"git init",
+				"Git: Diff All Files (Ignore Whitespace)"
+			],
+			[
+				"git",
+				"Git: Add..."
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"em",
+				"Emmet: Merge Lines"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"plan",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"",
+				"About"
 			],
 			[
 				"css",
@@ -72,15 +131,7 @@
 				"Snippet: #!/usr/bin/env"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -89,10 +140,6 @@
 			],
 			[
 				"install pa",
-				"Package Control: Install Package"
-			],
-			[
-				"ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -108,13 +155,14 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 485.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 155.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"div",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
@@ -130,25 +178,69 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Desktop/FDS/20160614",
-		"/Users/eatdesignlove/Desktop/FDS/20160615"
+		"/Users/eatdesignlove/Desktop/FDS",
+		"/Users/eatdesignlove/Desktop/FDS/Day01",
+		"/Users/eatdesignlove/Desktop/FDS/Day03",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views",
+		"/Users/eatdesignlove/Desktop/FDS/Day04",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/images"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Desktop/FDS/Day04/01-images.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/contact.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/just-do-git.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/index.html",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/README.md",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/css/style.css",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day01/README.md",
+		"/Users/eatdesignlove/github-practice/a.html",
+		"/Users/eatdesignlove/github-practice/README.md",
+		"/Users/eatdesignlove/github-practice/b.html",
+		"/Users/eatdesignlove/github-practice/file2.html",
+		"/Users/eatdesignlove/github-practice/file1.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/keepticle/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice3/views/projects.html",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/placehold.sublime-snippet",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice4/index.html",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/cc4ie.sublime-snippet",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/services.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/projects.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/contact.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/about.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2.html",
+		"/Users/eatdesignlove/Desktop/FDS/20160615/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day01/readme",
+		"/Users/eatdesignlove/Desktop/FDS/20160615/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/20160614/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/20160614/README.md",
 		"/Users/eatdesignlove/Desktop/FDS/20160615/practice.html",
 		"/Users/eatdesignlove/Desktop/FDS/20160615/2016 6 15 Day 2",
+		"/Users/eatdesignlove/Desktop/FDS/20160615/2016 6 15 Day 2.html",
 		"/Users/eatdesignlove/Desktop/FDS/20160614/2016 6 14 Day 1",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/eatdesignlove/Desktop/FDS/20160614/index.html",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-		"/Users/eatdesignlove/Desktop/프론트앤드개발스쿨/20160614/css/style.css",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings"
+		"/Users/eatdesignlove/Desktop/프론트앤드개발스쿨/20160614/css/style.css"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -162,6 +254,48 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
+			"&",
+			"p",
+			"osf",
+			";&",
+			"green",
+			"로램",
+			"로렘",
+			"Lorem",
+			"consectetur",
+			"<a href=\"http://daum.net\">Lorem ipsum dolor sit</a>",
+			"minimap",
+			"tab",
+			"=\"/\">\n",
+			"330",
+			"1000",
+			"jpg",
+			"h2",
+			"가능",
+			"Working Directory",
+			"eatdesignlove",
+			"Version Control System",
+			"자세히 보기",
+			"GIT",
+			"Git",
+			"GIT",
+			"Git",
+			"GIT",
+			"\"/\"",
+			"/",
+			"-it",
+			"{",
+			"subjects-",
+			"subjects-lists",
+			"</div>",
+			"</a>",
+			"Service",
+			"Project",
+			"href=\"",
+			"\"><",
+			"Optional",
+			"2",
 			"side",
 			"octto",
 			" "
@@ -182,57 +316,127 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "20160615/2016 6 15 Day 2",
+					"file": "Day04/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 179,
+						"buffer_size": 4675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								179,
-								179
+								4541,
+								4541
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3364.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Day01/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3727,
+								3727
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2808.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "20160615/practice.html",
+					"buffer": 2,
+					"file": "Day04/04-form.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 994,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31,
-								31
+								400,
+								400
 							]
 						],
 						"settings":
 						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": true,
+							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 155.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Day04/03-table.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2197,
+								2197
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"open_with_edit": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -242,26 +446,30 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
+					"file": "Day04/02-lists.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 121,
+						"buffer_size": 1704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								121,
-								121
+								127,
+								127
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"default_dir": "/Users/eatdesignlove/Desktop/FDS",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"open_with_edit": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -269,42 +477,13 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "20160614/2016 6 14 Day 1",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1086,
-								1086
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 659.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -337,11 +516,15 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 31.0
+	},
 	"pinned_build_system": "",
 	"project": "fds.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
