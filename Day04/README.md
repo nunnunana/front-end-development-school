@@ -194,11 +194,11 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 ```
 
 `summary` : HTML5에서는 문법 오류. 왜? summary가 표준으로 제공될 때 사람들이 caption과 거의 동일하게 사용하여 요소의 필요성에 대해 의문이 제기되었고 결국 비표준화됨. WAI-ARIA를 사용한다. 접근성 측면에서 사용되어 왔음.
-`aria-describedby` : id와 연결하지만, #을 넣지 않는다.
-
+`aria-describedby` : id와 연결하지만, #을 넣지 않는다. ARIA-labelledby보다 더 상세한 설명이 필요할 때 사용하며, 모든 요소에 사용가능
+`aria-labelledby` : 여러 개의 폼 요소를 그룹화하여 동일한 'Label'값으로 묶어서 제공하고 싶을 때 사용
 `scope` : 접근성을 위해서, th가 `thead`, 그리고 `tbody`에 포함되어 있을때, 스크린리더 사용자가 정보습득의 어려움을 겪지 않도록 scope를 지정해줘야 한다.
 
-`<select>`를 쓰지 않고 `<span>`,`<ul><li></li></ul>` 등을 이용해 만드는 custom select box를 만들 때, WAI-ARIA를 통해 의미를 부여할 수 있다.
+`<select>`를 쓰지 않고 `<span>`,`<ul><li></li></ul>` 등을 이용해 만드는 Custom Select Box를 만들 때, WAI-ARIA를 통해 의미를 부여할 수 있다.
 
 
 ## Form
@@ -249,7 +249,7 @@ GET 또는 POST는 HTTP프로토콜을 이용해서 서버에 무언가를 전�
 - 퍼머링크로 사용할 수 없다. 
 - 서버 쪽에 어떤 작업을 명령할 때 사용한다. (데이터의 기록, 삭제, 수정 등)
 
-[GET과 POST의 차이, Outsider](https://blog.outsider.ne.kr/312)
+>[GET과 POST의 차이, Outsider](https://blog.outsider.ne.kr/312)
 [GET과 POST의 차이, 생활코딩](https://blog.outsider.ne.kr/312)
 
 
@@ -262,8 +262,7 @@ GET 또는 POST는 HTTP프로토콜을 이용해서 서버에 무언가를 전�
 
 ###참고자료
 >- [야무님, 웹표준화 카페](http://cafe.naver.com/webstandardproject/603)
-- [webdesign.tutsplus.com](http://webdesign.tutsplus.com/
-)
+- [webdesign.tutsplus.com](http://webdesign.tutsplus.com/)
 - GridLove
 - Javascript Style guide
 
@@ -271,6 +270,3 @@ GET 또는 POST는 HTTP프로토콜을 이용해서 서버에 무언가를 전�
 목록 안에는 항상 li만 허용한다.
 NVDA : 오픈소스 스크린리더로서 무료로 사용 가능하며 다국어를 지원합니다.
 
-
-jscs
-google javascript style guide
