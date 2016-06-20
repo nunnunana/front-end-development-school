@@ -20,29 +20,21 @@
 	"buffers":
 	[
 		{
-			"file": "Day04/README.md",
-			"settings":
-			{
-				"buffer_size": 4675,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day01/README.md",
-			"settings":
-			{
-				"buffer_size": 6506,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n	<meta charset=\"UTF-8\">\n	<title>HTML 폼(form) 디자인</title>\n</head>\n<body>\n	<h2>폼 디자인(설계)</h2>	\n	<!-- \n	<form action=\"데이터 전송 목적지\" method=\"POST\" enctype=\"multipart/form-data\">\n			\n	</form> \n	-->\n	 <!-- form요소에는 name속성을 넣어줘야 한다. name은 id로 변경된다? -->\n\n\n	<form\n		name=\"register_form\"\n		action=\"#\"\n		method=\"GET\n		\">\n		<p>\n			<!-- input요소에 암묵적 레이블 연결 : 일부스크린리더는 제대로 인식하지 못함 -->\n			<!-- <label>ID1: <input type=\"text\"></label> -->\n			<!-- input요소에 명시적 레이블 연결 -->\n			<label for=\"user_id\">ID2:</label>\n			<input id=\"user_id\" type=\"text\"> <!-- id은 label과 연결시키기 위해 존재 -->\n		</p>\n		<p>\n			<label for=\"user_password\">PASS:</label> \n			<input name=\"user_password\" id=\"user_password\" type=\"password\" >\n		</p>\n		<p>\n			<label for=\"user_email\">E-MAIL:</label>\n			<input name=\"user_email\" id=\"user_email\" type=\"email\">\n		<p>\n			<button type=\"submit\">전송</button> \n			<button >리셋</button>\n		</p>\n\n\n	</form>\n</body>\n</html>",
+			"contents": "<!DOCTYPE html>\n<html lang=\"ko-KR\">\n<head>\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n	<meta charset=\"UTF-8\">\n	<title>HTML 폼(form) 디자인</title>\n</head>\n<body>\n	<h2>폼 디자인(설계)</h2>	\n	<!-- \n	<form action=\"데이터 전송 목적지\" method=\"POST\" enctype=\"multipart/form-data\">\n			\n	</form> \n	-->\n	<!-- form요소에는 name속성을 넣어줘야 한다. name은 id로 변경된다? -->\n<pre>\n	&lt;\n</pre>\n	<form\n		name=\"register_form\"\n		action=\"#\"\n		method=\"POST\">\n		<p>\n			<!-- input요소에 암묵적 레이블 연결 : 일부스크린리더는 제대로 인식하지 못함 -->\n			<!-- <label>ID1: <input type=\"text\"></label> -->\n			<!-- input요소에 명시적 레이블 연결 -->\n			<label for=\"user_id\">ID2:</label>\n			<input name=\"user_id\" id=\"user_id\" type=\"text\"> <!-- id은 label과 연결시키기 위해 존재 -->\n		</p>\n		<p>\n			<label for=\"user_password\">PASS:</label> \n			<input name=\"user_password\" id=\"user_password\" type=\"password\" >\n		</p>\n		<p>\n			<label for=\"user_email\">E-MAIL:</label>\n			<input name=\"user_email\" id=\"user_email\" type=\"email\">\n		<p>\n			<button type=\"submit\">전송</button> \n			<button >리셋</button>\n		</p>\n\n	</form>\n</body>\n</html>",
 			"file": "Day04/04-form.html",
-			"file_size": 1173,
-			"file_write_time": 131106274840000000,
+			"file_size": 1189,
+			"file_write_time": 131108928450000000,
 			"settings":
 			{
-				"buffer_size": 994,
+				"buffer_size": 1025,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day03/README.md",
+			"settings":
+			{
+				"buffer_size": 1223,
 				"line_ending": "Unix"
 			}
 		},
@@ -50,15 +42,23 @@
 			"file": "Day04/03-table.html",
 			"settings":
 			{
-				"buffer_size": 2511,
+				"buffer_size": 3770,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day04/02-lists.html",
+			"file": "Day04/README.md",
 			"settings":
 			{
-				"buffer_size": 1704,
+				"buffer_size": 7265,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day03/hello-git/index.html",
+			"settings":
+			{
+				"buffer_size": 2348,
 				"line_ending": "Unix"
 			}
 		}
@@ -181,13 +181,18 @@
 		"/Users/eatdesignlove/Desktop/FDS",
 		"/Users/eatdesignlove/Desktop/FDS/Day01",
 		"/Users/eatdesignlove/Desktop/FDS/Day03",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views",
 		"/Users/eatdesignlove/Desktop/FDS/Day04",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/images"
+		"/Users/eatdesignlove/Desktop/FDS/Day04/images",
+		"/Users/eatdesignlove/Desktop/FDS/Day05"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Desktop/FDS/Day05/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/02-lists.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/03-table.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/04-form.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day01/README.md",
 		"/Users/eatdesignlove/Desktop/FDS/Day04/01-images.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/contact.html",
@@ -201,12 +206,10 @@
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/README.md",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/css/style.css",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
 		"/Users/eatdesignlove/Desktop/FDS/Day02/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day01/README.md",
 		"/Users/eatdesignlove/github-practice/a.html",
 		"/Users/eatdesignlove/github-practice/README.md",
 		"/Users/eatdesignlove/github-practice/b.html",
@@ -254,6 +257,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"&amp;",
+			"&amp",
 			" ",
 			"&",
 			"p",
@@ -316,127 +321,31 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Day04/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4675,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4541,
-								4541
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3364.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Day01/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3727,
-								3727
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2808.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "Day04/04-form.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 994,
+						"buffer_size": 1025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								400,
-								400
+								484,
+								484
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"is_init_dirty_state": true,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 155.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Day04/03-table.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2511,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2197,
-								2197
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"open_with_edit": true,
-							"origin_encoding": "UTF-8",
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -446,36 +355,124 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Day04/02-lists.html",
+					"buffer": 1,
+					"file": "Day03/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1704,
+						"buffer_size": 1223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								127,
-								127
+								382,
+								382
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"open_with_edit": true,
-							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 238.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Day04/03-table.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2987,
+								2987
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 863.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Day04/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								351
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Day03/hello-git/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -542,6 +539,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/TIL/TIL.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

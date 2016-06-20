@@ -187,7 +187,6 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 </table>
 ```
 
-
 ```html
 <p id="metadata-table-summary">본 표는 4행 3열로 구성된..</p>
 <table aria-describedby="metadata-table-summary"></table>
@@ -251,7 +250,6 @@ GET 또는 POST는 HTTP프로토콜을 이용해서 서버에 무언가를 전�
 
 >[GET과 POST의 차이, Outsider](https://blog.outsider.ne.kr/312)
 [GET과 POST의 차이, 생활코딩](https://blog.outsider.ne.kr/312)
-
 
 ### Sublime Tip, 
 - autoFileName : 폴더에 위치한 파일 주소를 간편히 넣을 수 있는 기능 제공.
