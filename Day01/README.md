@@ -20,8 +20,7 @@
 ```
 
 #### 1. 표준문서의 시작.
-DOCTYPE(DTD, Document Type Definition)은 웹표준의 시작과도 같다. 왜냐하면 DTD의 명시여부에 따라 해당 문서는 브라우저에서 [표준모드(Standard Mode)나 비표준모드(Quirk Mode)](http://naradesign.net/wp/2007/03/27/118/)로 인식되기 때문이다.
-
+DOCTYPE(DTD, Document Type Definition)은 웹표준의 시작과도 같다. 왜냐하면 DTD의 선언여부에 따라 해당 문서는 브라우저에서 [표준모드(Standard Mode)나 비표준모드(Quirk Mode)](http://naradesign.net/wp/2007/03/27/118/)로 인식되기 때문이다.
 
 #### 2. DTD 위에 아무것도 없다.
 IE 브라우저에 있어서 DTD 위에 `<!-- 주석 -->`이나 `<?php require'core/init.php';?>` 등 과 같은 코드가 있을 경우, 올바르지 않은 DTD로 인식하여 비표준으로 인식된다. 따라서 DTD 위에는 아무것도 기입되지 않는 것이 좋다. 한편, DTD는 대소문자를 구분하지는 않는다.

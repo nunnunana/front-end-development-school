@@ -2,13 +2,55 @@
 
 #HTML(HyperText Markup Language) 기초
 
+HTML은 웹 문서의 뼈대를 이루는 언어다. 정보를 의미
+
 ### 웹 표준, 웹 호환성, 웹 접근성, 웹 사용성 ?
 - **웹 표준** : 
-(넓은 의미)웹 기술 전반과 관련한 표준 규격
-(좁은 의미)웹 화면을 구성하는 기술과 관련된 표준 규격
-- **웹 호환성** : IE, Chrome, Safari, FireFox 등 브라우저에 관계없이 동일한 서비스를 제공하는 것
-- **웹 접근성** :  어떠한 사용자(장애인, 노인 등), 어떠한 기술 환경에서도 사용자가 전문적인 능력 없이 웹사이트에서 제공하는 모든 정보에 접근할 수 있게 보장하는 것
-- **웹 사용성** : 웹 서비스에 대해 경험적 만족도를 느끼고 서비스를 편리하고 정확하게 사용할 수 있느냐에 관한 것
+  - (넓은 의미)웹 기술 전반과 관련한 표준 규격.
+  - (좁은 의미)웹 화면을 구성하는 기술과 관련된 표준 규격.
+- **웹 호환성** : IE, Chrome, Safari, FireFox 등 브라우저에 관계없이 동일한 서비스를 제공하는 것.
+- **웹 접근성** :  어떠한 사용자(장애인, 노인 등), 어떠한 기술 환경에서도 사용자가 전문적인 능력 없이 웹사이트에서 제공하는 모든 정보에 접근할 수 있게 보장하는 것.
+- **웹 사용성** : 웹 서비스에 대해 경험적 만족도를 느끼고 서비스를 편리하고 정확하게 사용할 수 있느냐에 관한 것.
 
-### 
+### [1] DOCTYPE 선언
 
+웹 문서는 크게 **표준 문서**와 **비표준 문서**로 나누어볼 수 있다. 표준과 비표준은 문서의 DTD(DOCTYPE Declarations)를 기준으로 한다. DTD를 바르게 하지 않을 경우, 브라우저는 해당 문서를 비표준 문서로 인식하게 된다. 
+
+```html
+<!-- DTD는 대/소문자를 가리지 않는다. -->
+
+# HTML4 관용 모드 표준 DTD ( emmet: !!!4t )
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+
+# HTML4 엄격 모드 표준 DTD ( emmet: !!!4s )
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+
+# XHTML1 관용 모드 표준 DTD ( emmet: !!!xt )
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+# XHTML1 엄격 모드 표준 DTD ( emmet: !!!xs )
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+#!!!  HTML5 표준 DTD
+<!DOCTYPE html>
+```
+문서의 Doctype 위에는 아무것도 작성하지 않도록한다. 왜냐하면 IE브라우저에서 `<!-- 주석 -->`이나 `<?php require'core/init.php';?>`등 과 같은 코드가 있을 경우 올바르지 않은 DTD로 인식하기 때문이다.
+
+```php
+<?php require'core/init.php';?>
+<?php include_once 'include/IE8Etc.php';?>
+<!doctype html> #<!DOCTYPE html>로 작성도 가능
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+```
+
+특정 웹 문서가 어떤 타입으로 작동하고 있는지 확인하려면, 브라우저(Chrome 기준)의 Console창에서 아래와 같이 확인 가능하다.
+
+```javascript
+	document.compatMode # 표준 "CSS1Compat" / 비표준 "BackCompat"
+```
+
+### [2] HTML문서의 기본 구조
