@@ -36,31 +36,31 @@
 
 ```
 
-##### label 요소
+#### label 요소
 암묵적 label 작성이 잘못된 것이 아니다. 단지, 국내환경에서 일부 스크린 리더가 label값을 제대로 읽어주지 못하는 경우가 있긴 하므로 경우에 맞게 적합한 선택을 할 필요가 있다.
 
-##### button
+#### button
 a 요소로 버튼을 만들더라도 role 변경을 통해 이용가능. 
 
 
-##### input:submit
+#### input:submit
 
 과거 이미지 버튼을 만들 수 없을 때, 컨텐츠를 넣을 수 있는 Button 요소를 활용했었음. 버튼은 버튼다운 모양을 지녀야하며, 서비스는 어포던스를 제공할 수 있어야 한다.
 
 input:submit을 사용했을 경우, value값을 지정해서 브라우저에 관계없이 동일한 내용을 전달하도록 조치해야 한다.
 
 
-##### input:radio
+#### input:radio
 name이 같아야 하나만 선택되게 된다.
 checked를 넣어 기본값을 제공할 수 있음.
 
 전송한 데이터는 "string"으로 전송됨.
 split('&')으로 쪼개어 활용가능.
 
-##### input 그 외
+#### input 그 외
 input:hidden
 
-###### 속성
+##### 속성
 maxlength :
 checked :
 selected :
@@ -68,12 +68,12 @@ disabled :
 placeholder : 
 
 
-##### textarea
-contenteditable 속성을 통해 내용을 수정해서, 전송도 가능함(표준)
+#### textarea
+contenteditable 속성을 통해 내용을 수정해서, 전송도 가능함(표준). 모든 요소에서 사용하능
 
 
-##### select
-```
+#### select
+```html
 <div>
 	<h3>Your Job</h3>
 		<select name="register=job">
@@ -81,6 +81,7 @@ contenteditable 속성을 통해 내용을 수정해서, 전송도 가능함(표
 			<option value="instructor">Instructor</option>
 			<option value="student">Student</option>
 			<option value="doctor">Doctor</option>
+			<!-- select option의 그룹을 묶어준다. -->
 			<optgroup label="web">
 				<option value="developer">Developer</option>
 				<option value="developer">Desiger</option>
@@ -90,8 +91,8 @@ contenteditable 속성을 통해 내용을 수정해서, 전송도 가능함(표
 </div>
 ```
 
-##### fieldset & legend
-```
+#### fieldset & legend
+```html
 <fieldset>
 	<legend>필수 입력사항</legend>
 	<input type="text">
@@ -99,6 +100,10 @@ contenteditable 속성을 통해 내용을 수정해서, 전송도 가능함(표
 	<input type="text">
 </fieldset>
 ```
+
+## Script
+#### script/noscript 요소는 head와 body안쪽에 위치한다.
+오늘날 대체가능한 방법들이 존재하는 이유로 noscript는 잘 쓰이지 않는다. ex)Modernizer 라이브러리 활용 코드 
 
 
 form의 name이 'regiset-form'인 경우, `document['register-form']`로 찾을 수 있음.
@@ -111,10 +116,3 @@ form의 name이 'regiset-form'인 경우, `document['register-form']`로 찾을 
 
 
 
-
-##### 따로 공부해볼 것
-//input 속성 둘러보기
-//이미지슬라이싱
-//이미지스프라이트기법
-//flexbox
-//contenteditable로 form만드는 것 찾아보기
