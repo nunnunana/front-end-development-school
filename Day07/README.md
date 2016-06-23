@@ -152,9 +152,9 @@ HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존�
 ```
 
 >### 참고자료
-[caniuse](http://caniuse.com/) 
-[html5test](https://html5test.com/)
-[w3.github.io](w3.github.io/html/)
+- [caniuse](http://caniuse.com/) 
+- [html5test](https://html5test.com/)
+- [w3.github.io](w3.github.io/html/)
 
 
 # CCS (Cascading Style Sheet)
@@ -164,9 +164,9 @@ HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존�
 @import url("colors.css");
 @import "common.css";
 @import "grid";
-@import "layout.css"
-@import "old-ie.css"
-@import "print.css"
+@import "layout.css";
+@import "old-ie.css";
+@import "print.css";
 ```
 
 CSS import 방식은 직렬식으로 파일을 다운로드하기 때문에 좋은 방법이 아님.
@@ -183,11 +183,13 @@ h1 p {자손}
 * {모든 요소}
 ```
 
----------------
 |inline|1000점|
+|---|---|
 |id|100점|
+|---|---|
 |class|10점|
+|---|---|
 |요소|1점|
+|---|---|
 |*|0점|
----------------
 
