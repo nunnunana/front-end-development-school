@@ -131,14 +131,27 @@ HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존�
 같은 section요소를 담을 수 있는 것은 sectioning 요소인데, header안에 section요소가 들어오는 것은 문법오류를 발생시키지는 않는다.
 `<h1>` 제목 요소는 문서에서 한 번만 쓰도록 한다. id를 줄이고, class를 줄여야하는 이유는 관리 측면에서 권장한다.
 
-[New Elements in HTML](http://www.w3schools.com/html/html5_new_elements.asp)
-[아웃라인 알고리즘 outlining-algorithm](https://www.smashingmagazine.com/2011/08/html5-and-the-document-outlining-algorithm/)
-[article과 section 활용 참고](http://dezang.net/511)
+HTML5에서는 `<a>`요소가 블록 요소를 감쌀 수 있도록 변경되었지만, 내부에 또 다른 클릭 가능한 컴포넌트가 존재한다면 그것은 문법오류이다.
+
+- [New Elements in HTML](http://www.w3schools.com/html/html5_new_elements.asp)
+- [아웃라인 알고리즘 outlining-algorithm](https://www.smashingmagazine.com/2011/08/html5-and-the-document-outlining-algorithm/)
+- [article과 section 활용 참고](http://dezang.net/511)
 
 
 ### 콘텐츠모델
 - Block 
 - Inline
+
+**Block Level Element의 특징**
+- 별도로 스타일 설정을 하지 않앗다면, 부모 요소 영역만큼 가로 크기(width)가 커진다. (기본값: auto)
+- 요소의 높이(height)는 부모와 상관없이 요소가 포함하는 자식 요소들의 크기에 좌우된다.
+- 별도로 가로(width), 세로(height)설정이 가능하다
+- 블록요소는 내부에 인라인 요소를 감쌀 수 있다.
+
+**Inline 요소의 특징**
+- 자신을 포한 부모 요소 영역과 상관없이 자신이 포함하는 자식 요소 또는 텍스트 만큼 가로(width), 세로(height) 크기를 가진다.
+- 인라인 요소는 내부에 블록 요소를 감쌀 수 없다. (단! 예외: <a>요소는 블록 요소를 감쌀 수 있다.)
+- margin, padding 속성의 상(top), 하(bottom) 설정이 불가능하다.
 
 `<h2>`바로 아래 보조 제목을 넣는 경우, 
 `<h3>`를 감싸는 암묵적으로 `<section>`가 생겨난다.
@@ -158,6 +171,13 @@ HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존�
 
 
 # CCS (Cascading Style Sheet)
+
+```css
+h1 {
+	color: deepSkyBlue;
+	font-size: 2em;
+}
+```
 
 ```css
 <!-- 스타일 모듈 파일로드 -->
