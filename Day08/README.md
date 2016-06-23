@@ -48,8 +48,8 @@
 font-size:14px
 line-height:1.5;
 
-http://gridcalculatro.dk/
-Bootstrap을 사용하기로 함
+- http://gridcalculatro.dk/
+- Bootstrap을 사용하기로 함
 
 규칙을 정하고, 맞추어가려고 함
 웹타이포그래피 시스템에서 중심을 기준으로 작업
@@ -75,5 +75,3 @@ sketch는 가이드 작업에 좋음
 ##### Zepplin
 디자인 결과물을 디자인 가이드로 뽑아내는 작업을 편하게 할 수 있도록 도와주는 도구.
 일정금액의 비용을 내고 사용할 수 있음
-
-## 실무에서의 업무 프로세스

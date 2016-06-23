@@ -1,3 +1,5 @@
+###### Front-End-Development Study
+
 #Day07
 ## HTML Script 
 
@@ -42,10 +44,6 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 <acronym> <!-- by IE. HTML5에서 폐지. 두문자어 -->
 ```
 
-### 키보드
-`<kbd>` 
-
-
 ### 웹정보
 ```html
 <!-- 이메일 주소 등 웹 상의 주소를 구조화 할때 사용, 즉 물리적인 주소를 넣는 곳이 아님 -->
@@ -56,7 +54,7 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 </address>
 ```
 
-```
+```html
 <ins> <!-- 불필요한 단어나 문장 대신 새로운 단어, 문장 삽입하는 의미 # Insert Text -->
 <del> <!-- 불필요한 단어나 문장 대신 새로운 단어, 문장 삭제하는 의미 # Delete Text  -->
 ```
@@ -64,7 +62,7 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 ### Output
 브라우저에게 전하는 나의 메세지
 
-```
+```html
 <pre> Preserved text
 <code> Computer code text
 <kbd> Keyboard text
@@ -80,10 +78,10 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 과거에는 Ajax기술이 발달하지 못해 프레임을 사용함
 frame을 쓸때는 body를 쓰지 않는다. 
 
->frame
-frameset
-noframes
-inline frame (iframe)
+>- frame
+- frameset
+- noframes
+- inline frame (iframe)
 
 
 ## Micro Format
@@ -93,7 +91,7 @@ inline frame (iframe)
 rel:  현재 문서가 링크로 연결되는 문서와 어떤 관계 인지 정의 (현재문서 >> 링크문서)
 rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정의 (현재문서 << 링크문서)
 
-```
+```html
 <!-- 마이크로포맷 hcard 적용 예 -->
 <address class="vcard">
 	<span class="fn">연오랑</span>
@@ -105,49 +103,61 @@ rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정�
 [Microformat 참고](http://microformats.org/get-started)
 
 
-##HTML5 
-[caniuse](http://caniuse.com/) 
-[html5test](https://html5test.com/)
-[w3.github.io](w3.github.io/html/)
+## HTML5
+
+### 새로 생긴 HTML5 코드 
+```html
+<section>, <article>, <aside>, <nav>, <main>은 Section 요소
+<header>, <footer>
+<time>, <datalist>, <summary>, <figure>, <figcaption>
+<hgroup>은 사라짐
+```
 
 contentinfo
 
-section, article, aside, nav, main은 Section 요소
-header, footer은 div 같은 요소
-time, datalist, summary, figure, figcaption
-hgroup은 사라짐
+### HTML5 마크업
+HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존에 의존하던 기술 대부분을 해결할 수 있는 방향성을 제시한다.
 
+[HTML5가 탄생하기까지](http://channy.creation.net/blog/719)
 
-### HTML5마크업
-`<article>` 독립적으로 사용 
-`<section>` 범용적인 경우, 제목이 꼭 필요하다.
-`<main>`은 문서에서 한 번만 사용할 수 있다.
-`<footer>` 부모 영역의 footer
+```html
+# Sectoning Content
+<article> <!-- 독립적으로 사용 --> 
+<section> <!-- 범용적인 경우, 제목이 꼭 필요하다. -->
+<main><!-- 문서에서 한 번만 사용할 수 있다. -->
+<footer> <!-- 부모 영역의 footer -->
+<aside> 
+```
 
-같은 section요소를 담을 수 있는 것은 sectioning 요소인데, 
-header안에 section요소가 들어온 것은 문법오류를 발생시키지는 않는다.
-`<h1>` h1제목은 문서에서 한 번만 쓰도록 한다.
-id를 줄이고, class를 줄여야하는 이유는 관리측면에서 권장하고, id는 꼭 id를 써야하는 
+같은 section요소를 담을 수 있는 것은 sectioning 요소인데, header안에 section요소가 들어오는 것은 문법오류를 발생시키지는 않는다.
+`<h1>` 제목 요소는 문서에서 한 번만 쓰도록 한다. id를 줄이고, class를 줄여야하는 이유는 관리 측면에서 권장한다.
 
-input:search
-::placeholder {}
-아웃라인 알고리즘(outlining-algorithm)
+[New Elements in HTML](http://www.w3schools.com/html/html5_new_elements.asp)
+[아웃라인 알고리즘 outlining-algorithm](https://www.smashingmagazine.com/2011/08/html5-and-the-document-outlining-algorithm/)
+[article과 section 활용 참고](http://dezang.net/511)
 
 
 ### 콘텐츠모델
-BLOCK / INLINE
+Block / Inline
 
-h2바로 아래 보조 제목을 넣는 경우, <h3>를 감싸는 암묵적으로 <section>가 생겨난다.
+h2바로 아래 보조 제목을 넣는 경우, 
+<h3>를 감싸는 암묵적으로 <section>가 생겨난다.
+
 ```html
 <h2>제목</h2>
+<!-- 암묵적 section가 생성된다. -->
 <h3>보조제목</h3>
 
 <h2>제목 <h3>보조제목</h3></h2> 또는 그대로 써도 디자인 상으로 문제는 없다.
 ```
 
+>### 참고자료
+[caniuse](http://caniuse.com/) 
+[html5test](https://html5test.com/)
+[w3.github.io](w3.github.io/html/)
 
-## CCS (Cascading Style Sheet)
-`@charset "utf-8";`을 css상단에 넣어준다. 연결된 문서에 적용된 UTF-8 인코딩은 해당 문서에만 적용되고 연결된 CSS은 적용되지 않음. 때문에 CSS 최상단에 넣어주어 css문서의 인코딩도 utf-8로 적용시킬 수 있다.
+
+# CCS (Cascading Style Sheet)
 
 ```css
 <!-- 스타일 모듈 파일로드 -->
@@ -158,21 +168,29 @@ h2바로 아래 보조 제목을 넣는 경우, <h3>를 감싸는 암묵적으�
 @import "old-ie.css"
 @import "print.css"
 ```
+
 CSS import 방식은 직렬식으로 파일을 다운로드하기 때문에 좋은 방법이 아님.
 대신 HTML link방식이 더 좋고, css도 압축하여 요청을 최소화한다.
 
+>`@charset "utf-8";`을 css상단에 넣어준다. 연결된 문서에 적용된 UTF-8 인코딩은 해당 문서에만 적용되고 연결된 CSS은 적용되지 않음. 때문에 CSS 최상단에 넣어주어 css문서의 인코딩도 utf-8로 적용시킬 수 있다.
+
 
 #### CSS Selector 선택자
-h1 요소
-h1, h2, h3, h4, h5, h6 그룹
-h1 p 자손
-* 모든 요소
+h1 '요소'
+h1, h2, h3, h4, h5, h6 '그룹'
+h1 p '자손'
+* '모든 요소'
 
 
-- inline 1000점
-- id 100점
-- class 10점
-- 요소 1점
-- * 0점
-
+---------------
+|inline 1000점|
+---------------
+|id 100점|
+---------------
+| class 10점|
+---------------
+| 요소 1점|
+---------------
+| * 0점|
+---------------
 
