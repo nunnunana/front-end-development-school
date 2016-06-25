@@ -66,10 +66,9 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 <code> Computer code text
 <kbd> Keyboard text
 <var> Variable
-<tt> Teletype text
+<tt> Teletype text <!-- html5에서 지원하지 않음 -->
 <dfn> Definition Term 
 <samp> Sample computer code
-
 ```
 
 ## Frame
@@ -112,7 +111,7 @@ rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정�
 <hgroup>은 사라짐
 ```
 
-contentinfo
+role="contentinfo"
 
 ### HTML5 마크업
 HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존에 의존하던 기술 대부분을 해결할 수 있는 방향성을 제시한다.
@@ -128,8 +127,7 @@ HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존�
 <aside> 
 ```
 
-같은 section요소를 담을 수 있는 것은 sectioning 요소인데, header안에 section요소가 들어오는 것은 문법오류를 발생시키지는 않는다.
-`<h1>` 제목 요소는 문서에서 한 번만 쓰도록 한다. id를 줄이고, class를 줄여야하는 이유는 관리 측면에서 권장한다.
+같은 section요소를 담을 수 있는 것은 sectioning 요소인데, header안에 section요소가 들어오는 것은 문법오류를 발생시키지는 않는다. `<h1>` 제목 요소는 문서에서 한 번만 쓰도록 한다. id를 줄이고, class를 줄여야하는 이유는 관리 측면에서 권장한다.
 
 HTML5에서는 `<a>`요소가 블록 요소를 감쌀 수 있도록 변경되었지만, 내부에 또 다른 클릭 가능한 컴포넌트가 존재한다면 그것은 문법오류이다.
 
@@ -139,10 +137,9 @@ HTML5에서는 `<a>`요소가 블록 요소를 감쌀 수 있도록 변경되었
 
 
 ### 콘텐츠모델
-- Block 
-- Inline
+- Block / Inline
 
-**Block Level Element의 특징**
+**Block 요소의 특징**
 - 별도로 스타일 설정을 하지 않앗다면, 부모 요소 영역만큼 가로 크기(width)가 커진다. (기본값: auto)
 - 요소의 높이(height)는 부모와 상관없이 요소가 포함하는 자식 요소들의 크기에 좌우된다.
 - 별도로 가로(width), 세로(height)설정이 가능하다
@@ -189,8 +186,7 @@ h1 {
 @import "print.css";
 ```
 
-CSS import 방식은 직렬식으로 파일을 다운로드하기 때문에 좋은 방법이 아님.
-대신 HTML link방식이 더 좋고, css도 압축하여 요청을 최소화한다.
+CSS import 방식은 직렬식으로 파일을 다운로드하기 때문에 좋은 방법이 아님. 대신 HTML link방식이 더 좋고, css도 압축하여 요청을 최소화한다.
 
 >`@charset "utf-8";`을 css상단에 넣어준다. 연결된 문서에 적용된 UTF-8 인코딩은 해당 문서에만 적용되고 연결된 CSS은 적용되지 않음. 때문에 CSS 최상단에 넣어주어 css문서의 인코딩도 utf-8로 적용시킬 수 있다.
 
@@ -202,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {그룹}
 h1 p {자손}
 * {모든 요소}
 ```
-|구성요소|우선순위점수|
+|구성요소|우선 순위점수|
 |---|---|
 |inline|1000점|
 |id|100점|

@@ -45,7 +45,6 @@
 <blockqoute cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">Oh my God, you/they killed Kenny!</blockqoute>
 # 감싸진 텍스트가 긴 인용문의 의미
 # cite 속성값에 인용된 정보의 원본 문서나 메세지를 가리키는 URL을 넣는데, & 는 &amp;로 처리해줘야 한다. 
-
 ```
 
 ## 문서 구조화(Markup)
@@ -196,9 +195,7 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 - `aria-describedby` : id와 연결하지만, #을 넣지 않는다. ARIA-labelledby보다 더 상세한 설명이 필요할 때 사용하며, 모든 요소에 사용가능
 - `aria-labelledby` : 여러 개의 폼 요소를 그룹화하여 동일한 'Label'값으로 묶어서 제공하고 싶을 때 사용
 - `scope` : 접근성을 위해서, th가 `thead`, 그리고 `tbody`에 포함되어 있을때, 스크린리더 사용자가 정보습득의 어려움을 겪지 않도록 scope를 지정해줘야 한다.
-
 - `<select>`를 쓰지 않고 `<span>`,`<ul><li></li></ul>` 등을 이용해 만드는 Custom Select Box를 만들 때, WAI-ARIA를 통해 의미를 부여할 수 있다.
-
 
 ## Form
 ### input
@@ -207,28 +204,28 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 
 ```html
 <form
-    name="register_form"
-    action="#"
-    method="GET">
-    <p>
-      <!-- input요소에 암묵적 레이블 연결 : 일부스크린리더는 제대로 인식하지 못함 -->
-      <label>ID1: <input type="text"></label>
-      <!-- input요소에 명시적 레이블 연결 -->
-      <label for="user_id">ID2:</label>
-      <input id="user_id" type="text"> <!-- id은 label과 연결시키기 위해 존재 -->
-    </p>
-    <p>
-      <label for="user_password">PASS:</label> 
-      <input name="user_password" id="user_password" type="password" >
-    </p>
-    <p>
-      <label for="user_email">E-MAIL:</label>
-      <input name="user_email" id="user_email" type="email">
-    <p>
-      <button type="submit">전송</button> 
-      <button >리셋</button>
-    </p>
-  </form>
+  name="register_form"
+  action="#"
+  method="GET">
+  <p>
+    <!-- input요소에 암묵적 레이블 연결 : 일부스크린리더는 제대로 인식하지 못함 -->
+    <label>ID1: <input type="text"></label>
+    <!-- input요소에 명시적 레이블 연결 -->
+    <label for="user_id">ID2:</label>
+    <input id="user_id" type="text"> <!-- id은 label과 연결시키기 위해 존재 -->
+  </p>
+  <p>
+    <label for="user_password">PASS:</label> 
+    <input name="user_password" id="user_password" type="password" >
+  </p>
+  <p>
+    <label for="user_email">E-MAIL:</label>
+    <input name="user_email" id="user_email" type="email">
+  <p>
+    <button type="submit">전송</button> 
+    <button >리셋</button>
+  </p>
+</form>
 ```
 
 ##### GET vs POST 차이
