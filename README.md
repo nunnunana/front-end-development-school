@@ -1,3 +1,31 @@
-# front-end-development-school
-프론트엔드 개발 스쿨 학습 내용을 정리합니다.
-Front End Development School / Fast Campus.
+####### eatdesignlove's front-end-development-school
+프론트엔드 개발 스쿨 학습 내용을 본 저장소에 정리한다.
+
+# 작성규칙
+- 매일 배운 것을 마크다운 파일과 소스파일로 정리해서 Commit 한다.
+- 폴더는 `Day$$`의 형태로 이름짓고, 폴더 내부는 구체적으로 다음과 같이 일관성 있게 구성한다.
+
+>`images` : 이미지 소스들을 담는다.
+`css` : 스타일 소스를 담는다.
+`js` : 자바스크립트 소스를 담는다.
+`README.md` : 당일 배운 내용을 전체적으로 정리한다.
+`01-학습주제.html` : 학습주제 별로 HTML 소스를 정리한다.
+
+# 마크다운 작성규칙
+- 마크다운은 내용의 **계층구조에 따라** 일관성있게 구성한다.
+- 모든 마크다운 문서의 시작은 `###### eatdesignlove's Front-End-Development-Study`로 한다.
+- H1 `#` (예: Day01)
+- H2 `##` (예: HTML 기초 )
+- H3 `###` (예: [1] Doctype)
+- H4 `####` (예: 1. 표준문서의 시작 )
+- H5 `#####` (예: MIME TYPE, 독립적인 소주제)
+- 각 Heading 아래는 해당 주제에 대한 요약 및 설명한다.
+- 요약 및 설명 후에 개별 소스코드 사례를 소개한다.
+- 소스코드 사례 뒤에 각 사례에 대한 요약 및 설명한다.
+- 참고자료 및 순서 목록을 제공할 때 `>` 활용한다.
+- 참고자료에 작성하는 링크는 한 줄에 하나씩 작성한다.
+
+# 체계화하기
+현재 주제별로 정리하는 것이 아니라 단순히 날짜별로 정리되는 중이다. 추후 정보의 활용성을 높이기 위해 TIL Repositoy에 주제별로 정리하여 체계화하도록 한다.
+
+[eatdesignlove's TIL](https://github.com/eatdesignlove/TIL)

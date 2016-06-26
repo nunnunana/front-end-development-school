@@ -1,16 +1,6 @@
 #Day04
 
-###복습
-###### Vender Prefix
->제조사 접두사
--`-webkit`, `-ms`, `-os`, `-moz`
-
-###### 언제나 코드의 효용성을 높여 성능을 최적화하자.
-예) ie조건부 주석 처리 
-
-###### link의 rel은 '관계'를 설정.
-
-###### 잘쓰이지 않는 HTML 요소가 있다.
+## 잘 쓰이지 않는 HTML 요소
 `<dfn>`, `<var>`, `<code>`, `<ruby>`, `<abbr>`, `<q>`, `<blockqoute>` 등
 
 ```html
@@ -49,26 +39,30 @@
 
 ## 문서 구조화(Markup)
 
-###`IMG`
->필수속성
-- source: src
-- alternate text: alt
-- image long description: longdesc (표준이 됨)
+### 1. img
+#### 필수속성
+- `src` : source 이미지 소스 주소
+- `alt` : alternate text 대체 텍스트
+- `longdesc` : image long description (표준이 됨)
 
->width , height
+#### width , height
 - img 요소에 크기가 지정되어 있으면 렌더링 과정에서 해당 크기만큼의 영역을 미리 자리를 잡아 로딩 중 UI의 변화가 적게되어 사용자 경험을 위해 넣어주는 것이 좋다는 의견. (권장)
 - px값을 넣지 않고 작성.
 - 코드에 둘다 넣어주도록 한다.
 
->alt
+#### alt
 chrome developer 도구를 이용해 간편하게 확인가능.
 alt의 길이는 정해져있다. 200자 가량.
 longdesc="관련 정보 링크 등을 제공" #image long description.
 
->title
+#### title
 마우스 오버시 툴팁을 제공한다. 그러나 GUI의 산물.
 
->Image map
+
+>포토샵에서 설정하는 dpi 96 / 72 의 차이는 웹타이포그래피 pt의 크기와 관련된 것! 이미지는 영향을 받지 않는다.
+
+
+### 2. Image Map
 img요소의 속성으로 usemap을 작성하고, map요소의 name혹은 id값과 연결한 뒤, area요소를 통해 이미지 맵을 정의할 수 있다.
 
 ```html
@@ -81,6 +75,7 @@ img요소의 속성으로 usemap을 작성하고, map요소의 name혹은 id값�
 </map>
 
 ```
+
 - rect : 사각형 / cirlce:원형 / polygon : 다각형
 최근에는 css map으로 대체(그러나 css map은 사각형 링크만 가능)
 *id를 지원하는 브라우저가 적기 때문에* map에서는 name을 써야한다.
@@ -89,10 +84,15 @@ css map은 사각형이기때문에 다각형의 링크를 만들어야 하는 �
 반응형 웹의 경우, *Responsive Image maps JQuery Plugin*을 활용가능.
 [summer image map](http://summerstyle.github.io/summer/)
 
-### svg
+### 3. svg
+SVG(Scalable Vector Graphics, SVG)는 2차원 벡터 그래픽을 표현하기 위한 XML 기반의 파일 형식으로, 1999년 W3C(World Wide Web Consortium)의 주도하에 개발된 오픈 표준의 벡터 그래픽 파일 형식이다. SVG 형식의 이미지와 그 작동은 XML 텍스트 파일들로 정의 되어 검색화·목록화·스크립트화가 가능하며 필요하다면 압축도 가능하다.
+[위키백과](https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%9F%AC%EB%B8%94_%EB%B2%A1%ED%84%B0_%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4)
+
 Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상일 뿐, 실제로 깨어지는 것은 아님. svg는 xml코드.
 
-### List
+### 4. List
+List 요소는 목록을 구조화할 때 사용하는 요소이다. 
+
 - 순차목록 ol (Ordered List)
 - 비순차목록 ul (Unordered List)
 - 리스트 아이템 li (List Item)
@@ -116,7 +116,11 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 </dl>
 
 ```
-### Table
+스크린리더는 순차목록을 읽어주지는 않는다.
+목록 안에는 항상 li만 허용한다.
+
+
+### 5. Table
 `<th>` : Table cell Header 
 `<tr>` : Table cell Row
 `<td>` : Table cell Data
@@ -197,8 +201,8 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 - `scope` : 접근성을 위해서, th가 `thead`, 그리고 `tbody`에 포함되어 있을때, 스크린리더 사용자가 정보습득의 어려움을 겪지 않도록 scope를 지정해줘야 한다.
 - `<select>`를 쓰지 않고 `<span>`,`<ul><li></li></ul>` 등을 이용해 만드는 Custom Select Box를 만들 때, WAI-ARIA를 통해 의미를 부여할 수 있다.
 
-## Form
-### input
+### 6. Form
+#### input
 `enctype="multipart/form-data"`는 텍스트가 아닌 데이터를 활용할 때 넣어준다.
 서버에 전송하기 위해서는 *name값이 필요*하다. 동시에 *접근성을 위해서는 id값이 필요*하다.
 
@@ -228,16 +232,17 @@ Photoshop CC에서 svg를 열었을 때 깨져보이는 현상은 단지 현상�
 </form>
 ```
 
-##### GET vs POST 차이
+#### GET vs POST 차이
 GET 또는 POST는 HTTP프로토콜을 이용해서 서버에 무언가를 전달할 때 사용하는 방식
 
->GET
+
+##### GET
 - URL에 정보가 담겨서 전송된다.
 - 전송할 수 있는 정보의 길이가 제한되어 있다.
 - 퍼머링크로 사용될 수 있다. #고유한 주소
 - 정보를 가져오고자 할 때 주로 사용
 
->POST
+##### POST
 - header의 body에 담겨서 전송된다.
 - URL 상에 전달한 정보가 표시되지 않는다.
 - GET에 비해서 보안상 약간의 우위에 있다. (사실상 동일하다)
@@ -245,23 +250,27 @@ GET 또는 POST는 HTTP프로토콜을 이용해서 서버에 무언가를 전�
 - 퍼머링크로 사용할 수 없다. 
 - 서버 쪽에 어떤 작업을 명령할 때 사용한다. (데이터의 기록, 삭제, 수정 등)
 
->[GET과 POST의 차이, Outsider](https://blog.outsider.ne.kr/312)
-[GET과 POST의 차이, 생활코딩](https://blog.outsider.ne.kr/312)
+>- [GET과 POST의 차이, Outsider](https://blog.outsider.ne.kr/312)
+- [GET과 POST의 차이, 생활코딩](https://blog.outsider.ne.kr/312)
 
-### Sublime Tip, 
+### 참고자료
+>- [야무님, 웹표준화 카페](http://cafe.naver.com/webstandardproject/603)
+- [webdesign.tutsplus.com](http://webdesign.tutsplus.com/)
+- GridLove
+- Javascript Style guide
+- NVDA : 오픈소스 스크린리더로서 무료로 사용 가능하며 다국어를 지원합니다.
+
+### * Sublime Tip
 - autoFileName : 폴더에 위치한 파일 주소를 간편히 넣을 수 있는 기능 제공.
 - `control + w` : wrapping 하여 코드를 빠르게 작성할 수 있는 emmet 기능.
 - `control + k + u / l` : uppercase, lowercase
 - `control + shift + i` : img 코드에 width&height를 빠르게 입력
 - Emmet에서 `input:password` 는 input 의 type="password"
 
-###참고자료
->- [야무님, 웹표준화 카페](http://cafe.naver.com/webstandardproject/603)
-- [webdesign.tutsplus.com](http://webdesign.tutsplus.com/)
-- GridLove
-- Javascript Style guide
+###### Vender Prefix
+>제조사 접두사
+-`-webkit`, `-ms`, `-os`, `-moz`
 
-스크린리더는 순차목록을 읽어주지는 않는다.
-목록 안에는 항상 li만 허용한다.
-NVDA : 오픈소스 스크린리더로서 무료로 사용 가능하며 다국어를 지원합니다.
+###### link의 rel은 '관계'를 설정.
+
 

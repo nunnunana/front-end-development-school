@@ -1,7 +1,10 @@
 #Day 01
 
-##1.HTML(HyperText Markup Language) 기초 
-### [1] DOCTYPE.
+##1.HTML기초 
+### [1] DOCTYPE
+#### 1. 표준문서의 시작.
+DOCTYPE(DTD, Document Type Definition)은 웹표준의 시작과도 같다. 왜냐하면 DTD의 선언여부에 따라 해당 문서는 브라우저에서 [표준모드(Standard Mode)나 비표준모드(Quirk Mode)](http://naradesign.net/wp/2007/03/27/118/)로 인식되기 때문이다.
+
 ```html
 #!!!4t HTML4 관용 모드 표준 DTD
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
@@ -19,9 +22,6 @@
 <!DOCTYPE html>
 ```
 
-#### 1. 표준문서의 시작.
-DOCTYPE(DTD, Document Type Definition)은 웹표준의 시작과도 같다. 왜냐하면 DTD의 선언여부에 따라 해당 문서는 브라우저에서 [표준모드(Standard Mode)나 비표준모드(Quirk Mode)](http://naradesign.net/wp/2007/03/27/118/)로 인식되기 때문이다.
-
 #### 2. DTD 위에 아무것도 없다.
 IE 브라우저에 있어서 DTD 위에 `<!-- 주석 -->`이나 `<?php require'core/init.php';?>` 등 과 같은 코드가 있을 경우, 올바르지 않은 DTD로 인식하여 비표준으로 인식된다. 따라서 DTD 위에는 아무것도 기입되지 않는 것이 좋다. 한편, DTD는 대소문자를 구분하지는 않는다.
 
@@ -37,10 +37,9 @@ IE 브라우저에 있어서 DTD 위에 `<!-- 주석 -->`이나 `<?php require'c
 ```
 
 >
-######관련링크
+##### 관련링크
 - [DTD 위에 주석이 올 경우 발생하는 문제](http://f10024.tistory.com/1)
 - [IE renders my page in Quirks mode](http://stackoverflow.com/questions/18517290/ie-renders-my-page-in-quirks-mode?rq=1)
->
 
 
 #### 3. 표준모드로 렌더링되는지 확인하는 방법
@@ -54,9 +53,7 @@ document.compatMode
 
 특별한 의미가 있다기보단 CSS에 등장한 시기에 썼던 이름이라는 정도로 이해하면 된다.
 
-
-------
-
+---
 
 ### [2] HTML문서의 기본 구조
 
@@ -102,7 +99,7 @@ document.compatMode
 </html>
 ```
 
-##### #1. meta:utf
+#### 1. meta:utf
 
 `meta http-equiv`로 시작되는 meta태그는 페이지 로딩 전 정의한 사항을 먼저 수행하는 전처리 구문 지시자 프라그마 디렉티브(Pragma Directive)라고 한다. (equiv는 equivalent의 약자). 서버에서 셋팅되지 못한 값을 처리하는 것이므로 `<title>` 위에 작성한다. HTML5부터 `content="text/html"`이 기본값으로 포함
 
@@ -116,8 +113,7 @@ document.compatMode
 </head>
 ```
 
->###### UTF-8
-
+>##### UTF-8
 >*장점*
 
 >
@@ -132,12 +128,12 @@ document.compatMode
 - 한중일 문자들과 표의 문자를 제외한 거의 모든 기존 인코딩들은 한 문자에 1바이트를 사용하므로 문자열 처리가 간편한 반면, UTF-8은 그렇지 않다.
 
 
-###### MIME TYPE
+>##### MIME TYPE
 서버 간 통신에 있어서 파일이 어떤 형식이 무엇인지 할 수 있게 구분지은 것.
 
 
 
-##### #2. meta:compat
+#### 2. meta:compat
 아래의 비표준 코드단락을 기입함으로써 IE의 호환성 보기 모드를 변경할 수 있다.Edge의 경우는 최신버전으로 렌더링하는 방식. 만약, 이 코드가 없다면 최신브라우저임에도 IE 7로 인식하는 문제가 발생할 수 있다.
 
 ```html
@@ -154,16 +150,16 @@ document.compatMode
 </head>
 ```
 
-###### X-UA-Compatible의 의미
+##### X-UA-Compatible의 의미
 이 코드가 없으면 최신 IE브라우저일지라도 IE 7로 동작한다.
 또는 서버 세팅값을 통해 서버단에서 처리할 수 있다.
 
 
-##### #3. meta:vp
+#### 3. meta:vp
 
 애플에서 safari를 위해 만든 비표준 코드이나 현재 많은 브라우저에서 제공하여, 모바일 브라우저에 최적화된 웹페이지를 구현할 수 있도록 하고 있다. 
 
->###### Viewport 참고자료
+>##### Viewport 참고자료
 - [viewport meta 태그를 이용해 모바일 브라우저상에서 레이아웃 조종하는 법](https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag)
 - [A tale of two viewports — part two](http://www.quirksmode.org/mobile/viewports2.html)
 
@@ -174,7 +170,7 @@ document.compatMode
 ```
 
 
-##### #4. 검색엔진최적화 SEO
+#### 4. 검색엔진최적화 SEO
 
 해당 문서를 검색엔진에 최적화하여 검색 결과 상단에 노출시키기 위한 최적화 작업의 일환으로 meta 요소의 `description`, `keywords`, `author`를 작성한다.
 
@@ -187,7 +183,7 @@ document.compatMode
 ```
 
 
-##### #5. lang 과 dir
+#### 5. lang 과 dir
 
 `lang`속성은 요소 내 주 언어를 명시하는 역할을 한다. ko-KR처럼 '언어-국가코드'형태로 명시하여 더욱 정확히 표현가능하다.
 - `en-US` 미국, 영어
@@ -214,7 +210,7 @@ document.compatMode
 ```
 
 
-#### 3. 절대경로와 상대경로의 차이
+#### 6. 절대경로와 상대경로의 차이
 외부에 존재하는 파일을 연결할 때 아래와 같이 절대경로 혹은 상대경로를 이용해 연결가능한데, 상대경로인 경우 파일 간 위치에 따라 경로값이 달라지는데 반해 절대경로는 `/`를 기준으로 단일하게 적용가능하여 관리가 더 용이하다. 
 
 ```html
@@ -222,30 +218,3 @@ document.compatMode
 ./ (현재경로부터)
 ../ (상대경로, 상위 경로를 의미)
 ```
-
-
-## 더 궁금한 것.
-- url, uri, urn
-- http
-
-
-<!-- ####URL, URI의 차이 ?
-- Uniform Resource Locator 통합 자원 위치표시
-- Uniform Resource Identifier 통합 자원 식별자
-- 
-
-#### HTTP ?
-- HyperText Transport Protocol : 웹서버와 클라이언트간의 문서를 교환하기 위한 통신규약
-- Tim Berners Lee, 1989
-- 웹에서만 사용하는 Protocol로 TCP/IP기반으로 한 지점에서 다른 지점으로 요청과 응답을 전송한다.
-- http://wiki.gurubee.net/pages/viewpage.action?pageId=26739929
-- http://sunychoi.github.io/java/2015/04/27/uri-url.html
-
-#### 닷컴버블을 극복하고 살아남은 기업의 특징 
-- 참여, 공유, 개방(Web 2.0)
-
-#### 그래서 나오게 된 것 Open API, 그리고 그러한 발전 속에서 AJAX
-#### canvas와 svg의 차이
-
-#### 플래시가 없어진 가장 큰 이유는 모바일 환경에서 플래시가 잡아먹는 큰 리소스 -->
- 

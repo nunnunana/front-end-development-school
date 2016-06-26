@@ -1,15 +1,20 @@
-###### Front-End-Development Study
+###### eatdesignlove's Front-End-Development Study
 
 #Day07
 ## HTML Script 
 
-- **스타일코드는 스크립트보다 반드시 위에 입력한다?** 그렇다. 인터넷 접속 환경이 느린 곳에서는 스크립트의 다운로드가 지연될 경우 화면에 스타일이 적용되지 않은 상태가 사용자에게 보여지게 될 수 있기 때문에.
-- **자바스크립트는 직렬식으로 다운로드 된다?** 그렇다. 때문에 브라우저가 HTML문서를 읽는 도중 자바스크립트를 만나면, 자바스크립트를 모두 읽을 때까지 랜더링 하지 않고 기다리게 된다.
-- **자바스크립트를 페이지 안에 작성하는 것이 잘못된 것은 아니다?** 그렇다. 자바스크립트를 페이지 안에 작성하는 것이 문제가 아니라, 비효율적으로 코드를 구성하는 것이 문제가 된다. 반복적으로 쓰이는 코드는 재사용가능하도록.
+### 스타일코드는 스크립트보다 반드시 위에 입력한다?
+그렇다. 인터넷 접속 환경이 느린 곳에서는 스크립트의 다운로드가 지연될 경우 화면에 스타일이 적용되지 않은 상태가 사용자에게 보여지게 될 수 있기 때문에.
+
+### 자바스크립트는 직렬식으로 다운로드 된다?
+그렇다. 때문에 브라우저가 HTML문서를 읽는 도중 자바스크립트를 만나면, 자바스크립트를 모두 읽을 때까지 랜더링 하지 않고 기다리게 된다.
+
+### 자바스크립트를 페이지 안에 작성하는 것이 잘못된 것은 아니다?
+그렇다. 자바스크립트를 페이지 안에 작성하는 것이 문제가 아니라, 비효율적으로 코드를 구성하는 것이 문제가 된다. 반복적으로 쓰이는 코드는 재사용가능하도록.
 
 
 ## HTML Object 요소
-images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 요소
+images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 요소.
 
 ```html
 <h3>object를 이용하여 그림을 문서내 호출하는 경우</h3>
@@ -17,7 +22,6 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 	<!-- 대체 텍스트 -->	
 	<p>Type에 지정된 적절한 플러그인을 찾을 수 없을 경우, 포함하고 있는 &lt;p&gt;내용을 대체 텍스트로 보여준다.</p>	
 </object>
-
 <h3>웹 문서 페이지 호출시</h3>
 <object data="파일경로" type="text/html">
 </object>
@@ -26,19 +30,35 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 
 
 ### Parameter 요소 (Param)
-오브젝트의 자식 요소로 해당 요소의 파라미터나 변수를 설정하는데 사용.
+ object 요소에 의해 활성화되는 플러그인에 전달되는 매개변수를 정의합니다. 매개변수의 이름을 정의하는 name 속성과 값을 정의하는 value 속성으로 이루어져 있다.
+
+```html
+<object type="application/x-java-applet">
+  <param name="code" value="MyJavaClass">
+</object>
+```
 
 ---
 
 ## HTML의 기타요소
 ### 인용
+`<q></q>` :  짧은 인용, 잘 사용하지 않음 
+`<blockqoute></blockqoute>` : 긴 인용
+`<cite></cite> (citation) 인용문을 말한 사람을 구조화할 때 사용
+
 ```html
-<q></q> <!-- 짧은 인용, 잘 사용하지 않음 --> 
-<blockqoute></blockqoute> <!-- 긴 인용 -->
-<cite> <!-- citation 인용문을 말한 사람을 구조화할 때 사용-->
+<blockquote>
+<p>As my fellow HTML5 Doctor, Oli Studholme has showed, people seldom quote exactly 
+– so sacrosanctity of the quoted text isn’t a useful ideal – and in print etc, 
+citations almost always appear as part of the quotation – it’s highly conventional.</p>
+<footer>
+— <cite><a href="http://www.brucelawson.co.uk/2013/on-citing-quotations-again/">Bruce Lawson</a></cite>
+</footer>
+</blockquote>
 ```
 
 ### 축약
+약어 혹은 두문자어를 나타내고, title 속성에는 약어의 원형을 나타낸다.
 ```html
 <abbr title=""> <!-- by 넷스케이프. IE 6 지원 X. 표준! 축약어 -->
 <acronym> <!-- by IE. HTML5에서 폐지. 두문자어 -->
@@ -72,9 +92,7 @@ images, audio, video, java applets, ActiveX, PDF, Flash를 사용하기 위한 �
 ```
 
 ## Frame
-접근성이 떨어져 표준 문서 작성시 사용을 권장하지 않음 
-과거에는 Ajax기술이 발달하지 못해 프레임을 사용함
-frame을 쓸때는 body를 쓰지 않는다. 
+과거에는 Ajax기술이 발달하지 못해 프레임을 사용했으나, 접근성이 떨어져 표준 문서 작성시 사용을 권장하지 않음. frame을 사용할 때는 body를 쓰지 않는다. 
 
 >- frame
 - frameset
@@ -85,10 +103,6 @@ frame을 쓸때는 body를 쓰지 않는다.
 ## Micro Format
 마이크로포맷은 특정 마크업을 사용하여 "사람이 쉽게 이해할 수 있는" 정보를 "장치(device)도 이해할 수 있도록" 바꾸어 주는 기술.
 
->class : 마이크로포맷을 구성하는 기본 속성으로 정보를 정의하는 역할
-rel:  현재 문서가 링크로 연결되는 문서와 어떤 관계 인지 정의 (현재문서 >> 링크문서)
-rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정의 (현재문서 << 링크문서)
-
 ```html
 <!-- 마이크로포맷 hcard 적용 예 -->
 <address class="vcard">
@@ -98,6 +112,11 @@ rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정�
 	<a href="http://ejungle.co.kr" rel="co-worker colleague">http://ejungle.co.kr</a>
 </address>
 ```
+
+>- class : 마이크로포맷을 구성하는 기본 속성으로 정보를 정의하는 역할
+- rel:  현재 문서가 링크로 연결되는 문서와 어떤 관계 인지 정의 (현재문서 -> 링크문서)
+- rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정의 (현재문서 <- 링크문서)
+
 [Microformat 참고](http://microformats.org/get-started)
 
 
@@ -111,7 +130,7 @@ rev: 링크로 연결되는 문서가 현재 문서와 어떤 관계인지 정�
 <hgroup>은 사라짐
 ```
 
-role="contentinfo"
+[HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
 ### HTML5 마크업
 HTML5은 외부 기술에 의존하지 않고 마크업 언어선에서 기존에 의존하던 기술 대부분을 해결할 수 있는 방향성을 제시한다.
@@ -136,16 +155,17 @@ HTML5에서는 `<a>`요소가 블록 요소를 감쌀 수 있도록 변경되었
 - [article과 section 활용 참고](http://dezang.net/511)
 
 
-### 콘텐츠모델
-- Block / Inline
+## 콘텐츠모델
+- Block 
+- Inline
 
-**Block 요소의 특징**
+###Block 요소의 특징
 - 별도로 스타일 설정을 하지 않앗다면, 부모 요소 영역만큼 가로 크기(width)가 커진다. (기본값: auto)
 - 요소의 높이(height)는 부모와 상관없이 요소가 포함하는 자식 요소들의 크기에 좌우된다.
 - 별도로 가로(width), 세로(height)설정이 가능하다
 - 블록요소는 내부에 인라인 요소를 감쌀 수 있다.
 
-**Inline 요소의 특징**
+### Inline 요소의 특징
 - 자신을 포한 부모 요소 영역과 상관없이 자신이 포함하는 자식 요소 또는 텍스트 만큼 가로(width), 세로(height) 크기를 가진다.
 - 인라인 요소는 내부에 블록 요소를 감쌀 수 없다. (단! 예외: <a>요소는 블록 요소를 감쌀 수 있다.)
 - margin, padding 속성의 상(top), 하(bottom) 설정이 불가능하다.
@@ -160,12 +180,6 @@ HTML5에서는 `<a>`요소가 블록 요소를 감쌀 수 있도록 변경되었
 <!-- </section> -->
 <h2>제목 <h3>보조제목</h3></h2> 
 ```
-
->### 참고자료
-- [caniuse](http://caniuse.com/) 
-- [html5test](https://html5test.com/)
-- [w3.github.io](w3.github.io/html/)
-
 
 # CCS (Cascading Style Sheet)
 HTML의 모든 요소는 Box모델로 이루어져 있다.
@@ -199,11 +213,12 @@ CSS import 방식은 직렬식으로 파일을 다운로드하기 때문에 좋�
 
 #### CSS Selector 선택자
 ```css
-h1 {요소}
-h1, h2, h3, h4, h5, h6 {그룹}
-h1 p {자손}
-* {모든 요소}
+h1 {} /* 요소 */
+h1, h2, h3, h4, h5, h6 {}  /* 그룹 */
+h1 p {} /* 자손 */
+* {} /* 모든 요소 */
 ```
+
 |구성요소|우선 순위점수|
 |---|---|
 |inline|1000점|
@@ -212,3 +227,7 @@ h1 p {자손}
 |요소|1점|
 |*|0점|
 
+## 참고자료
+>- [caniuse](http://caniuse.com/) 
+- [html5test](https://html5test.com/)
+- [w3.github.io](w3.github.io/html/)
