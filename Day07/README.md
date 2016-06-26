@@ -168,6 +168,12 @@ HTML5에서는 `<a>`요소가 블록 요소를 감쌀 수 있도록 변경되었
 
 
 # CCS (Cascading Style Sheet)
+HTML의 모든 요소는 Box모델로 이루어져 있다.
+```
+Offset > Margin > Padding > Content
+```
+계산된 소수점 아래 자리수는 브라우저마다 처리하는 방식이 다르다. 때문에 요소에 적용하는 값은 정수로 떨어지도록 쓰는게 가장 좋음. 또한 웹 브라우저마다 가지고 있는 Default 스타일이 같지 않다.
+
 
 ```css
 h1 {
