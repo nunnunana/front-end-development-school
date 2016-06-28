@@ -23,6 +23,11 @@
 }
 
 
+[lang|="en"] {
+	font-weight: bold;
+}
+
+
 /* --------------------------------
 	상태 디자인(State Design) 선택자
 	기본상태 (Normal)
@@ -62,7 +67,6 @@ p:active {
 
  /* 기본 상태 */
  a {
- 	display: inline-block;
  	text-decoration: none;
  	color: #232323;
  	background: #eee;
@@ -256,7 +260,7 @@ abbr {
  * ------------------------------ */
 
  ::selection {
- 	text-shadow: 2px 2px 8px #fff;
+ 	text-shadow: 2px 2px 8px #fff; 
  	background-color: #E40000;
  	color:#fff;
  }
