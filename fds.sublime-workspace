@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"get",
 				"getElementsByTagName"
 			],
@@ -56,10 +60,6 @@
 				"my_num_input"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"di",
 				"display"
 			],
@@ -88,37 +88,21 @@
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"ko-KR\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>CSS 속성 선택자를 활용하여 각 파일 포맷별 아이콘 설정</title>\n	<link rel=\"stylesheet\" href=\"css/file-format-icons.css\">\n</head>\n<body>\n	<div class=\"lecture\">\n		<span style=\"padding:10px;\">가나다</span>\n		<h2>Check File Format Type Assign Icons</h2>\n		<ul class=\"lecture-file-list reset-list\">\n			<li class=\"lecture-file-item\">\n				<a href=\"resources/file.ai\"><!-- <img src=\"images/documents-assets/ai.png\" alt> -->file-ai</a>\n			</li>\n			<li class=\"lecture-file-item\">\n				<a href=\"resources/file.psd\"><!-- <img src=\"images/documents-assets/psd.png\" alt> -->file-psd</a>\n			</li>\n			<li class=\"lecture-file-item\">\n				<a href=\"resources/file.mov\"><!-- <img src=\"images/documents-assets/mov.png\" alt> -->file-mov</a>\n			</li>\n			<li class=\"lecture-file-item\">\n				<a href=\"resources/file.pdf\"><!-- <img src=\"images/documents-assets/pdf.png\" alt> -->file-pdf</a>\n			</li>\n			<li class=\"lecture-file-item\">\n				<a href=\"resources/file.txt\"><!-- <img src=\"images/documents-assets/txt.png\" alt> -->file-txt</a>\n			</li>\n		</ul>\n	</div>\n\n	<!-- <div class=\"demo\">\n		<ul class=\"lecture-file-list reset-list\">\n			<li><a href=\"\">item-01</a></li>\n			<li><a href=\"\">item-02</a></li>\n			<li><a href=\"\">item-03</a></li>\n			<li><a href=\"\">item-04</a></li>\n		</ul>\n	</div> -->\n\n</body>\n</html>",
-			"file": "Day09/02-css-file-format-type.html",
-			"file_size": 1377,
-			"file_write_time": 131114635220000000,
+			"contents": "<!DOCTYPE html>\n<html lang=\"ko-KR\">\n<head>\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n	<meta charset=\"UTF-8\">\n	<title>CSS 선택자</title>\n	<link rel=\"stylesheet\" href=\"css/selectors.css\">\n</head>\n<body>\n\n  <!-- 스페인어 -->\n	<p lang=\"sp\">Mujer uno dolor más de, poder mismo si. Crepúsculo fugacidad, falda ataque consecuencia montaña represión fotografía y encefalograma. Apéndice, expedición.</p>\n	\n	<!-- 미국식 영어 -->\n	<p lang=\"en-US\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus possimus, fuga a minima aliquam odio velit labore necessitatibus ipsa rem.</p>\n\n  <!-- 영국식 영어 -->\n	<p lang=\"en-GB\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi a totam facilis quibusdam, fuga recusandae consequatur voluptatum voluptates impedit fugiat?</p>\n</body>\n</html>",
+			"file": "Day11/01-css-selector.html",
+			"file_size": 836,
+			"file_write_time": 131115506350000000,
 			"settings":
 			{
-				"buffer_size": 1328,
+				"buffer_size": 796,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day09/css/file-format-icons.css",
+			"file": "Day11/css/selectors.css",
 			"settings":
 			{
-				"buffer_size": 773,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day10/homework/css-file-format-type.html",
-			"settings":
-			{
-				"buffer_size": 2373,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day10/homework/css/file-format-type.css",
-			"settings":
-			{
-				"buffer_size": 2404,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -254,12 +238,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Desktop/FDS",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/css",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/css"
+		"/Users/eatdesignlove/Documents/program/FDS",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/index.html",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/css/style.css",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/untitled.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day09/css/selectors.css",
 		"/Users/eatdesignlove/Desktop/FDS/Day09/03-css-file-format-type-practice.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day09/README.md",
@@ -278,7 +264,6 @@
 		"/Users/eatdesignlove/Desktop/index.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day09/css/file-format-icons.css",
 		"/Users/eatdesignlove/Desktop/FDS/css/style.css",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/index.html",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/Users/eatdesignlove/Desktop/FDS/HTML/README.mdown",
 		"/Users/eatdesignlove/Desktop/FDS/Day02/index.html",
@@ -356,7 +341,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -483,136 +468,66 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Day09/02-css-file-format-type.html",
+					"file": "Day11/01-css-selector.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1328,
+						"buffer_size": 796,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								212,
+								780
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
 							"colorcode": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Day09/css/file-format-icons.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 773,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								198,
-								198
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"colorcode": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 63.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Day10/homework/css-file-format-type.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1960,
-								1960
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"colorcode": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1108.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Day10/homework/css/file-format-type.css",
+					"buffer": 1,
+					"file": "Day11/css/selectors.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2404,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								363,
-								363
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
 							"colorcode": true,
-							"force_encoding": "UTF-8",
-							"in_converting": true,
 							"open_with_edit": true,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"viewport_position":
-							[
-								0.0,
-								428.0
-							]
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 154.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -688,7 +603,7 @@
 		[
 			[
 				"",
-				"~/Documents/TIL/TIL.sublime-project"
+				"~/Desktop/FDS/fds.sublime-workspace"
 			]
 		],
 		"width": 380.0
@@ -709,7 +624,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 197.0,
 	"status_bar_visible": true,
 	"template_settings":
