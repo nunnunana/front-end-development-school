@@ -1,0 +1,21 @@
+h1 {
+	margin-bottom: 1.88em;
+	font-weight: bolder; /* 하위 호환 고려, 구형브라우저는 아래 형태의 값을 이해하지 못할 경우가 있기 때문. */
+	font-weight: 900; /*100 - 400 normal - 700 bold - 900 bolder*/
+	font-size: 2.2em;
+}
+
+p {
+	color: #323130;
+	font-size: 0.875em;	/* 14px */
+}	
+
+p a {
+	background: #000;
+	color: #fff;
+	margin-left: 10px;
+}
+
+p span {
+	margin-right: 20px;
+}

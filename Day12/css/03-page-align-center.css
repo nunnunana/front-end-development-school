@@ -1,0 +1,77 @@
+.page {
+	width: 50vw; /* vw? = viewport width */
+	height: 100vh; /* vh? = viewport height */
+	background: #000;
+	/* width:auto; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 인터랙션의 기본은 이벤트 감지! */
+/* 최신기술 vh을 사용하고, 하위 브라우저는 대체기술 polyfill 을 사용한다. */
+
+/* 비표준 IE에서는 margin:auto 적용이 되지 않는다. */
+
+
+/* 대상을 세로 가운데 정렬하는 방법 */
+.parent {
+	height: 10em;
+	line-height:10em;	
+	/* 웹의 line-height는 해당 문자의 em을 뺀 나머지 공간을 양분하는 개념 */
+	/* 대체하는 기술은 flex Box */
+  /*이미지의 경우 vertical-align:middle;을 주어야 한다.*/
+}
+
+.vertical {
+	width: 90%;
+	max-width: 900px;
+	height: 333px;
+	background: #9B48FF;
+	margin: 20vh auto;
+	padding-top: 1.25em;
+	padding-left: 1.25em;
+}
+
+.print-class-attr::before {
+	display: block;
+	content: attr(data-name);
+	color: #fff;
+	font-size: 1.375rem;
+}
+
+/* .inner-box */
+
+.inner-box {
+	width: 250px;
+	height: 111px;
+	background: #FFCE20;
+	padding-top: 1.25em;
+	padding-left: 1.25em;
+}
+
+.inner-box::before {
+	font-size: 0.977rem;
+}
+
+/* inline-block 안의 img에 생기는 여백을 해결하는 방법 */
+.change-display-inline-block li {
+	display: inline-block;
+}
+
+.change-display-inline-block img {
+	vertical-align: middle; /* bottom */
+}
+
+/* margin 속기형 (short properties) */
+p {
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+
+	margin: top right bottom left;
+	margin: top right bottom;
+	margin: top right;
+	margin: top;
+}
+
