@@ -19,7 +19,7 @@
 	line-height:10em;	
 	/* 웹의 line-height는 해당 문자의 em을 뺀 나머지 공간을 양분하는 개념 */
 	/* 대체하는 기술은 flex Box */
-  /*이미지의 경우 vertical-align:middle;을 주어야 한다.*/
+  /* 이미지의 경우 vertical-align:middle;을 주어야 한다.*/
 }
 
 .vertical {
