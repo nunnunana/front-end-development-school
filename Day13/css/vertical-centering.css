@@ -1,0 +1,49 @@
+.text, .image, .block {
+  width: 14em;
+  height: 8em;
+  margin: 0.5em;
+  border: thick solid;
+  background: #fff;
+}
+.text {
+  border-color: #99f;
+}
+.image {
+  border-color: #f99;
+}
+.image img {
+  width: 50px; 
+  height: 50px;
+}
+.block {
+  color:#ff4;
+}
+.block div {
+  width: 10em;
+  border:dashed;
+  border-color: #000;
+  color: #000;
+}
+
+/* Using line-height */
+.using-line-height div { line-height: 8em; }
+.using-line-height img { vertical-align:middle; }
+
+/* using-display-table-cell */
+.using-display-table-cell .text, 
+.using-display-table-cell .image, 
+.using-display-table-cell .block {
+  display: table-cell;
+}
+.using-display-table-cell div,
+.using-display-table-cell img {
+  vertical-align: middle;
+}
+
+/* using-line-height-and-display-inline-block */
+.using-line-height-and-display-inline-block .block {line-height: 8em;}
+.using-line-height-and-display-inline-block div {
+  display:inline-block;
+  vertical-align:middle;
+  line-height: normal;
+}

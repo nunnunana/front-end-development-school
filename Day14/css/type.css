@@ -1,0 +1,64 @@
+/* 웹타이포 그래피 */
+/* 본문(body) -> 제목(heading) */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 80vmax; /* 더 긴 것의 길이의 80% 영역을 가진다. */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5; /* 1rem * 1.5 = 16* 1.5 =24 */
+  line-height: 1.5rem; /* 1rem * 1.5 = 16* 1.5 =24 */
+  background-image: url(../images/leading-24px.png);
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* 포토샵, 웹의 행간의 기본값은 120% */
+/* line-height 1.5 이상 2 이하를 추천 */
+
+
+.small-caps {font-variant: small-caps;}
+.uppercase  {text-transform: uppercase;}
+.lowercase  {text-transform: lowercase;}
+.capitalize  {text-transform: capitalize;}
+
+
+/* ---------------- 
+ * font 속기형 작성법 
+ * 기본 작성법
+ * font: size family; [필수]
+ * font: style variant weight size/line-height family; [선택]
+ * -------------- */
+
+.spoqa {
+  font-family: "spoqa han sans", sans-serif;
+  letter-spacing: -0.02em;
+  word-spacing: 0.05em;
+}
+
+
+/* ---------------- 
+ * IR 이미지 대체 기법
+ * -------------- */
+.brand-tweetle {
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/tweetle/buzzboy_tweetle.png");
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+}
+
+h1 a {
+  display: block;
+}
