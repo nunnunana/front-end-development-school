@@ -1,0 +1,30 @@
+.wrap {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #333;
+}
+
+.wide-block {}
+
+.member-container {
+  float: left;
+}
+.member-container h3 {
+  text-align: center;
+}
+.member-picture {
+  float: left;
+  width: 50%;
+}
+.member-info {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+.member-social::before {
+  display: block;
+  border-top: 1px solid #7e7e7e;
+  width: 44px;
+  margin: 0 auto 14px;
+}

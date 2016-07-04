@@ -1,0 +1,71 @@
+body {
+  color: #464646;
+  text-align: center;
+}
+
+/* 그리드 시스템 */
+.col-50 {
+  float: left;
+  width: 50%;
+}
+.col-50.floated-right {
+  float: right;
+}
+.col-100 {
+  width: 100%;
+  float: left;
+}
+
+/* 공통 모듈 */
+li:hover {
+  background: #fff1e2;
+}
+li {
+  position: relative;
+}
+li:hover::before {
+  content: '';
+  background: #fff1e2;
+  transform: rotate(45deg);
+  z-index: 2;
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+}
+.member-info h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1875rem;
+  line-height: 1.1;
+  padding-top:5.4375rem;
+}
+.member-info p {
+  font-family: 'Open Sans', sans-serif;
+  width: 80%;
+  margin:0 auto;
+  padding-top: 1.5625rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.member-social {
+  padding-top: 1.25rem;
+}
+.member-social::before {
+  content: '';
+  display: block;
+  border-top: 1px solid #7e7e7e;
+  width: 44px;
+  height: 1px;
+  margin: 0 auto 14px;
+}
+.twitter {
+  width: 25px;
+  height: 25px;
+}
+.twitter:hover path {  
+  fill:#4ca6de;
+}
+

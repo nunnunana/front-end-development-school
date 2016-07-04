@@ -27,8 +27,8 @@ img {
 /* line-height 1.5 이상 2 이하를 추천 */
 
 
-.small-caps {font-variant: small-caps;}
-.uppercase  {text-transform: uppercase;}
+.small-caps {font-variant: small-caps;} /* font-variant */
+.uppercase  {text-transform: uppercase;} /* text-transform */
 .lowercase  {text-transform: lowercase;}
 .capitalize  {text-transform: capitalize;}
 
