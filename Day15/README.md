@@ -61,7 +61,7 @@ css float 속성을 활용하여 이미지를 둘러싸는 형태의 디자인�
 #### 방법 3. 부모 요소에 overflow:hidden 또는 overflow:auto! (x)
 왜 이렇게 해결되는지 뚜렷한 설명이 어려움. overflow의 원래 사용 용도와 다르게 사용하는 방식으로 또다른 문제가 있을 수 있음.
 
-#### 방법 4. Clearfix !
+#### 방법 4. Clearfix (o)!
 ```css
 /* 초기 Legacy Method v1 */
 .clearfix::after {
@@ -96,7 +96,7 @@ css float 속성을 활용하여 이미지를 둘러싸는 형태의 디자인�
 `common.css`에 옮겨두고 재사용하도록 한다.
 
 
-.class:nth-last-of-type(2)
+### .class:nth-last-of-type(2)
 ```html
 <!DOCTYPE html>
 <html>
@@ -123,9 +123,11 @@ css float 속성을 활용하여 이미지를 둘러싸는 형태의 디자인�
 </body>
 </html>
 ```
-
-## Verticl Rhythm
+`nth-first-last-of-type(n)`과 같은 선택자를 사용할 때 유의할 점은 선택자가 해당 요소와 해당 요소가 가지는 클래스 모두를 지니는 교집합인 경우에 적용된다는 점이다.
 
 ## Practice 1
+[CSS Floating Layout](http://eatdesignlove.github.io/shared/homework/css-styling/04-practice1.html)
 
 ## Practice 2
+[CSS Grid Module]()
+###### eatdesignlove's Front-End-Development Study
