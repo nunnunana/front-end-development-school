@@ -4,12 +4,84 @@
 		"selected_items":
 		[
 			[
+				"tex",
+				"text-shadow"
+			],
+			[
+				"tx",
+				"text-shadow"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
 				"ba",
-				"background-position"
+				"background"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bo",
+				"border-left"
+			],
+			[
+				"fo",
+				"font-weight"
 			],
 			[
 				"pad",
-				"padding-top"
+				"padding-left"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"out",
+				"outline"
 			],
 			[
 				"rg",
@@ -40,20 +112,8 @@
 				"line-height"
 			],
 			[
-				"fon",
-				"font-weight"
-			],
-			[
 				"pa",
 				"padding-bottom"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"mar",
-				"margin-right"
 			],
 			[
 				"fl",
@@ -72,10 +132,6 @@
 				"text-align"
 			],
 			[
-				"fo",
-				"font-variant"
-			],
-			[
 				"ta",
 				"table-cell"
 			],
@@ -88,24 +144,8 @@
 				"color"
 			],
 			[
-				"bo",
-				"bolder"
-			],
-			[
-				"border",
-				"border"
-			],
-			[
-				"co",
-				"color"
-			],
-			[
 				"font",
 				"font-size"
-			],
-			[
-				"out",
-				"outline-offset"
 			],
 			[
 				"lin",
@@ -124,20 +164,12 @@
 				"inline-block"
 			],
 			[
-				"margin",
-				"margin-bottom"
-			],
-			[
 				"text-",
 				"text-indent"
 			],
 			[
 				"wi",
 				"width"
-			],
-			[
-				"tx",
-				"text-indent"
 			],
 			[
 				"border-co",
@@ -184,10 +216,26 @@
 	"buffers":
 	[
 		{
-			"file": "Day15/README.md",
+			"file": "Day18/README.md",
 			"settings":
 			{
-				"buffer_size": 3025,
+				"buffer_size": 496,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day17/README.md",
+			"settings":
+			{
+				"buffer_size": 1298,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day18/01-gird.html",
+			"settings":
+			{
+				"buffer_size": 203,
 				"line_ending": "Unix"
 			}
 		}
@@ -316,7 +364,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 434.0
 	},
 	"console":
 	{
@@ -340,14 +388,35 @@
 	"expanded_folders":
 	[
 		"/Users/eatdesignlove/Documents/program/FDS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day13",
-		"/Users/eatdesignlove/Documents/program/FDS/Day14",
-		"/Users/eatdesignlove/Documents/program/FDS/Day14/images",
-		"/Users/eatdesignlove/Documents/program/FDS/Day15",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware",
 		"/Users/eatdesignlove/Documents/program/FDS/resources"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/03-fixed-position.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/03-fixed-position.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/font-awesome/font-awesome.min.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/css/practice1.css",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/momentum/index.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/practice1.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/02-position.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/02-position.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css/aware-style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/03-css-position.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/practice2.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/02-vertical-rhythm.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/images/meteocons-icons/SVG/35.svg",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/practice1.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/01-css-box-sizing.html",
+		"/Users/eatdesignlove/Documents/program/FDS/HTML/README.mdown",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/SpoqaHanSans-kr.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/01-css-box-sizing.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day13/02-vertical-centering-using-css.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day13/03-fullsize-block.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day13/css/vertical-centering.css",
@@ -453,33 +522,11 @@
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/css/style.css",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
-		"/Users/eatdesignlove/github-practice/a.html",
-		"/Users/eatdesignlove/github-practice/README.md",
-		"/Users/eatdesignlove/github-practice/b.html",
-		"/Users/eatdesignlove/github-practice/file2.html",
-		"/Users/eatdesignlove/github-practice/file1.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/keepticle/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice3/views/projects.html",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/placehold.sublime-snippet",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice4/index.html",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/cc4ie.sublime-snippet",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/services.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/projects.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/contact.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/views/about.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/practice2.html",
-		"/Users/eatdesignlove/Desktop/FDS/20160615/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day01/readme",
-		"/Users/eatdesignlove/Desktop/FDS/20160615/index.html"
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -493,6 +540,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"49",
+			"52%",
+			"</div>",
+			"f2f2f2",
+			"padding-left: 21px;",
+			".buttonset-movie-control",
+			"background: #e6e6e6;",
+			" 100%",
+			"<span",
+			"\"button\">",
+			"../",
+			"<button>",
+			"tton",
+			"  padding:20px;\n",
+			"padding: 20px;",
+			"article",
+			"span",
+			"article",
+			"<li></li>",
+			"<li>",
+			"&",
+			"<li>",
+			"</section>",
+			"<li>",
+			"<section",
+			"700;",
+			"font",
+			"div",
+			"weather-box",
+			"container",
+			".main-container",
+			"relativ",
+			"line-height: ;",
+			"}",
+			" \"",
+			"col-30",
+			">",
+			"일상을 먹고, 삶을 디자인하고, 세상을 사랑하라",
+			";\n",
 			"using-",
 			"</div>",
 			"<span></span>",
@@ -581,46 +667,7 @@
 			"class=\"\"",
 			"<li>",
 			"<li><",
-			"h1",
-			"<p>",
-			"></",
-			"background",
-			"<a",
-			"ai",
-			"../",
-			"ai",
-			"lecutre-",
-			"<li>",
-			"=\"\"",
-			"</li>",
-			"<a",
-			"p",
-			"shoppingGrptab",
-			"font-size: 2em;",
-			"div",
-			"*/",
-			"`",
-			"@import ",
-			"footer",
-			"p>",
-			"p",
-			"					<option value=\"developer\">Desiger</option>\n",
-			"-b-type",
-			"name=\"register-hobby\"",
-			"text",
-			"for=\"\"",
-			"-a-",
-			"a",
-			"id=\"register-user-gender\"",
-			"&amp;",
-			"&amp",
-			" ",
-			"&",
-			"p",
-			"osf",
-			";&",
-			"green",
-			"로램"
+			"h1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -647,33 +694,101 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day15/README.md",
+					"file": "Day18/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3025,
+						"buffer_size": 496,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3025,
-								3025
+								447,
+								447
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2404.0,
+						"translation.y": 295.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Day17/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1108,
+								1108
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 784.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "Day18/01-gird.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -696,11 +811,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.512694842071,
 			1.0
 		],
 		"rows":
@@ -717,6 +839,10 @@
 	"output.git":
 	{
 		"height": 31.0
+	},
+	"output.markdown":
+	{
+		"height": 156.0
 	},
 	"pinned_build_system": "",
 	"project": "fds.sublime-project",
@@ -750,7 +876,7 @@
 		[
 			[
 				"",
-				"~/Documents/TIL/TIL.sublime-project"
+				"~/Documents/program/femme-translator/untitled.sublime-project"
 			]
 		],
 		"width": 380.0

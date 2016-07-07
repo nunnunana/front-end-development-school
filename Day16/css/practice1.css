@@ -1,0 +1,105 @@
+body {
+  color: #fff;
+  font: 16px/1.5 'Helvetica', sans-serif;
+  background-image: url("../images/bg-moonshot.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+/* Position class */
+.top-left {
+  padding: 20px;
+  position: absolute;
+  top:0;
+  left: 0
+}
+.top-right {
+  padding: 20px;
+  position: absolute;
+  top:0;
+  right: 0
+}
+.bottom-left {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bottom-right {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* 기본 공통 모듈 */
+button {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #fff;
+}
+
+ /* 메인 영역 */
+.main-box {
+  position: ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main-box .clock {
+  font-size: 180px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -5px;
+}
+.main-box .message {
+  width: 100%;
+  font-size: 54px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-box .question {
+  color: #fff;
+}
+.main-box .question p {
+  font-size: 24px;
+}
+.main-box .question input {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+}
+.main-box .question input:focus {
+  outline: none;
+  text-align: center;
+}
+/* 검색 영역 */
+.search-box input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  color: #f2f2f2;
+}
+
+ /* 날씨 정보 */
+.weather-box { 
+  font-weight: 700;
+}
+
+/* 콘텐츠 관리 */
+.keepticle-box {
+  font-weight: 700;
+}
+
+/* 해야할 일 */
+.todo-box {
+  font-weight: 700;
+}

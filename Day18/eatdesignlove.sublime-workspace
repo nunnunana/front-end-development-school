@@ -1,0 +1,870 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-shadow"
+			],
+			[
+				"tx",
+				"text-shadow"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bo",
+				"border-left"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"text-in",
+				"text-align"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"lin",
+				"inline-block"
+			],
+			[
+				"br",
+				"background-color"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"my",
+				"my_num_input"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"max",
+				"maxlength	Attr"
+			],
+			[
+				"plac",
+				"placeholder	Attr"
+			],
+			[
+				"ce",
+				"cellspacing	Attr"
+			],
+			[
+				"mat",
+				"Material-Theme-Lighter"
+			],
+			[
+				"th",
+				"Material-Theme-Lighter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/ui-kit/index.html",
+			"settings":
+			{
+				"buffer_size": 5668,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/ui-kit/css/style.css",
+			"settings":
+			{
+				"buffer_size": 3615,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"co",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"emm ev",
+				"Emmet: Evaluate Math Expression"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sy",
+				"Set Syntax: Markdown"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"git cus",
+				"Git: Custom Command"
+			],
+			[
+				"git cust",
+				"Git: Custom Command"
+			],
+			[
+				"git init",
+				"Git: Diff All Files (Ignore Whitespace)"
+			],
+			[
+				"git",
+				"Git: Add..."
+			],
+			[
+				"em",
+				"Emmet: Merge Lines"
+			],
+			[
+				"plan",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"!	",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 434.0
+	},
+	"console":
+	{
+		"height": 60.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"div",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/ui-kit",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/ui-kit/css"
+	],
+	"file_history":
+	[
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/03-fixed-position.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/03-fixed-position.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/font-awesome/font-awesome.min.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/css/practice1.css",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/momentum/index.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/practice1.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/02-position.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/02-position.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css/aware-style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/03-css-position.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/practice2.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/02-vertical-rhythm.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/images/meteocons-icons/SVG/35.svg",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/practice1.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day16/01-css-box-sizing.html",
+		"/Users/eatdesignlove/Documents/program/FDS/HTML/README.mdown",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/SpoqaHanSans-kr.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day15/01-css-box-sizing.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day13/02-vertical-centering-using-css.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day13/03-fullsize-block.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day13/css/vertical-centering.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day07/02-html-etc.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day14/01-typography-for-web.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day14/02-overflow.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day14/03-float.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day14/css/overflow.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day14/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day14/css/type.css",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/team-activity/index-bugs.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day07/README.md",
+		"/Users/eatdesignlove/Documents/program/testbr/README.md",
+		"/Users/eatdesignlove/Documents/program/testbr/test.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day04/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/03-page-align-center.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day13/01-practice-display.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day09/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/selectors.css",
+		"/Users/eatdesignlove/Documents/program/FDS/fds.sublime-project",
+		"/Users/eatdesignlove/Desktop/my-body.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/02-em-unit.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/02-css-unit.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/05-css-border-design.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/06-font.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/04-margin-collapse.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/03-page-align-center.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/css/page-align-cetner.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/01-css-box-model.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/common.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/common.css",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/reset.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/practice.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/01-css-selector.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/02-css-practice.html",
+		"/Users/eatdesignlove/Documents/program/FDS/02-css-practice.html",
+		"/Users/eatdesignlove/Documents/program/FDS/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/reset.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/common.css",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/index.html",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/css/style.css",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/untitled.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day09/css/selectors.css",
+		"/Users/eatdesignlove/Desktop/FDS/Day09/03-css-file-format-type-practice.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day09/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/01-form.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day09/01-css-selectors.html",
+		"/Users/eatdesignlove/Desktop/FDS/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day08/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day05/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day01/README.md",
+		"/Users/eatdesignlove/Desktop/FDS/Day09/02-css-file-format-type.html",
+		"/Users/eatdesignlove/Desktop/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day09/css/file-format-icons.css",
+		"/Users/eatdesignlove/Desktop/FDS/css/style.css",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/eatdesignlove/Desktop/FDS/HTML/README.mdown",
+		"/Users/eatdesignlove/Desktop/FDS/Day02/index.html",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/dowon/expedia/index_01.html",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/eunyoung/expedia/index.html",
+		"/Users/eatdesignlove/Documents/program/cheetah_study/yeongbae/expedia/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/04-xhtml-html5.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/02-lists.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/css/style.css",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/04-index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/css/people.css",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/05-css-basic.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/02-html-etc.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/ frames/main.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/01-script-object-parameter.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/03-frameset.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/ css/style.css",
+		"/Users/eatdesignlove/Desktop/FDS/Day07/style.css",
+		"/Users/eatdesignlove/Documents/program/type2rain/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/02-script.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/js/in-head-javascript.js",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/js/in-body-javascript.js",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/js/check-support-js.js",
+		"/Users/eatdesignlove/Desktop/FDS/Day06/css/alt-no-js.css",
+		"/Users/eatdesignlove/Documents/program/gitgit/README.md",
+		"/Users/eatdesignlove/Documents/program/gitgit/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/04-form.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/index.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/03-table.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day04/01-images.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/contact.html",
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/just-do-git.html",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"49",
+			"52%",
+			"</div>",
+			"f2f2f2",
+			"padding-left: 21px;",
+			".buttonset-movie-control",
+			"background: #e6e6e6;",
+			" 100%",
+			"<span",
+			"\"button\">",
+			"../",
+			"<button>",
+			"tton",
+			"  padding:20px;\n",
+			"padding: 20px;",
+			"article",
+			"span",
+			"article",
+			"<li></li>",
+			"<li>",
+			"&",
+			"<li>",
+			"</section>",
+			"<li>",
+			"<section",
+			"700;",
+			"font",
+			"div",
+			"weather-box",
+			"container",
+			".main-container",
+			"relativ",
+			"line-height: ;",
+			"}",
+			" \"",
+			"col-30",
+			">",
+			"일상을 먹고, 삶을 디자인하고, 세상을 사랑하라",
+			";\n",
+			"using-",
+			"</div>",
+			"<span></span>",
+			"no-",
+			"default",
+			"<span>",
+			"box",
+			"<div>#",
+			"    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nulla.\n",
+			"<span>",
+			"<div class=\"box box-3\"></div>",
+			"class=\"",
+			"width: 300px;",
+			"height: 300px;",
+			"5em",
+			"left",
+			"<h2>overflow: visible</h2>",
+			">\n",
+			"  <",
+			"il",
+			"check",
+			"span",
+			"\"\"",
+			"<li>",
+			"<a href=\"#\">",
+			" href=\"\"",
+			"</figure></li>",
+			"<li>",
+			"<figcaption>",
+			"<a href=\"\">주간 핫이슈</a>\n							<a href=\"\">뭘 들을까? - 6월 다섯째주, 씨스타 외 화제작</a>",
+			"<button class=\"play\">재생</button>",
+			"<button class=\"play\">재생t</button>",
+			"더보기 버튼",
+			"musicain",
+			"musicaian",
+			"<span class=\"music-title\">노래 제목</span>",
+			"<span class=\"music-title\"></span>",
+			"<a href=\"#\"><img src=\"#\" alt=\"앨범이미지\"></a>\n										<button class=\"play\">재생</button>",
+			"											<span class=\"music-title\"></span>\n",
+			"<a href=\"#\">",
+			"										<img src=\"#\" alt=\"\">\n",
+			"<figcaption>",
+			"</span>",
+			"<li>",
+			"\"\"",
+			">\n",
+			"span",
+			"발톱",
+			"발가락털",
+			"border-",
+			"eatdesignlove",
+			"320x480",
+			"||\n",
+			"background:",
+			"	background:",
+			"background:",
+			"#1AE0FB",
+			";\n",
+			"<li>",
+			"span",
+			"연습합니다.",
+			"|",
+			"after",
+			"</span>",
+			"<span>",
+			"	::",
+			"::",
+			"300px",
+			"href=\"\"",
+			"p",
+			"pdf",
+			"txt",
+			"doc",
+			"avi",
+			"txt",
+			"mov",
+			"html",
+			"doc",
+			");",
+			"acc",
+			"/file-",
+			"file-",
+			"-",
+			"href=\"\"",
+			"file-",
+			"class=\"\"",
+			"<li>",
+			"<li><",
+			"h1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"9px",
+			"14em",
+			"22px",
+			"14"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/ui-kit/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1058,
+								1058
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/ui-kit/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 104.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 31.0
+	},
+	"output.markdown":
+	{
+		"height": 156.0
+	},
+	"pinned_build_system": "",
+	"project": "eatdesignlove.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"Day07/02-html-etc.html"
+			],
+			[
+				"",
+				"Day06/02-script.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/program/femme-translator/untitled.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,81 @@
+/* 공통 모듈 디자인 */
+body {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+ul li {
+  float: left;
+}
+.visible-hidden { 
+  /* ? 어떻게 처리하더라 */
+  visibility: hidden;
+  height: 1px;
+  width: 0;
+} 
+
+/* 그리드 모듈 디자인 */
+[class*="col-"] {
+  float: left; 
+  width: 240px;
+  height: 240px;
+  background: #f0f0f0;
+}
+.col-25 {
+  width: 25%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-75 {
+  width: 75%;
+}
+.col-100 {
+  width: 100%; 
+}
+.row-50 {
+  height: 50%;
+}
+
+/* header 영역 */
+header {
+  height:80px;
+  line-height: 80px;
+}
+
+.gnb-toggle {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+h1.gnb-aware {
+  float: left;
+}
+.gnb-nav,
+.gnb-nav li{
+  float: left;
+}
+.gnb-depth2 {
+  display: none;
+}
+.unb {
+  float: right;
+}
+.unb li {
+  float: left;
+}
+
+
+
+/* slider section */
+
+
+/* footer section */
+footer {
+  background: #222222;
+}
+
+.copyright, send-mail, socials-payments {
+  float: left;
+}
