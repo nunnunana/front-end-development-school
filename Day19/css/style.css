@@ -1,0 +1,16 @@
+h1 {
+  color: #232323;
+  line-height: 48px;
+}
+
+.temp {
+  background: #F0AE45;
+  color: #fff;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.row {
+  margin-bottom: 24px;
+}

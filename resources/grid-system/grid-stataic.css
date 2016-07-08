@@ -1,0 +1,89 @@
+/* grid-system(static), 2016 */
+
+/* -----------------
+ * 그리드 컨테이너 모듈 
+ * ----------------- */
+body {color:#fff;}
+body.overlay-grid::after {
+  content: '';
+  display: block;
+  position: absolute;
+  min-height: 100vh;
+  z-index: 1000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 모듈 a 화면 폭 지정 가운데 배치 */
+body.overlay-grid::after,
+.container {
+  width: 960px;
+  margin-right:auto;
+  margin-left: auto;
+ }
+
+body.overlay-grid::after,
+body.show-grid,
+body.hover-hide-grid,
+.container.show-grid,
+.container.hover-hide-grid {
+/*  background: url("images/GS-pattern-10-60-10.png"); */  background: url("images/GS-pattern-16-48-16.png");
+}
+
+.container.hover-hide-grid:hover {
+  background: none;
+}
+
+
+/* ------------ 
+ * 그 리 드  모 듈 
+ * ------------ */
+
+/* 행(Row) 모듈 */
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 컬럼(Column) 모듈*/
+[class^="col-"] {
+  float: left;
+  margin-left:  10px;
+  margin-right: 10px;
+}
+/* width: 60*1+(20*(1-1))px */
+.col-1  {width: 60px;}
+.col-2  {width: 140px;}
+.col-3  {width: 220px;}
+.col-4  {width: 300px;}
+.col-5  {width: 380px;}
+.col-6  {width: 460px;}
+.col-7  {width: 540px;}
+.col-8  {width: 620px;}
+.col-9  {width: 700px;}
+.col-10 {width: 780px;}
+.col-11 {width: 860px;}
+.col-12 {width: 940px;}
+
+
+[class^="col-"] {
+  float: left;
+  margin-left:  16px;
+  margin-right: 16px;
+}
+
+/* width: 48*1+(32*(1-1))px */
+.col-1  {width: 48px ;}
+.col-2  {width: 128px;}
+.col-3  {width: 208px;}
+.col-4  {width: 288px;}
+.col-5  {width: 368px;}
+.col-6  {width: 448px;}
+.col-7  {width: 528px;}
+.col-8  {width: 608px;}
+.col-9  {width: 688px;}
+.col-10 {width: 768px;}
+.col-11 {width: 848px;}
+.col-12 {width: 928px;}
