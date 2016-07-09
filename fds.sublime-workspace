@@ -4,16 +4,56 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"marin",
+				"margin-right"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"ini",
+				"inline"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"c",
+				"resources/"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
 				"tex",
 				"text-shadow"
 			],
 			[
 				"tx",
 				"text-shadow"
-			],
-			[
-				"border",
-				"border-left"
 			],
 			[
 				"bord",
@@ -32,32 +72,16 @@
 				"transform"
 			],
 			[
-				"ba",
-				"background"
-			],
-			[
 				"h",
 				"height"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"bold",
 				"bolder"
 			],
 			[
-				"marg",
-				"margin-top"
-			],
-			[
 				"mar",
 				"margin-left"
-			],
-			[
-				"co",
-				"color"
 			],
 			[
 				"bo",
@@ -90,10 +114,6 @@
 			[
 				"op",
 				"opacity"
-			],
-			[
-				"back",
-				"background-size"
 			],
 			[
 				"text",
@@ -216,26 +236,34 @@
 	"buffers":
 	[
 		{
-			"file": "Day18/README.md",
+			"file": "Day19/01-gird-system.html",
 			"settings":
 			{
-				"buffer_size": 496,
+				"buffer_size": 1142,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day17/README.md",
+			"file": "Day19/01-gird-system-practice.html",
 			"settings":
 			{
-				"buffer_size": 1298,
+				"buffer_size": 1641,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day18/01-gird.html",
+			"file": "resources/grid-system/grid-stataic.css",
 			"settings":
 			{
-				"buffer_size": 203,
+				"buffer_size": 1642,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day19/css/style.css",
+			"settings":
+			{
+				"buffer_size": 185,
 				"line_ending": "Unix"
 			}
 		}
@@ -364,7 +392,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 434.0
+		"width": 455.0
 	},
 	"console":
 	{
@@ -388,17 +416,23 @@
 	"expanded_folders":
 	[
 		"/Users/eatdesignlove/Documents/program/FDS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware",
-		"/Users/eatdesignlove/Documents/program/FDS/resources"
+		"/Users/eatdesignlove/Documents/program/FDS/Day19",
+		"/Users/eatdesignlove/Documents/program/FDS/resources",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-stataic.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/broadcast-web-ui.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day19/practice-broadcast-web-ui",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/ress.min.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day18/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day18/01-gird.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/03-fixed-position.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day17/03-fixed-position.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day15/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/README.md",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/font-awesome/font-awesome.min.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day16/css/practice1.css",
 		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/momentum/index.html",
@@ -515,18 +549,11 @@
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/contact.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/just-do-git.html",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap"
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -540,6 +567,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\">",
+			"class=\"\">",
+			"}",
+			"\"\">",
+			";}",
+			"width:",
+			"\">",
+			"}",
+			".container",
+			".co",
+			"breaking-article",
+			"<li>",
 			"49",
 			"52%",
 			"</div>",
@@ -655,19 +694,7 @@
 			"avi",
 			"txt",
 			"mov",
-			"html",
-			"doc",
-			");",
-			"acc",
-			"/file-",
-			"file-",
-			"-",
-			"href=\"\"",
-			"file-",
-			"class=\"\"",
-			"<li>",
-			"<li><",
-			"h1"
+			"html"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -694,30 +721,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day18/README.md",
+					"file": "Day19/01-gird-system.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 496,
+						"buffer_size": 1142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								447,
-								447
+								615,
+								615
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
 							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 295.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -725,33 +752,35 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Day17/README.md",
+					"file": "Day19/01-gird-system-practice.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1298,
+						"buffer_size": 1641,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1108,
-								1108
+								163,
+								163
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
 							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 784.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -762,19 +791,50 @@
 			[
 				{
 					"buffer": 2,
-					"file": "Day18/01-gird.html",
+					"file": "resources/grid-system/grid-stataic.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 203,
+						"buffer_size": 1642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								203,
-								203
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Day19/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
 							]
 						],
 						"settings":
@@ -782,7 +842,7 @@
 							"apply_syntax_touched": true,
 							"is_init_dirty_state": false,
 							"origin_encoding": "ASCII",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -796,7 +856,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -822,7 +882,7 @@
 		"cols":
 		[
 			0.0,
-			0.512694842071,
+			0.400624953862,
 			1.0
 		],
 		"rows":
@@ -848,7 +908,7 @@
 	"project": "fds.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
