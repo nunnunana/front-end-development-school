@@ -3,7 +3,9 @@ body {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 16px/1.5, sans-serif;
 }
+a {text-decoration: none;}
 ul li {
   float: left;
 }
@@ -11,71 +13,127 @@ ul li {
   /* ? 어떻게 처리하더라 */
   visibility: hidden;
   height: 1px;
-  width: 0;
+  width: 1px;
+  margin-top: -1px;
 } 
-
-/* 그리드 모듈 디자인 */
-[class*="col-"] {
-  float: left; 
-  width: 240px;
-  height: 240px;
-  background: #f0f0f0;
-}
-.col-25 {
-  width: 25%;
-}
-.col-50 {
-  width: 50%;
-}
-.col-75 {
-  width: 75%;
-}
-.col-100 {
-  width: 100%; 
-}
-.row-50 {
-  height: 50%;
-}
 
 /* header 영역 */
 header {
   height:80px;
   line-height: 80px;
+  background: #fff;
 }
-
-.gnb-toggle {
-  width: 80px;
-  height: 80px;
-  float: left;
+.gnb-nav {
+  font-family: "Varela Round", sans-serif;
 }
-
-h1.gnb-aware {
-  float: left;
+.gnb-nav > li {
+  margin-right: 20px;
 }
-.gnb-nav,
-.gnb-nav li{
-  float: left;
+.gnb-nav > li a {
+  padding: 20px 15px 10px 0;
+  color: #222222;
+  font-size: 0.875rem;
+}
+.gnb-nav > li img{
+  margin-left: 10px;
 }
 .gnb-depth2 {
   display: none;
 }
-.unb {
-  float: right;
-}
-.unb li {
-  float: left;
-}
-
-
 
 /* slider section */
+.slider {
+  background: #eeeeee;
+  position: relative;
+}
+.slider-controller {
+  position: absolute;
+}
+.slider-content {
+  height: 480px;
+}
+.slider-list li {
+  width: 100%;
+}
+.slider-list a {
+  display: block;
+  height: 120px;
+  background: #ccc;
+}
+
+/* banners */
+.banners a {
+  display: block;
+  height: 240px;
+  background: #9AE3BC;
+}
+
+/* feature product */
+.features a {
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: #E3D263;
+}
+
+.blog a {
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: #8CA3E3;
+}
+
+.blog article:last-child,
+.blog article:nth-last-child(2),
+.blog article:last-child a,
+.blog article:nth-last-child(2) a {
+  height: 120px;
+}
+
+/* testimonials */
+.testimonials {
+  height:480px;
+  background: #C4DFE3;
+}
+
+/* about */
+.about {
+  height: 480px;
+  background: #DAE398;
+}
+
+/* brands */
+.brands a {
+  display: block;
+  height: 120px;  
+  background: #6A706E;
+}
+.about-infographic [class*="col-"]{
+  height: 60px;
+}
+.about .brands-info { background: #1f4ba5; }
+.about .brands-photo { background: #fff; }
 
 
 /* footer section */
 footer {
   background: #222222;
+  text-align: center;
 }
 
-.copyright, send-mail, socials-payments {
-  float: left;
+.categories {
+  height: 60px;
+}
+.categories li{
+  display: inline-block;
+  height: 60px;
+  float: none;
+}
+
+.copyright {
+  height: 120px;
+}
+
+.socials-payments ul {
+  height: 60px;
 }

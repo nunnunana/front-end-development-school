@@ -1,0 +1,78 @@
+/* Grid Systme (160 [unit(130) + gutter(15)], 8 columns) */
+/* base-font-size: 0.9375 (18px) */
+/* base-leading-ratio: 1.5 // 18 * 1.5 = 27px */
+/* gutter-direction: after: // margin-right Ã¬â€šÂ¬Ã¬Å¡Â© */
+
+/* Ã¬ËœÂ¤Ã«Â²â€žÃ«Â Ë†Ã¬ÂÂ´ ÃªÂ·Â¸Ã«Â¦Â¬Ã«â€œÅ“ ÃªÂ°â‚¬Ã¬ÂÂ´Ã«â€œÅ“Ã«ÂÂ¼Ã¬ÂÂ¸ Ã«ÂªÂ¨Ã«â€œË† */
+/*.grid-container::before {
+  content: ''; 
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(60, 50%, 50%, 0.3);
+  background: 
+    linear-gradient(90deg, rgba(191, 64, 64, 0.3) 81%, rgba(0,0,0,0) 81%),
+    linear-gradient(transparent 26px, #1FC672 26px);
+  background-size: 
+    160px 1px,
+    1px 1.6875rem;
+}*/
+
+.grid-container.show-grid-before::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: 
+    linear-gradient(90deg, rgba(191, 64, 64, 0.3) 130px, rgba(0,0,0,0) 130px),
+    linear-gradient(transparent 26px, #22564F 26px);
+  background-size:
+    160px 1px,
+    1px 27px;
+}
+.grid-container.show-grid-split::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, transparent 15px, rgba(191, 64, 64, 0.3) 15px, rgba(191, 64, 64, 0.3) 145px,transparent 145px);
+  background-size: 160px 1px;
+}
+
+/* ÃªÂ·Â¸Ã«Â¦Â¬Ã«â€œÅ“ Ã¬Â»Â¨Ã­â€¦Å’Ã¬ÂÂ´Ã«â€žË† Ã«ÂªÂ¨Ã«â€œË† */
+.grid-container {
+  width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+/* ÃªÂ·Â¸Ã«Â¦Â¬Ã«â€œÅ“ Ã«ÂªÂ¨Ã«â€œË† */
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Ã¬Å“Â Ã«â€¹â€º Ã«ÂªÂ¨Ã«â€œË† */
+[class*="unit"-] { float: left; margin-right: 30px;}
+[class*="unit-"]:last-child .last .omega { margin-right: 0;}
+
+.unit-1 {width: 130px;}
+.unit-2 {width: 290px;}
+.unit-3 {width: 450px;}
+.unit-4 {width: 610px;}
+.unit-5 {width: 770px;}
+.unit-6 {width: 930px;}
+.unit-7 {width: 1090px;}
+.unit-8 {width: 1250px;}
+

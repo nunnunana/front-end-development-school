@@ -3,17 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Aware</title>
-  <link rel="stylesheet" href="../../resources/reset.css">
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round|PT+Serif' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../../resources/initailization/reset.css">
   <link rel="stylesheet" href="../../resources/common.css">
+  <link rel="stylesheet" href="css/grid-system.css">
   <link rel="stylesheet" href="css/aware-style.css">
 </head>
 <body>
-  <header>
-    <button class="gnb-toggle">toggle menu button</button>
-    <h1 class="gnb-aware"><a href="#">aware</a></h1>
-    <ul class="gnb-nav">
+  <header class="grid">
+    <div class="col-2">
+      <div>
+        <div class="col-1">
+          <button class="gnb-toggle">
+            <img src="aware-website-design-assets/svg-icon-hamberger.svg" alt="menu">
+          </button>
+        </div>
+        <div class="col-3">
+          <h1 class="gnb-aware"><a href="#">
+            <img src="aware-website-design-assets/svg-logo-aware.svg" alt="aware">
+          </a></h1>  
+        </div>  
+      </div>
+    </div>
+    <ul class="gnb-nav col-4">
       <li>
-        <a href="#">Men</a>
+        <a href="#">Men <img src="aware-website-design-assets/svg-icon-arrow-down.svg" alt="Open the this menu"></a>
         <ul class="gnb-depth2">
           <li>depth-2</li>
           <li>depth-2</li>
@@ -21,7 +35,7 @@
         </ul>
       </li>
       <li>
-        <a href="#">Women</a>
+        <a href="#">Women <img src="aware-website-design-assets/svg-icon-arrow-down.svg" alt="Open the this menu"></a>
         <ul class="gnb-depth2">
           <li>depth-2</li>
           <li>depth-2</li>
@@ -29,7 +43,7 @@
         </ul>
       </li>
       <li>
-        <a href="#">Kids</a>
+        <a href="#">Kids <img src="aware-website-design-assets/svg-icon-arrow-down.svg" alt="Open the this menu"></a>
         <ul class="gnb-depth2">
           <li>depth-2</li>
           <li>depth-2</li>
@@ -37,7 +51,7 @@
         </ul>
       </li>
       <li>
-        <a href="#">Accessories</a>
+        <a href="#">Accessories <img src="aware-website-design-assets/svg-icon-arrow-down.svg" alt="Open the this menu"></a>
         <ul class="gnb-depth2">
           <li>depth-2</li>
           <li>depth-2</li>
@@ -45,19 +59,19 @@
         </ul>
       </li>
     </ul>
-    <ul class="unb">
-      <li><button class="btn-alram"></button></li>
-      <li><button class="btn-profile"></button></li>
-      <li><button class="btn-search"></button></li>
+    <ul class="col-2 unb">
+      <li><button class="btn-alram"><img src="aware-website-design-assets/svg-icon-bag.svg" alt="alram"></button></li>
+      <li><button class="btn-profile"><img src="aware-website-design-assets/svg-icon-face.svg" alt="profile"></button></li>
+      <li><button class="btn-search"><img src="aware-website-design-assets/svg-icon-search.svg" alt="search"></button></li>
     </ul>
   </header>
-  <main class="clearfix">
+  <main>
     <h2 class="visible-hidden">Products Showcase</h2>
-    <section class="slider">
-      <div class="col-75">
+    <section class="grid slider">
+      <div class="col-6">
         <div class="slider-controller">
-          <button class="arrow-prev">slide to prev</button>
-          <button class="arrow-next">slide to next</button>
+          <button class="arrow-prev"><img src="aware-website-design-assets/svg-icon-arrow-left.svg" alt="slide to prev"> </button>
+          <button class="arrow-next"><img src="aware-website-design-assets/svg-icon-arrow-right.svg" alt="slide to next"> </button>
         </div>
         <div class="slider-content">
           <span class="product-category">men</span>
@@ -65,7 +79,7 @@
           <p class="product-desc">Skinny Comfort Ultra Stretch Light Wash</p>
         </div>
       </div>
-      <div class="slider-list col-25">
+      <div class="col-2 slider-list">
         <ul>
           <li><a href="#">short pants</a></li>
           <li><a href="#">jeans</a></li>
@@ -76,173 +90,200 @@
     </section>
     <section class="banners">
       <h2 class="visible-hidden">Banners</h2>
-      <ul>
-        <li class="col-50">
-          <span class="product-category">Women</span>
-          <h3 class="product-title"></h3>
-          <p class="product-desc">Shoes, hats, pants, jeans.</p>
-        </li>
-        <li class="col-25">
-          <span class="product-category">Man</span>
-          <h3 class="product-title"></h3>
-          <!-- <p class="product-desc">Shoes, hats, pants, jeans.</p> -->
-        </li>
-        <li class="col-25">
-          <span class="product-category">Accessories</span>
-          <h3 class="product-title"></h3>
-          <!-- <p class="product-desc">Shoes, hats, pants, jeans.</p> -->
-        </li>
-      </ul>
-    </section>
-    <section class="features">
-      <div class="col-25">
-        <h2>Featured Products</h2>
-        <p>the best of our store</p>
-      </div>
-      <ul>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-        <li class="col-25">
-          <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
-        </li>
-      </ul>
-    </section>
-    <section class="blog">
-      <div class="col-25">
-        <h2>Our Blog</h2>
-        <p>tips, trends, advices</p>
-      </div>
-      <ul>
-        <li class="col-25">
-          <a href="">
-            <article>
-              <span class="posted-at"></span>
-              <h3 class="post-title">title</h3>
-              <span class="posted-by"></span>
-            </article>
+      <ul class="grid">
+        <li class="col-4">
+          <a href="#">
+            <span class="product-category">Women</span>
+            <h3 class="product-title"></h3>
+            <p class="product-desc">Shoes, hats, pants, jeans.</p>
           </a>
         </li>
-        <li class="col-25">
-          <a href="">
-            <article>
-              <span class="posted-at"></span>
-              <h3 class="post-title">title</h3>
-              <span class="posted-by"></span>
-            </article>
+        <li class="col-2">
+          <a href="#">
+            <span class="product-category">Man</span>
+            <h3 class="product-title"></h3>
+            <!-- <p class="product-desc">Shoes, hats, pants, jeans.</p> -->
           </a>
         </li>
-        <li class="col-25 row-50">
-          <a href="">
-            <article>
-              <span class="posted-at"></span>
-              <h3 class="post-title">title</h3>
-              <!-- <span class="posted-by"></span> -->
-            </article>
-          </a>
-        </li>
-        <li class="col-25 row-50">
-          <a href="">
-            <article>
-              <span class="posted-at"></span>
-              <h3 class="post-title">title</h3>
-              <!-- <span class="posted-by"></span> -->
-            </article>
+        <li class="col-2">
+          <a href="#">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-title"></h3>
+            <!-- <p class="product-desc">Shoes, hats, pants, jeans.</p> -->
           </a>
         </li>
       </ul>
     </section>
-    <section class="col-50 testimonials">
-      <div class="testimonials-header">
-        <h3>What People Say</h3>
-        <button class="btn-reply">Reply</button>
-        <button class="btn-reload">Reload</button>
+    <section class="grid features">
+      <div class="col-2">
+        <a href="">
+          <h2>Featured Products</h2>
+          <p>the best of our store</p>  
+        </a>
       </div>
-      <div class="testimonials-contents">
-        <blockquote>And they, too, had big dreams for their daughter. I believe that we can give our middle class relief and provide working families with a road to opportunity. They've worked hard all their lives, many times only to see their jobs shipped overseas or their pension dumped after a lifetime of labor.</blockquote>
-        <div>
+      <article class="col-2">
+        <a href="#">
+          <h3 class="product-title"></h3>
           <img src="#" alt="#">
-          <cite>Komol Kuchkarov</cite>
-          <span>from Uzbekistan</span>
+          <span class="product-cost">$</span></a>
+      </article>
+      <article class="col-2">
+        <a href="#">
+          <h3 class="product-title"></h3>
+          <img src="#" alt="#">
+          <span class="product-cost">$</span>
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="#">
+          <h3 class="product-title"></h3>
+          <img src="#" alt="#">
+          <span class="pro</a>duct-cost">$</span>
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="#">
+          <h3 class="product-title"></h3>
+          <img src="#" alt="#">
+          <span class="product-cost">$</span>
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="#">
+          <h3 class="product-title"></h3>
+          <img src="#" alt="#">
+          <span class="product-cost">$</span></a>
+      </article>
+      <article class="col-2">
+        <a href="#">
+          <h3 class="product-title"></h3>
+          <img src="#" alt="#">
+          <span class="product-cost">$</span>
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="">
+          <h3 class="product-title"></h3>
+          <img src="#" alt="#">
+          <span class="product-cost">$</span>  
+        </a>
+      </article>
+    </section>
+    <section class="grid blog">
+      <div class="col-2">
+        <a href="#">
+          <h2>Our Blog</h2> 
+          <p>tips, trends, advices</p></a>
+      </div>
+      <article class="col-2">
+        <a href="">
+          <span class="posted-at"></span>
+          <h3 class="post-title">title</h3>
+          <span class="posted-by"></span>
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="">
+          <span class="posted-at"></span>
+          <h3 class="post-title">title</h3>
+          <span class="posted-by"></span>
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="">
+          <span class="posted-at"></span>
+          <h3 class="post-title">title</h3>
+          <!-- <span class="posted-by"></span> -->
+        </a>
+      </article>
+      <article class="col-2">
+        <a href="">
+          <span class="posted-at"></span>
+          <h3 class="post-title">title</h3>
+          <!-- <span class="posted-by"></span> -->
+        </a>
+      </article>
+    </section>
+    <div class="grid">
+      <section class="col-4 testimonials">
+        <div class="testimonials-header">
+          <h3>What People Say</h3>
+          <button class="btn-reply">Reply</button>
+          <button class="btn-reload">Reload</button>
         </div>
-      </div>
-      <ol class="testimonials-controller">
-        <li><button></button></li>
-        <li><button></button></li>
-        <li><button></button></li>
-        <li><button></button></li>
-      </ol>
-    </section>
-    <section class="col-50 about">
-      <div class="about-header">
-        <h3>Who We Are</h3>
-        <button class="">calandar</button>
-        <span class="established">est 2015</span>
-      </div>
-      <div class="about-content">
-        <img src="#" alt="#">
-        <h4>It's the hope of slaves sitting around a fire singing freedom songs.</h4>
-        <p>For the African-American community, that path means embracing the burdens of our past without becoming victims of our past. But if we see this conflict only from one side or the other, then we will be blind.</p>
-      </div>
-    </section>
+        <div class="testimonials-contents">
+          <blockquote>And they, too, had big dreams for their daughter. I believe that we can give our middle class relief and provide working families with a road to opportunity. They've worked hard all their lives, many times only to see their jobs shipped overseas or their pension dumped after a lifetime of labor.</blockquote>
+          <div>
+            <img src="#" alt="#">
+            <cite>Komol Kuchkarov</cite>
+            <span>from Uzbekistan</span>
+          </div>
+        </div>
+        <ol class="testimonials-controller">
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+        </ol>
+      </section>
+      <section class="col-4 about">
+        <div class="about-header">
+          <h3>Who We Are</h3>
+          <button class="">calandar</button>
+          <span class="established">est 2015</span>
+        </div>
+        <div class="about-content">
+          <div class="about-infographic">
+            <div class="row">
+              <div class="col-1 brands-photo">1</div>
+              <div class="col-1 prefix-2 brands-photo">2</div>
+              <div class="col-2 prefix-1 brands-info">2970<br>brands</div>
+            </div>
+            <div class="row">
+              <div class="col-2 prefix-1 brands-info">245<br>countries</div>
+              <div class="col-1 prefix-1 brands-photo">2</div>
+              <div class="col-1 prefix-1 brands-photo">3</div>
+              <div class="col-1  brands-photo">4</div>
+            </div>
+          </div>
+         
+          <h4>It's the hope of slaves sitting around a fire singing freedom songs.</h4>
+          <p>For the African-American community, that path means embracing the burdens of our past without becoming victims of our past. But if we see this conflict only from one side or the other, then we will be blind.</p>
+        </div>
+      </section>
+    </div>
     <section class="brands">
-      <ul>
-        <li>
-          <a href="#"></a>
+      <ul class="grid">
+        <li class="col-1">
+          <a href="#">1</a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="col-1">
+          <a href="#">2</a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="col-1">
+          <a href="#">3</a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="col-1">
+          <a href="#">4</a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="col-1">
+          <a href="#">5</a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="col-1">
+          <a href="#">6</a>
         </li>
-        <li>
+        <li class="col-1">
+          <a href="#">7</a>
+        </li>
+        <li class="col-1">
           <a href="#">All Brands</a>
         </li>
       </ul>
     </section>
   </main> 
   <footer>
-    <div class="categories clearfix">
-      <ul>
+    <div class="grid categories">
+      <ul class="col-8">
         <li><a href="#">Men</a></li>
         <li><a href="#">Women</a></li>
         <li><a href="#">Kids</a></li>
@@ -252,12 +293,12 @@
         <li><a href="#">Blog</a></li>
       </ul>
     </div>
-    <div class="clearfix">
-      <div class="copyright">
+    <div class="grid">
+      <div class="col-2 copyright">
         <img src="#" alt="aware logo">
         <p>© 2015 Aware UI Kit.<br>All rights resrved.</p>
       </div>
-      <div class="send-mail">
+      <div class="col-4 send-mail">
         <div>
           <input type="text">
           <button></button>
@@ -268,7 +309,7 @@
           <li><a href="#">Accessibility </a></li>
         </ul>
       </div>
-      <div class="socials-payments">
+      <div class="col-2 socials-payments">
         <ul class="sns">
           <li>
             <a href="#">Go to Twitter</a>

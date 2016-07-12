@@ -1,0 +1,46 @@
+/* Aware */
+
+/* 그리드 모듈 디자인 */
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+} 
+.grid [class*="col-"] {
+  float: left;
+}
+.grid .col-1 { width: 120px;}
+.grid .col-2 { width: 240px;}
+.grid .col-3 { width: 360px;}
+.grid .col-4 { width: 480px;}
+.grid .col-5 { width: 600px;}
+.grid .col-6 { width: 720px;}
+.grid .col-7 { width: 840px;}
+.grid .col-8 { width: 960px;}
+
+.row::after  {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid [class*="col-"] > .row > [class*="col-"] {
+  float: left;
+  background: #AEC3E4;
+}
+.grid .row > .col-1 { width: 60px;}
+.grid .row > .col-2 { width: 120px;}
+.grid .row > .col-3 { width: 180px;}
+.grid .row > .col-4 { width: 240px;}
+.grid .row > .col-5 { width: 300px;}
+.grid .row > .col-6 { width: 360px;}
+.grid .row > .col-7 { width: 420px;}
+.grid .row > .col-8 { width: 480px;}
+
+.row > .prefix-1 { margin-left: 60px; }
+.row > .prefix-2 { margin-left: 120px; }
+.row > .prefix-3 { margin-left: 180px; }
+.row > .prefix-4 { margin-left: 240px; }
+.row > .prefix-5 { margin-left: 300px; }
+.row > .prefix-6 { margin-left: 360px; }
+.row > .prefix-7 { margin-left: 420px; }
+.row > .prefix-8 { margin-left: 480px; }
