@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* Aware */
 
 /* 그리드 모듈 디자인 */
@@ -25,7 +26,6 @@
 }
 .grid [class*="col-"] > .row > [class*="col-"] {
   float: left;
-  background: #AEC3E4;
 }
 .grid .row > .col-1 { width: 60px;}
 .grid .row > .col-2 { width: 120px;}
@@ -44,3 +44,27 @@
 .row > .prefix-6 { margin-left: 360px; }
 .row > .prefix-7 { margin-left: 420px; }
 .row > .prefix-8 { margin-left: 480px; }
+
+/* pull, push모듈 */
+.grid [class*="pull-"],
+.grid [class*="push-"] {
+  position: absolute;
+}
+
+.grid .pull-1 {left:-120px;}
+.grid .pull-2 {left:-240px;}
+.grid .pull-3 {left:-360px;}
+.grid .pull-4 {left:-480px;}
+.grid .pull-5 {left:-600px;}
+.grid .pull-6 {left:-720px;}
+.grid .pull-7 {left:-840px;}
+.grid .pull-8 {left:-960px;}
+
+.grid .push-1 {left:120px;}
+.grid .push-2 {left:240px;}
+.grid .push-3 {left:360px;}
+.grid .push-4 {left:480px;}
+.grid .push-5 {left:600px;}
+.grid .push-6 {left:720px;}
+.grid .push-7 {left:840px;}
+.grid .push-8 {left:960px;}

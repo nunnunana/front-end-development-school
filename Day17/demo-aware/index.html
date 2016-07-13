@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Aware</title>
-  <link href='https://fonts.googleapis.com/css?family=Varela+Round|PT+Serif' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round|PT+Serif|Oswald:700,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../../resources/initailization/reset.css">
   <link rel="stylesheet" href="../../resources/common.css">
   <link rel="stylesheet" href="css/grid-system.css">
@@ -12,13 +12,13 @@
 <body>
   <header class="grid">
     <div class="col-2">
-      <div>
+      <div class="row">
         <div class="col-1">
-          <button class="gnb-toggle">
+          <button class="btn-gnb-toggle">
             <img src="aware-website-design-assets/svg-icon-hamberger.svg" alt="menu">
           </button>
         </div>
-        <div class="col-3">
+        <div class="col-2">
           <h1 class="gnb-aware"><a href="#">
             <img src="aware-website-design-assets/svg-logo-aware.svg" alt="aware">
           </a></h1>  
@@ -59,27 +59,16 @@
         </ul>
       </li>
     </ul>
-    <ul class="col-2 unb">
-      <li><button class="btn-alram"><img src="aware-website-design-assets/svg-icon-bag.svg" alt="alram"></button></li>
-      <li><button class="btn-profile"><img src="aware-website-design-assets/svg-icon-face.svg" alt="profile"></button></li>
-      <li><button class="btn-search"><img src="aware-website-design-assets/svg-icon-search.svg" alt="search"></button></li>
+    <ul class="col-2 row unb">
+      <li class="col-1 prefix-1"><button class="btn-alram"><img src="aware-website-design-assets/svg-icon-bag.svg" alt="alram"></button></li>
+      <li class="col-1"><button class="btn-profile"><img src="aware-website-design-assets/svg-icon-face.svg" alt="profile"></button></li>
+      <li class="col-1"><button class="btn-search"><img src="aware-website-design-assets/svg-icon-search.svg" alt="search"></button></li>
     </ul>
   </header>
   <main>
     <h2 class="visible-hidden">Products Showcase</h2>
     <section class="grid slider">
-      <div class="col-6">
-        <div class="slider-controller">
-          <button class="arrow-prev"><img src="aware-website-design-assets/svg-icon-arrow-left.svg" alt="slide to prev"> </button>
-          <button class="arrow-next"><img src="aware-website-design-assets/svg-icon-arrow-right.svg" alt="slide to next"> </button>
-        </div>
-        <div class="slider-content">
-          <span class="product-category">men</span>
-          <h3 class="product-title">Replay Jeans<br>Hyperflex</h3>
-          <p class="product-desc">Skinny Comfort Ultra Stretch Light Wash</p>
-        </div>
-      </div>
-      <div class="col-2 slider-list">
+      <div class="col-2 push-6 slider-list">
         <ul>
           <li><a href="#">short pants</a></li>
           <li><a href="#">jeans</a></li>
@@ -87,6 +76,21 @@
           <li><a href="#">short pants</a></li>
         </ul>
       </div>
+      <div class="col-6">
+        <div class="row slider-content">
+          <div class="slider-controller">
+            <button class="arrow-prev"><img src="aware-website-design-assets/svg-icon-arrow-left.svg" alt="slide to prev"> </button>
+            <button class="arrow-next"><img src="aware-website-design-assets/svg-icon-arrow-right.svg" alt="slide to next"> </button>
+          </div>
+          <div class="col-4 prefix-2">
+            <span class="product-category">men</span>
+            <h3 class="product-title">Replay Jeans<br>Hyperflex</h3>
+            <p class="product-desc">Skinny Comfort Ultra Stretch Light Wash</p>
+          </div>
+          
+        </div>
+      </div>
+      
     </section>
     <section class="banners">
       <h2 class="visible-hidden">Banners</h2>
@@ -94,29 +98,27 @@
         <li class="col-4">
           <a href="#">
             <span class="product-category">Women</span>
-            <h3 class="product-title"></h3>
+            <h3 class="product-title">Big Spring Sale -70%</h3>
             <p class="product-desc">Shoes, hats, pants, jeans.</p>
           </a>
         </li>
         <li class="col-2">
           <a href="#">
             <span class="product-category">Man</span>
-            <h3 class="product-title"></h3>
-            <!-- <p class="product-desc">Shoes, hats, pants, jeans.</p> -->
+            <h3 class="product-title">Last Winter Sale<br>Boots 70% Discount</h3>
           </a>
         </li>
         <li class="col-2">
           <a href="#">
             <span class="product-category">Accessories</span>
-            <h3 class="product-title"></h3>
-            <!-- <p class="product-desc">Shoes, hats, pants, jeans.</p> -->
+            <h3 class="product-title">New Hats for Every Day</h3>
           </a>
         </li>
       </ul>
     </section>
     <section class="grid features">
       <div class="col-2">
-        <a href="">
+        <a href="#">
           <h2>Featured Products</h2>
           <p>the best of our store</p>  
         </a>
@@ -124,48 +126,41 @@
       <article class="col-2">
         <a href="#">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span></a>
+          <span class="product-cost">$12</span></a>
       </article>
       <article class="col-2">
         <a href="#">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
+          <span class="product-cost">$140</span>
         </a>
       </article>
       <article class="col-2">
         <a href="#">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="pro</a>duct-cost">$</span>
+          <span class="pro</a>duct-cost">$170</span>
         </a>
       </article>
       <article class="col-2">
         <a href="#">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
+          <span class="product-cost">$9.95</span>
         </a>
       </article>
       <article class="col-2">
         <a href="#">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span></a>
+          <span class="product-cost">$24</span></a>
       </article>
       <article class="col-2">
         <a href="#">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>
+          <span class="product-cost">$344</span>
         </a>
       </article>
       <article class="col-2">
         <a href="">
           <h3 class="product-title"></h3>
-          <img src="#" alt="#">
-          <span class="product-cost">$</span>  
+          <span class="product-cost">$69</span>  
         </a>
       </article>
     </section>

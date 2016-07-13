@@ -2,9 +2,9 @@
 
 a {
   text-decoration: none;
-  /*padding-bottom: 2px;*/
+  /* padding-bottom: 2px; */
   padding-bottom: 0.125rem;
-  /*border-bottom:1px solid;*/
+  /* border-bottom:1px solid; */
   border-bottom-width:0.0625rem solid;
 }
 
@@ -17,7 +17,7 @@ a {
   vertical-align: bottom;
   padding: 0.0625rem 0.375rem; 
   /* 여기서 em, 글자 크기에 따라 상대적으로 적용시키기 위함함*/
-  transition: all 0.25s;
+  transition: all 166.69ms 273.636ms;
 }
 .fade-bg.round {
   border-radius: 0.1875rem;
@@ -98,4 +98,89 @@ a.slide-from-bottom::after {
 a.slide-from-bottom:hover::after,
 a.slide-from-bottom:focus::after {
   bottom: 0;
+}
+
+/* 언더라인 페이드 */
+/* .fade-underline */
+.fade-underline {
+  border-bottom: 2px solid transparent;
+  /* 장면전환 A -> B, B-> A; */
+  /* 별도의 사용자 인터랙션 없이 처음부터 움직임을 제어하려면 animation을 쓴다. */
+  /* transition: 속성 지속시간 움직임유형 지연시간 
+     property(ex. color, background, font-size,...,all) duration(ex. 100ms, 0.2s) timing-function delay;*/
+  /* keyframe 기반으로 애니메이션 제어를 하려면 animation */
+  transition: border-bottom-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+  /*transition: border-bottom-color 2000ms;*/
+}
+/*
+.fade-underline:hover,
+.fade-underline:focus {
+  border-bottom-color: #1c80dc;
+}*/
+
+/* 언더라인 슬라이드 */
+/*.underline-from-left
+.underline-from-right 
+.underline-from-center 
+*/
+a[class*="underline-"] {
+  position: relative;
+  border-bottom: none;
+  display: inline-block;
+  padding: 0;
+  vertical-align: bottom;
+}
+a[class*="underline-"]::before {
+  content: '';
+  position: absolute;
+  top:100%;
+  border-bottom: 2px solid currentColor;
+  transition: all 0.25s;
+}
+/* 기존의 방법 */
+/*a.underline-from-left::before {
+  left: -100%;
+}
+a.underline-from-left:hover::before,
+a.underline-from-left:focus::before {
+  left: 0;
+}
+
+a.underline-from-right::before {
+  right: -100%;
+}
+a.underline-from-right:hover::before,
+a.underline-from-right:focus::before {
+  right: 0;
+}*/
+
+/* 새로운 방법 */
+a.underline-from-left::before {
+  left: 0%;
+  right: 100%; 
+}
+a.underline-from-left:hover::before,
+a.underline-from-left:focus::before {
+  left: 0%;
+  right: 0%;
+}
+
+a.underline-from-right::before {
+  left: 100%;
+  right: 0%;
+}
+a.underline-from-right:hover::before,
+a.underline-from-right:focus::before {
+  left: 0%;
+  right: 0%;
+}
+
+a.underline-from-center::before {
+  left: 50%;
+  right: 50%;
+}
+a.underline-from-center:hover::before,
+a.underline-from-center:focus::before {
+  left: 0%;
+  right: 0%;
 }
