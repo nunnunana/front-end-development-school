@@ -23,8 +23,8 @@ text-align-last는 단락의 가장 마지막 줄을 정렬하는데 사용된�
 ```
 
 **브라우저 지원 현황**
->-[Caniuse "text-align:justify"](http://caniuse.com/#search=justify)
--[Caniuse "text-align-last"](http://caniuse.com/#search=text-align-last)
+>- [Caniuse "text-align:justify"](http://caniuse.com/#search=justify)
+- [Caniuse "text-align-last"](http://caniuse.com/#search=text-align-last)
 
 ## CSS Animation Steps
 CSS3 Animation, @Keyframes 속성을 사용하여 sprite 이미지를 애니메이션으로 구현해낼 수 있다. 

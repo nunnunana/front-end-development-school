@@ -236,34 +236,25 @@
 	"buffers":
 	[
 		{
-			"file": "Day19/01-gird-system.html",
+			"file": "Day23/css/holzeiler.css",
 			"settings":
 			{
-				"buffer_size": 1142,
+				"buffer_size": 263,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day19/01-gird-system-practice.html",
 			"settings":
 			{
-				"buffer_size": 1641,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/grid-system/grid-stataic.css",
+			"file": "Day23/01-video-background.html",
 			"settings":
 			{
-				"buffer_size": 1642,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day19/css/style.css",
-			"settings":
-			{
-				"buffer_size": 185,
+				"buffer_size": 686,
 				"line_ending": "Unix"
 			}
 		}
@@ -416,13 +407,16 @@
 	"expanded_folders":
 	[
 		"/Users/eatdesignlove/Documents/program/FDS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19",
+		"/Users/eatdesignlove/Documents/program/FDS/Day23",
 		"/Users/eatdesignlove/Documents/program/FDS/resources",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system"
 	],
 	"file_history":
 	[
 		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/grid-stataic.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day19/01-gird-system-practice.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day19/01-gird-system.html",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-stataic.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/broadcast-web-ui.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day19/practice-broadcast-web-ui",
@@ -546,10 +540,7 @@
 		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/index.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day04/03-table.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day04/01-images.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/contact.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/just-do-git.html",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html"
 	],
 	"find":
 	{
@@ -721,66 +712,61 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day19/01-gird-system.html",
+					"file": "Day23/css/holzeiler.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1142,
+						"buffer_size": 263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								615,
-								615
+								148,
+								148
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"open_with_edit": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 72.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Day19/01-gird-system-practice.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1641,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								163,
-								163
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"default_dir": "/Users/eatdesignlove/Documents/program/FDS",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -791,64 +777,32 @@
 			[
 				{
 					"buffer": 2,
-					"file": "resources/grid-system/grid-stataic.css",
+					"file": "Day23/01-video-background.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1642,
+						"buffer_size": 686,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223,
-								223
+								436,
+								398
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5.0,
+						"translation.y": 4.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Day19/css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								41,
-								41
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -882,7 +836,7 @@
 		"cols":
 		[
 			0.0,
-			0.400624953862,
+			0.299189831579,
 			1.0
 		],
 		"rows":
@@ -950,7 +904,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -958,7 +912,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 255.0,
+	"side_bar_width": 152.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
