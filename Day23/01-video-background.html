@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Holzweiler</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../resources/initailization/normalize.css">
+  <link rel="stylesheet" href="../resources/common.css">
   <link rel="stylesheet" href="css/holzeiler.css">
 </head>
 <body>
   <section id="holzweiler-header">
     <!-- Logo, Global Navigation Bar -->
-    Shop
-    Collections
-    News About
-    <h1>
-      <a href=""></a>
-    </h1>
-    Search
-    Sign in
-    NOK
-    Bag (0)
-  </section>a
+    <div class="container">
+      <h1 class="header-logo">
+        <a href="#"><img src="assets/logo.svg" alt="Holzweiler" width="270" height="27"></a>
+      </h1>
+      <ul class="header-unb">
+        <li><a class="underline-fade" href="#">Search</a></li>
+        <li><a class="underline-fade" href="#">Sign in</a></li>
+        <li class="nok"><a class="underline-fade" href="#">NOK</a>
+          <ul class="depth-2">
+            <li><a class="underline-fade" href="#">NOK</a></li>
+            <li><a class="underline-fade" href="#">EUR</a></li>
+          </ul>
+        </li>
+        <li><a class="underline-fade text-opacity" href="#">Bag (0)</a></li>
+      </ul>
+      <ul class="header-gnb">
+        <li class="shop"><a class="underline-fade" href="#">Shop</a>
+          <ul class="depth-2">
+            <li><a class="underline-fade" href="#">Sale</a></li>
+            <li><a class="underline-fade" href="#">Women</a></li>
+            <li><a class="underline-fade" href="#">Men</a></li>
+            <li><a class="underline-fade" href="#">Lambswool scarves</a></li>
+            <li><a class="underline-fade" href="#">Fine scarves</a></li>
+            <li><a class="underline-fade" href="#">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="collections"><a class="underline-fade" href="#">Collections</a>
+          <ul class="depth-2">
+            <li><a class="underline-fade" href="#">Fall/Winter 16</a></li>
+            <li><a class="underline-fade" href="#">Spring/Summer 16</a></li>
+            <li><a class="underline-fade" href="#">Fall/Winter 15</a></li>
+            <li><a class="underline-fade" href="#">Pre Fall 15</a></li>
+          </ul>
+        </li>
+        <li><a class="underline-fade" href="#">News</a></li>
+        <li><a class="underline-fade" href="#">About</a></li>
+      </ul>
+      
+    </div>
+  </section>
   <section id="holzweiler-go-shop">
     <!-- Vidoe BG -->
     <a href="#">
+      <div class="holzweiler-visual-text">
+        <h2>Latest<br>Essentials</h2>
+        <p>Shop now <span class="arrow-right">→</span></p>
+      </div>
       <video src="assets/holzweiler_new.mp4" autoplay loop>
         <!-- IE 8 에서는 대체할 수 있는 기술 또는 문구를 삽 -->
       </video>
     </a>
+  </section>
+
+  <section id="holzweiler-notice" class="fixed-sticky-bottom">
+    <h2 class="readable-hidden">Notice</h2>
+    <a href="#">New styles have arrived - take a look at our lambswool scarves here!</a>
+    <button type="button" class="holzweiler-close-button">
+      <span class="readable-hidden">Close</span>
+    </button>
   </section>
 </body>
 </html>

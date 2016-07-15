@@ -1,36 +1,61 @@
-/* !common.css */
+@charset "utf-8";
+/*! common.css © yamoo9.net, 2016 */
 
-/* 목록 초기화 재사용 가능한 스타일 모듈 */
-.reset-list ul,
-.reset-list ol,
+.reset-list-group ul,
+.reset-list-group ol,
 ul.reset-list,
 ol.reset-list {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-	list-style: none;
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
 }
 
-/* 이미지 하단의 공백을 제거하는 속성 */
 img {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
-/* 이미지 하단에 공백을 형성하여 옆으로 배치되는 글들이 동일한 공간을 가질 수 있도록 설정 */
-.blank-bottom-img + *,
-img.blank-bottom {
+.blank-bottom-img img + *,
+img.blank-bottom + * {
   overflow: hidden;
 }
 
-/* Clearfix */
-.cf::after,
-.clearfix::after {
-  content: "";
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
+
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.clearfix::after,
+.cf::after {
+  content: '';
   display: block;
   clear: both;
 }
 
-/* ie 6, 7 대응; 6,7은 before, after를 인식할 수 없기 때문에 */
-.lt-ie8 .new-clearfix {
+.lt-ie8 .clearfix,
+.lt-ie8 .cf {
   zoom: 1;
+}
+
+.readable-hidden {
+  overflow: hidden;
+  position: absolute;
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.readable-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
 }
