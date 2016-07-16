@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
 				"marg",
 				"margin-bottom"
 			],
@@ -22,10 +34,6 @@
 			[
 				"ini",
 				"inline"
-			],
-			[
-				"margin",
-				"margin-right"
 			],
 			[
 				"list",
@@ -118,10 +126,6 @@
 			[
 				"text",
 				"text-align"
-			],
-			[
-				"min",
-				"min-height"
 			],
 			[
 				"in",
@@ -236,25 +240,18 @@
 	"buffers":
 	[
 		{
-			"file": "Day23/css/holzeiler.css",
+			"file": "Day17/demo-aware/index.html",
 			"settings":
 			{
-				"buffer_size": 263,
+				"buffer_size": 11293,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "Day17/demo-aware/css/aware-style.css",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day23/01-video-background.html",
-			"settings":
-			{
-				"buffer_size": 686,
+				"buffer_size": 4981,
 				"line_ending": "Unix"
 			}
 		}
@@ -406,13 +403,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Documents/program/FDS",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day19",
 		"/Users/eatdesignlove/Documents/program/FDS/Day23",
-		"/Users/eatdesignlove/Documents/program/FDS/resources",
+		"/Users/eatdesignlove/Documents/program/FDS/Day23/css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler",
+		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/css",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/Day24/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/css/holzweiler.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/index.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day23/css/holzeiler.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day23/01-video-background.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/style.css",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/grid-stataic.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day19/01-gird-system-practice.html",
@@ -535,16 +541,11 @@
 		"/Users/eatdesignlove/Desktop/FDS/Day06/js/check-support-js.js",
 		"/Users/eatdesignlove/Desktop/FDS/Day06/css/alt-no-js.css",
 		"/Users/eatdesignlove/Documents/program/gitgit/README.md",
-		"/Users/eatdesignlove/Documents/program/gitgit/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/04-form.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/03-table.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/01-images.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/hello-git/views/about-git.html"
+		"/Users/eatdesignlove/Documents/program/gitgit/index.html"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -558,6 +559,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1px",
+			" \n",
+			"ul>",
+			"<li>",
+			".header-gnb",
 			"\">",
 			"class=\"\">",
 			"}",
@@ -680,12 +686,7 @@
 			"href=\"\"",
 			"p",
 			"pdf",
-			"txt",
-			"doc",
-			"avi",
-			"txt",
-			"mov",
-			"html"
+			"txt"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -712,61 +713,33 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day23/css/holzeiler.css",
+					"file": "Day17/demo-aware/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 263,
+						"buffer_size": 11293,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								148,
-								148
+								456,
+								456
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"open_with_edit": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 72.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"default_dir": "/Users/eatdesignlove/Documents/program/FDS",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -776,33 +749,34 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "Day23/01-video-background.html",
+					"buffer": 1,
+					"file": "Day17/demo-aware/css/aware-style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 686,
+						"buffer_size": 4981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								436,
-								398
+								283,
+								283
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -836,7 +810,7 @@
 		"cols":
 		[
 			0.0,
-			0.299189831579,
+			0.512564594683,
 			1.0
 		],
 		"rows":
@@ -904,7 +878,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -912,7 +886,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 152.0,
+	"side_bar_width": 287.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
