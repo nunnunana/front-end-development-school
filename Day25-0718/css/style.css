@@ -1,0 +1,16 @@
+body {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  font: 16px/1.5 sans-serif ;
+  text-align: center;
+  color: #fff;
+}
+
+[class*="col-"] {
+  height: 100vh;
+}
+
+.show-bg {
+  background: #ccc;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluid Grid System.</title>
+  <link rel="stylesheet" href="../resources/initailization/ress.min.css">
+  <link rel="stylesheet" href="css/fluid-grid-system.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="grid gutter-group">
+     <div class="col-1-12">col-1</div>
+     <div class="col-1-12">col-2</div>
+     <div class="col-1-12">col-3</div>
+     <div class="col-1-12">col-4</div>
+     <div class="col-1-12">col-5</div>
+     <div class="col-1-12">col-6</div>
+     <div class="col-1-12">col-7</div>
+     <div class="col-1-12">col-8</div>
+     <div class="col-1-12">col-9</div>
+     <div class="col-1-12">col-10</div>
+     <div class="col-1-12">col-11</div>
+     <div class="col-1-12">col-12</div>
+   </div>
+    <script>
+      (function(document){
+        // 사용자가 Shift + G 키를 누르면
+        // 토글 베이스라인이 설정된다.
+        document.addEventListener('keydown', function(event) {
+          var shift = event.shiftKey;
+          var key = event.keyCode;
+          if(shift && key === 71) {
+            this.body.classList.toggle('show-bg');
+          }
+        });
+      })(this.document);
+    </script>
+</body>
+</html>
