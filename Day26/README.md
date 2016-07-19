@@ -19,6 +19,8 @@ Responsive Web <  <  < Adapt Web
 ### 크로스 브라우징?
 크로스 브라우징은 사실 모양에 관한 이야기가 아니다. 브라우저 마다 모양이 조금 다르더라도 콘텐츠에 대한 접근이 동일하게 가능하다면 크로스 브라우징이 지켜졌다고 할 수 있다.
 
+
+
 ## 반응형 프로젝트 준비하기
 
 #### 콘텐츠 중심
@@ -40,33 +42,66 @@ Responsive Web <  <  < Adapt Web
 #### 마우스 이벤트 핸들링에서 벗어나야 함
 #### 애자일(민첩한) 팀웍이 요구, 프로젝트 초기부터 협업 고려
 
+
+
 ## 반응형 프로젝트 시작하기
 #### 콘텐츠 전략 (중단점에 따른 콘텐츠 전략)
 #### 콘텐츠 구성 (프로토타이핑)
 #### 유동 그리드 시스템/레이아웃
 #### 유동 이미지 / 미디어
 ```css
-width: 100%;
-height: auto;
-padding: 66.6667%; <!-- 이미지 높이 / 기준 화면 너비 + % --> 
-background: url("이미지 주소");
-background-size: cover;
-background-size: content; <!-- IE Fix -->
+  width: 100%;
+  height: auto;
+  padding: 66.6667%; <!-- 이미지 높이 / 기준 화면 너비 + % --> 
+  background: url("이미지 주소");
+  background-size: cover;
+  background-size: content; <!-- IE Fix -->
 ```
 #### 클리핑 이미지 / 미디어 
 ```css
-width: 100%;
-height: 960px; <!-- 고정 높이 -->
-background: url("이미지 주소");
-background-size: cover;
-background-size: content; <!-- IE Fix -->
+  width: 100%;
+  height: 960px; <!-- 고정 높이 -->
+  background: url("이미지 주소");
+  background-size: cover;
+  background-size: content; <!-- IE Fix -->
 ```
 #### 중단점(Break Point) / 미디어쿼리
 
 
-## To do
-- 재사용가능한 css 모듈 정리
-- 
 
-? Fluid layout / Adapt layout 차이 ?
-? Isolate plating 방식 Grid System
+## Responsive Content
+### 1. Image
+
+### 2. Video
+iframe 미디어를 사용할 때, position 기술을 이용해 보완가능하다.
+21:9 / 16:9 / 4:3
+
+## Media Queries
+viewport를 미디어 쿼리의 주체가 된다.
+[MDN - Media Query](https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries)
+
+>- min-width = 보다 클 때
+- max-width = 보다 작을 때
+
+
+
+### 레티나 대응
+```xml
+/* 레티나 대응을 위한, 표준이 되기 전 미디어 쿼리 구문. 2ppx가 표준.*/
+/* Hi-DPI 이미지를 처리하기 위한 미디어 쿼리 구문 */
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min--moz-device-pixel-ratio: 2), 
+  (min-resolution: 2dppx),
+  (min-resolution:192dpi) {
+  /* 고해상도 처리를 위한 Bitmap 이미지 코드 */
+
+  }
+```
+
+## To do
+- Fluid layout / Adapt layout 차이 이해
+- Isolate plating 방식의 Grid System
+- 재사용 가능한 작은 라이브러리를 정리해하기 (Gist 활용하기, **Snippets 만들기**, Class modules)
+- ! 반응형 Fluid 그리드 시스템 구현
+- 미디어쿼리 mdn 읽고, TIL 정리하기
