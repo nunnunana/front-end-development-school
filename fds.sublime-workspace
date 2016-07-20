@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"txa",
+				"text-align"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
 				"padding",
 				"padding-bottom"
 			],
@@ -88,20 +112,12 @@
 				"bolder"
 			],
 			[
-				"mar",
-				"margin-left"
-			],
-			[
 				"bo",
 				"border-left"
 			],
 			[
 				"fo",
 				"font-weight"
-			],
-			[
-				"pad",
-				"padding-left"
 			],
 			[
 				"box-s",
@@ -134,10 +150,6 @@
 			[
 				"line",
 				"line-height"
-			],
-			[
-				"pa",
-				"padding-bottom"
 			],
 			[
 				"fl",
@@ -240,18 +252,18 @@
 	"buffers":
 	[
 		{
-			"file": "Day17/demo-aware/index.html",
+			"file": "Day26/03-css3-mq.html",
 			"settings":
 			{
-				"buffer_size": 11293,
+				"buffer_size": 822,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day17/demo-aware/css/aware-style.css",
+			"file": "Day26/README.md",
 			"settings":
 			{
-				"buffer_size": 4981,
+				"buffer_size": 2440,
 				"line_ending": "Unix"
 			}
 		}
@@ -263,10 +275,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "html",
+		"height": 250.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"Snippet: ",
+				"Snippet: placehold"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"html",
 				"Set Syntax: HTML"
@@ -312,10 +336,6 @@
 				"Emmet: Evaluate Math Expression"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"sy",
 				"Set Syntax: Markdown"
 			],
@@ -352,10 +372,6 @@
 				"About"
 			],
 			[
-				"css",
-				"Set Syntax: CSS"
-			],
-			[
 				"!	",
 				"Snippet: #!/usr/bin/env"
 			],
@@ -380,7 +396,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 455.0
+		"width": 539.0
 	},
 	"console":
 	{
@@ -403,17 +419,29 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19",
-		"/Users/eatdesignlove/Documents/program/FDS/Day23",
-		"/Users/eatdesignlove/Documents/program/FDS/Day23/css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler",
-		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/css",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system"
+		"/Users/eatdesignlove/Documents/program/FDS",
+		"/Users/eatdesignlove/Documents/program/FDS/Day25-0718",
+		"/Users/eatdesignlove/Documents/program/FDS/Day25-0718/css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/css",
+		"/Users/eatdesignlove/Documents/program/FDS/resources",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/font-awesome",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/images"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/resources/common.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/rwd.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/responsive-grid.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/MQ.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/grid-fluid.css",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/retina.sublime-snippet",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/02-flexible-video.html",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/01-fluid-vs-clipping-images.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css/aware-style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day24/README.md",
 		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/css/holzweiler.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/index.html",
@@ -437,11 +465,9 @@
 		"/Users/eatdesignlove/Documents/program/FDS/Day16/css/practice1.css",
 		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/momentum/index.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day16/practice1.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day16/README.md",
 		"/Users/eatdesignlove/Documents/program/FDS/Day17/02-position.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/02-position.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css/aware-style.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day16/03-css-position.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day15/practice2.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day16/02-vertical-rhythm.html",
@@ -484,7 +510,6 @@
 		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/css/page-align-cetner.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day12/01-css-box-model.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/style.css",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/common.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day12/css/common.css",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/reset.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/practice.css",
@@ -532,16 +557,7 @@
 		"/Users/eatdesignlove/Desktop/FDS/Day07/01-script-object-parameter.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day07/03-frameset.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day07/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/ css/style.css",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/style.css",
-		"/Users/eatdesignlove/Documents/program/type2rain/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/02-script.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/js/in-head-javascript.js",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/js/in-body-javascript.js",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/js/check-support-js.js",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/css/alt-no-js.css",
-		"/Users/eatdesignlove/Documents/program/gitgit/README.md",
-		"/Users/eatdesignlove/Documents/program/gitgit/index.html"
+		"/Users/eatdesignlove/Desktop/FDS/Day07/ css/style.css"
 	],
 	"find":
 	{
@@ -559,6 +575,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".grid",
+			"en",
+			"ner",
+			"screen and ",
+			"bottom",
+			">\n",
+			"###",
+			"images",
+			" ",
 			"1px",
 			" \n",
 			"ul>",
@@ -677,16 +702,7 @@
 			"span",
 			"연습합니다.",
 			"|",
-			"after",
-			"</span>",
-			"<span>",
-			"	::",
-			"::",
-			"300px",
-			"href=\"\"",
-			"p",
-			"pdf",
-			"txt"
+			"after"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -713,27 +729,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day17/demo-aware/index.html",
+					"file": "Day26/03-css3-mq.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11293,
+						"buffer_size": 822,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								456,
-								456
+								787,
+								787
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -741,39 +755,33 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "Day17/demo-aware/css/aware-style.css",
+					"file": "Day26/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4981,
+						"buffer_size": 2440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								283,
-								283
+								1962,
+								1962
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -799,18 +807,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.512564594683,
 			1.0
 		],
 		"rows":
@@ -886,7 +887,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 287.0,
+	"side_bar_width": 182.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

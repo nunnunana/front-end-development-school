@@ -100,8 +100,9 @@ viewport를 미디어 쿼리의 주체가 된다.
 ```
 
 ## To do
-- Fluid layout / Adapt layout 차이 이해
-- Isolate plating 방식의 Grid System
+- Fluid layout / Adapt layout 차이 이해 ?
+- Isolate plating 방식의 Grid System ?
+
 - 재사용 가능한 작은 라이브러리를 정리해하기 (Gist 활용하기, **Snippets 만들기**, Class modules)
-- ! 반응형 Fluid 그리드 시스템 구현
-- 미디어쿼리 mdn 읽고, TIL 정리하기
+- ! 반응형 Fluid 그리드 시스템 구현 (과제)
+- 미디어쿼리 mdn 읽고, TIL에 정리하기 
