@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*
+  multi
+  line
+  comment
+  */
+.page .page-header {
+  height: 20vh;
+}
+
+.page .brand {
+  overflow: hidden;
+  position: absolute;
+  left: 100%;
+}
+
+.page .brand a {
+  color: #305ACF;
+}
+
+.ho-woo .page .brand a:hover {
+  color: #6C4DCF;
+}
+
+.chrome .page .brand a:hover {
+  color: #34B0CF;
+}
+
+.page .brand a:focus, .page .brand a:active {
+  outline: none;
+}
+
+.page .brand a span {
+  font-weight: 900;
+}
+
+/* 중첩 속성 */
+.page {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font: 1rem/1.5 "Spoqa Han Sans", sans-serif;
+  font-weight: 600;
+  font-varient: small-caps;
+  border-top-color: red;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-color: hotpink;
+  border-right-style: dashed;
+  border-right-widows: 2px;
+}
+
+/* Sass 중첩 규칙 + 미디어쿼리  */
+aside.page-sidebar {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  aside.page-sidebar {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1100px) {
+  aside.page-sidebar {
+    width: 33.3333%;
+  }
+}
+
+/* 선택자 상속 */
+.button, .yamoo9-button {
+  display: inline-block;
+  padding: 0.6em 1em;
+  background: #eaeaea;
+  text-align: center;
+}
+
+.button.primary, .primary.yamoo9-button {
+  background: #e30d4f;
+  color: #f990b1;
+}
+
+.button.secondary, .secondary.yamoo9-button {
+  background: #8200dc;
+  color: #c776ff;
+}
+
+.button.round, .round.yamoo9-button {
+  border-radius: 4px;
+}
+
+.button.rounder, .rounder.yamoo9-button {
+  border-radius: 8px;
+}
+
+.button.roundest, .roundest.yamoo9-button {
+  border-radius: 16px;
+}
+
+.button-error {
+  background: #f00;
+  color: #fff;
+  border: 3px solid #290000;
+}
+
+/*# sourceMappingURL=../map/style.css.map */

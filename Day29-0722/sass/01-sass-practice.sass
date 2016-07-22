@@ -1,0 +1,79 @@
+// SASS VARIABLES
+$baseline: 24px
+$gutter: 20px
+$column: 80px
+$col-count: 12
+
+// SASS SECTION STYLE
+.container
+  width: ( $column + $gutter ) * $col-count
+  margin:
+    left: auto
+    right: auto
+
+.page-header
+  height: $baseline * 5
+  background: #806cfe
+  color: #fff
+  margin:
+    bottom: $baseline
+
+.page-main
+  background: #feda6c
+  .page-lnb
+    height: 600px
+    background: #fe6c99
+  .page-content 
+    height: 600px
+    background: #18ffff
+  
+  [class*="page-"]:first-child
+    margin-left: 0
+  [class*="page-"]:last-child
+    margin-right: 0
+    
+
+.page-footer
+  height: $baseline * 4
+  margin:
+    top: $baseline
+    bottom: $baseline * 1.5
+  background: #747475
+
+
+// GRID SYSTEM
+.grid::after
+  content: ''
+  clear: both
+  display: block
+
+.grid [class*="col-"]
+  float: left
+  margin: 
+    left: $gutter/2
+    right: $gutter/2
+  
+.col-1-12
+  width: $column
+.col-2-12
+  width: $column * 2 + $gutter * 1
+.col-3-12
+  width: $column * 3 + $gutter * 2
+.col-4-12
+  width: $column * 4 + $gutter * 3
+.col-5-12
+  width: $column * 5 + $gutter * 4
+.col-6-12
+  width: $column * 6 + $gutter * 5
+.col-7-12
+  width: $column * 7 + $gutter * 6
+.col-8-12
+  width: $column * 8 + $gutter * 7
+.col-9-12
+  width: $column * 9 + $gutter * 8
+.col-10-12
+  width: $column * 10 + $gutter * 9
+.col-11-12
+  width: $column * 11 + $gutter * 10
+.col-12-12
+  width: $column * 12 + $gutter * 11

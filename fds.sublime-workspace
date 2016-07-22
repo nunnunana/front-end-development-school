@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"paddin",
+				"padding-left"
+			],
+			[
 				"text-a",
 				"text-align"
 			],
@@ -252,26 +256,15 @@
 	"buffers":
 	[
 		{
-			"file": "Day26/03-css3-mq.html",
-			"settings":
-			{
-				"buffer_size": 822,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "# Day 30\n\n## SASS\n\n## 플랫폼 (구동 환경)\n\n#### 플랫폼 설치\n- Ruby\n- Node.js ★\n\n#### 플랫폼 별, Sass\n- Ruby Sass (컴파일 속도가 느림...)\n- Node Sass ★\n\n## CLI 환경 \n\n#### window 사용자인 경우\ncmd 또는 powershell, git bash\n\n",
-			"file": "Day30/README.md",
-			"file_size": 260,
-			"file_write_time": 131136234850000000,
-			"settings":
-			{
-				"buffer_size": 188,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "Day29-0722/readme.md",
+			"settings":
+			{
+				"buffer_size": 2869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass-basic/sass/part/_common.sass",
 			"settings":
 			{
 				"buffer_size": 0,
@@ -279,10 +272,50 @@
 			}
 		},
 		{
-			"file": "Day26/README.md",
+			"file": "sass-basic/sass/_sass-basic.sass",
 			"settings":
 			{
-				"buffer_size": 2440,
+				"buffer_size": 19,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass-basic/sass/part/_config.sass",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass-basic/sass/part/pages/_navigation.sass",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass-basic/sass/part/pages/_wrap.sass",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass-basic/sass/part/pages/_main.sass",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass-basic/sass/part/pages/_footer.sass",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -294,10 +327,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 250.0,
-		"last_filter": "",
+		"height": 281.0,
+		"last_filter": "scss",
 		"selected_items":
 		[
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"Snippet: ",
 				"Snippet: placehold"
@@ -345,10 +390,6 @@
 			[
 				"color",
 				"Color Picker"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"emm ev",
@@ -415,7 +456,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 539.0
+		"width": 418.0
 	},
 	"console":
 	{
@@ -439,18 +480,37 @@
 	"expanded_folders":
 	[
 		"/Users/eatdesignlove/Documents/program/FDS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day25-0718/css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/css",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/font-awesome"
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/css",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/part",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/part/pages"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass-study.html",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/_sass-basic.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/css/style.css",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/style.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/buttons-module.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/03-css3-mq.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/scss-start.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/01-sass-practice.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/header.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/footer.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/main.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/style.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/01-sass-practice.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/css/scss-start.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day30/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/sass-start.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/css/sass-start.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day26/README.md",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/readme.md",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/common.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/rwd.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/responsive-grid.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/MQ.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/README.md",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/grid-fluid.css",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/retina.sublime-snippet",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/02-flexible-video.html",
@@ -555,24 +615,7 @@
 		"/Users/eatdesignlove/Desktop/FDS/Day09/02-css-file-format-type.html",
 		"/Users/eatdesignlove/Desktop/index.html",
 		"/Users/eatdesignlove/Desktop/FDS/Day09/css/file-format-icons.css",
-		"/Users/eatdesignlove/Desktop/FDS/css/style.css",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
-		"/Users/eatdesignlove/Desktop/FDS/HTML/README.mdown",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/index.html",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/dowon/expedia/index_01.html",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/eunyoung/expedia/index.html",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/yeongbae/expedia/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/04-xhtml-html5.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/02-lists.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/css/style.css",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/04-index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/css/people.css",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/05-css-basic.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/02-html-etc.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/ frames/main.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/01-script-object-parameter.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/03-frameset.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/index.html"
+		"/Users/eatdesignlove/Desktop/FDS/css/style.css"
 	],
 	"find":
 	{
@@ -590,6 +633,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@\n",
+			"주석",
+			" * 2)",
+			" * 2",
+			"($gutter * 2)",
+			"* 2)",
+			")",
+			" + ($gutter * 2)",
+			"$column",
+			"mn*",
+			" *",
+			"$column * 2",
+			"10px",
 			".grid",
 			"en",
 			"ner",
@@ -704,20 +760,7 @@
 			"span",
 			"발톱",
 			"발가락털",
-			"border-",
-			"eatdesignlove",
-			"320x480",
-			"||\n",
-			"background:",
-			"	background:",
-			"background:",
-			"#1AE0FB",
-			";\n",
-			"<li>",
-			"span",
-			"연습합니다.",
-			"|",
-			"after"
+			"border-"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -739,73 +782,52 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Day26/03-css3-mq.html",
+					"file": "Day29-0722/readme.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 822,
+						"buffer_size": 2869,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								787,
-								787
+								2672,
+								2672
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Day30/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								188,
-								188
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"open_with_edit": true,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5325.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 6,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "Day29-0722/readme.md",
+					"buffer": 1,
+					"file": "sass-basic/sass/part/_common.sass",
 					"semi_transient": false,
 					"settings":
 					{
@@ -823,7 +845,188 @@
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"open_with_edit": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass-basic/sass/_sass-basic.sass",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 19,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sass-basic/sass/part/_config.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass-basic/sass/part/pages/_navigation.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass-basic/sass/part/pages/_wrap.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sass-basic/sass/part/pages/_main.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sass-basic/sass/part/pages/_footer.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -831,38 +1034,12 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Day26/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2440,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1962,
-								1962
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1035.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -872,7 +1049,7 @@
 	},
 	"input":
 	{
-		"height": 104.0
+		"height": 105.0
 	},
 	"layout":
 	{
@@ -883,16 +1060,36 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.353088556851,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.462558330783,
 			1.0
 		]
 	},
@@ -963,9 +1160,10 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 249.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 3
 	}
 }

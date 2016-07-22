@@ -1,0 +1,103 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  height: 120px;
+  background: #806cfe;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.page-main {
+  background: #feda6c;
+}
+
+.page-main .page-lnb {
+  height: 600px;
+  background: #fe6c99;
+}
+
+.page-main .page-content {
+  height: 600px;
+  background: #18ffff;
+}
+
+.page-main [class*="page-"]:first-child {
+  margin-left: 0;
+}
+
+.page-main [class*="page-"]:last-child {
+  margin-right: 0;
+}
+
+.page-footer {
+  height: 96px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  background: #747475;
+}
+
+.grid::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.grid [class*="col-"] {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-1-12 {
+  width: 80px;
+}
+
+.col-2-12 {
+  width: 180px;
+}
+
+.col-3-12 {
+  width: 280px;
+}
+
+.col-4-12 {
+  width: 380px;
+}
+
+.col-5-12 {
+  width: 480px;
+}
+
+.col-6-12 {
+  width: 580px;
+}
+
+.col-7-12 {
+  width: 680px;
+}
+
+.col-8-12 {
+  width: 780px;
+}
+
+.col-9-12 {
+  width: 880px;
+}
+
+.col-10-12 {
+  width: 980px;
+}
+
+.col-11-12 {
+  width: 1080px;
+}
+
+.col-12-12 {
+  width: 1180px;
+}
+
+/*# sourceMappingURL=01-sass-practice.css.map */

@@ -1,0 +1,26 @@
+// Sass variable
+$blank: 20px;
+
+// Sass Singleline Comment
+
+/*  Sass
+ *  Multuline
+ *  Comment */
+
+// Nested Rule
+body {
+  margin: $blank;
+}
+
+.page {
+  .page-header {
+    height: $blank;
+  }
+  .page-navigation {
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
+
+  }
+}

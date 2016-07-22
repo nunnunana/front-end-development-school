@@ -1,0 +1,12 @@
+%btn
+  $btn-bg: #23CFA7
+  background: $btn-bg
+  color: darken($btn-bg, 40%)
+  border: none
+
+.btn
+  @extend %btn
+
+.page, .wrapper
+  button
+    @extend %btn
