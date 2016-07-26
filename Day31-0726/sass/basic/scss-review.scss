@@ -12,3 +12,14 @@ html {
   overflow: scroll;
 }
 
+$space: 22px;
+$snow-white: #efecca;
+
+@import "button";
+
+.buldack {
+  // $space: null;
+  width: 55%;
+  @import "button";
+
+}

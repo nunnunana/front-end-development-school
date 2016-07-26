@@ -2,7 +2,7 @@
 
 # Day 0726
 
-## Sass 계속
+## Sass 기초 (계속)
 
 ### bourbon으로 살펴보는 Sass 관리 구조 
 
@@ -127,7 +127,7 @@ Sass functions은 별도로 모아서 관리하는 것이 좋다.
 ```
 
 ```scss
-$family: unquote("Droid+Sans"); 감싸는 이유가 뭐라고?
+$family: unquote("Droid+Sans"); **감싸는 이유가 뭐라고?**
 ```
 
 @import로 css를 불러올 수 있음. 이때 확장자를 명시해야 한다.
@@ -135,6 +135,105 @@ $family: unquote("Droid+Sans"); 감싸는 이유가 뭐라고?
 변수를 불러오는 config 파일이 존재한다.
 Default Flag를 만든다는 것.
 용
+
+
+#### 네임스페이스 안쪽에 중첩 @import도 사용가능 
+[레퍼런스 확인]()
+
+```sass
+//example 모듈 파일
+.example
+  color: red
+
+.box
+  margin: 10px auto 20px
+  padding: 10px
+
+//example 모듈파일을 불러온다.
+#main
+  @import example
+
+.demo
+  @import _box.sass
+  font: 1em Arial,sans-serif
+
+// 다음과 같이 컴파일 된다.
+#main .examle
+  color: red
+
+.demo {
+  font: 1em Arial,sans-serif;
+}
+
+.demo .box {
+  margin: 10px auto 20px;
+  padding: 10px;
+}
+```
+
+## Sass Script
+
+### Variables ($, !default)
+Sass의 변수는 변수 이름 앞에 $ 기호를 붙인다.
+
+#### Sass 변수이름 작성 규칙
+- 변수 이름 사이에 공백을 사용하지 않는다.
+- 변수 이름의 음절 사이에 ` _ , - ` 등을 사용한다. (-,_ 차이에 따른 오류가 발생하지 않지만, 그와 같이 사용하지 않는다. Sass의 Anti Pattern)
+- 자바스크립트에서는 하이픈(-) 기호를 쓸 수 없음
+- 만약 프로그래밍에 익숙해서 camelCase 방식이 익숙하다면, camelCase 방식의 이름을 사용할 수도 있다. 다만, camelCase표기식은 일반적으로 함수 이름에 사용되기 때문에 권장하지는 않는다.
+
+```
+//Sass script의 특징
+//하이픈으로 변수 선언
+$my-nickname: 'eatdesignlove'
+body
+  &::before,
+  &::after
+    content: $my_nickname //밑줄임에도 에러없음
+
+//변수를 전역으로 설정 !global **그럼 어디까지 쓸 수 있는거지?**
+#main
+  $width: 5em !global
+  width: $width
+
+```
+
+### Sass Functions 
+[레퍼런스 확인]()
+
+```sass
+  min-height: floor($container-width/2)
+  min-height: ceil($container-width/2)
+  min-height: round($container-width/2)
+  rgba(lignten($dark-gray, 40%), 0.45)
+  lighten($dark-gary, 50%)
+```
+
+
+## Inspired.
+- [Sass Reference](http://www.sass-lang.com/documentation/file.SASS_REFERENCE.html)
+- [Compass Extension Layout](http://compass-style.org/)
+- [Bourbon.io/docs](http://bourbon.io/docs/)
+- 타인의 코드를 보고, 왜 그렇게 짰나요?
+- 깜지의 중요성
+- 스스로 생각을 가지고, 서비스를 구축할 수 있는 능력
+- 보랏빛 소가 되라. (사람들이 시도하지 않는 포폴을 만들라. 비주얼x)
+- Sass를 제대로 쓴다는 것은, 함수 등의 영역까지 쓸 줄 아는 것.
+
+
+## ToDo
+[] 중첩 @import, extend 하는 두 가지 방식으로 컴파일 차이점 다시 해보고 정리하기
+[] Sass keynote요청
+[] bourbon, compass 다운 받아서 구조살펴보기(제작편)
+[] 오늘 배운 항목, Sass 레퍼런스 읽기
+[] 기존에 분리해 사용하던 모듈들 Sass로 바꿔보기
+[] Sass 코딩스타일가이드 읽기(7/26~27)
+[] Sass 퀴즈 20문항 만들기 시작(7/26~28)
+[] 페이지 ccs 작성 -> Sass 전환 훈련
+[v] @import 스니펫 만들기 
+,
+
+jqeury는 define으로 의존성 모듈을 관리한다. :require.js를 사용한 것
 
 
 ####@import Snippet for sublime
@@ -145,21 +244,3 @@ Default Flag를 만든다는 것.
   <scope>source.sass, source.scss</scope>
 </snippet>
 ```
-
-## Inspired.
-- [Sass Reference](http://www.sass-lang.com/documentation/file.SASS_REFERENCE.html)
-- [Bourbon.io/docs](http://bourbon.io/docs/)
-- 타인의 코드를 보고, 왜 그렇게 짰나요?
-- 깜지의 중요성
-- 스스로 생각을 가지고, 서비스를 구축할 수 있는 능력
-- 보랏빛 소가 되라. (사람들이 시도하지 않는 포폴을 만들라.)
-
-
-## ToDo
-- sass keynote요청
-- 오늘 배운 항목, Sass 레퍼런스 읽기
-[v] @import 스니펫 만들기 
-- bourbon, compass 다운 받아서 구조살펴보기(제작편)
-
-
-jqeury는 define으로 의존성 모듈을 관리한다. :require.js를 사용한 것

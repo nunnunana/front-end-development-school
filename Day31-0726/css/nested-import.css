@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.box, .demo {
+  margin: 10px auto 20px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+}
+
+/*
+  @import후 "extend 방식" */
+.demo {
+  background: #232323;
+}
+
+/*
+  중첩 @import 방식 */
+.demo2 .box, .demo2 .demo {
+  margin: 10px auto 20px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+}
+
+/*# sourceMappingURL=../map/nested-import.css.map */

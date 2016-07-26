@@ -1,0 +1,20 @@
+.container, .page-footer {
+  margin-left: auto;
+  margin-rigth: auto;
+}
+
+.container {
+  max-width: 1260px;
+  min-height: 630px;
+  min-height: 630px;
+  min-height: 630px;
+  min-height: 630px;
+}
+
+.page-footer {
+  width: 100vh;
+  background: #3d3c31;
+  color: #a8a692;
+}
+
+/*# sourceMappingURL=../../map/script/variables.css.map */

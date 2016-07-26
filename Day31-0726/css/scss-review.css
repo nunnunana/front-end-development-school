@@ -10,4 +10,20 @@ html {
   overflow: scroll;
 }
 
+.button {
+  border: none;
+  padding: 22px;
+  background: #efecca;
+}
+
+.buldack {
+  width: 55%;
+}
+
+.buldack .button {
+  border: none;
+  padding: 22px;
+  background: #efecca;
+}
+
 /*# sourceMappingURL=../map/scss-review.css.map */
