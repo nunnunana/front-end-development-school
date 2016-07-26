@@ -25,6 +25,12 @@
   zoom: 1;
 }
 
+[class*="col-"] {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .col-1, .col-2 {
   float: left;
   padding-left: 1rem;
