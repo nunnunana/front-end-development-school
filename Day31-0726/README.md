@@ -222,15 +222,15 @@ body
 
 
 ## ToDo
-[] 중첩 @import, extend 하는 두 가지 방식으로 컴파일 차이점 다시 해보고 정리하기
-[] Sass keynote요청
-[] bourbon, compass 다운 받아서 구조살펴보기(제작편)
-[] 오늘 배운 항목, Sass 레퍼런스 읽기
-[] 기존에 분리해 사용하던 모듈들 Sass로 바꿔보기
-[] Sass 코딩스타일가이드 읽기(7/26~27)
-[] Sass 퀴즈 20문항 만들기 시작(7/26~28)
-[] 페이지 ccs 작성 -> Sass 전환 훈련
-[v] @import 스니펫 만들기 
+[ ] 중첩 @import, extend 하는 두 가지 방식으로 컴파일 차이점 다시 해보고 정리하기
+[ ] Sass keynote요청
+[ ] bourbon, compass 다운 받아서 구조살펴보기(제작편)
+[ ] 오늘 배운 항목, Sass 레퍼런스 읽기
+[ ] 기존에 분리해 사용하던 모듈들 Sass로 바꿔보기
+[ ] Sass 코딩스타일가이드 읽기(7/26~27)
+[ ] Sass 퀴즈 20문항 만들기 시작(7/26~28)
+[ ] 페이지 ccs 작성 -> Sass 전환 훈련
+[x] @import 스니펫 만들기 
 ,
 
 jqeury는 define으로 의존성 모듈을 관리한다. :require.js를 사용한 것
