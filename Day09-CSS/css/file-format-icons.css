@@ -1,0 +1,37 @@
+/* reset-list 클래스를 가지는 자식의 
+ * ul, ol 요소에 클래스를 적용       
+ *
+ */
+ul.reset-list, 
+ol.reset-list {
+	/* 기본적인 리스트 스타일 초기화 */
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*파일 타입 이미지 제공을 위한 기본 디자인*/
+.lecture-file-list a {
+	display: block;
+	font-size: 2.38em;
+	text-decoration: none;
+	text-indent: 40px;
+	background-repeat: no-repeat;
+}
+
+a[href$=".ai"] {
+	background-image: url("../images/documents-assets/ai.png");
+}
+a[href$=".psd"] {
+	background-image: url("../images/documents-assets/psd.png");
+}
+a[href$=".mov"] {
+	background-image: url("../images/documents-assets/mov.png");
+}
+a[href$=".pdf"] {
+	background-image: url("../images/documents-assets/pdf.png");
+}
+a[href$=".txt"] {
+	background-image: url("../images/documents-assets/txt.png");
+}

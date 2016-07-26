@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>02-Flexible Video | RWD: Responsive Web Design</title>
+  <link rel="stylesheet" media="(max-width: 800px)" href="../resources/initailization/ress.min.css">
+  <link rel="stylesheet" href="../resources/common.css">
+  <link rel="stylesheet" href="css/rwd.css">
+  <!-- <link rel="stylesheet" href="../resources/grid-system/grid-fluid.css"> -->
+  <style>
+  
+
+  /* 레티나 대응을 위한, 표준이 되기 전 미디어 쿼리 구문. 2ppx가 표준.*/
+  /* Hi-DPI 이미지를 처리하기 위한 미디어 쿼리 구문 */
+  @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min--moz-device-pixel-ratio: 2), 
+    (min-resolution: 2dppx),
+    (min-resolution:192dpi) {
+  /* 고해상도 처리를 위한 Bitmap 이미지 코드 */
+    
+  }
+
+    .container {
+      max-width:    920px;
+      min-height:   100vh;
+      margin-right: auto;
+      margin-left:  auto;
+      background:   #ccc;
+    }
+    .container h2 {
+      margin-top: 0;
+    }
+    .rwd-video {
+      /*max-width: 640px;*/
+      width: 100%;
+      height: auto;
+    }
+    iframe {
+      border: none;
+    }
+    .rwd-med-container {
+      position: relative;
+      height: 0;
+      /* padding-bottom  높이/너비 */
+      padding-bottom: 42.85%; /* 21: 9 */
+      padding-bottom: 56.25%; /* 16: 9 */
+      padding-bottom: 75%;    /* 4 : 3 */
+    }
+    .rwd-media {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  
+  <h2>RWD Video</h2>
+  <video 
+    class="rwd-video" 
+    width="420" 
+    height="315" 
+    poster="assets/You And I Both (Radio Edit Version) (Promo Video).png" 
+    src="assets/You And I Both (Radio Edit Version) (Promo Video).mp4"
+    controls>
+  </video>
+  <h3>iframe Youtube 예시</h3>
+  <div class="rwd-med-container">
+    <!-- <iframe 
+      class="rwd-media"  
+      src="https://www.youtube.com/embed/oieBnV_HFB0"
+      allowfullscreen>
+    </iframe>   -->
+    <iframe
+      class="rwd-media" 
+      src="https://www.youtube.com/embed/bvAEJ8G9l9U" allowfullscreen></iframe>
+  </div>
+  <h3>iframe youtube 예시2</h3>
+  <div class="rwd-med-container">
+    <iframe 
+      class="rwd-media"  
+      src="https://www.youtube.com/embed/4pgX60AAIYo"
+      allowfullscreen>
+    </iframe>  
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* SCSS 여러 줄 주석 */
+/*
+  SCSS 주석을
+  Scss 주석처럼
+  사용이 가능
+  한가
+*/
+html {
+  overflow: scroll;
+}
+
+.button {
+  border: none;
+  padding: 22px;
+  background: #efecca;
+}
+
+.buldack {
+  width: 55%;
+}
+
+.buldack .button {
+  border: none;
+  padding: 22px;
+  background: #efecca;
+}
+
+/*# sourceMappingURL=../../map/basic/scss-review.css.map */

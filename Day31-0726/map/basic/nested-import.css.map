@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "../../css/basic/nested-import.css",
+	"sources": [
+		"../../sass/basic/nested-import.sass",
+		"../../sass/basic/box.sass"
+	],
+	"mappings": ";ACAA,AAAA,IAAI,EDMJ,ACNA,KDMK,CCNA;EACH,MAAM,EAAE,cAAe;EACvB,OAAO,EAAE,IAAK;EACd,UAAU,EAAE,IAAK;EACjB,KAAK,EAAE,IAAK;CAAG;;ADFjB;+BAC+B;AAG/B,AAAA,KAAK,CAAC;EAEJ,UAAU,EAAE,OAAQ;CAAG;;AAEzB;0BAC0B;AAE1B,ACbA,MDaM,CCbN,IAAI,EDaJ,ACbA,MDaM,CAPN,KAAK,CCNA;EACH,MAAM,EAAE,cAAe;EACvB,OAAO,EAAE,IAAK;EACd,UAAU,EAAE,IAAK;EACjB,KAAK,EAAE,IAAK;CAAG",
+	"names": []
+}
