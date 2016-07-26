@@ -1,7 +1,7 @@
 # Day29
 
 ## SASS (Syntactically Awesome Style Sheets)
-sass는 css3를 보다 멋지게 활용할 수 있도록 도와주는 도구다.
+sass는 css3를 보다 효율적으로 활용할 수 있도록 도와주는 도구다.
 중첩/변수/믹스인/**선택자 상속** 등 주요 기능.
 
 ### 기본 개념
@@ -174,13 +174,59 @@ aside.page-sidebar
 @extend를 사용해
 
 
+
 선택자 상속을 받을 때, 실제로 존재하지 않는 선택자를 선택하면 오류가 발생. 이를 미리 방지하기 위해 `!optional` 사용가능
 !optional
+
+```sass
+/* 선택자 상속 */
+.button
+  display: inline-block
+  padding: $button-gap 1em
+  background: $button-default-color
+  text-align: $button-align
+  &.primary
+    background: $button-primary-color
+    color: lighten($button-primary-color, 30%)
+  &.secondary
+    background: $button-secondary-color
+    color: lighten($button-secondary-color, 30%)
+  &.round
+    border-radius: $button-radius
+  &.rounder
+    border-radius: $button-radius * 2
+  &.roundest
+    border-radius: $button-radius * 4
+
+
+.button-error
+  @extend .buttons !optional
+  background: #f00
+  color:#fff
+  border: 3px solid darken(#f00, 42%)
+```
+
 
 #### % (대체선택자) 
 실체화되지 않은 클래스를 활용한다.
 
+```sass
+%btn
+  $btn-bg: #23CFA7
+  background: $btn-bg
+  color: darken($btn-bg, 40%)
+  border: none
+
+.btn
+  @extend %btn
+
+.page, .wrapper
+  button
+    @extend %btn
+```
+
+
 ### OOCSS + Sass = The Best way to CSS
 
-### @import (호출)
 
+### @import (호출)

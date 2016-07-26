@@ -1,0 +1,66 @@
+// 2016-07-26
+@import common
+
+
+/* css의 comments */
+
+// SingleLine Comment 
+// Sass Comment
+
+// Sass MultiLine Comment
+/* 
+  여러
+  줄
+  라인
+  출력
+  가능? 
+
+// 중첩 규칙/속성
+// Nested Rules/Propertise
+
+// Sass 변수
+// 추후 분리
+$page-width: 1280px
+$columns: 16
+$column-width: $page-width / $columns
+
+.container
+  max-widht: $page-width
+  margin:
+    left: auto
+    right: auto
+  .row
+    &:before,
+    &:after
+      content: ''
+      display: table
+    &:after
+      clear: both
+    .le-ie8 &
+      zoom: 1 //ie8의 핵
+
+
+// 속성선택자를 활용한 col 공통 모듈의 기초적인 구현방식
+// [class*="col-"] 
+//   float: left
+//   padding:
+//     left: 1rem
+//     right: 1rem
+
+
+//대체선택자를 활용한 col 공통 모듈의 효율적 구현방식
+%col-module
+  float: left
+  padding:
+    left: 1rem
+    right: 1rem
+
+.col-1
+  // @extend [class*="col-"] !optional
+  @extend %col-module
+  width: $column-width
+
+.col-2
+  // @extend [class*="col-"] !optional
+  @extend %col-module
+  width: $column-width * 2
