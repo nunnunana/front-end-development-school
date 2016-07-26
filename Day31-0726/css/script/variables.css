@@ -17,4 +17,10 @@
   color: #a8a692;
 }
 
+@media screen and (min-widht: em(750px)) {
+  .page-footer {
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=../../map/script/variables.css.map */

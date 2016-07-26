@@ -25,9 +25,19 @@
     left: auto
     rigth: auto
 
+
+// @function strip-unit($unit)
+//   @return $px/(1px)
+
+// @function em($unit, $base: 16)
+//   $unit: $unit/(1px)
+//   @return $unit/16 * 1em
+
 // Variables
 $container-width: 1260px
 $dark-gray: #3d3c31
+// $bp-md: 720px
+$bp-md: em(750px)
 
 .container
   @extend %align-center-margin
@@ -40,5 +50,8 @@ $dark-gray: #3d3c31
 .page-footer
   @extend %align-center-margin
   width: 100vh
+  @media screen and (min-widht: $bp-md)
+    width: 90%
   background: $dark-gray
   color: lighten($dark-gray, 40%)
+
