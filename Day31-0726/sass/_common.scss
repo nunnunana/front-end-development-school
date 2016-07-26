@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+// 의존 function 모듈
+@import "functions/percent";
+
+// 목록 초기화
 %reset-list-group ul,
 %reset-list-group ol,
 %reset-list,
@@ -9,6 +13,8 @@
   padding-left:  0;
   list-style:    none;
 }
+
+// 이미지 하단 공백 제거
 %rm-img-blank {
   vertical-align: bottom;
 }
@@ -37,18 +43,19 @@
 
 %rwd-media-3-4 {
   @extend %_rwd-media-ratio;
-  padding-bottom: 75%;
+  padding-bottom: getMediaRatio(3,4)
 }
 
 %rwd-media-16-9 {
   @extend %_rwd-media-ratio;
-  padding-bottom: 56.25%;
+  padding-bottom: getMediaRatio(9,16)
 }
 
 %rwd-media-21-9 {
   @extend %_rwd-media-ratio;
-  padding-bottom: 42.85%;
+  padding-bottom: getMediaRatio(9,21)
 }
+
 
 
 %clearfix::after,

@@ -1,0 +1,5 @@
+
+// Sass function
+@function getMediaRatio($target, $content) {
+  @return $targe/$content*100%
+}
