@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* 변수 */
+nav {
+  height: 45; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #00CCF6;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent; }
+
+/*# sourceMappingURL=../maps/sass-script.css.map */

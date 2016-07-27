@@ -1,0 +1,93 @@
+// sass script operation
+
+@import var
+// @import var, mixins
+@import mixins
+
+
+%box-sizing
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+
+
+// 믹스인사용
+header
+  // height: 100px
+  // @extend %box-sizing
+  // @include box-sizing
+  // +box-sizing
+
+main
+  // @extend %box-sizing
+  // @include size(10px)
+  // +box-sizing
+
+footer
+  // @extend %box-sizing
+  // @include box-sizing
+
+@mixin abbr($w1,$w2,$w3,$w4,$w5,$w6,$w7,$w8,$w9)
+  height: $w1+$w2+$w3+$w4+$w5+$w6+$w7+$w8+$w9
+
+
+nav
+  // +size($h: 40hv)
+  +abbr(1,2,3,4,5,6,7,8,9)
+
+.triangle
+  +triangle(bottom, 100px, #00CCF6)
+  
+
+
+
+// /* 웹폰트 */
+// @import url("http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-#{$spoqa-language}.css")
+// @import url("https://fonts.googleapis.com/css?family=#{$google-font-family}:#{$google-font-weight}")
+
+// /* 본문 설계 */
+// body
+//   // font-size: $base-font-size
+//   // font-family: "Spoqa Han Sans Ko"
+//   // line-height: $base-line-height
+
+//   // font: #{$base-font-size}/#{$base-line-height} $spoqa-font-family
+//   font: #{$base-font-size}/#{$base-line-height} $google-font-family
+// $n: hi 
+
+// // @debug
+// @debug red != #ff0
+// @debug type-of($n) //color
+
+// // 문자열 결합
+// li
+//   cursor: $n + -resize //n-resize
+
+// // 보간법
+// $selector: eatdesignlove
+// $pseudo-name: after
+
+// #area .#{$selector}
+//   margin:
+//     left: 20%
+//     right: 20%
+//   &::#{$pseudo-name}
+//     content: 'Dynamic content'
+
+
+// $media-md: "screen and (min-width: 760px)"
+// $media-lg: "screen and (min-width: 1220px)"
+// $media-print: "print and (max-width: 20cm)"
+
+// .#{$selector}
+//   @media #{$media-md}
+//     display: flex
+//     flex-flow: row-reverse wrap 
+//   @media #{$media-lg}
+//     display: block
+//     padding: 1rem
+//   @media #{$media-print}
+//     background: #fff !important
+//     color: #000 !important
+//     // 프린트 환경에서 완전한 검정색으로 출력할 수 있도록.

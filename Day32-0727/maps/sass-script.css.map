@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "../css/sass-script.css",
+	"sources": [
+		"../sass/sass-script.sass",
+		"../sass/_var.sass",
+		"../sass/mixins.scss"
+	],
+	"mappings": ";ACAA,YAAY;ADkCZ,AAAA,GAAG,CAAC;EAHF,MAAM,EAAE,EAAG,GAKwB;;AAErC,AAAA,SAAS,CAAC;EEKR,KAAK,EAAE,CAAE;EACT,MAAM,EAAE,CAAE;EACV,aAAa,EAAE,KAAU,CAAC,KAAK,CAAC,OAAS;EACzC,YAAY,EAAE,IAAY,CAAC,KAAK,CAAC,WAAW;EAC5C,WAAW,EAAG,IAAY,CAAC,KAAK,CAAC,WAAW,GFRJ",
+	"names": []
+}

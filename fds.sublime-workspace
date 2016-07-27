@@ -255,6 +255,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/eatdesignlove/Desktop/practice/sass/index.sass",
+			"settings":
+			{
+				"buffer_size": 11,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -263,7 +271,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 281.0,
+		"height": 354.0,
 		"last_filter": "scss",
 		"selected_items":
 		[
@@ -392,7 +400,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 418.0
+		"width": 461.0
 	},
 	"console":
 	{
@@ -415,11 +423,31 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/css",
-		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass"
+		"/Users/eatdesignlove/Documents/program/FDS/Day09-CSS"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/css/script/variables.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/css/script/media-queries.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/script/media-queries.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/script/variables.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/css/nested-import.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/nested-import.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/scss-review.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/button.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/box.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass-review.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/01-sass-practice.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/_common.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/css/scss-review.css",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/sass-review.sass",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/css/sass-review.css",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/sass-import.sublime-snippet",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/sass/functions/_percent.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/sass/_common.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/_commmon.scss",
+		"/Users/eatdesignlove/Documents/program/FDS/Day31-0726/sass/scss-review.cscc",
 		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/buttons-module.sass",
 		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/style.sass",
 		"/Users/eatdesignlove/Documents/program/FDS/sass-basic/sass/_sass-basic.sass",
@@ -428,7 +456,6 @@
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/readme.md",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/03-css3-mq.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/scss-start.scss",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/01-sass-practice.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/header.sass",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/footer.sass",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/main.sass",
@@ -527,27 +554,7 @@
 		"/Users/eatdesignlove/Documents/program/FDS/README.md",
 		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/reset.css",
 		"/Users/eatdesignlove/Documents/program/FDS/Day11/css/common.css",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/index.html",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/css/style.css",
-		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/untitled.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/css/selectors.css",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/03-css-file-format-type-practice.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day04/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day02/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/01-form.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day07/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/01-css-selectors.html",
-		"/Users/eatdesignlove/Desktop/FDS/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day08/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day06/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day05/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day03/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day01/README.md",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/02-css-file-format-type.html",
-		"/Users/eatdesignlove/Desktop/index.html",
-		"/Users/eatdesignlove/Desktop/FDS/Day09/css/file-format-icons.css",
-		"/Users/eatdesignlove/Desktop/FDS/css/style.css"
+		"/Users/eatdesignlove/Documents/program/cheetah_study/jeongsic/expedia/index.html"
 	],
 	"find":
 	{
@@ -565,6 +572,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"--",
+			"[",
+			"</div>",
+			".\n",
+			"getMediaRatio",
+			".",
+			"[class*=\"col-\"]",
+			"  float: left\n",
+			"$page-width",
+			"nt",
+			"   ",
+			"26",
 			"@\n",
 			"주석",
 			" * 2)",
@@ -680,19 +699,7 @@
 			"musicaian",
 			"<span class=\"music-title\">노래 제목</span>",
 			"<span class=\"music-title\"></span>",
-			"<a href=\"#\"><img src=\"#\" alt=\"앨범이미지\"></a>\n										<button class=\"play\">재생</button>",
-			"											<span class=\"music-title\"></span>\n",
-			"<a href=\"#\">",
-			"										<img src=\"#\" alt=\"\">\n",
-			"<figcaption>",
-			"</span>",
-			"<li>",
-			"\"\"",
-			">\n",
-			"span",
-			"발톱",
-			"발가락털",
-			"border-"
+			"<a href=\"#\"><img src=\"#\" alt=\"앨범이미지\"></a>\n										<button class=\"play\">재생</button>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -714,18 +721,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
+				{
+					"buffer": 0,
+					"file": "/Users/eatdesignlove/Desktop/practice/sass/index.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -736,7 +764,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -757,30 +785,17 @@
 				0,
 				2,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.353088556851,
+			0.440113166892,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.462558330783,
 			1.0
 		]
 	},
@@ -801,7 +816,7 @@
 	"project": "fds.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -851,7 +866,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 249.0,
+	"side_bar_width": 241.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

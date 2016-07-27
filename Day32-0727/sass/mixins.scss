@@ -1,0 +1,87 @@
+// 믹스인(mixin)정의
+// 코드를 섞다
+
+// 믹스인 정의
+// @mixin 믹스인이름($매개변수) {
+//  섞고자 하는 코드
+//  섞고자 하는 코드
+//  섞고자 하는 코드
+// }
+
+@mixin box-sizing {
+  -webkit-webkit-box-sizing: border-box;
+  -moz-webkit-box-sizing: border-box;
+  -ms-webkit-box-sizing: border-box;
+  -o-webkit-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+}
+
+// @mixin size($width: null, $height: null) {
+//   width: $width;
+//   height: $height;
+// }
+
+// =size($width: null, $height: null) {
+//   width: $width;
+//   height: $height;
+// }
+
+// @mixin size($w: null, $h: null) {
+//   width: $w;
+//   height: $h
+// }
+
+// @mixin transition($props...) {
+//   -webkit-transition: $props;
+//   -o-transition:      $props;
+//   -moz-transition:    $props;
+//   -o-transition:      $props;
+//   transition:         $props;
+// }
+
+@mixin triangle($type, $height, $color){
+  width: 0;
+  height: 0;
+
+
+  @if $type == "top" {
+    border:
+      bottom: #{$height} solid #{$color};
+      right: #{$height/2} solid transparent;
+      left:  #{$hight/2} solid transparent;
+  }
+  @else if $type == "right" {
+    border:
+      left: #{$height} solid #{$color};
+      top: #{$height/2} solid transparent;
+      bottom:  #{$hight/2} solid transparent;      
+  }
+  @else if $type == "left" {
+    border:
+      right: #{$height} solid #{$color};
+      top: #{$height/2} solid transparent;
+      bottom:  #{$hight/2} solid transparent;    
+  }
+  @else if $type == "bottom" {
+    border:
+      top: #{$height} solid #{$color};
+      left: #{$height/2} solid transparent;
+      right:  #{$hight/2} solid transparent;    
+  }
+}
+
+
+
+
+// @mixin abbr(
+//   $w1,
+//   $w2,
+//   $w3,
+//   $w4,
+//   $w5,
+//   $w6,
+//   $w7,
+//   $w8,
+//   $w9) {
+//   height: $w1+$w2+$w3+$w4+$w5+$w6+$w7+$w8+$w9;
+// }

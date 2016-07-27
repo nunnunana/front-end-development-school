@@ -1,0 +1,25 @@
+// SCSS 한 줄 주석
+/* SCSS 여러 줄 주석 */
+
+/*
+  SCSS 주석을
+  Scss 주석처럼
+  사용이 가능
+  한가
+*/
+
+html {
+  overflow: scroll;
+}
+
+$space: 22px;
+$snow-white: #efecca;
+
+@import "button";
+
+.buldack {
+  // $space: null;
+  width: 55%;
+  @import "button";
+
+}
