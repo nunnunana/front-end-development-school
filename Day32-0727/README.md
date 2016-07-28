@@ -252,10 +252,10 @@ index($list, ) //
 
 
 ## Todo
-- [ ] Sass Keynote 요청
+- [X] Sass Keynote 요청
+- [X] 시험문제 10문항
 - [ ] Sass 사용해보며 사용 중 시행착오, 주석, 로그 
-- [ ] 시험문제 10문항
-- [ ] 일요일 자정까지 Indulge/Pizza
+- [ ] 일요일 자정까지 Pizza Site 완성
 - [ ] Compass, susy 열어보기
 
 >변수는 변수에 담긴 것이 곧 타입이다.
