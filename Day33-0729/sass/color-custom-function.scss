@@ -1,0 +1,22 @@
+@function _hsla($hex, $alpha) {
+  // 실행 : _hsla(#393909, 0.4)
+  // 결과 : hsla(hue, saturation, lightness, alpha)
+  
+  $hue: hue($hex);
+  $hue: $hue/($hue*0+1);
+  $saturation: saturation($hex);
+  $lightness: lightness($hex);
+  
+  $result: "hsla(#{$hue}, #{$saturation}, #{$lightness}, #{$alpha})";
+  @return unqoute($result)
+}
+
+@function px2rem($px) {
+  // $px: 20px;
+  // <html> 요소의 기본 글자 크기 16px
+  // 20/16
+
+
+  @retun ($px/$base-font-size) * 1rem;
+}
+

@@ -1,0 +1,12 @@
+@media \0screen {
+  body {
+    margin: 0 auto;
+  }
+  .content-lock {
+    padding-top: 20%;
+  }
+}
+
+* + html .demo {
+  color: #fff;
+}

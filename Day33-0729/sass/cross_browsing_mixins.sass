@@ -1,0 +1,32 @@
+// --------------------
+// 크로스 브라우징 믹스인 
+// --------------------
+// 
+
+// IE 7 핵 믹스인
+=ie7hack($selector)
+  *+html #{$selector}
+    @content
+
+
+// IE 8 미디어쿼리 핵 믹스인
+// @media \0screen {}
+
+=ie8hack
+  @media \0screen
+    @content
+
+// SCSS 문법
+@mixin ie8 
+  @media \0screen
+    @content;
+
++ie8hack
+  body
+    margin: 0 auto
+  .content-lock
+    padding:
+      top: 20%
+
++ie7hack(".demo")
+  color: #fff
