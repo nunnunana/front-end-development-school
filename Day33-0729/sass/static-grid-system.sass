@@ -1,0 +1,45 @@
+// --------------------
+// Static Grid System 
+// --------------------
+
+// 그리드 변수
+$page-width         : 960px         // 1.그리드 컨테이너
+$column-count       : 12            // 2.컬럼의 개수
+$gutter-direction   : split         // 3.거터 타입 none left rigth split
+$gutter             : 20px       
+$base-font-size     : 16px
+$base-leading-ratio : $base-font-size * 1.5
+
+$column             : $page-width / $column-count
+$unit               : $column - $gutter
+$i                  : 1
+
+@function unit-width($n)
+  @return $unit * $n + $gutter * ($n - 1)
+
+
+.grid
+  .container
+    width: $page-width
+    margin: 0 auto
+
+  [class*="unit-"]
+    float: left
+    margin-right:$gutter/2
+    margin-left:$gutter/2
+
+  @while $i <= $column-count
+    .unit-#{$i}
+      width: unit-width($i)
+    $i: $i + 1
+
+
+
+// 컬럼 그리드 함수 만들기!!  
+// @function draw-column-pattern($hex, $alpha: 0.3, $location)
+//   @return linear-gradient(90deg, rgba($hex, $alpha) $location)
+
+
+
+
+

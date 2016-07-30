@@ -104,3 +104,38 @@
 >- complement($color)   //보완색(색상만 보색으로 바꾸어 준다.)
 - invert($invert)       //반전색(명도까지 밝게 바꾸어준다.)
 
+
+##### @if
+```sass
+@if 조건 {
+  // 조건이 참인 경우, 코드 블록문이 처리 (1회)
+}
+```
+
+##### **if()함수**
+if함수를 이용하면 자바스크립트 삼항식과 같은 형태로 변수를 작성할 수 있다.
+
+```
+  $bg-color: if($lightness, darken($color, $amount), lighten($color, $amount))
+```
+
+##### **Loops**
+- @while
+- @for
+- @each
+
+
+```
+@while 조건 {
+  // 조건이 참인 경우, 코드 블록문이 처리 (반복)
+  
+}
+```
+
+@for문
+```
+@for $
+```
+
+## 참고자료
+>[yamoo9's Sublime-text-User-snippets](https://github.com/yamoo9/Sublime-text-User-Snippets)

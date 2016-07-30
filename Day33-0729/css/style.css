@@ -1,3 +1,107 @@
-body {
-  color: unqoute("hsla(49.53846deg, 91.5493%, 58.23529%, 0.3)");
+.grid {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid .col-1, .grid .col-2, .grid .col-3, .grid .col-4, .grid .col-5, .grid .col-6, .grid .col-7, .grid .col-8, .grid .col-9, .grid .col-10, .grid .col-11, .grid .col-12 {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.grid .col-1 {
+  width: 60px;
+}
+
+.grid .col-2 {
+  width: 140px;
+}
+
+.grid .col-3 {
+  width: 220px;
+}
+
+.grid .col-4 {
+  width: 300px;
+}
+
+.grid .col-5 {
+  width: 380px;
+}
+
+.grid .col-6 {
+  width: 460px;
+}
+
+.grid .col-7 {
+  width: 540px;
+}
+
+.grid .col-8 {
+  width: 620px;
+}
+
+.grid .col-9 {
+  width: 700px;
+}
+
+.grid .col-10 {
+  width: 780px;
+}
+
+.grid .col-11 {
+  width: 860px;
+}
+
+.grid .col-12 {
+  width: 940px;
+}
+
+.icon-play {
+  background: url("../images/icon-icon.png");
+}
+
+.icon-pause {
+  background: url("../images/icon-icon.png");
+}
+
+.icon-stop {
+  background: url("../images/icon-icon.png");
+}
+
+.icon-prev {
+  background: url("../images/icon-icon.png");
+}
+
+.icon-next {
+  background: url("../images/icon-icon.png");
+}
+
+.icon-forward {
+  background: url("../images/icon-icon.png");
+}
+
+.icon-backward {
+  background: url("../images/icon-icon.png");
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
 }

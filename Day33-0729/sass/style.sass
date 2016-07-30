@@ -1,5 +1,104 @@
 @import color-custom-function
 
-body
-  color: _hsla(#F6D433, 0.3)
-   
+// --------------------
+// @while문 
+// --------------------
+// @if문과 유사, 반복 수행
+
+$i: 1
+$total: 12
+$unit-width: 60px
+$gutter: 20px
+$gutter-direction: inside
+$fluid: true //유동 그리드
+$page-width: $total * $unit-width + $gutter *( $total - 1 )
+
+
+// target / context * 100
+// @if fluid
+// percentage(width/context)
+
+%cf
+  content: ''
+  display: block
+  clear: both
+
+%col
+  $gutter-direction: split !default
+  float: left
+  @if $gutter-direction == split
+    margin:
+      left:   $gutter/2
+      right:  $gutter/2
+  @if $gutter-direction == before
+    margin-left: $gutter
+  @if $gutter-direction == after
+    margin-right: $gutter
+  @if $gutter-direction == inside
+    padding:
+      left: $gutter/2
+      right: $gutter/2
+
+@function width($n)
+  @return $unit-width * $n + $gutter * ($n - 1)
+
+@function width($n)
+  $w: $unit-width * $n + $gutter * ($n - 1)
+  @return if($fluid, $w, percentage()) 
+
+
+@while $i <= $total
+  .grid 
+    @extend %cf  
+    & .col-#{$i}
+      @extend %col
+      width: width($i)
+  $i: $i + 1
+
+
+// @extend를 사용해서 깔끔한 코드 구현 탐구할 필요가 있음
+// page-width에 거꾸로 접근하는 방법을 택한 이유는 컬럼이 정수로 떨어지도록 처리하기 위함임.
+
+
+// --------------------
+// @for문 
+// --------------------
+// @for (iteration, from ~ through ~)
+
+// 자바스크립트는 함수만이 지역을 구분하는 공간, 하지만 Sass는 @for, @while 등도 지역을 구분한다.
+
+// Sass의 반복문은 반드시 1씩 증가한다. 때문에 증가값을 조정하고 싶다면 @while문을 사용할 필요가 있다.
+
+
+// --------------------
+// @each문 
+// --------------------
+// @each(iteration, in ~ [list, map])
+
+$icons: play pause stop prev next forward backward
+// @debug length($icons)
+
+@each $icon in $icons
+  .icon-#{$icon}
+    background: url("../images/icon-#{icon}.png")
+
+
+// 구조화의 중요성 (코딩 스타일, 네이밍 규칙!)
+// sprite image를 이용할 때 map을 사용할 수 있다!
+// map를 활용하여 타이포그래피 모듈을 구현하는 걸 생각해볼 수 도 있겠군. 바로 아래와 같이.
+
+$headings: (h1: 3rem, h2: 2rem, h3: 1.5rem, h4: 1.25rem, h5: 1.1rem)
+
+@each $heading, $info in $headings
+  @debug $heading
+  $h: nth($heading, 1)
+  $v: nth($heading, 2)
+
+  #{$h}
+    font-size: $v
+    line-height: 
+
+// --------------------
+// 복습 
+// --------------------
+// @while, @for, @each
