@@ -1,0 +1,21 @@
+// --------------------
+// Static-Grid Module 
+// --------------------
+// 
+
+@function col-width($n)
+  @return $unit * $n + $gutter * ($n - 1)
+
+@function percentage($target, $context)
+  @return $target / $context * 100
+
+
+
+.grid
+  &::after
+    @extend %cf
+  @for $i from 1 through $column-count
+    .unit-#{$i}-#{$column-count}
+      @extend %col
+      width: col-width($i)
+

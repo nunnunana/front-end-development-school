@@ -1,0 +1,23 @@
+// --------------------
+// Grid System Settings 
+// --------------------
+// 그리드 시스템을 제어하는 변수들입니다.
+
+$column:              80px
+$column-count:        12
+$gutter-type:         split
+$gutter:              20px
+
+$base-font-size:      16px
+$base-leading-ratio:  1.5
+
+
+// --------------------
+// variables for Grid
+// --------------------
+// 그리드 시스템에서 사용되는 변수들입니다.
+
+$page-width:    $column * $column-count
+$unit:          $column - $gutter
+$base-line-heigth: $base-font-size * $base-leading-ratio
+@debug $base-line-heigth

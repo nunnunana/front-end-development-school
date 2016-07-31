@@ -1,0 +1,78 @@
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.grid .unit-1-12, .grid .unit-2-12, .grid .unit-3-12, .grid .unit-4-12, .grid .unit-5-12, .grid .unit-6-12, .grid .unit-7-12, .grid .unit-8-12, .grid .unit-9-12, .grid .unit-10-12, .grid .unit-11-12, .grid .unit-12-12 {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+body::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent 95%, #A69FA7 100%);
+  background-size: 1px 24px;
+}
+
+.grid .unit-1-12 {
+  width: 60px;
+}
+
+.grid .unit-2-12 {
+  width: 140px;
+}
+
+.grid .unit-3-12 {
+  width: 220px;
+}
+
+.grid .unit-4-12 {
+  width: 300px;
+}
+
+.grid .unit-5-12 {
+  width: 380px;
+}
+
+.grid .unit-6-12 {
+  width: 460px;
+}
+
+.grid .unit-7-12 {
+  width: 540px;
+}
+
+.grid .unit-8-12 {
+  width: 620px;
+}
+
+.grid .unit-9-12 {
+  width: 700px;
+}
+
+.grid .unit-10-12 {
+  width: 780px;
+}
+
+.grid .unit-11-12 {
+  width: 860px;
+}
+
+.grid .unit-12-12 {
+  width: 940px;
+}
+
+/*# sourceMappingURL=../maps/style.css.map */
