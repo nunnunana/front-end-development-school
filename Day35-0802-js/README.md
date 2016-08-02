@@ -127,9 +127,9 @@ requestAnimationFrame();
 clearRequestAnimationFrame();
 ```
 
-[DOM Element의 Event Object](http://www.w3schools.com/jsref/dom_obj_event.asp)
-[requestAnimationFrame Usecase](https://css-tricks.com/using-requestanimationframe/)
-[Can I use `requestAnimationFrame`](http://caniuse.com/#search=requestAnimationFrame)
+- [DOM Element의 Event Object](http://www.w3schools.com/jsref/dom_obj_event.asp)
+- [requestAnimationFrame Usecase](https://css-tricks.com/using-requestanimationframe/)
+- [Can I use `requestAnimationFrame`](http://caniuse.com/#search=requestAnimationFrame)
 
 ### 브라우저 객체 모델 BOM
 
@@ -183,10 +183,63 @@ clearRequestAnimationFrame();
 - [Repainting Reflow 관련 2](https://www.google.co.kr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwizrrL1_aHOAhWJnpQKHXXsCEcQFggwMAE&url=https%3A%2F%2Flists.w3.org%2FArchives%2FPublic%2Fpublic-html-ig-ko%2F2011Sep%2Fatt-0031%2FReflow_____________________________Tip.pdf&usg=AFQjCNHelLgcXkYj0itupgpIYX-tl9sHVw&sig2=MoEu18Q4iAX2wSqJdiELsA&cad=rjt)
 - [브라우저 동작의 이해 - 리플로우와 리페인트, 그리고 최적화](http://www.mimul.com/pebble/default/2013/07/07/1373183724195.html)
 - [use strict](https://msdn.microsoft.com/ko-kr/library/br230269(v=vs.94).aspx)
+- [use strict2](http://blog.aliencube.org/ko/2014/01/02/reasons-behind-using-strict-mode-while-coding-javascript/)
+- [use strict3](http://hmmim.tistory.com/5)
 
 ## To Do
-- [ ] @function, @mixin 활용해서 font함수 만들기(복습)
-- [ ] 읽기 자료 읽기
-- [ ] 쿠키와 local-storage 차이점
+- [ ] @function, @mixin 활용해서 Font함수 만들기(복습)
+- [X] 읽기 자료 읽기
+- [X] 쿠키와 local-storage 차이점
 
+### Web Storage
+HTML5부터 Web Storage기술을 사용할 수 있는데, Web Storage에는 Local Storage와 Session Storage 두 가지가 존재한다.
 
+Local Storage는 기존의 쿠키보다 많은 양의 데이터를 저장할 수 있는데, 이때 서버와의 통신은 하지 않는다.
+
+Local Storage는 데이터의 유효기간이 없고, 
+Session Storage는 브라우저를 닫을 때 데이터가 초기화된다.
+
+#### Cookie
+
+##### 단점
+- 쿠키는 매번 서버로 전송된다.
+- 개수(20개), 용량 제한(4kb)
+
+```javascript
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+```
+
+#### Local Storage
+로컬스토리지는 별도의 함수선언 없이 localStorage.항목이름 으로 저장, 불러오기가 모두 가능하다.
+
+##### 장점
+- 구조화된 객체를 저장할 수 있다.
+- 용량에 제한이 없다.
+- 영구 데이터 저장이 가능하다.
+
+```javascript
+//cde라는 항목에 345라는 값을 저장
+localStorage.cde = "345"
+
+//cde라는 항목에 저장된 값 불러오기
+localStorage.cde
+```
+
+[WebStorage 참고](http://nubiz.tistory.com/540)
+[WebStorage 관련](http://m.mkexdev.net/59)
