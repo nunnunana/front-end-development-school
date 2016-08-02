@@ -1,0 +1,19 @@
+
+
+// @function font($base-font-size, $base-line-height, $base-font-family)
+  
+//   $result: #{$base-font-size}/#{$base-line-height} #{$base-font-family}
+//   @return $result
+
+
+@function _font-shorthand($fz, $lh)
+  @return #{$fz}/#{$lh}
+
+@mixin font($fz: null, $lh: 1.5, $ff: null, $etc: null)
+  @if $fz == null or $ff == null
+    @error "필수 속성값 font-size, font-family이 입력되지 않았습니다."
+  @else
+    font-family: $etc _font-shorthand($fz, $lh) $ff
+
+body
+  @include font(42, 1.5, (verdana, sans-serif), 900)
