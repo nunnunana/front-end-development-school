@@ -4,13 +4,13 @@
 
 ### 역사
 
-- 1. 넷스케이프는 비 전문가도 사용할 수 있는 **자바와 비슷하고**, 웹 브라우저에서 해석 가능한 **가벼운 언어**를 원했다. 넷스케이프의 엔터프라이즈 서버에서도 사용할 수 있도록 서버사이드 자바스크립트도 고려되어 만들어졌다.
+1. 넷스케이프는 비 전문가도 사용할 수 있는 **자바와 비슷하고**, 웹 브라우저에서 해석 가능한 **가벼운 언어**를 원했다. 넷스케이프의 엔터프라이즈 서버에서도 사용할 수 있도록 서버사이드 자바스크립트도 고려되어 만들어졌다.
 
-- 2. 개발 초기 코드네임은 **모카**. 이렇게 만들어진 자바스크립트는 프로토타입을 기반으로 만들어진 언어. 객체지향을 이루는 방법이 자바와는 다름.
+2. 개발 초기 코드네임은 **모카**. 이렇게 만들어진 자바스크립트는 프로토타입을 기반으로 만들어진 언어. 객체지향을 이루는 방법이 자바와는 다름.
 
-- 3. 공식이름은 라이브스크립트, 넷스케이프와 선마이크로 시스템즈의 제휴 속에서 최종적으로 **자바스크립트**라는 이름을 갖게 됨
+3. 공식이름은 라이브스크립트, 넷스케이프와 선마이크로 시스템즈의 제휴 속에서 최종적으로 **자바스크립트**라는 이름을 갖게 됨
 
-- 4. C, C#의 기능이 점점 ES에 빠르게 도입되고 있는 추세이고, 그러한 기능들을 **CoffeeScript, TypeScript와 같은 Transfiler**를 통해 더 많은 기능을 사용할 수 있다.
+4. C, C#의 기능이 점점 ES에 빠르게 도입되고 있는 추세이고, 그러한 기능들을 **CoffeeScript, TypeScript와 같은 Transfiler**를 통해 더 많은 기능을 사용할 수 있다.
 
 - ECMA Script (JavaScript, JScript, Action Script)
 
@@ -35,26 +35,34 @@ if (dp > 1) {
 
 #### 자바스크립트 기초
 
-자바스크립트는 Dot Syntax.
+- 자바스크립트는 Dot Syntax.
 
-**반드시 세미콜론**을 붙인다. 왜냐하면 세미콜론을 붙이지 않았을 때, 압축과정에서 문제가 발생할 수 있기 때문.
+- **반드시 세미콜론**을 붙인다. 왜냐하면 세미콜론을 붙이지 않았을 때, 압축과정에서 문제가 발생할 수 있기 때문.
+
+- 변수 선언만 하는 경우. 즉, 값이 대입되지 않은 경우
+- undefined 값이 기본으로 할당되어 있다.
+- = 연산자는 할당(대입)연산자라고 한다.
 
 ```js
-devicePixelRatio
-innerHeight
-innerWidth
-pageXOffset
-pageYOffset
+devicePixelRatio  // 디스플레이 밀도 비율
+innerHeight       // 브라우저에서 보여지는 화면의 높이
+innerWidth        // 브라우저에서 보여지는 화면의 너비
+outerHeight       // 브라우저 전체의 높이
+outerWidht        // 브라우저 전체의 너비
+pageXOffset       // 문서가 세로로 스크롤된 픽셀값(IE9) 
+pageYOffset       // 문서가 가로로 스크롤된 픽셀값(IE9) 
+scrollY           // 문서가 세로로 스크롤된 픽셀값
+scrollX           // 문서가 가로로 스크롤된 픽셀값
 
-console
-alert()
-confirm()
-prompt()
+console           // window 객체 내에 위치한 웹브라우저의 디버깅 콘솔에 접근할 수 있는 객체
+alert()           // ok버튼을 갖는 대화상자를 띄운다.
+confirm()         // ok, cancle 버튼을 갖는 대화상자를 띄운다.
+prompt()          // 사용자가 텍스트를 입력할 수 있도록 안내하는 메시지가 적힌 대화 상자를 띄운다.
 
-resizeTo()
-resizeBy()
-scrollTo()
-ScrollBy()
+resizeTo()        // window 크기를 조정
+resizeBy()        // window 크기를 상대적으로 조정
+scrollTo()        // 특정 위치로 이동 
+ScrollBy()        // 특정 위치로 상대적으로 이동
 ```
 
 #### setTimeout() & setInterval()
@@ -99,46 +107,65 @@ window.resizeBy(200,200)
 
 사용자가 직접 함수를 실행할 때에는 실행 연산자가 필요하다.
 ```
-init());
+init();
 ```
 
 이벤트가 함수를 처리할 때는 실행 연산자를 붙이지 않아야 한다.
+
 ```
 window.onload = init;
 ```
 
-#### DOM API 
+#### DOM Element의 Event Object 
 ```
-onload;
-onclick;
+onload();
+onclick();
 setInterval();
 clearInterval();
 setTimeout();
-requestAnimationFrame(); //
+requestAnimationFrame(); 
+clearRequestAnimationFrame();
 ```
 
+[DOM Element의 Event Object](http://www.w3schools.com/jsref/dom_obj_event.asp)
+[requestAnimationFrame Usecase](https://css-tricks.com/using-requestanimationframe/)
 [Can I use `requestAnimationFrame`](http://caniuse.com/#search=requestAnimationFrame)
 
 ### 브라우저 객체 모델 BOM
 
 ##### Window
+- console
 
-##### Location (주소창)
+##### - Location (주소창)
+- href          //주소값
+- hash          //href에서 #가 붙은 값
+- host          //host
+- pathname      //host 뒤에 붙는 path값
+- protocol      //문서의 프로토
+- reload        //페이지 새로고침
+- replace       //페이지 이동
 
-##### History
+##### - History
+- go()
+- forward()
+- back()
 
-##### Navigator (브라우저 정보)
+##### - Navigator (브라우저 정보)
+- userAgent
+- vendor
 
-##### Screen (화면)
-orientation
+##### - Screen (화면)
+- orientation
+- availHeight
+- availWdith
+- availTop
+- width
+- height
+- colorDepth
+- pixelDepth
 
-
-
-
-
-### 코어 EcmaScript (Server)
-
-
+#### - Document
+- **activeElement** : 접근성 관점에서 매우 중요. 현재 활성화된 element가 무엇인지 알 수 있다.
 
 
 ## 참고자료
@@ -157,7 +184,9 @@ orientation
 - [브라우저 동작의 이해 - 리플로우와 리페인트, 그리고 최적화](http://www.mimul.com/pebble/default/2013/07/07/1373183724195.html)
 - [use strict](https://msdn.microsoft.com/ko-kr/library/br230269(v=vs.94).aspx)
 
-
 ## To Do
 - [ ] @function, @mixin 활용해서 font함수 만들기(복습)
 - [ ] 읽기 자료 읽기
+- [ ] 쿠키와 local-storage 차이점
+
+

@@ -36,3 +36,11 @@
 
 <!-- $0 -->
 <!-- 자바스크립트는 '200px'가 문자형 데이터 반드시 따옴표 -->
+
+var standard_mode = document.compatMode == 'CSS1Compat';
+var html = document.documentElement;
+if (standard_mode) {
+    html.setAttribute('class','standard')
+} else {
+  html.setAttribute('class', 'no-standard')
+}

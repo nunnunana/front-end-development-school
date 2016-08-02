@@ -116,8 +116,7 @@ function countDown(){
   count = count - 1;
   console.log(count)
 }
-
-setInterval(countDown, 1000)
+콜setInterval(countDown, 1000)
 
 // 컴퓨터에게 일을 반복적으로 수행하도록 시켰으
 
