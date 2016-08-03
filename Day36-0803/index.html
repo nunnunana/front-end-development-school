@@ -3,9 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>DOM Script Basic</title>
+  <style>
+    .btn-group {
+      width: 300px;
+      margin: 100px auto;
+      text-align: center;
+    }
+    .btn-trigger {
+      border: 1px solid #dedede;
+      padding: 0.5em 2em;
+      margin-bottom: 1.5em;
+      background: #fff;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <p title="Time is gold">오늘 잠시 졸은 시간은 더 이상 오지 않는다.</p>
+<!--   <div class="btn-group">
+    <button class="btn-trigger" type="button">빨간휴지줄까</button>
+    <button class="btn-trigger" type="button">파란휴지줄까</button>
+  </div> -->
+  <div id="btn-group" class="btn-group" role="group">
+    <button class="btn-trigger" type="button">#683CE2</button>
+    <button class="btn-trigger" type="button">#48ABE2</button>
+    <button class="btn-trigger" type="button">#E27C8A</button>
+    <button class="btn-trigger" type="button">#BAE243</button>
+    <button class="btn-trigger" type="button">#0CC998</button>
+  </div>
+  <!-- <p title="Time is gold">오늘 잠시 졸은 시간은 더 이상 오지 않는다.</p>
   <p id="notification">보충은 다음 주부터 다시 시작합니다.</p>
   <div class="note-01">
     <h2 id="heading-01">headline</h2>
@@ -46,7 +71,7 @@
         <a href="">item-03</a>
       </li>
     </ul>
-  </div>
+  </div> -->
   <script>
     // 문서(document)에서 단락 요소에 접근한다.
     // 유사배열(Like Array): NodeList or HTMLCollection.
@@ -118,11 +143,38 @@
     // --------------------
     // <body> 요소에 사용자가 마우스를 올리면 배경 색이 붉은 색으로 변경된다.
     // <body> 요소에 사용자가 마우스를 내리면 배경 색이 붉은 색으로 변경된다.
-    // 캐시
+    // 캐시(cache)
     var body = tag('body')[0];
     var body = document.body; //DOM Legacy (Lv. 0), HTML DOM
+    var buttons = tag('button')
+    var setRedBgBtn = buttons[0]
+    var setBlueBgBtn = buttons[1]
 
+    setRedBgBtn.onclick = function() {
+      body.style.backgroundColor = '#E22D1D';
+      console.log('빨간휴지....ㅎㅎ');
+    }
 
+    setBlueBgBtn.onclick = function() {
+      body.style.backgroundColor = '#3574E2';
+      console.log('파란휴지....ㅎㅎ');
+    }
+    // body.onmouseenter = function() {
+    //   // 어떤 일을 수행 (할 일)
+    //   console.log('mouse enter on body');
+    //   body.style.backgroundColor = '#E24631';
+    //   // body.style.borderTopStyle = red
+    // };
+    // body.onmouseleave = function() {
+    //   // 어떤 일을 수행 (할 일)
+    //   console.log('mouse leave on body');
+    //   body.style.backgroundColor = '';
+    //   // body.style.borderTopStyle = red
+    // };
+  
+    var btn_group = document.getElementById('btn-group');
+    console.log(btn_group)
   </script>
+
 </body>
 </html>

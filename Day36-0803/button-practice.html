@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Buttons Practice</title>
+  <link rel="stylesheet" href="css/button-practice.css">
+</head>
+<body>
+  <div id="button-group" role="group">
+    <button type="button">#00BCD4</button>
+    <button type="button">#FF5252</button>
+    <button type="button">#212121</button>
+    <button type="button">#FFC107</button>
+    <button type="button">#673AB7</button>
+  </div>
+  <script>
+
+    function id(name) {
+      return document.getElementById(name);
+    };
+    function tags(name) {
+      return document.getElementsByTagName(name);
+    };
+
+    // 변수에 함수를 연결. 이벤트에 따라 실행되는 함수.
+    var changeBgColor = function() {
+      body.style.backgroundColor = this.firstChild.nodeValue;
+    }
+
+    var body = document.body;
+    var btn_group = id("button-group");
+    var btns = tags("button");
+    var btn_1 = btns[0];
+    var btn_2 = btns[1];
+    var btn_3 = btns[2];
+    var btn_4 = btns[3];
+    var btn_5 = btns[4];
+
+    btn_1.onfocus = changeBgColor;
+    btn_2.onfocus = changeBgColor;
+    btn_3.onfocus = changeBgColor;
+    btn_4.onfocus = changeBgColor;
+    btn_5.onfocus = changeBgColor;
+
+  </script>
+</body>
+</html>

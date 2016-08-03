@@ -1,0 +1,32 @@
+// --------------------
+// Button Practice
+// --------------------
+
+$material-color-map: (1:#00BCD4, 2:#FF5252, 3:#212121, 4:#FFC107, 5:#673AB7)
+
+%btn
+  cursor: pointer
+  flex: 1
+  border: none
+  padding: 2em
+  color: #fff
+  text-shadow: 0 0 3px rgba(0,0,0,0.36)
+
+#button-group
+  display: flex
+  flex-flow: wrap
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  button
+    @extend %btn
+    &:focus
+      outline: none
+    @each $i, $color in $material-color-map
+      &:nth-child(#{$i})
+        background: $color
+      &:nth-child(#{$i}):hover
+        background: darken($color,10)
+      &:nth-child(#{$i}):focus
+        background: darken($color,10)

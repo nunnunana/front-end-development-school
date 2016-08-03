@@ -1,0 +1,81 @@
+#button-group button {
+  cursor: pointer;
+  flex: 1;
+  border: none;
+  padding: 2em;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.36);
+}
+
+#button-group {
+  display: flex;
+  flex-flow: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#button-group button:focus {
+  outline: none;
+}
+
+#button-group button:nth-child(1) {
+  background: #00BCD4;
+}
+
+#button-group button:nth-child(1):hover {
+  background: #008fa1;
+}
+
+#button-group button:nth-child(1):focus {
+  background: #008fa1;
+}
+
+#button-group button:nth-child(2) {
+  background: #FF5252;
+}
+
+#button-group button:nth-child(2):hover {
+  background: #ff1f1f;
+}
+
+#button-group button:nth-child(2):focus {
+  background: #ff1f1f;
+}
+
+#button-group button:nth-child(3) {
+  background: #212121;
+}
+
+#button-group button:nth-child(3):hover {
+  background: #080808;
+}
+
+#button-group button:nth-child(3):focus {
+  background: #080808;
+}
+
+#button-group button:nth-child(4) {
+  background: #FFC107;
+}
+
+#button-group button:nth-child(4):hover {
+  background: #d39e00;
+}
+
+#button-group button:nth-child(4):focus {
+  background: #d39e00;
+}
+
+#button-group button:nth-child(5) {
+  background: #673AB7;
+}
+
+#button-group button:nth-child(5):hover {
+  background: #512e90;
+}
+
+#button-group button:nth-child(5):focus {
+  background: #512e90;
+}
