@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Script with JavaScript</title>
+</head>
+<body>
+  
+  <p>
+    <strong>Hello</strong>How are you doing?
+  </p>
+
+  <form name="primary_form" action="#" method="GET">
+    <p>
+      <label for="c_id">ID</label>
+      <input type="text" name="c_id" id="c_id" placeholde="eatdesignlove">
+    </p>
+    <button type="submit">전송</button>
+  </form>
+  <form name="secondary-form" action="#" method="GET">
+    <p>
+      <label for="c_mail">Email</label>
+      <input type="email" name="c_mail" id="c_mail" placeholde="eatdesignlove@gmail.com">
+    </p>
+  </form>
+  <script>
+    // var forms = document.forms;
+    // console.log(forms); //[form, form]
+
+    // var root_element = document.documentElement;
+    // console.log(root_element);
+
+    // var inputs = document.getElementsByTagName('input');
+    // var buttons = document.getElementsByTagName('button');
+    // console.log(inputs)
+    // console.log(buttons)
+
+    // // ID 속성을 통한 접근 방법(interface selecting)
+    // var c_id   =  document.getElementById('c_id')
+    // var c_mail =  document.getElementById('c_mail')
+    // console.log('c_id', c_id);
+    // console.log('c_mail:', c_mail);
+
+
+    // --------------------
+    
+    var first_para = document.getElementsByTagName('p').item(0);
+    var first_para_nodes = first_para.childNodes;
+    console.log(first_para_nodes[0])
+    console.log(first_para_nodes[0].nodeType === document.ELEMENT_NODE)
+    console.log(first_para_nodes[1].nodeType === document.ELEMENT_NODE)
+    console.log(first_para_nodes[2].nodeType === document.TEXT_NODE)
+  </script>
+</body>
+</html>

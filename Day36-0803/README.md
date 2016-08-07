@@ -70,6 +70,5 @@ Javascript는 오른쪽부터 연산한다.
 ------
 
 ## Todo
-- [ ] button-group 만들어서, 배경색상 변화 주기
-- [ ] 자바스크립트 기본 개념 잡기
-- [ ] 피치를 올리자!
+- [X] [button-group 만들어서, 배경색상 변화 주기](http://eatdesignlove.github.com/projects/material-button)
+- [X] 자바스크립트 기본 개념 잡기
