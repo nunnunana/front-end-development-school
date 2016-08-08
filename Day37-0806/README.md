@@ -85,8 +85,3 @@ document.body.firstChild.nextSibling
 - mdn 번역 번역 번역! 기여하기
 - [JSON (Javascript Object Notatio)](http://www.json.org/json-ko.html)
 
-## Todo
-- [ ] [다음 네이밍 가이드 읽기](http://darum.daum.net/)
-- [ ] zoom 속성? 무엇이고 언제 주로쓰는지 이해하기 
-- [ ] transpiler가 무엇인지, 종류가 무엇인지. (바벨) / postCSS
-- [ ] 관계도에 따라 node 탐색해보기
