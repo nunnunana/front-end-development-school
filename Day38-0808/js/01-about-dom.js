@@ -36,3 +36,11 @@ for (var i = 0; i < child_el_child_nodes.length ; i++) {
   }
 }
 
+// 2-1. break 활용 예
+
+// if ( parent_el_child_nodes[i].nodeType === 1 ) {
+//   parent_el_first_child_el = parent_el_child_nodes[i];
+//   break;
+// }
+
+// 3. children을 활용한 요소 노드 탐색
