@@ -17,12 +17,11 @@ function makeModal() {
   var modal_btn_close = createNode('button','x');
 
   // Set Attr
-
-  modal_container.setAttribute('class', 'modal');
-  modal_heading.setAttribute('class', 'modal-title');
-  modal_desc.setAttribute('class', 'modal-desc');
-  modal_btn_cta.setAttribute('class', 'modal-cta');
-  modal_btn_close.setAttribute('class', 'modal-close');
+  addClass(modal_container, 'modal');
+  addClass(modal_heading, 'modal-title');
+  addClass(modal_desc, 'modal-desc');
+  addClass(modal_btn_cta, 'modal-cta');
+  addClass(modal_btn_close, 'modal-close');
   modal_btn_close.setAttribute('aria-label','close modal window');
 
   // append Els
@@ -45,20 +44,3 @@ function removeModal() {
   is_modal = !is_modal;
 }
 btn__openModal.onclick = makeModal;
-
-
-
-// 코드 설계
-// 이 함수는 어떤 일을 하나?
-// 전달된 2개의 노드 위치를 교체한다. replaceChild의 한계를 극복.
-// 매개 변수 1: 이동시키고자 하는 노드 
-// 매개 변수 2: 이동시키고자 하는 목표가 되는 노드
-
-var p_1 = query('.para-1');
-var p_2 = query('.para-2');
-
-function chagePositionNodes(moving_node, target_node) {
-  // var nodes_parent = moving_node.parentNode;
-  // var replaced_node = nodes_parent.replaceChild(moving_node, target_node);
-  // nodes_parent.insertBefore(replaced_node, moving_node);
-}
