@@ -50,6 +50,6 @@ target_node.parentNode.replaceChild(replace_node, target_node)
 ## Todo
 - [ ] 핼퍼함수 개선해서, 모달 코드 개선하기(attr) + todolist
 - [ ] 진행한 코드 다시 작성하기 `changePositionNodes()`...
-- [ ] github FDS 폴더정리
+- [v] github FDS 폴더정리
 - [ ] FDS/referencs 읽기 (A__Fundmantal)
 - [ ] sportShop.
