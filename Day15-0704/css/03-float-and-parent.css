@@ -1,0 +1,66 @@
+.parent {
+  border: 1px solid hsl(100, 3%, 93%); 
+  /* border가 없을 경우, 자식들은 나란히 배치되는 것처럼 보임 */
+  margin-bottom: 2rem;
+  /* padding: 2rem;*/
+  background: #efefef;
+  /* float:left; 첫번째 해결방법 */ 
+  /* overflow: auto; 세번째 해결방법 */
+}
+
+/* 옳은 해결 방법 */
+.clearfix::after {
+  content: "";
+  display: block; /* clear:both는 block요소에 적용된다. */
+  clear: both;
+  height: 0; /* height를 0으로 주어서 뜨는 공간을 잡아준다. */
+  visibility: hidden; 
+}
+
+.micro-clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 오페라의 버그까지 고려한 micro clearfix */
+.micro-clearfix::before,
+.micro-clearfix::after {
+  content: '';
+  display: table;
+}
+.micro-clearfix::after {
+  content: '';
+  clear: both;
+}
+.micro-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.child {
+  float: left;
+  width: 140px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+}
+
+.child:first-of-type {
+  font-weight: 900;
+  background-color: #808CAC;
+}
+/* .child 클래스도 가져야하고, 요소의 타입도 동일한 교집합이어야 적용됨 ?? */
+
+.child:first-child  {background: #26106D;}
+.child:nth-child(2) {background: #1E9392;}
+.child:last-child   {background: #AC204B;}
+
+.clear {clear: both;}
+
+/* ie 6, 7 대응; 6,7은 before, after를 인식할 수 없기 때문에 */
+.lt-ie8 .new-clearfix {
+  zoom: 1;
+}

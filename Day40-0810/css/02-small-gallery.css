@@ -1,0 +1,48 @@
+/* Small Gallery.css */
+body {
+  height: 100vh;
+  background: #f2f2f2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.25s; }
+
+.gallery-thums {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  list-style: none;
+  transform: translateY(-50%); }
+  .gallery-thums li {
+    margin-bottom: 25px; }
+  .gallery-thums .thum {
+    width: 100px;
+    height: 100px;
+    background: #DAEEFA;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    position: relative; }
+    .gallery-thums .thum:focus {
+      outline: none; }
+      .gallery-thums .thum:focus:focus::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: 'This';
+        color: #fff;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        line-height: 100px;
+        background: rgba(0, 0, 0, 0.8); }
+
+li:nth-child(1) .thum {
+  background-image: url("../images/photo-01.jpeg"); }
+
+li:nth-child(2) .thum {
+  background-image: url("../images/photo-02.jpeg"); }
+
+li:nth-child(3) .thum {
+  background-image: url("../images/photo-03.jpeg"); }

@@ -1,0 +1,66 @@
+body * {
+  box-sizing: border-box;
+}
+.container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left : auto;
+  padding-right: 51px;
+  padding-left: 51px;
+}
+[class^="col"] {
+  height: 430px;
+}
+.col-1-3 {width:33.33%;}
+.col-2-3 {width:66.66%;}
+.col-3-3 {width:100%;}
+
+/* buttons style */
+.btn {
+  padding: 15px 32px;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+.btn-default {
+  background: #f92525;  
+  border-radius: 2px;
+}
+
+/* page-header */
+.page-header {
+  background: #202124;
+  padding: 25px 0;
+}
+.page-header h1 {
+  float: left;
+}
+.gnb {
+  float: left;
+}
+.gnb li {
+  float: left;
+}
+.unb {
+  float: right;
+}
+
+
+/* page-main */
+/* ------------- 
+ * Breaking News
+ * -------------*/
+.breaking-news-header {
+  float: right; 
+  height: 660px;
+}
+.breaking-news article {
+  float: left;
+}
+.newyork-city {background: #89b0b7; height: 660px;}
+.technology   {background: #fdc5a4;}
+.world-news   {background: #686855;}
+.politics     {background: #a09f9d;}
+
+

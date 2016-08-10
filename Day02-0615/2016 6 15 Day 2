@@ -1,0 +1,17 @@
+######2016 6 15 Day 2
+
+# 할일
+- Github관리하기 (학습내용 기록/명시적으로 처리)
+- Markdown문법 익히기 (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- 다시 읽어보고 이해하기 (html-attribute와-property-의-차이, github fds.)
+
+# 질문
+- 마크다운 프리뷰 하는 방법 궁금합니다.
+
+`Node.js`를 설치한 후에 설치된 버전확인 명령어
+
+```sh
+$ node --version
+$ npm --version
+```
+

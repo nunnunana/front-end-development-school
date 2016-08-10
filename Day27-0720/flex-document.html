@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>HTML문서 기본 레이아웃</title>
+  <link rel="stylesheet" href="../resources/initailization/normalize.css">
+  <style>
+    header, footer { height: 100px; }
+    header  { background: #FF7F22; }
+    footer  { background: #542D0F; }
+    
+    main    { 
+      display: flex;
+      border: 10px solid #222;
+      height: 600px;
+
+    } 
+    section      {order: 2;background: #41BAE4; flex-basis:300px; flex-grow: 1; height: 600px; }
+    aside        {flex-shrink: 0; height: 200px;}
+    aside.side-A {order: 1;background: #5FE476; width: 200px; }
+    aside.side-B {order: 3;background: #B9E439; width: 200px; align-self: flex-end;}
+
+
+  </style>
+</head>
+<body>
+  <header>Heeeeader</header>
+  <main>
+    <section>section</section>
+    <aside class="side-A">aside A</aside>
+    <aside class="side-B">aside B</aside>
+  </main>
+  <footer>Fooooooter</footer>
+</body>
+</html>

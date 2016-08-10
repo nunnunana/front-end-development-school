@@ -1,1 +1,0 @@
-[Mon Jun 27 2016 10:07:18 GMT+0900 (KST)] layer "psd.png": Duplicate path: psd.png

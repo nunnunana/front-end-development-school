@@ -32,7 +32,7 @@ function $q(name, hook, context){
 
 
 ## ToDo
-- [ ] Todolist + Modal (항목생성시 modal, 항목 삭제) + 전체삭제
+- [x] Todolist + Modal (항목생성시 modal, 항목 삭제)
 - [ ] prependChild(), inserAfter() 다시 작성해보기
 - [ ] github FDS 폴더정리
 - [ ] FDS/referencs 읽기 (A__Fundmantal)

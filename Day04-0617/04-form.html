@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>HTML 폼(form) 디자인</title>
+</head>
+<body>
+	<h2>폼 디자인(설계)</h2>	
+	<!-- 
+	<form action="데이터 전송 목적지" method="POST" enctype="multipart/form-data">
+			
+	</form> 
+	-->
+	<!-- form요소에는 name속성을 넣어줘야 한다. name은 id로 변경된다? -->
+<pre>
+	<code>&lt;ruby&gt;</code>
+</pre>
+	<form
+		name="register_form"
+		action="#"
+		method="POST">
+		<p>
+			<!-- input요소에 암묵적 레이블 연결 : 일부스크린리더는 제대로 인식하지 못함 -->
+			<!-- <label>ID1: <input type="text"></label> -->
+			<!-- input요소에 명시적 레이블 연결 -->
+			<label for="user_id">ID2:</label>
+			<input name="user_id" id="user_id" type="text"> <!-- id은 label과 연결시키기 위해 존재 -->
+		</p>
+		<p>
+			<label for="user_password">PASS:</label> 
+			<input name="user_password" id="user_password" type="password" >
+		</p>
+		<p>
+			<label for="user_email">E-MAIL:</label>
+			<input name="user_email" id="user_email" type="email">
+		<p>
+			<button type="submit">전송</button> 
+			<button >리셋</button>
+		</p>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 폼 디자인</title>
+</head>
+<body>
+
+<div>
+	<form action="" name="register-form" method="get" enctype="multipart/form-data">
+		<fieldset>
+			<legend>필수 입력</legend>
+			<div>
+				<label for="register-id">ID</label>
+				<input id="register-id" type="text" placeholder="user name" maxlength="10">
+			</div>
+			<div>
+				<label for="register-email">E-MAIL</label>
+				<input type="email" name="register-email" id="register-email" placeholder="email@email.com">
+			</div>
+			<div>
+				<label for="register-password">PASSWORD</label>
+				<input id="register-password" type="password">
+			</div>	
+		</fieldset>	
+
+		<div>
+			<h3>Gender</h3>
+			<!-- 명시적 방식 -->
+			<!-- <div>
+				<input type="radio" id="register-male" name="register-gender-a-type"><label for="register-male" vlaue="1"> Male</label>
+				<input type="radio" id="register-female" name="register-gender-a-type"><label for="register-female" vlaue="2"> female</label>
+			</div> -->
+			<hr>
+			<!-- 암묵적 방식 -->
+			<div>	
+				<label><input type="radio" value="1" name="register-gender"> Male</label>
+				<label><input type="radio" value="2" name="register-gender"> Female</label>
+			</div>
+		</div>
+		
+		<div>
+			<h3>Hobby</h3>
+			<ul>
+				<li>
+					<label><input type="checkbox" name="register-hobby" value="book"> Read a Book</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="register-hobby" value="sleep"> sleeping</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="register-hobby" value="moive"> watch Movie</label>
+				</li>
+			</ul>
+		</div>
+		
+		<textarea name="register-" cols="30" rows="10"></textarea>
+		<p contenteditable="true">내용</p>
+		<div>
+			<label for="register-upload">file</label>
+			<input type="file" name="register-upload" id="register-upload">
+		</div>
+
+		<div>
+			<h3>Your Job</h3>
+				<select name="register=job">
+					<option value="">Select your job</option>
+					<option value="instructor">Instructor</option>
+					<option value="student">Student</option>
+					<option value="doctor">Doctor</option>
+					<optgroup label="web">
+						<option value="developer">Developer</option>
+						<option value="developer">Desiger</option>
+						<option value="developer">Planner</option>
+					</optgroup>
+				</select>
+		</div>
+
+		<!-- <input type="submit" value="버튼 내용을 바꿉니다."> -->
+		<!-- 어느것을 써도 상관은 없음 -->
+		<button type="submit">버튼</button>
+		<!-- 요즘에는 잘 쓰지 않는 기능 -->
+		<button type="reset">초기화</button>
+
+		<!-- 과거 이미지 버튼을 만들 수 없을 때, 컨텐츠를 넣을 수 있는 Button 요소를 활용했었음. -->
+	</form>
+	<!-- button:button인 경우, form밖에서 쓸 수 있음 -->
+	<!-- button에는 submit, reset, button 의 종류가 있음 -->
+	<!-- <button type="button">버튼</button> -->
+</div>
+
+	
+</body>
+</html>

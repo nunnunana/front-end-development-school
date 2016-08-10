@@ -59,6 +59,7 @@ function removeModal() {
   this.parentNode.parentNode.removeChild(modal);
   btn__openModal.removeAttribute('disabled');
   is_modal = !is_modal;
-
 }
 btn__openModal.onclick = makeModal;
+
+

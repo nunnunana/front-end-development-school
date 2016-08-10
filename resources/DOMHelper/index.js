@@ -1,6 +1,10 @@
 /* DOMHelper.js */
 
 
+// body 변수
+var body = query('body');
+
+
 // prependChild(부모노드, 자식노드)
 // 부모노드의 첫번째 자식노드로 삽입한다.
 // ------------------------------------------
@@ -31,9 +35,8 @@ function insertAfter(insert_node, target_node) {
   else { parent_node.appendChild(insert_node); }
 }
 
+
 // .querySelectorAll() 메소드를 단축하여 사용할 수 있는 헬퍼함수
-
-
 
 function queryAll(name, context) {
   // 유효성 검사
@@ -43,7 +46,7 @@ function queryAll(name, context) {
   if (typeof name !== 'string') {
     // 조건이 참이 되면 오류 발생
     throw new Error('첫번째 전달인자는 문자 유형이어야 한다.')
-  } 
+  }
 
   // context 인자 값을 사용자가 전달하였는가?
   // 사용자가 context 값을 전달하지 않았을 경우는 undefined이다.
@@ -57,6 +60,8 @@ function query(name, context) {
   return queryAll(name, context)[0];
 }
 
+// 노드를 생성하는 핼퍼 함수
+
 function createEl(name) {
   return document.createElement(name);
 }
@@ -65,4 +70,23 @@ function createText(name) {
   return document.createTextNode(name);
 }
 
-var body = query('body');
+// 요소, 요소를 포함한 텍스트 노드를 생성하는 핼퍼 함수
+
+function createNode(name, text) {
+  var el = createEl(name)
+  if ( typeof text !== ' undefined' && typeof text === 'string' ) {
+    var el_text = createText(text);
+    el.appendChild(el_text);
+    return el;
+  }
+  return createEl(name);
+}
+
+
+// 문서 객체를 제거하는 핼퍼 함수
+
+function removeNode(node) {
+   node.parentNode.removeChild(node)
+}
+
+

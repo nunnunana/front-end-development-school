@@ -1,0 +1,183 @@
+@charset "utf-8";
+body {
+  font-family:"Roboto", sans-serif;
+  font-weight: 100;
+  background: #231f20;
+}
+body * {
+  box-sizing: border-box;
+}
+ul,li {list-style: none;}
+a {text-decoration: none;}
+a:visited {text-decoration: none; color: #fff;}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+.container {
+  width: 1290px;
+  margin: 0 auto;
+}
+#holzweiler-header {
+  position: absolute;
+  height: 40px;
+  left:0;
+  right: 0;
+  top:0;
+  z-index: 10;
+  letter-spacing: 1px;
+  padding-top: 38px;
+}
+#holzweiler-header a {
+  color: #fff;
+  font-size: 16px;
+}
+
+[class*="header-"] {
+  margin: 0;
+}
+.header-gnb    {float: left;padding:0;}
+.header-logo   {
+  width: 270px; 
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-unb    { float: right;}
+
+[class*="header"]>li {
+  float: left;
+  padding: 0px 8px 10px 0;
+}
+.header-gnb li:first-child { 
+  padding-left: 0;
+}
+.header-unb li:last-child { 
+  padding-right: 0;
+}
+[class*="header"] .depth-2 {
+  min-width: 142px;
+  position: absolute;
+  background: #231f20;
+  padding: 30px;
+  display: none;
+  margin-top: 10px;
+}
+[class*="header"] .depth-2 a {
+  float: left;
+}
+
+[class*="depth-"] {/* display: none; */}
+[class*="header"] .depth-2 li{
+  float: none;
+  margin: 10px 0;
+}
+[class*="header"] .depth-2 li::after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+/* 링크 효과 */
+.underline-fade {
+  display: block;
+  position: relative;
+  padding-bottom: 2px;
+}
+.underline-fade::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s;
+}
+.underline-fade:hover::after {
+  border-bottom: 1px solid #fff;
+}
+
+.text-opacity {
+  opacity: 0.7;
+}
+
+
+#holzweiler-go-shop a {
+  display: block;
+}
+#holzweiler-go-shop a .arrow-right  {
+  position: relative;
+  left:0;
+  transition: all 0.5s;
+}
+#holzweiler-go-shop a:hover .arrow-right  {
+  left:5px;
+}
+
+.holzweiler-visual-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  color: #fff;
+}
+
+.holzweiler-visual-text h2 {
+  padding-top: 80px;
+  font-size: 82px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 34px;
+}
+
+
+#holzweiler-go-shop video {
+  width: 100%;
+}
+
+.shop:hover .depth-2 {
+  display: block;
+  transition: all 0.25s;
+}
+.collections:hover .depth-2 {
+  display: block;
+  transition: all 0.25s;
+}
+.nok:hover .depth-2 {
+  display: block;
+  transition: all 0.25s;
+}
+
+
+#holzweiler-notice {
+  background: #231f20;
+  color:#fff;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 21px;
+}
+
+.holzweiler-close-button {
+  position: absolute;
+  right: 0;
+  border:none;
+  background: none;
+}
+.holzweiler-close-button::before {
+  content: '';
+  display: block;
+  border-top:1px solid #fff;
+}
+.holzweiler-close-button::after {
+  content: '';
+  display: block;
+  border-top:1px solid #fff;
+}
+
+.fixed-sticky-bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

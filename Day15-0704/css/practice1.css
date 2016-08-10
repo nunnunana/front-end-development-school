@@ -1,0 +1,115 @@
+body {
+  color: #464646;
+  text-align: center;
+}
+
+/* 그리드 시스템 */
+.col {
+  float: left;
+  height: 367px;
+}
+.col-50 {
+  width: 50%;
+}
+.col-50.floated-right {
+  float: right;
+}
+.col-100 {
+  width: 100%;
+}
+
+/* 공통 모듈 */
+li {
+  position: relative;
+}
+.member-picture {
+  height: 367px;
+  background-size: cover;
+  background-position: center;
+}
+.member-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.1;
+    padding-top:5.4375rem;
+  }
+.member-info p {
+  font-family: 'Open Sans', sans-serif;
+  width: 80%;
+  margin:0 auto;
+  padding-top: 1.5625rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.member-info:hover {
+  background: #fff1e2;  
+}
+.member-info:hover::before {
+  content: '';
+  background: #fff1e2;
+  transform: rotate(45deg);
+  z-index: 2;
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.member-social {
+  padding-top: 1.25rem;
+}
+.member-social::before {
+  content: '';
+  display: block;
+  border-top: 1px solid #7e7e7e;
+  width: 44px;
+  height: 1px;
+  margin: 0 auto 14px;
+}
+.twitter {
+  width: 25px;
+  height: 25px;
+}
+.twitter:hover {  
+  fill:#4ca6de;
+}
+::selection {
+  background: #4ca6de;
+  color:#fff;
+}
+
+/* 개별 모듈 디자인 */
+.peter-longman .member-picture {
+  background-image: url(../images/speaker_1.jpg);
+}
+.joan-martinez .member-picture {
+  background-image: url(../images/speaker_2.jpg);
+}
+.michael-doe .member-picture {
+  background-image: url(../images/speaker_3.jpg);
+}
+.saul-goodman .member-picture {
+  background-image: url(../images/speaker_4.jpg);
+}
+.hugh-laurence .member-picture {
+  background-image: url(../images/speaker_5.jpg);
+}
+
+
+@media screen and (max-width:900px) {
+  html {font-size: 14px;}
+  ul > .col-50 {
+    width: 100%;
+  }
+  li.col {float: none;}
+  li > .col-50.floated-right {float: left;}
+}
+
+
+@media screen and (min-width: 901px) {
+  
+}
+

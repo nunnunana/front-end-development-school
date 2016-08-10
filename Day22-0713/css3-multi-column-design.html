@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>css3멀티 커럼 레이아웃 디자인</title>
+  <link rel="stylesheet" href="../resources/initailization/normalize.css">
+  <link rel="stylesheet" href="../resources/webfont/SpoqaHanSans-kr.css">
+  <style>
+    .column-container {
+      max-width: 56.25rem;
+      margin: 3rem auto;
+    }
+
+    .column-container::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .column {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      width: 33.3333%;
+      line-height: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .colum:nlast-child {
+      padding-right: 0;
+    }
+
+    .colum p {
+      margin-bottom: 1.5rem;
+    }
+
+
+    .use-multi-columns {
+      line-height: 1.5rem;
+      color: #5436A3;
+
+      /*CSS3 multi columns*/  
+      /* 컬럼 개 수 */
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+
+      /* 컬럼 사이 간격 */
+      -webkit-column-gap: 1.2rem;
+      -moz-column-gap: 1.2rem;
+      column-gap: 1.2rem;
+
+      -webkit-column-rule: 1px dashed #ddd;
+      -moz-column-rule: 1px dashed #ddd;
+      column-rule: 1px dashed #ddd; 
+    }
+
+    .use-multi-columns p {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      text-align: center;
+      letter-spacing: 0.045em;
+      word-spacing: 0.15rem
+    }
+
+
+    .masonry {
+      width: 100%;
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+      
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+
+      -webkit-column-gap: 1.5rem;
+      -moz-column-gap: 1.5rem;
+      column-gap: 1.5rem;      
+
+      -webkit-column-rule: 1px solid #dedede;
+      -moz-column-rule: 1px solid #dedede;
+      column-rule: 1px solid #dedede;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="column-container no-multi-columns">
+    <div class="column unit-1-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur similique, quo impedit reiciendis eaque, maiores placeat. Sapiente excepturi placeat, voluptate aperiam tempore molestias nam esse nemo mollitia nulla ducimus nobis reprehenderit! Quas harum voluptate officiis quod corporis et saepe a dolorem provident explicabo minima amet, eligendi. Libero ut nam at quas hic ipsum facilis, necessitatibus dignissimos minus vitae, corrupti facere saepe pariatur quaerat, omnis debitis error non quidem ullam? Minima!</p>
+      <p>Nesciunt fugit voluptas ea? Quisquam molestias molestiae nulla velit eligendi, distinctio ex! Excepturi modi ducimus esse autem. Dolore nulla explicabo aspernatur impedit repellendus quis accusantium, est aliquam fuga repudiandae facilis perferendis necessitatibus quos fugit atque, saepe id iusto temporibus, quae, nesciunt officia ducimus! Nobis nesciunt vero corrupti. Aliquam animi voluptatibus saepe, a molestiae numquam dolores repudiandae illum quisquam veritatis, obcaecati natus fugit inventore placeat laborum iure consequatur quod doloribus autem!</p>
+    </div>
+    <div class="column unit-1-3">
+          <p>Quaerat illum, perspiciatis facilis, ab, veniam adipisci consequuntur fugit non molestias soluta consectetur iste excepturi ipsa facere dolore fuga sequi quibusdam tenetur, fugiat necessitatibus omnis labore ducimus nam commodi! Ipsa repudiandae facere nobis assumenda veritatis odit et tempore, dolor, alias expedita eius adipisci quisquam accusantium dolores, debitis necessitatibus reiciendis ducimus ipsum vel, est at dicta. Fugit sunt ipsa, doloremque eveniet vel, quasi mollitia, architecto nemo recusandae adipisci qui! In, quas.</p>
+          <p>Laudantium sapiente, totam quis vero facere neque iure eum aspernatur blanditiis qui hic voluptatem illo, tenetur aliquam, officiis ea quo recusandae beatae. Corporis molestias nam, recusandae nobis dolorum ipsa aperiam similique voluptatem saepe, molestiae accusantium id voluptates unde deleniti quidem quod delectus doloremque placeat pariatur dolor expedita at. Totam placeat officia, excepturi. Nobis laboriosam commodi dolores nihil ex numquam sint fugiat, sit, minus consequuntur veniam, voluptatum soluta voluptatibus. Cumque, velit.</p>
+        </div>
+        <div class="column unit-1-3">
+          <p>Obcaecati est, praesentium quo recusandae nam, voluptates id dolorum optio quaerat illum aliquam natus sunt explicabo eveniet sed quibusdam atque maxime aspernatur numquam eos quasi velit voluptatibus. Consequatur repellat quia maxime culpa pariatur debitis veniam voluptates neque! Rerum mollitia tempora laboriosam, cum quo repudiandae magnam. Ipsum numquam, omnis at eligendi in quis odit maiores, corporis fugit! Vero, expedita, vitae. Dolore porro itaque, ipsa quae ut soluta provident veniam sed est!</p>
+        </div>
+  </div>
+
+  <div class="column-container use-multi-columns">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perspiciatis quas distinctio assumenda voluptatum sed, molestias nisi, libero, ad repellendus suscipit, incidunt asperiores nulla ipsum dolores soluta voluptates labore. Reprehenderit, impedit, voluptas repellendus enim in magni sunt voluptatum similique, autem quaerat doloribus consectetur ipsam sapiente obcaecati maxime ratione. Magnam, laborum accusamus veritatis eum totam quis reiciendis tempore fugit dolor ex magni nihil blanditiis, nam quasi, sequi voluptatem, autem saepe quos.</p>
+    <p>Magnam ea possimus minus voluptatibus nobis dicta repellat dolore quidem voluptates neque, deserunt voluptatum placeat rem beatae at aspernatur totam itaque saepe ex eos accusamus pariatur recusandae qui. Eligendi tempora cum quidem dolor sunt ab unde laborum voluptate minus, inventore tenetur deleniti, eveniet qui dolore vel eos quaerat ea. Temporibus laborum, error dicta, aspernatur laudantium saepe perspiciatis natus ducimus, vitae velit corporis cumque eos. Voluptatum nihil recusandae quo nostrum iusto!</p>
+    <p>Tenetur nemo quos at ducimus numquam dolorem. Delectus repudiandae porro, asperiores voluptates inventore quos ex ipsam corporis sit nihil earum consectetur dolores blanditiis, nesciunt rem quisquam animi quo officiis modi quidem, vitae neque! Dolore reprehenderit aperiam dicta aut. Modi aspernatur culpa fuga sapiente eum libero illum voluptates debitis repudiandae neque id, at ullam recusandae eius aliquam odio est ducimus cum quas, amet repellendus eos quibusdam ipsa. Officia tenetur, obcaecati non.</p>
+    <p>Placeat eius reprehenderit distinctio saepe incidunt consectetur delectus porro, quod dolor exercitationem numquam obcaecati ullam odit beatae praesentium omnis non. Commodi tempore porro error sunt tenetur, molestias praesentium iusto ut ab aut modi distinctio quibusdam a dolorem! Et accusantium atque, sit hic tenetur corporis earum itaque facere enim consectetur esse? Ab ut, voluptate corporis nam quia aspernatur, facilis amet explicabo nostrum totam reprehenderit sunt quasi repellendus aliquid, distinctio iste saepe.</p>
+    <p>Provident autem perferendis, facilis tempora ducimus dolorem nostrum atque repellat quos. Rem natus fugit, nostrum veritatis modi qui quo laudantium iusto quos accusantium adipisci dolorem voluptas quis minima illo vel fuga, ratione recusandae, porro alias eligendi molestiae! Atque mollitia quibusdam perferendis dolorum laborum quae, numquam saepe modi voluptate, ut vel, nostrum, optio tempore commodi blanditiis facere sit earum culpa enim libero neque laboriosam cumque! Excepturi dicta adipisci earum! Temporibus, delectus.</p>
+    <p>Dignissimos autem, magnam voluptatum atque quos repellendus saepe aut beatae culpa sequi cupiditate praesentium est at nihil nam expedita totam vero maxime neque blanditiis, unde ex iste velit nesciunt dicta! Est, voluptas beatae, animi obcaecati enim, tempora, et repellendus non ut quidem fugiat ullam qui impedit a adipisci quis. Vitae id ipsa ducimus minus atque iusto soluta eius quis. Nihil eveniet at, corporis asperiores, natus repellat totam aliquam sequi earum!</p>
+  </div>
+
+
+  <div class="masonry">
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x580/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x300/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x500/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x480/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x200/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x100/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x100/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x540/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x560/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+    <div class="masonry-item">
+      <img src="http://placehold.it/320x900/000/fff/?text=eatdesignlove" alt="eatdesignlove">
+    </div>
+  </div>
+
+</body>
+</html>

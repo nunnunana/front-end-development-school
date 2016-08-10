@@ -1,0 +1,28 @@
+/* float demo */
+body {
+  margin: 2rem 20%;   
+  line-height: 1.45;
+}
+.image-container {
+  width: 600px;
+  border: 4px solid #34c0ff;
+  padding: 1rem;
+}
+
+.image-container p {
+  margin-bottom: 1.5em;
+  color: #13315b;
+  font-size: 0.875rem;
+  /* padding-left: 310px; 유지보수 측면에서 좋지 않은 코드 */
+   overflow: hidden; /*단락을 오른쪽으로 가지런히 정렬한다*/ 
+}
+
+.image-container img {
+  float: left;
+  margin-right: 0.625rem;
+}
+
+.image-container.blank-bottom-img img + * {
+  overflow: hidden;
+}
+
