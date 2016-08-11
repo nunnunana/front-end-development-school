@@ -122,3 +122,33 @@ function replaceNode(moving_node, target_node) {
     console.log(ii);
   }
 }
+
+
+// --------------------
+// 스타일을 가져오는 핼퍼 함수
+// --------------------
+
+function getStyle(el, property, pseudo) {
+  var value;
+  // 유효성 검사
+  if ( el.nodeType !== 1 ) {
+    console.error('첫번째 인자 el은 요소노드여야 합니다.')
+  }
+  if ( typeof property != 'string') {
+    console.error('두번째 인자 property는 문자열이어야 합니다.')
+  }
+  if ( typeof pseudo !== 'string' && pseudo ) {
+    console.error('세번째 인자 pseudo는 문자열이어야 합니다.')
+  }
+  if (winddow.getComputedStyle) {
+    value = winddow.getComputedStyle(el,pseudo)[property];
+  } else {
+    value = el.currentStyle[property];
+  }
+}
+
+변수명을 알 때
+man.age
+
+변수명을 모를 때
+man[property]

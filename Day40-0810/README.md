@@ -48,8 +48,8 @@ target_node.parentNode.replaceChild(replace_node, target_node)
 
 
 ## Todo
-- [ ] 핼퍼함수 개선해서, 모달 코드 개선하기(attr) + todolist
+- [v] 핼퍼함수 개선해서, 모달 코드 개선하기(attr) + todolist
 - [v] 진행한 코드 다시 작성하기 replaceNodes()`...
 - [v] github FDS 폴더정리
-- [ ] FDS/referencs 읽기 (A__Fundmantal)
+- [v] FDS/referencs 읽기 (A__Fundmantal)
 - [ ] sportShop.
