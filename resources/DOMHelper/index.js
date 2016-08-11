@@ -140,15 +140,11 @@ function getStyle(el, property, pseudo) {
   if ( typeof pseudo !== 'string' && pseudo ) {
     console.error('세번째 인자 pseudo는 문자열이어야 합니다.')
   }
-  if (winddow.getComputedStyle) {
-    value = winddow.getComputedStyle(el,pseudo)[property];
+
+  if (window.getComputedStyle) {
+    value = window.getComputedStyle(el,pseudo)[property];
   } else {
     value = el.currentStyle[property];
   }
+  return value;ß
 }
-
-변수명을 알 때
-man.age
-
-변수명을 모를 때
-man[property]

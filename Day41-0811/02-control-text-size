@@ -5,8 +5,8 @@
   <title>01-Compare-pass-to-value-or-reference</title>
   <style>
     .page-header {
-      font-size:16px;
-      transition: all 0.25sß;
+      font-size: 16px;
+      transition: all 0.25s;
     }
   </style>
 </head>
