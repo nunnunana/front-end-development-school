@@ -148,3 +148,23 @@ function getStyle(el, property, pseudo) {
   }
   return value;ß
 }
+
+
+// --------------------
+// camelCase 함수 
+// --------------------
+function camelCase(css_prop) {
+    return text.replace(/-./g, function($1){
+        return $1.replace('-', '').toUpperCase();
+    });
+}
+
+
+
+// --------------------
+// isType 함수 
+// --------------------
+function isType(data){
+  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
+}
+
