@@ -159,8 +159,6 @@ function camelCase(css_prop) {
     });
 }
 
-
-
 // --------------------
 // isType 함수 
 // --------------------
@@ -168,3 +166,165 @@ function isType(data){
   return Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
 }
 
+// 요소노드인지 아닌지를 체크하여 참/거짓을 반환하는 헬퍼함수
+function isElNode(node) {
+  return node.nodeType === 1;
+}
+function isntElNode(node) {
+  return !isElNode(node);
+  // return node.nodeType !== 1;
+}
+
+
+// --------------------
+// error  
+// --------------------
+function errorMsg(message) {
+  if (isType(message) !== 'string') {
+    // 함수 자신을 다시 호출: 재귀 함수
+    errorMsg('오류 메시지는 문자 데이터 유형이어야 합니다.')
+  }
+  throw new Error(message)
+}
+
+// --------------------
+// preveEl 
+// 특정 노드의 앞 요소를 탐색한다.
+// --------------------
+
+function prevEl(node){
+  // 검증: 유효성 검사
+  // 만약 인자의 노드타입이 '요소노드'가 아니라면
+  if ( node.nodeType !== 1 ) {
+    // '에러 메시지'를 띄운다.
+    errorMsg('전달된 인자는 요소노드여야 합니다.');
+  }
+
+  // do {
+  //   // 받은 node 인자의 앞 형제를 node에 할당하고
+  //   // node가 존재하면서, node 타입이 요소노드가 아닌 경우
+  //   // 계속 반복하고
+  //   // 요소노드인 경우, node를 반환한다.
+  //   node = node.previousSibling;
+  // } while( node && node.nodeType !== 1 );
+  // return node;
+
+  // 구형 IE 9+, 신형 웹 브라우저
+  if (node.previousElementSibling) {
+    return node.previousElementSibling;
+  } 
+  // 구형 IE
+  else {
+    do {
+     node = node.previousSibling;
+   } while( node && node.nodeType !== 1 );
+   return node;
+  }
+}
+
+
+// --------------------
+// nextEl 
+// 특정 요소의 뒷 요소를 탐색한다.
+// --------------------
+
+function nextEl(node) {
+  if ( node.nodeType !== 1 ) {
+    errorMsg('전달된 인자는 요소노드여야 합니다.');
+  }
+  if ( node.nextElementSibling ) {
+    return node.nextElementSibling;
+  } else {
+    do {
+      node = node.nextSibling;
+    } while( node && node.nodeType !== 1 );
+    return node;
+  }
+}
+
+
+// --------------------
+// firstEl
+// 첫 번째 자식 요소를 탐색 
+// --------------------
+// function firstEl(node){
+//   // 유효성 검사
+//   if ( isntElNode(node) ) {
+//     errorMsn('전달된 인자는 요소노드여야 합니다.')
+//   }
+
+//   if ( node.firstElementChild ) {
+//     return node.firstElementChild;
+//   } else {
+//     node = node.firstChild;
+//   }
+//   return (node && isntElNode(node)) ? : nextEl(node):  node
+// }
+
+// --------------------
+// lastEl
+// --------------------
+function lastEl(node){
+  if ( isntElNode(node) )
+  return node.lastChild;
+
+}
+
+// --------------------
+// isElName 
+// --------------------
+
+function isElName(node, name) {
+  if ( isntElNode(node) ) { errorMsg('첫 번째 전달된 인자는 요소노드여야 합니다.') }
+  if ( isType(name) !== 'string' ) { errorMsg('두 번째 인자로 텍스트 데이터 유형이 전달되어야 합니다.s') };
+  // return node.localName === name
+  return (node.localName  || node.nodeName.toLowerCase()) === name;
+}
+// function isntElName
+function isTextNode(node) {
+  if ( node.nodeType !== 3 ) {
+    errorMsg('전달된 인자는 텍스노드여야 합니다.');
+  }
+  return (node.nodeType === 3)
+}
+
+
+// --------------------
+// getUnit 
+// 포함된 단위를 반환한다.
+// --------------------
+var units = 'px rem em % vw vh vmin vmax'.split(' ');
+function getUnit(value) {
+  // 텍스트가 아닌 것을 예외처리
+  // if ( value.nodeType !== 3 ) {
+  //   errorMsg('인자는 텍스트여야 합니다.')
+  // }
+  getUnit.units = units;
+  var i=0, l=getUnit.units.length, unit;
+  for ( ; i < l ; i++) {
+    unit = getUnit.units[i];
+    if (value.indexOf(unit) > -1 ) {
+      // break;
+      return unit
+    }
+  }
+  return null;
+}
+
+// --------------------
+// removeUnit
+// 단위를 제거하고 반환한다. 
+// --------------------
+function removeUnit(value){
+  var this_unit = getUnit(value);
+  return parseInt(value.replace(this_unit,''));
+}
+
+// --------------------
+// hasunit 
+// --------------------
+
+function hasUnit(value){
+  console.log(getUnit(value))
+  return (getUnit(value) !== null)
+}
