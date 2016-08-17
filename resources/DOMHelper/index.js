@@ -146,7 +146,7 @@ function getStyle(el, property, pseudo) {
   } else {
     value = el.currentStyle[property];
   }
-  return value;ß
+  return value;
 }
 
 

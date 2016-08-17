@@ -3,9 +3,7 @@
 
 var minions = function (){
   // console.log(this)
-
   if (hello) {
-
     let hello = ':-0'
     console.log('if 내부:', hello);
   }
