@@ -7,11 +7,11 @@
 - /\S/ : (공백이 아닌 것) 정규표현식, /\s/ (공백인것)
 - var Single Turn Pattern
 - for문의 변수 선언구간은 밖으로 빼낼 수 있다.
-- 기존의 for문 내의 블록은 지역이 아닌데, ES6에서 let을 사용하면 지역변수를 선언할 수 있게 된다.
+- 기존의 for문 내의 블록은 지역이 아닌데, ES6에서 *let을 사용하면 지역변수*를 선언할 수 있게 된다.
 - nodeName / localName 차이
 - 함수 또한 객체이기 때문에 속성을 가질 수 있다. (hasUnit()함수)
-- parseFloat/ parseInt 차이
-- hasOwnProperty(value) : 조상의 속성까지 확인하지 않도록.
+- parseFloat => 부동소수점형 / parseInt => 정수형
+- hasOwnProperty(value) : 조상의 속성까지 확인하지 않도록, 막아주는 역할을 할 수 있다.
 
 ## 반복문(loop)
 
@@ -47,7 +47,7 @@ while ( (var count = 20) <=10) {
 }
 ```
 
-### ES6,
+### ES6.
 ```js
 // ES6에서는 다음과 같이 초기값 설정 가능
 var cleanWhiteSpace = ( el=document ) => {
@@ -73,7 +73,7 @@ do {
 } while(boo);
 ```
 
-### for문''
+### for문
 - 1. for문 정의시 변수
 - 2. 비교값
 - 3. 반복문 내 내용
@@ -97,6 +97,7 @@ var real_fruits = [],
 
 for (; k < o; k++) {
   fruit = fruits[k];
+  // fruit가 문자형 데이터가 아니면 건너뛴다.
   if ( isType(fruit) !== 'string' ) {
     continue;
   }
@@ -175,7 +176,7 @@ function fn1() {
 
 2. 함수 표현식
 
-자바스크립트 호이스팅 현상이 발생한다. function, var 키워드가 상단으로 이동된다. 변수명는 상단으로 이동되고 할당된 내용은 나중에 할당된다. 함수가 먼저 올라가게 된다.
+자바스크립트 호이스팅 현상이 발생한다. function, var 키워드가 상단으로 이동된다. 변수명는 상단으로 이동되고 할당한 내용은 나중에 할당된다. 함수가 먼저 올라가게 된다.
 
 ```
 var fn2 = function(){
@@ -193,19 +194,7 @@ var fn2 = function(){
 해당 영역의 최상단으로 이동한다.
 
 ```
-var boo = true;
-
-var inScope = function(){
-  if (boo) {
-    if (boo) {
-      console.log(boo); // false
-      var boo = false;
-    }
-    console.log(boo); // true
-  }
-}
-inScioe();
-console.log()
+c
 ```
 
 
@@ -214,9 +203,8 @@ console.log()
 
 
 ## ToDo 
-- [ ] 실습예제, 실습미션 다시 만들어보고 정리하기
-- [ ] 함수 만들기로 제다이가 되도록 훈련시작하기
-- [ ] FDS레퍼런스 읽기
-- [ ] 모듈패턴을 익히고, 특정 프로퍼티가 있는지 확인하고 재사용하는 방법을 익히자.
+- [X] 실습예제, 실습미션 다시 만들어보고 정리하기
+- [ ] FDS 레퍼런스 읽기 (A)
+- [ ] 모듈패턴을 익히고, 특정 프로퍼티가 있는지 확인하고 재사용하는 방법을 익히자. (B)
 
 

@@ -321,7 +321,7 @@ function removeUnit(value){
 }
 
 // --------------------
-// hasunit 
+// hasUnit 
 // --------------------
 
 function hasUnit(value){
