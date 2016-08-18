@@ -185,7 +185,6 @@ fn(function(){
 ```
 function countDown(number) {
   if (typeof number !== 'number') {throw new Error('숫자를 전달하라.');}
-  var test = 'hello'; 
   var _num = number;
   
   var _countDown = function(){
@@ -196,6 +195,7 @@ function countDown(number) {
 
 var countDown10 = countDown(10);
 ```
+
 #### 비용을 절감하는 형태로 클로저 함수를 만드는 방법
 - 모던 자바스크립트 패턴 중 이 패턴이 가장 많이 사용되는 패턴
 - IIFE 패턴 (즉시 실행되는 함수)
@@ -205,10 +205,12 @@ var countDown10 = countDown(10);
 +function(){}();
 ~function(){}();
 !function(){}();
+
 (function(){
   // 외부와 단절된 독립된 공간이 형성
   // 캡슐화
 }()); // 더글라스 크록포드의 추천
+
 (function(){}()); // 추후 코드를 붙일 때 문제가 발생할 여지가 있다.
 ```
 
@@ -218,7 +220,6 @@ var countDown10 = countDown(10);
 프로그래밍에서 콜백(callback)은 **다른 코드의 인수로서 넘겨주는 실행 가능한 코드**를 말한다. 콜백을 넘겨받는 코드는 이 콜백을 필요에 따라 즉시 실행할 수도 있고, 아니면 나중에 실행할 수도 있다.
 
 
-
 ## 참고자료
 >- [호이스팅 문제](https://gist.github.com/getify/11336871)
 - [호이스팅 문제2](https://www.nczonline.net/blog/2010/01/26/answering-baranovskiys-javascript-quiz/)
@@ -226,7 +227,7 @@ var countDown10 = countDown(10);
 
 ## ToDo
 - [ ] forEach, map 활용 실습해보기
-- [ ] 호이스팅 이해하기 
+- [x] 호이스팅 이해하기
 - [ ] 콜백을 활용한 예제 만들기
 - [ ] 클로저를 이용한 예제 만들기
 - [ ] 핼퍼함수 전체 다시 작성해보기

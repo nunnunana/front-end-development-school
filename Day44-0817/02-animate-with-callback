@@ -20,7 +20,7 @@
 </head>
 <body>
   <div class="demo-box"></div>
-<script src="../resources/DOMHelper/index.js"></script>
-<script src="js/callback.js"></script>
-</body>
+<script src="../resources/DOMHelper/DOMhelper.js"></script>
+<!-- <script src="js/callback.js"></script>
+ --></body>
 </html>
