@@ -38,9 +38,9 @@
   // .button-set 내부에서 .button을 모두 수집
   // 수집된 노드리스트를 순환하여(코드의 흐름제어) 클릭 이벤트에 함수(이벤트 핸들러)를 연결한다.
   // 각 버튼을 사용자가 클릭하 ㄹ경우, 자신의 순환 익덱스 숫자를 콘솔에 출력한다.
-  var button_set = helper.queryAll('.button-set');
-  var buttons = helper.queryAll('.button-set .button');
-  console.log(buttons);
+  // var button_set = helper.queryAll('.button-set');
+  // var buttons = helper.queryAll('.button-set .button');
+  // console.log(buttons);
   // 1. forEach 예시 (매개변수가 존재함)
   // buttons.forEach(function(button, idx, buttons){
   //   console.log(arguments)
@@ -67,7 +67,41 @@
   //     console.log(this.index);
   //   }
   // }
-
   
+
+
+  // 생성자 함수
+
+  // 숫자 객체 생성자를 사용하여 숫자 1부터 10까지를 변수 num1~num10에 생성하라
+  // 단, num1~ num10에는 숫자 값이 담겨야 한다.
+
+  // var i = 1, l = 10 
+  // for (;i<l+1;i++) {
+
+  //   var num = 'num' + i
+  //   var num = parseInt(new Number(i));
+  // }
+
+  // 불리언 객체 생성자를 사용해 불리언, true, false로 연속된느 변수 boo1, boo10에 생성하라
+  // 단 boo1 ~ boo10에는 불리언 값이 담겨야 한다.
+
+  global.boo1   = (new Boolean(1)).valueOf();
+  global.boo2   = (new Boolean(0)).valueOf();
+  global.boo3   = (new Boolean(1)).valueOf();
+  global.boo4   = (new Boolean(0)).valueOf();
+  global.boo5   = (new Boolean(1)).valueOf();
+  global.boo6   = (new Boolean(0)).valueOf();
+  global.boo7   = (new Boolean(1)).valueOf();
+  global.boo8   = (new Boolean(0)).valueOf();
+  global.boo9   = (new Boolean(1)).valueOf();
+  global.boo10  = (new Boolean(0)).valueOf();
+
+  // for (var i = 1; i <= 10; i++ ) {
+  //   if ( i%2 === i ) {
+  //     var global['boo'+i] = (new Boolean(1)).valueOf();
+  //   } else {
+  //     var global['boo'+i] = (new Boolean(0)).valueOf();
+  //   }
+  // }
 
 })(this)

@@ -56,11 +56,24 @@
       return node;
     }
   }
-  function lastEl(node){
-    if ( isntElNode(node) )
-    return node.lastChild;
+  function firstEl(node) {
+    if (isntElNode(node)) { errorMsg('요소노드를 전달해야 합니다.'); }
+    if (node.firstElementChild) {
+      return node.firstElementChild;
+    } else {
+      node = node.firstChild;
+      return (node && isntElNode(node)) ? nextEl(node) : node;
+    }
   }
-
+  function lastEl(node) {
+    if (isntElNode(node)) { errorMsg('요소노드를 전달해야 합니다.'); }
+    if (node.lastElementChild) {
+      return node.lastElementChild;
+    } else {
+      node = node.lastChild;
+      return (node && isntElNode(node)) ? prevEl(node) : node;
+    }
+  }
   // --------------------
   // Class 
   // --------------------
@@ -125,7 +138,7 @@
     }
   }
   // function makeArray(data) {
-  //   var choeck_data = isType(data), 
+  //   var check_data = isType(data), 
   //       result_arr = [], len = data.length;
   //   if (check_data === 'array') { 
   //     return data;
@@ -137,6 +150,23 @@
   //   return result_arr.reverse();
   //   }
   // }
+
+  function makeArray(data) {
+    // 전달된 객체는 배열 또는 유사 배열인가?
+    var check_data = isType(data), result_arr = [], len = data.length;
+    // 실제 배열
+    if (check_data === 'array') {
+      return data;
+    }
+    // 유사 배열
+    if ( len && check_data !== 'string' ) {
+      while( len-- ) {
+        result_arr.push( data[len] );
+      }
+    }
+    return result_arr.reverse();
+  }
+
 
   // Array.from을 한 번만 물어보는 방식으로 코드 개선
   // 클로저를 활용하여 매번 구버전/최신브라우저를 조건으로 분기하는 과정을 줄일 수 있다. 반드시 사라지는 변수나 파라미터를 기억하게 하기 위해서 이용되는 것이 아니라는 것을 알 수 있음.
@@ -172,39 +202,48 @@
   // --------------------
   // Style 
   // --------------------
-  function getStyle(el, property, pseudo) {
-    var value;
-    if ( el.nodeType !== 1 ) {
-      console.error('첫번째 인자 el은 요소노드여야 합니다.')
+    function getStyle(el, property, pseudo) {
+    var value, el_style;
+    if (el.nodeType !== 1) {
+      console.error('첫번째 인자 el은 요소노드여야 합니다.');
     }
-    if ( typeof property != 'string') {
-      console.error('두번째 인자 property는 문자열이어야 합니다.')
+    if (typeof property !== 'string') {
+      console.error('두번째 인자 property는 문자열이야 합니다.');
     }
-    if ( typeof pseudo !== 'string' && pseudo ) {
-      console.error('세번째 인자 pseudo는 문자열이어야 합니다.')
+    if (pseudo && typeof pseudo !== 'string') {
+      console.error('세번째 인자 pseudo는 문자열이야 합니다.');
     }
 
+    property = camelCase(property);
+
     if (window.getComputedStyle) {
-      value = window.getComputedStyle(el,pseudo)[property];
+      el_style = window.getComputedStyle(el, pseudo);
+      if (pseudo && el_style.content === '') {
+        return null;
+      }
+      value = el_style[property];
     } else {
       value = el.currentStyle[property];
     }
     return value;
   }
-  function setStyle(el, property) {
-    if ( isntElNode(el) ) {
-      errorMsg('첫번째 인자는 요소노드여야 합니다.');
+
+  function setStyle(elNode, property, value) {
+    if ( isntElNode(elNode) ) {
+      errorMsg('요소노드가 전달되어야 합니다.');
     }
-    if ( isType(property) !== 'string' ) {
-      errorMsg('두번째 인자는 텍스트여야 합니다.')
+    if (isType(property) !== 'string') {
+      errorMsg('두번째 전달인자는 문자열이어야 합니다.');
     }
-    return el.setAttribute('style', property);
+    elNode.style[property] = value;
   }
 
-  function camelCase(css_prop) {
-      return text.replace(/-./g, function($1){
-          return $1.replace('-', '').toUpperCase();
-      });
+  function css(elNode, prop, value) {
+    if ( !value ) {
+      return getStyle(elNode, prop);
+    } else {
+      setStyle(elNode, prop, value);
+    }
   }
   var units = 'px rem em % vw vh vmin vmax'.split(' ');
   function getUnit(value) {
@@ -266,25 +305,28 @@
   }
   
   // 외부에 공개하고자 하는 내용 (Open API)
-  $.helper = {
-    'query'       : query,
-    'queryAll'    : queryAll,
-    'isType'      : isType,
-    'isElNode'    : isElNode,
-    'isElName'    : isElName,
-    'isTextNode'  : isTextNode,
-    'prevEl'      : prevEl,
-    'nextEl'      : nextEl,
-    'lastEl'      : lastEl,
-    'prependChild': prependChild,
-    'insertAfter' : insertAfter,
-    'addClass'    : addClass,
-    'removeClass' : removeClass,
-    'getStyle'    : getStyle,
-    'setStyle'    : setStyle,
-    'hasUnit'     : hasUnit,
-    'getUnit'     : getUnit,
-    'removeUnit'  : removeUnit,
-  }
+  
+  global.query        = query;
+  global.queryAll     = queryAll;
+  global.isType       = isType;
+  global.isElNode     = isElNode;
+  global.isElName     = isElName;
+  global.isTextNode   = isTextNode;
+  global.firstEl      = firstEl;
+  global.prevEl       = prevEl;
+  global.nextEl       = nextEl;
+  global.lastEl       = lastEl;
+  global.prependChild = prependChild;
+  global.insertAfter  = insertAfter;
+  global.addClass     = addClass;
+  global.removeClass  = removeClass;
+  global.getStyle     = getStyle;
+  global.setStyle     = setStyle;
+  global.hasUnit      = hasUnit;
+  global.getUnit      = getUnit;
+  global.removeUnit   = removeUnit;
+  global.createNode   = createNode;
+  global.makeArray    = makeArray;
+  global.css          = css;
 
 }(this))

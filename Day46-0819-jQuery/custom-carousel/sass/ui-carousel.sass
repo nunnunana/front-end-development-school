@@ -1,0 +1,89 @@
+@import normalize
+
+// Function
+@function tint($color, $amount: 10%, $mix: #fff)
+  @return mix($color, $mix, $amount)
+
+@function shade($color, $amount: 10%, $mix: #000)
+  @return mix($color, $mix, $amount)
+
+
+// Mixin
+=flex-align-center($orientation: both, $flow: row nowrap)
+  display: flex
+  flex-flow: $flow
+  @if $orientation == both
+    justify-content: center
+    align-items: center
+  @if $orientation == h
+    justify-content: center
+  @if $orientation == v
+    align-items: center
+
+// Placeholder Selector
+// %align-hv-center
+//   display: flex
+//   justify-content: center
+//   align-items: center
+%reset-button
+  background: transparent
+  border: none
+
+// Variables
+$carousel-prefix: ui-carousel
+$content-bg: #76CFA6
+$content-width: 500px
+$content-height: 400px
+$content-buttons-width: $content-width / 8
+
+body.demonstration
+  min-height: 100vh
+  +flex-align-center
+  
+// UI Carousel Component Style
+.#{$carousel-prefix}
+  position: relative
+  border: 4px solid #E4F1E7
+  width:  $content-width + $content-buttons-width
+  height: $content-height
+  overflow: auto
+  .js &
+    overflow: hidden
+  .#{$carousel-prefix}--content__wrapper
+    position: absolute
+    top: 0
+    left: 0
+  .#{$carousel-prefix}--content
+    width:  $content-width
+    height: $content-height
+    text-align: center
+    color: #fff
+    @for $i from 1 through 6
+      &:nth-child(#{$i})
+        background: shade($content-bg, 12% * $i)
+  h2
+    margin: 0
+
+
+.#{$carousel-prefix}--navigation__buttons
+  display: flex
+  flex-wrap: wrap
+  position: absolute
+  top: 0
+  right: 0
+  width: $content-buttons-width
+  height: $content-height
+  .no-js &
+    display: none
+  button
+    $button-color: #406B78
+    @extend %reset-button !optional
+    width: 100%
+    cursor: pointer
+    background: $button-color
+    color: #fff
+    transition: all 0.3s
+    &:hover,
+    &:focus
+      background: tint($button-color,80%)
+    &[class*="__prev_better"]
