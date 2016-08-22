@@ -28,7 +28,7 @@
 
 ## $(document).ready와 onload와의 차이
 
-$(document).ready는 내부적으로 아래의 첫번째 코드와 같은 내용을 지니고 있다. 문서가 DOMContentLoad 되었을 때 콜백함수를 실행하는 하게된다. 반면 window.onload의 경우 문서에서 필요한 모든 소스가 로드된 이후에 함수 내부의 내용을 실행하는 차이점을 가지고 있다.
+$(document).ready는 내부적으로 아래의 첫번째 코드와 같은 내용을 지니고 있다. 문서가 DOMContentLoad 되었을 때 콜백함수를 실행하게된다. 반면 window.onload의 경우 문서에서 필요한 모든 소스가 로드된 이후에 함수 내부의 내용을 실행하는 차이점을 가지고 있다.
 
 때문에 마크업이 로드되었을 때, 이미지 등의 미디어 파일과 같은 나머지 소스를 기다리지 않고 자바스크립트를 처리하는 것이 효율적이라고 볼 수있다.
 
@@ -66,9 +66,10 @@ var $jq = jQuery.noConflict();
 
 ### 방벙 3. jQuery.noConflict()를 사용하여 $, window.jQuery 모두 포기한다.
 ```js
-console.log(this.$, this.jQuery);
 // $$ 변수에 jQuery 변수를 담아서 사용할 수 있다.
+// noConflict()안에 인수로 true를 전달할 경우, 식별자로 등록된 $, jQuery 모두를 포기하게 된다.
 var $$ = jQuery.noConflict(true);  
+
 ```
 
 
@@ -81,11 +82,11 @@ var $$ = jQuery.noConflict(true);
 ```
 
 
-### 방법 5. 팩토리 함수에 전달한 후, 인자 값을 $로 받는다.
+### 방법 5. jQuery 팩토리 함수에 전달한 후, 인자 값을 $로 받는다.
 ```js
 var $j = jQuery.noConflict(true);
-  $j(function($){
-})
+jQuery.noConflict(true)(function($){});
+$j(function($){})
 ```
 
 
@@ -99,12 +100,8 @@ var $j = jQuery.noConflict(true);
 
 
 ## jQuery Selector 
-- CSS 1-3 모두 지원
-- $('html a:not(:first-child)')
-- :nth-child(fomular)
-- :nth-child(fomular)
-- :only-child(fomlar)
-...
+
+> [http://codylindley.com/jqueryselectors/](http://codylindley.com/jqueryselectors/) 에서 셀렉터를 알아봅시다.
 
 ## a:nth-child(odd) vs a:odd
 - CSS에서의 odd는 짝수, CSS는 1이 첫번째이기 때문에.
