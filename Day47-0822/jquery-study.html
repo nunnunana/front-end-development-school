@@ -5,15 +5,17 @@
   <meta charset="UTF-8"/>
   <title>jQuery Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../resources/initailization/ress.min.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/jquery-side-menu-button.css">  
   <script src="../resources/libraries/jquery-3.1.0.js"></script>
   <script src="js/modernizr-custom.js"></script>
-  <script src="js/jquery.study.js"></script>
-  <script>
+<!--   <script>
     // window.jQuery && document.write('<p>jQuery로딩에 성공했습니다.</p>')
     window.jQuery ?
       document.write('<p>jQuery 로딩에 성공했습니다.</p>') :
       document.write('<p>jQuery 로딩에 성공 못했습니다.</p>') ;
-  </script>
+  </script> -->
   <style>
     /* css 포지션 스티키를 지원하는 브라우저: FF, Safari */
     .csspositionsticky {
@@ -28,9 +30,50 @@
     .no-cssborderradius {
 
     }
+    
+
+
   </style>
 </head>
 <body>
+<!--   <div class="demo">
+    <button tpye="button" class="change-text-button">아래 단락 내용 변경</button>
+    <p>문서객체모델은 아직 준비되지 않았습니다.</p>
+  </div> -->
+  <button class="btn__menu ion-navicon-round">
+  </button>
+  <div class="side-menu">
+    <ul>
+      <li><a class="link__side-menu" href="">menu 01</a></li>
+      <li><a class="link__side-menu" href="">menu 02</a></li>
+      <li><a class="link__side-menu" href="">menu 03</a></li>
+    </ul>
+  </div>
+
+ <!--  <div class="page-container">
+    <div class="offcanvas-menu-wrapper">
+      <button
+        type="button"
+        class="toggle-menu-button"
+        aria-label="오프캔버스 메뉴 펼침">
+        <span> ─ </span>
+        <span> ─ </span>
+        <span> ─ </span>
+      </button>
+      <div class="offcanvas-menu">
+        <h2>Off Canvas Menu</h2>
+        <ul>
+          <li><a href="#">item</a></li>
+          <li><a href="#">item</a></li>
+          <li><a href="#">item</a></li>
+          <li><a href="#">item</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
   
+  
+<script src="js/jquery.study.js"></script>
 </body>
 </html>

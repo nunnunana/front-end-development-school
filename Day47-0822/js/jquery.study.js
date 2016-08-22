@@ -12,9 +12,9 @@ console.log(window.$ === window.jQuery);
 // -----------------------------
 
 // 방법 1. $를 사용하지 않고, jQuery 키워드만 사용한다.
-jQuery(document).ready(function(){
-  jQuery('body').css('background','#41DB71');
-})
+// jQuery(document).ready(function(){
+//   jQuery('body').css('background','#41DB71');
+// })
 
 // 방법 2. $를 사용하지 않고, jQuery.noConflict()메소드 사용으로 jQuery를 참조하는 새로운 변수를 생성한다.
 // $ 별칭을 포기하게 된다.
@@ -40,3 +40,89 @@ jQuery(document).ready(function(){
 // jQuery.noConflict(true)(function($){
 //   console.log($().jquery);
 // });
+
+
+(function(global, $){
+  'use strict';
+  
+  // global.setTimeout(function(){
+  //   $('.demo').find('p').text('문서객체모델이 모두 준비되어 해당 코드는 문서 객체의 내용을 변경했습니다.');
+  //   $('.demo p').text('문서객체모델이 모두 준비되어 해당 코드는 문서 객체의 내용을 변경했습니다.')  
+  // }, 2000);
+
+  // var $button = $('.change-text-button');
+  // $button.on('click mouseenter keydown', function(){
+  //   console.log(this)
+  //   $(this).next().text('변경되었습니다.');
+  //   // attribute vs property
+  //   // HTML에 마크업하는 내용, 자바스크립트가 셋팅하는 속성 내용
+  //   //$(this).attr('disabled','true'); //xhtml에서는 속성과 값이 일치해야한다.
+  //   $(this).prop('disabled','true'); 
+
+  // });
+
+  // jQuery 사용시 느려지는 이유. 매번 객체를 만들기 때문.
+  // console.log(!!this.css, $(this).css );
+
+  var $body = $('body');
+  var $isMenu = false;
+  var $side_menu = $('.side-menu', $body);
+  $('.btn__menu').on('click', toggleMenu);
+
+  function toggleMenu(){
+    if ( !$isMenu ) {
+      $side_menu.css('display','block');
+      $body.css('transform','translateX(210px)');
+      $(this).removeClass('ion-navicon-round');
+      $(this).addClass('ion-close-round');  
+    } else {
+      setTimeout(function(){
+        $side_menu.css('display','none');
+      }, 250);
+      $body.css('transform','translateX(0)');
+      $(this).addClass('ion-navicon-round');
+      $(this).removeClass('ion-close-round');
+    }
+    $isMenu = !$isMenu;
+  }
+  // 0. 일반적으로 토글은 클래스로 처리를 많이 하던데, 좋은 코드 구조가 있을까?
+  // 1. 마지막 메뉴 이후에 다시 닫기 버튼으로 포커스를 줘야할 것같은데, 효율적인 방법?
+
+
+}(this, this.jQuery));
+
+// (function(global, $){
+//   'use strict';
+//   var wrapper_origin_pos;
+//   // 오프캔버스 메뉴 이벤트 핸들링
+//   function init() {
+//     // 오프캔버스 메뉴 래퍼 선택(참조)
+//     var $offcanvas_wrapper = $('.offcanvas-menu-wrapper');
+//     wrapper_origin_pos = $offcanvas_wrapper.css('left');
+//     // 오프캔버스 토글 메뉴 버튼 선택(참조)
+//     var $toggle_btn = $offcanvas_wrapper.find('.toggle-menu-button');
+//     // var $toggle_btn = $('.toggle-menu-button', $offcanvas_wrapper);
+//     // 오프캔버스 메뉴 래퍼에서 탐색한 버튼에 클릭 이벤트 핸들링
+//     $toggle_btn.on('click', toggleOffCanvasMenu);
+//   }
+
+//   // 이벤트 핸들러(함수)
+//   function toggleOffCanvasMenu() {
+//     // this는 이벤트가 연결된 <button> 문서 객체 이다.
+//     // this가 참조하는 <button> 객체를 jQuery 객체화 시키는 방법은
+//     // jQuery() 팩토리 함수 내부에 this 참조 변수를 전달하여 jQuery 객체를 생성한다.
+//     // 생성된 jQuery 객체는 jQuery.프로토타입 객체가 가진 능력을 맘껏 사용 가능하다.
+//     var $this = $(this); // ※ 이와 같은 행위는 성능을 저하시킨다.
+//     // console.log($this.jquery); // jQuery 버전 출력
+//     var $wrapper = $this.parent();
+//     // console.log($wrapper, $wrapper[0]);
+//     // 부모요소 $wrapper의 left 속성을 이동
+//     $wrapper.animate({
+//       'left': global.parseInt($wrapper.css('left')) == 0 ? wrapper_origin_pos : 0
+//     });
+//   }
+
+
+//   $(init); // $(document).ready(init);
+
+// })(this, this.jQuery);

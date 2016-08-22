@@ -4,16 +4,24 @@
 		"selected_items":
 		[
 			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"jq",
+				"jQuery"
+			],
+			[
+				"re",
+				"resources/"
+			],
+			[
 				"ch",
 				"checkedIcon"
 			],
 			[
 				"getEle",
 				"getElementsByTagName"
-			],
-			[
-				"text-",
-				"text-align"
 			],
 			[
 				"btn",
@@ -291,6 +299,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Day47-0822/README.md",
+			"settings":
+			{
+				"buffer_size": 2258,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day47-0822/jquery-study.html",
+			"settings":
+			{
+				"buffer_size": 2217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day47-0822/css/jquery-side-menu-button.css",
+			"settings":
+			{
+				"buffer_size": 1367,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day47-0822/js/jquery.study.js",
+			"settings":
+			{
+				"buffer_size": 3881,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -299,10 +339,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "sass",
+		"height": 342.0,
+		"last_filter": "js",
 		"selected_items":
 		[
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"sass",
 				"Set Syntax: Sass"
@@ -428,7 +472,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 431.0
+		"width": 407.0
 	},
 	"console":
 	{
@@ -451,11 +495,9 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Documents/program/FDS/Day34-0801",
-		"/Users/eatdesignlove/Documents/program/FDS/Day36-0803",
-		"/Users/eatdesignlove/Documents/program/FDS/Day36-0803/css",
-		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/projects/material-button/css",
-		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/projects/material-button/sass"
+		"/Users/eatdesignlove/Documents/program/FDS",
+		"/Users/eatdesignlove/Documents/program/FDS/Day46-0819-jQuery",
+		"/Users/eatdesignlove/Documents/program/FDS/Day47-0822"
 	],
 	"file_history":
 	[
@@ -604,6 +646,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"toggle_btn",
+			"<a",
+			"<li>",
+			"// ",
+			"//",
 			"document",
 			".style",
 			"it",
@@ -726,12 +773,7 @@
 			"../",
 			"<button>",
 			"tton",
-			"  padding:20px;\n",
-			"padding: 20px;",
-			"article",
-			"span",
-			"article",
-			"<li></li>"
+			"  padding:20px;\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -753,13 +795,141 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Day47-0822/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1982,
+								1982
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Monokai.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1268.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Day47-0822/jquery-study.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2154,
+								2154
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Monokai.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Day47-0822/css/jquery-side-menu-button.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								622,
+								622
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Monokai.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 567.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 3,
+					"file": "Day47-0822/js/jquery.study.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2487,
+								2487
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Monokai.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1068.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -791,7 +961,7 @@
 		"cols":
 		[
 			0.0,
-			0.857407831512,
+			0.459344308594,
 			1.0
 		],
 		"rows":
@@ -874,8 +1044,8 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 213.0,
+	"side_bar_visible": false,
+	"side_bar_width": 172.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
