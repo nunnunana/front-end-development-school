@@ -90,10 +90,26 @@ $button.on('click mouseenter keydown', function(){
 - :nth-child(fomular)
 - :nth-child(fomular)
 - :only-child(fomlar)
+...
+
+
+## a:nth-child(odd) vs a:odd
+- CSS에서의 odd는 짝수, CSS는 1이 첫번째이기 때문에.
+- JavaScript에서 odd는 홀수, 0이 첫번째이기 때문에. 
+
+## animated 
+- 애니메이션이 작동중일 때, 작동할 수 없도록 처리가 가능
+
+
+## 참고자료
+- [https://www.w3.org/TR/wai-aria-practices/#combobox](https://www.w3.org/TR/wai-aria-practices/#combobox)
+- [http://codylindley.com/jqueryselectors/](http://codylindley.com/jqueryselectors/)
+- [elastic sidebar](https://codepen.io/suez/pen/emjwvP)
 
 ## Todo
 - [ ] 자바스크립트 완전정복 3, 김춘경
 - [ ] [Learn.jQuery 읽기](http://learn.jquery.com/about-jquery/)
 - [ ] [http://mcdlr.com/wai-aria-cheatsheet/](http://mcdlr.com/wai-aria-cheatsheet/)
-- [ ] offcanvas menu 리팩토링
+- [ ] offcanvas menu 리팩토링(Elastic Sidebar)
+- [ ] 제이쿼리 필터 목록 살펴보고 사용해보기(Keynote)
 

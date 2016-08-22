@@ -3,6 +3,7 @@ body {
   transition: all 0.25s;
 }
 .side-menu {
+  display: none;
   position: absolute;
   left: -210px;
   top: 0;
@@ -85,3 +86,4 @@ body {
   border: 1px solid #92451c;
   background: #ed9a62;
 }
+

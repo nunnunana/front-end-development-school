@@ -67,7 +67,10 @@ console.log(window.$ === window.jQuery);
   var $body = $('body');
   var $isMenu = false;
   var $side_menu = $('.side-menu', $body);
-  $('.btn__menu').on('click', toggleMenu);
+  var $side_menu_links = $('a', $side_menu);
+  var $btnMenu = $('.btn__menu');
+  console.log($side_menu_links)
+  $btnMenu.on('click', toggleMenu);
 
   function toggleMenu(){
     if ( !$isMenu ) {
@@ -75,6 +78,13 @@ console.log(window.$ === window.jQuery);
       $body.css('transform','translateX(210px)');
       $(this).removeClass('ion-navicon-round');
       $(this).addClass('ion-close-round');  
+      $('li:first a', $side_menu).focus();
+      console.log($side_menu.first()[0])
+
+      $( $side_menu_links[2] ).on('focusout', function() {
+        $btnMenu.focus();
+      });
+
     } else {
       setTimeout(function(){
         $side_menu.css('display','none');
@@ -85,9 +95,6 @@ console.log(window.$ === window.jQuery);
     }
     $isMenu = !$isMenu;
   }
-  // 0. 일반적으로 토글은 클래스로 처리를 많이 하던데, 좋은 코드 구조가 있을까?
-  // 1. 마지막 메뉴 이후에 다시 닫기 버튼으로 포커스를 줘야할 것같은데, 효율적인 방법?
-
 
 }(this, this.jQuery));
 
