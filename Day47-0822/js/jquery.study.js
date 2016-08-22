@@ -133,3 +133,30 @@ console.log(window.$ === window.jQuery);
 //   $(init); // $(document).ready(init);
 
 // })(this, this.jQuery);
+
+
+(function(global, $){
+  'use strict';
+  
+ // $('.dmem-box').on('click', function(){
+ //  var $this = $(this);
+ //  console.log($this);
+ //  $this.addClass('primary')
+ // });
+
+ $('.demo-box').eq(0).on('mounseenter', function(){
+  var $this = $(this);
+  if ($this.hasClass('secondary')){
+    $this.css('font-size', '+=10');
+    }
+    $this.addClass('primary');
+  })
+  .on('mouseleave', function(){
+    var $this = $(this);
+    $this.removeClass('primary');
+    $this.addClass('secondary');
+  });
+ })
+
+
+}(this, this.jQuery));
