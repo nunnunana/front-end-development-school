@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>jQuery Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../resources/libraries/jquery-3.1.0.js"></script>
+  <script src="js/modernizr-custom.js"></script>
+  <script src="js/jquery.study.js"></script>
+  <script>
+    // window.jQuery && document.write('<p>jQuery로딩에 성공했습니다.</p>')
+    window.jQuery ?
+      document.write('<p>jQuery 로딩에 성공했습니다.</p>') :
+      document.write('<p>jQuery 로딩에 성공 못했습니다.</p>') ;
+  </script>
+  <style>
+    /* css 포지션 스티키를 지원하는 브라우저: FF, Safari */
+    .csspositionsticky {
+      background: #41DB71
+    }
+    /* css포지션 스티키를 미지원하는 브라우저: chrome .. */
+    .no-csspositionsticky {
+      background: #F96058;
+    }
+
+    /* 크로스브라우징을 목적으로 사용자 환경을 감지한 후, 대체방식을 제공 */
+    .no-cssborderradius {
+
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>

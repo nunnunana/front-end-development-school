@@ -19,6 +19,3 @@
 - [sizzlejs](http://sizzlejs.com/)s 
 - DOMContentLoaded : onload를 사용해서 로드가 완료되는 시점을 기다리는 것보다, 해당 코드 위치에서 바로 실행하는 것이 조금 더 빠르다고 할 수 있음
 
-## ToDo
-- [ ] 
-- [ ] 
