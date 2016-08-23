@@ -90,7 +90,7 @@
   $letters.each(function(index, item){
     // var $this = $(this);
     var $this = $letters.eq(index);
-    // console.log($this, index);
+    // console.log($this, index); 
     // $this.on('mouseenter', letterOvers);
 
     // $this[0].onclick = function () {

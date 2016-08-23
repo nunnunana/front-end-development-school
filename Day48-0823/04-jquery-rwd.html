@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>jQuery RWD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../resources/libraries/jquery-3.1.0.js"></script>
+  <script>
+    (function($){
+      'use strict';
+      
+      if (!$.keys) {
+        $.keys = function(obj) {
+          if ( $.tpye(obj) !== 'object' ) {throw new Error('객체를 전달해야 합니다.'); }
+          var keys = [];
+          for (var prop in obj) {
+            if ( obj.hasOwnProperty(prop)) {
+              keys.push(prop);
+            }
+          }
+          return keys;
+        }
+      }
+    }(this.jQuery));
+
+
+    (function(global, $){
+      'use strict';
+      
+      // STEP01
+      // 페이지가 로드될 때 다음의 기기인지를 확인한다.
+      // 아래 조건을 확인하여 <html>, <body>요소에 class 속성값으로 추가한다.
+      // Mobile       : 0     ~  767
+      // Tablet       : 768   ~  1024
+      // Desktop      : 1025  ~  1366
+      // Wide-Screen  : 1367  ~
+      // ----------------------------------
+      var $html = $('html'), screen_width = $html.width();
+
+
+
+      // STEO02
+      // 창 크기를 조정하면 STEP01수행했던 결과를 다시 실행하여 class 속성 처리를 변경한다.
+
+    }(this, this.jQuery));
+  </script>
+  <style>
+    body {
+      height: 100vh;
+    }
+    .desktop {
+      background: #000;
+    }
+    .tablet {
+      background: #EB756E;
+    }
+    .mobile {
+      background: #AB70DE;
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
