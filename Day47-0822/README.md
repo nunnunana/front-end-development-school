@@ -84,9 +84,8 @@ var $$ = jQuery.noConflict(true);
 
 ### 방법 5. jQuery 팩토리 함수에 전달한 후, 인자 값을 $로 받는다.
 ```js
-var $j = jQuery.noConflict(true);
-jQuery.noConflict(true)(function($){});
-$j(function($){})
+var $j = jQuery.noConflict(true)(function($){});
+<!-- $j(function($){}) -->
 ```
 
 
@@ -125,9 +124,9 @@ $j(function($){})
 - [elastic sidebar](https://codepen.io/suez/pen/emjwvP)
 
 ## Todo
-- [ ] 자바스크립트 완전정복 3, 김춘경
+- [x] 자바스크립트 완전정복 3, 김춘경
+- [x] 제이쿼리 필터 목록 살펴보고 사용해보기(Keynote)
 - [ ] [Learn.jQuery 읽기](http://learn.jquery.com/about-jquery/)
-- [ ] [http://mcdlr.com/wai-aria-cheatsheet/](http://mcdlr.com/wai-aria-cheatsheet/)
 - [ ] offcanvas menu 리팩토링(Elastic Sidebar)
-- [ ] 제이쿼리 필터 목록 살펴보고 사용해보기(Keynote)
+- [ ] [http://mcdlr.com/wai-aria-cheatsheet/](http://mcdlr.com/wai-aria-cheatsheet/)
 
