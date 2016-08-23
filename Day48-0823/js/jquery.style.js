@@ -81,28 +81,76 @@
   // 불필요한 처리를 하지 않는 코드
   // 코드리뷰 => 리팩토링
 
-  $letters.on('mouseenter', { '$l' : $letters }, function(e){
-    console.log(e.data.$l.eq(0));
-  });
+  // $letters.on('mouseenter', { '$l' : $letters }, function(e){
+  //   console.log(e.data.$l.eq(0));
+  // });
   // 인덱스를 알아야 각각의 요소를 확인할 수 있다. => 반복문
   // 제이쿼리 내부의 $(this)는 돔 객체를 가리킨다.
 
   $letters.each(function(index, item){
-    var $this = $(this);
-    // var $this = $letters.eq(index);
+    // var $this = $(this);
+    var $this = $letters.eq(index);
+    // console.log($this, index);
     // $this.on('mouseenter', letterOvers);
-    $this.on('mouseenter', $.proxy(letterOvers, $this));
 
+    // $this[0].onclick = function () {
+    //   console.log('this:', $($this[0]));
+    //   $($this[0]).css('color', '#52c88c');
+    // };
+    
+    // $this.on('mouseenter', $.proxy(letterOvers, $this));
+    // $this.on('mouseenter', $.proxy(playEffectSound, $this));
+    
+    $this.one('mouseenter', $.proxy(letterOvers, $this));
+    $this.one('mouseenter', $.proxy(playEffectSound, $this));
+
+
+    
     // $this.on('mouseenter', function(){
     //   $this.css('color', '#74D177');
     // });
   });  
+
+  // Q1.
+  // 함수가 실행되고 리턴될때 클로저 영역이 생기고 해당 변수들을 기억할 수 있을 것 같은데,
+  // 위의 예에서 함수가 실행되는 시점이 마우스가 들어왔을 때이고, 반복문시 작동하는 시점은 그 이전인데 어떻게 가능한거지?
   // on 이벤트의 콜백함수는 마우스가 진입했을 때 실행되고, 그때 $this를 받아오는 것일텐데?
   // var $this를 어떻게 기억하지?
 
+  // Q2.
+  // XHR 내 정보가 보이지 않게 하는 것? IIFE를 활용하는 것과 관련이 있을까?
+  
+  // var effect_sound = $('<audio>');
+  // effect_sound.attr({
+  //   'src':'../resources/sounds/pop.mp3'
+  // });
+  
+  var effect_sound = $('<audio>', {
+    'src':'../resources/sounds/pop.mp3'
+  });
+
+  effect_sound = effect_sound[0];
+  
+  function audioStop(audio){
+    audio.pause();
+    audio.currentTime = 0;
+  }
+
+  function playEffectSound(){
+    audioStop(effect_sound)
+    effect_sound.play();
+  };  
+
   function letterOvers() {
-    console.log('this:', this);
-    this.css('color', '#52c88c');
+    // console.log('this:', this);
+    // $(this).css('color', '#52c88c');
+    // console.log('$this:', $this);
+    this.css({
+      'transform': 'scale(1.5)',
+      'margin': '0 0 0 10px',
+      'color':'#74D177'
+    });
+
   }
 
 

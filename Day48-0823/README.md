@@ -4,6 +4,7 @@
 
 ## 잊지말기
 - 기존의 자바스크립트와 'use strict'간 차이를 파악
+- JavaScript Keynote. **모두읽기** [이벤트위임]
 
 
 ###  this 컨텍스트 참조 변수
@@ -145,6 +146,7 @@ var fn_map = {
 - 아래의 코드는 `$.proxy`를 통해 외부 함수의 context를 바꾸어 줄 수 있다.
 - [Javascript call() & apply() vs bind()?](http://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind)
 
+
 ```js
 $letters.on('mouseenter', { '$l' : $letters }, function(e){
   console.log(e.data.$l.eq(0));
@@ -163,9 +165,71 @@ function letterOvers() {
 };
 ```
 
+## jQuery Class 제어
+- .hasClass(): 해당 클래스 속성을 소유했는가? Boolean
+- .addClass(): 해당 클래스가 없다면 추가한다. jQuery object
+- .removeClass(): 해당 클래스가 있다면 제거한다. jQuery Object | 인자 값이 없다면 모든 클래스 속성을 제거한다. 
+- .toggleClass(): 해당 클래스 속성을 토글한다. (해당 클래스 속성을 소유했다면 제거, 소유하지 않았다면 추가)
+
+### 이벤트 위임
+- 크로스브라우징 문제로 이벤트 위임처리를 자유롭게 처리하지 못했다.
+- 이벤트 캡쳐링 : 부모에서 자식으로 내려가는 방법
+- 이벤트 버블링 : 자식에서 부모로 올라오는 방법
+
+### 버튼예제 | 초기 코드
+
+```js
+var button_control = $('.button-control');
+var $demo_box = $('.demo-box');
+var addClass_btn = $('.addClass_look', button_control);
+var removeClass_btn =$('.removeClass_look', button_control);
+var toggleClass_btn =$('.toggleClass_look', button_control);
+
+addClass_btn.on('click', function(){
+  demo_box.addClass('look');
+});
+removeClass_btn.on('click', function(){
+  demo_box.removeClass('look');
+});
+toggleClass_btn.on('click', function(){
+  demo_box.toggleClass('look');
+});
+```
+
+### 버튼예제 | 이벤트 위임을 이용한 더 효율적인 코드
+
+```js
+var button_control = $('.button-control');
+var $demo_box = $('.demo-box');
+
+button_control.on('click','button',function(){
+  switch(this.getAttribute('class')) {
+    case 'addClass_look':
+      $demo_box.addClass('look');
+    break;
+    case 'removeClass_look':
+      $demo_box.removeClass('look');
+    break;
+    case 'toggleClass_look':
+      $demo_box.toggleClass('look');
+    break;
+  }
+});
+
+```
+
+
+## Q.
+- 함수가 실행되고 리턴될때 클로저 영역이 생기고 해당 변수들을 기억할 수 있을 것 같은데, 위의 예에서 함수가 실행되는 시점이 마우스가 들어왔을 때이고, 반복문시 작동하는 시점은 그 이전인데 어떻게 가능한거지? on 이벤트의 콜백함수는 마우스가 진입했을 때 실행되고, 그때 $this를 받아오는 것일텐데? var $this를 어떻게 기억하지?
+- 크롬 개발자도구의 XHR 내 정보가 보이지 않게 하는 것? IIFE를 활용하는 것과 관련이 있을까?
+
+
 ## 참고자료
->- [$.extend(obj1, obj2);](http://api.jquery.com/jQuery.extend/)
+>- [$.extend(obj1, obj2);](htt-api.jquery.com/jQuery.extend/)
 
 
 ## Todo
-- [ ] 
+- [ ] counter.js 라이브러리 (오늘 배운 것을 활용)
+- [ ] _on 핼퍼함수 (JJ_Camp)
+- [ ] 내일 팀액티비티, 관리자페이지 작업
+  
