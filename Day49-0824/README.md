@@ -64,8 +64,28 @@ $('li').find(':last') //**li의 자손들 중** 마지막 요소를 반환한다
 - .unwrap() 해당요소를 래핑한 요소를 없앤다. 
 - .innerWrap
 
+## Toggle
+
+- 이벤트 바인딩 시에 이벤트 객체에 사용자가 정의한 객체를 합성 [객체 합성] 
+- 외부에 변수를 만들지 않고, 이벤트 객체를 통해 조건 처리하는 토글 구문
+
+```js
+$target.on('click', {'clicked':false}, function(ev){
+  var clicked = ev.data.clicke;
+  if (!clicked) {
+    console.log('toggle1');
+  } else {
+    console.log('toggle2');
+  }
+  ev.data.clicked = !ev.data.clicked;
+})
+```
+
+## return this
+- `return this`는  메서드 체이닝의 원리
+
 
 ## Todo
 - [ ] Counter.js 완성하기
-- [ ] jQuery Plugin 만들기 복습
+- [ ] jQuery Plugin 만들기 복습(radioClass)
 - [ ] jQuery 메소드 키노트 살펴보기

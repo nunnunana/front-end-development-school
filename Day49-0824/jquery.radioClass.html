@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>jQuery RadioClass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <script src="../resources/libraries/jquery-3.1.0.js"></script>
+  <script src="plugins/radioClass/jqeury.radioClass.js"></script>
+  <style>
+    .on {
+      font-weight: 900;
+      background: #ff0;
+    }
+  </style>
+</head>
+<body>
+<nav class="test">
+  <ul>
+    <li class="active"><a href="">test suite 1</a></li>
+    <li><a href="">test suite 2</a></li>
+    <li><a href="">test suite 3</a></li>
+    <li><a href="">test suite 4</a></li>
+  </ul>
+</nav>
+
+<script>
+  (function(global, $){
+    'use strict';
+    
+    console.log($.fn.radioClass);
+    var $test = $('.test');
+
+    $test.on('click', 'a', function(ev){
+      // 브라우저의 기본동작 차단
+      ev.preventDefault();
+      // console.log('ev.target:', this);
+      // console.log('this:', this);
+
+      var $this = $(ev.target);
+      var $parent = $this.parent();
+      $parent.radioClass('on');
+    });
+  }(this, this.jQuery));
+</script>
+</body>
+</html>
