@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>jQuery RadioClass Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../resources/libraries/jquery-3.1.0.js"></script>
+  <script src="js/jquery-component-practice.js"></script>
+  <style>
+    .active {
+      font-weight: 900;
+      background: #21EADB;
+    }
+  </style>
+</head>
+<body>
+  <nav class="gnb">
+    <ol>
+      <li class="active"><a href="">Link Content 1</a></li>
+      <li><a href="">Link Content 2</a></li>
+      <li><a href="">Link Content 3</a></li>
+      <li><a href="">Link Content 4</a></li>
+      <li><a href="">Link Content 5</a></li>
+    </ol>
+  </nav>
+
+<script>
+(function(global, $){
+  'use strict';
+    
+  var $gnb = $('.gnb');
+  
+  $gnb.on('click', 'a', function(ev){
+    ev.preventDefault();
+
+    var $this = $(ev.target);
+    var $parent = $this.parent();
+    $parent.radioClass('active');
+    console.log($parent.radioClass('active').css('background'));
+  });
+
+}(this, this.jQuery));
+</script>
+</body>
+</html>
