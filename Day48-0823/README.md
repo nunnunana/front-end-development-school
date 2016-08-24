@@ -240,7 +240,35 @@ function f(){
 
 
 ## Q.
-- 함수가 실행되고 리턴될 때 클로저 영역이 생기고 해당 변수들을 기억하는데, 위의 예에서 함수가 실행되는 시점이 마우스가 들어왔을 때이고, 반복문시 작동하는 시점은 그 이전인데 어떻게 가능한지? on 이벤트의 콜백함수는 마우스가 진입했을 때 실행되고, 그때 $this를 받아오는 것일텐데? var $this를 어떻게 기억하는가?
+- 위의 예에서 함수가 실행되는 시점이 마우스가 들어왔을 때이고, 반복문시 작동하는 시점은 그 이전인데 어떻게 가능한지? on 이벤트의 콜백함수는 마우스가 진입했을 때 실행되고, 그때 $this를 받아오는 것일텐데? var $this를 어떻게 기억하는가?
+
+```js
+//jQuery 3.1.
+
+each: function( obj, callback ) {
+    var length, i = 0;
+
+    if ( isArrayLike( obj ) ) {
+      length = obj.length;
+      for ( ; i < length; i++ ) {
+        if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+          break;
+        }
+      }
+    } else {
+      for ( i in obj ) {
+        if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+          break;
+        }
+      }
+    }
+
+    return obj;
+  }
+
+
+```
+
 
 - 크롬 개발자도구의 XHR에 나타나는 JSON 정보가 보이지 않게 하는 것? IIFE를 활용하는 것과 관련이 있는가?
 

@@ -57,7 +57,8 @@
   h1_text = $.map(h1_text, function(item, index){
     if($.trim(item)) {
       return '<span>' + item + '</span>';      
-    } else {
+    } 
+    else {
       return item;
     }
   });
@@ -88,8 +89,8 @@
   // 제이쿼리 내부의 $(this)는 돔 객체를 가리킨다.
 
   $letters.each(function(index, item){
-    // var $this = $(this);
-    var $this = $letters.eq(index);
+    var $this = $(this);
+    // var $this = $letters.eq(index);
     // console.log($this, index); 
     // $this.on('mouseenter', letterOvers);
 
