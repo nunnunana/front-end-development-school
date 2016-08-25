@@ -1,0 +1,1 @@
+(function(exports,$){'use strict';var $demo_tabs=$('.demo-tabs').uiTabs();var $demo_tabs2=$('.demo-tabs-2').uiTabs();$demo_tabs.find('ul').uiRipple({'sound':true,'color':'hsla(188, 87%, 58%, 0.56)'});})(this,this.jQuery);

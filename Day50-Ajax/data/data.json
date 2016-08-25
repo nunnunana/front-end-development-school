@@ -1,0 +1,380 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "paige",
+        "last": "franklin"
+      },
+      "location": {
+        "street": "4076 station road",
+        "city": "sligo",
+        "state": "offaly",
+        "postcode": 47744
+      },
+      "email": "paige.franklin@example.com",
+      "login": {
+        "username": "ticklishbird494",
+        "password": "steven1",
+        "salt": "XU7kaSyE",
+        "md5": "3c42561beb01271fb93f523186c34fdf",
+        "sha1": "a670567b046efe71c1c48c54ef3ef6a267ba22bc",
+        "sha256": "471d4f7b5cc72fef96575068b5e8fe23614e9c16f1ba086433f71052116bb154"
+      },
+      "dob": "1974-04-04 09:58:03",
+      "registered": "2015-01-05 16:38:23",
+      "phone": "071-342-8418",
+      "cell": "081-863-2206",
+      "id": {
+        "name": "PPS",
+        "value": "2347049T"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/9.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/9.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/9.jpg"
+      },
+      "nat": "IE"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "paul",
+        "last": "dixon"
+      },
+      "location": {
+        "street": "6331 kingsway",
+        "city": "belfast",
+        "state": "gloucestershire",
+        "postcode": "S32 7XY"
+      },
+      "email": "paul.dixon@example.com",
+      "login": {
+        "username": "heavymouse300",
+        "password": "millwall",
+        "salt": "9ANV8UHy",
+        "md5": "b134ab205919bccacaa34ae1821b0b0b",
+        "sha1": "ab6db0f99e8ad865e2217bfa2eb1ec3ecf055305",
+        "sha256": "8ba8ba756ba179493036a80cc600860b25cac93ba72c331c29b582bdb11a00e2"
+      },
+      "dob": "1965-09-21 12:46:24",
+      "registered": "2008-06-01 13:03:51",
+      "phone": "015395 05380",
+      "cell": "0750-640-686",
+      "id": {
+        "name": "NINO",
+        "value": "YJ 30 20 66 Z"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/79.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/79.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/79.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "charles",
+        "last": "sanders"
+      },
+      "location": {
+        "street": "1491 springfield road",
+        "city": "salisbury",
+        "state": "hertfordshire",
+        "postcode": "RM3 7NA"
+      },
+      "email": "charles.sanders@example.com",
+      "login": {
+        "username": "bigfish578",
+        "password": "darrel",
+        "salt": "YRn57cBc",
+        "md5": "f0376f79b4e627f79a905a336b4edf4f",
+        "sha1": "ecd27150a726b2e76034bc2802a7eecf0f852b6d",
+        "sha256": "d1510fcad48f3cad4c8d4a4aa2d1379e8423127c7c7513fae6e991e7f30cbb20"
+      },
+      "dob": "1993-08-08 20:34:45",
+      "registered": "2009-03-01 22:07:43",
+      "phone": "016973 02663",
+      "cell": "0738-627-213",
+      "id": {
+        "name": "NINO",
+        "value": "CC 58 41 35 E"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/62.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/62.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/62.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "ms",
+        "first": "savannah",
+        "last": "wood"
+      },
+      "location": {
+        "street": "4091 cambridge terrace",
+        "city": "blenheim",
+        "state": "taranaki",
+        "postcode": 31017
+      },
+      "email": "savannah.wood@example.com",
+      "login": {
+        "username": "silverrabbit523",
+        "password": "vaughn",
+        "salt": "tRXLHcFJ",
+        "md5": "e2dffd9d1de16a49e01e6fe345d9f1f7",
+        "sha1": "cefaaf530a25f07140a6f56a3ae8180098f32009",
+        "sha256": "5404e4eb6768846d8e69cf950db6238a4e3de6d01c6faaae3928b0572fbfff27"
+      },
+      "dob": "1987-10-09 16:08:13",
+      "registered": "2015-10-25 05:20:50",
+      "phone": "(263)-125-1431",
+      "cell": "(751)-603-4152",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/69.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/69.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/69.jpg"
+      },
+      "nat": "NZ"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "astrid",
+        "last": "andersen"
+      },
+      "location": {
+        "street": "1637 brogårdsvej",
+        "city": "støvring ",
+        "state": "syddanmark",
+        "postcode": 61594
+      },
+      "email": "astrid.andersen@example.com",
+      "login": {
+        "username": "smallmouse582",
+        "password": "phyllis",
+        "salt": "j0bsHeje",
+        "md5": "ecffc39c87d6f1977df46f16ef8de9b9",
+        "sha1": "c72929061d851b26c30044c9832301cce486e464",
+        "sha256": "6b60b015728053683e8f7c81609d94b12f6e6a96f15d7309cfc660a21f55b19a"
+      },
+      "dob": "1959-01-12 12:02:45",
+      "registered": "2010-01-07 06:04:41",
+      "phone": "54175453",
+      "cell": "12632356",
+      "id": {
+        "name": "CPR",
+        "value": "486945-4865"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/43.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/43.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/43.jpg"
+      },
+      "nat": "DK"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "mrs",
+        "first": "marilou",
+        "last": "tremblay"
+      },
+      "location": {
+        "street": "5814 concession road 6",
+        "city": "sherbrooke",
+        "state": "northwest territories",
+        "postcode": 62321
+      },
+      "email": "marilou.tremblay@example.com",
+      "login": {
+        "username": "yellowswan263",
+        "password": "adam",
+        "salt": "0ESoHHW5",
+        "md5": "0953cca57cf302a36cef890e9b535f57",
+        "sha1": "a2246fe2a0549b89721c832055a05f2886967dd5",
+        "sha256": "7dc38b30f6481f94ce24d59dfdc38cc0658af23f9e2ce9253fd8a6fb87781113"
+      },
+      "dob": "1960-07-26 18:22:42",
+      "registered": "2004-08-20 21:01:21",
+      "phone": "750-581-0604",
+      "cell": "077-499-7031",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/30.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/30.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/30.jpg"
+      },
+      "nat": "CA"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "brandão",
+        "last": "campos"
+      },
+      "location": {
+        "street": "6685 rua santo antônio ",
+        "city": "guarulhos",
+        "state": "rio grande do sul",
+        "postcode": 71929
+      },
+      "email": "brandão.campos@example.com",
+      "login": {
+        "username": "brownbird600",
+        "password": "cosmic",
+        "salt": "WvETlnkr",
+        "md5": "03e144461e7c9539feac764f1217a3a2",
+        "sha1": "bf13e9af625d0fd613e56e5fe309f8a467f7295a",
+        "sha256": "f26b3a6f84dbff3fef44b8c2eef1ae438871d4aeb9ac80ce564aee9d6349bd07"
+      },
+      "dob": "1987-07-19 05:10:01",
+      "registered": "2015-05-08 15:13:59",
+      "phone": "(61) 0754-7726",
+      "cell": "(34) 6206-7234",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/96.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/96.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/96.jpg"
+      },
+      "nat": "BR"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "howard",
+        "last": "stevens"
+      },
+      "location": {
+        "street": "2128 parker rd",
+        "city": "albany",
+        "state": "victoria",
+        "postcode": 4753
+      },
+      "email": "howard.stevens@example.com",
+      "login": {
+        "username": "tinybutterfly501",
+        "password": "whore",
+        "salt": "pKSGwZb2",
+        "md5": "0ad65f5e7410292dc75577a5c06f8b3a",
+        "sha1": "a1eb963683723ce5335a4ee4991965188c8865de",
+        "sha256": "ff868166e0d891d6c8cc1d4e5a60918ade764000be53038ec5a5170ece85c9c4"
+      },
+      "dob": "1951-04-13 13:08:44",
+      "registered": "2006-03-14 22:55:44",
+      "phone": "09-5559-9576",
+      "cell": "0477-484-890",
+      "id": {
+        "name": "TFN",
+        "value": "961846086"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/96.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/96.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/96.jpg"
+      },
+      "nat": "AU"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "ms",
+        "first": "caitlin",
+        "last": "chavez"
+      },
+      "location": {
+        "street": "6749 grange road",
+        "city": "kingston upon hull",
+        "state": "tayside",
+        "postcode": "UD5 8QB"
+      },
+      "email": "caitlin.chavez@example.com",
+      "login": {
+        "username": "smallostrich975",
+        "password": "longhorn",
+        "salt": "5fzT1gKO",
+        "md5": "120ec3ae76d8571dff4a14a0ba2eb65e",
+        "sha1": "c31438ec74375db37219d9fd3555ff4af99a91be",
+        "sha256": "9b4c443beedd61c7673f0e93e74dd075af18a4196fdc17bfcb5f3d9c486055ef"
+      },
+      "dob": "1977-06-07 17:32:52",
+      "registered": "2012-09-18 02:26:42",
+      "phone": "017684 54873",
+      "cell": "0780-686-934",
+      "id": {
+        "name": "NINO",
+        "value": "ZM 94 57 59 N"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/76.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/76.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/76.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "meral",
+        "last": "kulaksızoğlu"
+      },
+      "location": {
+        "street": "8758 istiklal cd",
+        "city": "bolu",
+        "state": "siirt",
+        "postcode": 13435
+      },
+      "email": "meral.kulaksızoğlu@example.com",
+      "login": {
+        "username": "greensnake627",
+        "password": "cicero",
+        "salt": "BHHPePjt",
+        "md5": "2fcaa50b3d569ad8fb85c85a1ccb491c",
+        "sha1": "f115747d4c6ad7fced79c4a6f3629171fc4dd9b3",
+        "sha256": "aa15f0de6116da452a1cf57d873063545699caa1c37af3bd2e0aa11acfdb2415"
+      },
+      "dob": "1950-07-22 07:33:01",
+      "registered": "2005-12-15 00:36:57",
+      "phone": "(678)-971-5481",
+      "cell": "(880)-457-7603",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/72.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/72.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/72.jpg"
+      },
+      "nat": "TR"
+    }
+  ],
+  "info": {
+    "seed": "17b0bdc352892a23",
+    "results": 10,
+    "page": 1,
+    "version": "1.1"
+  }
+}
