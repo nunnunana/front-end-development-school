@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko-KR" data-ng-app>
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="UTF-8"/>
@@ -12,9 +12,9 @@
     console.log('Angular 버전:', window.angular.version.full); 
   </script>
 </head>
-<body>
-
-<h1 lang="en">Angular Javascript Framework</h1>
-
+<body data-ng-init="application_name='Hello, AngularJS!.'">
+  <input type="text" data-ng-model="application_name">
+  <h1 lang="en" data-ng-bind="application_name"></h1>
+  
 </body>
 </html>

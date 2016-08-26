@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"fuc",
+				"function"
+			],
+			[
+				"lo",
+				"localstorage"
+			],
+			[
+				"get",
+				"getData"
+			],
+			[
+				"str",
+				"storage"
+			],
+			[
 				"per",
 				"person"
 			],
@@ -336,10 +352,6 @@
 				"background-color"
 			],
 			[
-				"get",
-				"getElementsByTagName"
-			],
-			[
 				"inl",
 				"inline-block"
 			],
@@ -392,146 +404,26 @@
 	"buffers":
 	[
 		{
-			"file": "Day50-Ajax/README.md",
+			"file": "Day51-angular/README.md",
 			"settings":
 			{
-				"buffer_size": 3043,
+				"buffer_size": 1555,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day50-Ajax/js/04-ajax-jquery.js",
+			"file": "Day51-angular/angularJS/angular.start.html",
 			"settings":
 			{
-				"buffer_size": 504,
+				"buffer_size": 597,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day50-Ajax/js/ajax-communication.js",
+			"file": "/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 4295,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/01-ajax-basic.html",
-			"settings":
-			{
-				"buffer_size": 973,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/04-ajax-jquery.html",
-			"settings":
-			{
-				"buffer_size": 366,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/02-ajax-practice-2.html",
-			"settings":
-			{
-				"buffer_size": 862,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/03-ajax-single-page-app.html",
-			"settings":
-			{
-				"buffer_size": 559,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/js/spa.js",
-			"settings":
-			{
-				"buffer_size": 1172,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/includes",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/includes/about.html",
-			"settings":
-			{
-				"buffer_size": 172,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/includes/home.html",
-			"settings":
-			{
-				"buffer_size": 171,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/includes/contact.html",
-			"settings":
-			{
-				"buffer_size": 174,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/data/data.xml",
-			"settings":
-			{
-				"buffer_size": 11407,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/data/data.html",
-			"settings":
-			{
-				"buffer_size": 646,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/data/data.txt",
-			"settings":
-			{
-				"buffer_size": 41,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/00-ajax-practice.html",
-			"settings":
-			{
-				"buffer_size": 318,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/js/00-ajax.practice.js",
-			"settings":
-			{
-				"buffer_size": 437,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day50-Ajax/NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.js",
-			"settings":
-			{
-				"buffer_size": 4156,
+				"buffer_size": 32,
 				"line_ending": "Unix"
 			}
 		}
@@ -544,16 +436,16 @@
 	"command_palette":
 	{
 		"height": 342.0,
-		"last_filter": "js",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"js",
-				"Set Syntax: JavaScript"
-			],
-			[
 				"ins",
 				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"html",
@@ -680,7 +572,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 431.0
+		"width": 503.0
 	},
 	"console":
 	{
@@ -703,14 +595,39 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/eatdesignlove/Documents/program/FDS/Day48-0823/js",
-		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/data"
+		"/Users/eatdesignlove/Documents/program/FDS",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS/lib",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS/lib/angular"
 	],
 	"file_history":
 	[
-		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/data/data.json",
-		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/js/ajax-communication.js",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-Angular/angularJS/bower.json",
+		"/Users/eatdesignlove/.bowerrc",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/01-localstorage.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/js/storage.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-Angular/js/jquery.dataManager.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/00-ajax-practice.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/js/00-ajax.practice.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/data/data.txt",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/data/data.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/data/data.xml",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/includes/contact.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/includes/home.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/includes/about.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/includes",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/js/spa.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/03-ajax-single-page-app.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/02-ajax-practice-2.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/04-ajax-jquery.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/01-ajax-basic.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/js/ajax-communication.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/js/04-ajax-jquery.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/data/data.json",
 		"/Users/eatdesignlove/Documents/program/FDS/Day50-Ajax/google",
 		"/Users/eatdesignlove/Documents/program/FDS/Day49-0824/js/jquery-component-practice.js",
 		"/Users/eatdesignlove/Documents/program/FDS/Day49-0824/02-jquery.radioClass-practice.html",
@@ -813,29 +730,7 @@
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/02-flexible-video.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/01-fluid-vs-clipping-images.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css/aware-style.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day24/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/css/holzweiler.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day24/holzweiler/index.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day23/css/holzeiler.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day23/01-video-background.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/style.css",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/grid-stataic.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19/01-gird-system-practice.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19/01-gird-system.html",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-stataic.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19/css/broadcast-web-ui.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day19/practice-broadcast-web-ui",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/ress.min.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day18/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/Day18/01-gird.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/css/03-fixed-position.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/03-fixed-position.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day15/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/font-awesome/font-awesome.min.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day16/css/practice1.css",
-		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/demo/momentum/index.html"
+		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html"
 	],
 	"find":
 	{
@@ -853,6 +748,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"Data",
+			"FDS",
+			"_",
+			"text",
+			"\"",
 			"// ",
 			"span",
 			"//",
@@ -974,13 +875,7 @@
 			" + ($gutter * 2)",
 			"$column",
 			"mn*",
-			" *",
-			"$column * 2",
-			"10px",
-			".grid",
-			"en",
-			"ner",
-			"screen and "
+			" *"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1007,531 +902,62 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day50-Ajax/README.md",
+					"file": "Day51-angular/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3043,
+						"buffer_size": 1555,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2736,
-								2736
+								1088,
+								1088
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
 							"open_with_edit": true,
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2121.0,
+						"translation.y": 806.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Day50-Ajax/js/04-ajax-jquery.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 504,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								21
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Day50-Ajax/js/ajax-communication.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1933,
-								1933
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Day50-Ajax/01-ajax-basic.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 973,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								514
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 245.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Day50-Ajax/04-ajax-jquery.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 366,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								42,
-								42
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Day50-Ajax/02-ajax-practice-2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 862,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Day50-Ajax/03-ajax-single-page-app.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								186,
-								186
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Day50-Ajax/js/spa.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1134,
-								1134
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Day50-Ajax/includes",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Day50-Ajax/includes/about.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								172,
-								172
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Day50-Ajax/includes/home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171,
-								171
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Day50-Ajax/includes/contact.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 174,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Day50-Ajax/data/data.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								273,
-								273
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Day50-Ajax/data/data.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 646,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								288,
-								288
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "Day50-Ajax/data/data.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 41,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23,
-								23
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 15,
-					"file": "Day50-Ajax/00-ajax-practice.html",
+					"buffer": 1,
+					"file": "Day51-angular/angularJS/angular.start.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 318,
+						"buffer_size": 597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								317,
-								317
+								34,
+								34
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
 							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "Day50-Ajax/js/00-ajax.practice.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								374,
-								374
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1541,27 +967,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "Day50-Ajax/NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.js",
+					"buffer": 2,
+					"file": "/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4156,
+						"buffer_size": 32,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17,
-								17
+								29,
+								29
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1601,7 +1027,7 @@
 		"cols":
 		[
 			0.0,
-			0.524926070972,
+			0.460565176875,
 			1.0
 		],
 		"rows":
@@ -1685,7 +1111,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 212.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
