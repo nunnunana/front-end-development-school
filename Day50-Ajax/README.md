@@ -102,19 +102,18 @@ $.ajax({
 ## AngularJS
 - SPA : Single Page Application
 - Angular팀이 제공하는 예제는 비표준인 것이 많으니 주의
-- 
+-
 
 
 
 ## Q
 - [SPA의 경우, 검색엔진 최적화는 어떻게 할 수 있는지 궁금.](http://funnygangstar.tistory.com/entry/%EC%8B%B1%EA%B8%80-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90%EC%84%9C%EC%9D%98-%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-%EC%B5%9C%EC%A0%81%ED%99%94-SEO)
-- services 데이터와 관련된 getter, setter를 설정하곤 했는데 그 이유가 뭘까?
-- 
+- services 데이터와 관련된 getter, setter를 설정하곤 했는데 그 이유가 뭘까? 
 
 
 ## Todo
-- [ ] Ajax 연습하기 (배운 것을 이용해 무언가 만들기[Tab-ui](https://github.com/yamoo9/NIA_A11y_UI_Components/tree/01-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%A0%9C%EC%9E%91-%EC%A4%80%EB%B9%84/UI/Tabs))
-- [ ] Ajax 무한스크롤 페이지 만들기
+- [x] Ajax 연습하기 (배운 것을 이용해 무언가 만들기[Tab-ui](https://github.com/yamoo9/NIA_A11y_UI_Components/tree/01-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%A0%9C%EC%9E%91-%EC%A4%80%EB%B9%84/UI/Tabs))
+- [x] Ajax 무한스크롤 페이지 만들기 (질문거리)
 - [ ] radioClass:[yamoo9 예제](http://yamoo9.net/demo/aria-tabs/) 참고하여 리팩토링하기
 - [ ] 우회메소드 이해하기[.bind()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 - [ ] [HTTP 상태코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) 주요 코드 숙지하기

@@ -62,10 +62,10 @@
 
       var person, gender, phone, email, pic, i = people.length-1;
       for ( ; people[i] ; i--) {
-        person =people[i];
+        person  = people[i];
         gender  = person.gender;
         phone   = person.phone;
-        email  = person.email;
+        email   = person.email;
         pic = person.picture.thumbnail;
         console.log(gender, phone, email, pic)
         
