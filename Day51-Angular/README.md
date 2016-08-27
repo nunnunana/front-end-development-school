@@ -3,7 +3,9 @@
 # Day51
 
 ## 잊지말기
-- 
+- angular의 모든 것은 모듈로 이루어져 있다.
+- 라우트는 주소와 관련, 
+- MVVM + MVC
 
 ## Localstorage
 - HTML5에 추가된 가능으로 사용자의 웹 브라우저에 데이터를 저장하는 방법
@@ -78,6 +80,17 @@ console.log('Angular 버전:', window.angular.version.full);
 - HTML/CSS를 포함
 - 컨트롤러에 연결된 $scope 객체를 통해 연결된 데이터를 처리
 - 디렉티브를 사용해 HTML을 확장
+
+## Route
+- 연결 주소에 컨트롤러와 뷰를 각각 연결
+- 라우트 파라미터를 포함시킬 수 있음
+- 라우트는 #를 보고 
+
+## Angular Big Picture.
+- Module
+- Config
+- Route
+- directive < **view** - **$scope** - **controller** > factory
 
 
 ## 드는생각
