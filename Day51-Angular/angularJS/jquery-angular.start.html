@@ -5,13 +5,14 @@
   <meta charset="UTF-8"/>
   <title>jQuery | Angular.Start</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../resources/libraries/jquery-3.1.0.js">
+  <script src="../../resources/libraries/jquery-3.1.0.js"></script>
   <script>
     function init($) {
       var $twb          = $('#twb'),
           $twb_binding  = $('#twb-binding');
 
       $twb.on('keyup', function(event){
+        console.log(event)
         $twb_binding.text( event.target.value );
       });
     }

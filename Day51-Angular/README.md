@@ -99,12 +99,12 @@ console.log('Angular 버전:', window.angular.version.full);
 
 
 ## Todo
-- [ ] 랜덤유저 한글판(네이밍) 만들기 (노드서버는 태선형님 지원);
-- [ ] **jQuery 핼퍼 객체** 만드는 연습
+- [x] 랜덤유저 한글판(네이밍) 만들기 (노드서버는 태선형님 지원);
+- [x] **jQuery 핼퍼 객체** 만드는 연습
 - [ ] **Tab-UI Plugin** 만드는 연습
 - [ ] **todolist + localstorage** 기능 추가 (이벤트 위임 처리)
 - [ ] **Infinity Scroll** 완성 (onprogress) -> 추후 Plugin
-- [ ] dataManager 핼퍼 객체가 어떻게 더 편리해지는지 잘 와닿지 않는데, 핼퍼 객체를 이용해서 무언가를 만들어보기
+- [x] dataManager 핼퍼 객체가 어떻게 더 편리해지는지 잘 와닿지 않는데, 핼퍼 객체를 이용해서 무언가를 만들어보기
 - [ ] projectKit 살펴보고 도입할 방법 고민해보기
 - [ ] gulp, webpack 설치하고 사용해보기
 - [ ] angular keynote.
