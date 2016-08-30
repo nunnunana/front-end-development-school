@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-ng-app>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>demo - changeColor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../resources/libraries/angular.1.5.7.min.js"></script>
+  <style>
+    body {
+      marign: 0;
+      min-height: 100vh;
+      background: {{view_color}};
+    }
+    .color-palette {
+      background: #fff;
+    }
+  </style>
+</head>
+<body data-ng-init="
+  my_color  = '#786FFF';
+  hidden = true;
+  colors = {
+    'pink'  : '#FF656C',
+    'purple': '#966FFF',
+    'green' : '#49FF94',
+    'yellow': '#FFC554',
+    'gray'  : '#A7B2B7'
+  };
+  view_color = colors.pink;
+  my_style = {
+    'width': '400px',
+    'height': '400px'
+  }
+">
+<!--
+  Directives & Expressions 
+  - ng-init
+  - ng-show
+  - ng-hide
+  - ng-model
+  - ng-click
+-->
+
+<!-- 팔레트 토글 버튼 -->
+<button 
+  type="button" 
+  class="toggle-palette-btn" 
+  data-ng-click="hidden = !hidden"
+  data-ng-bind="hidden ? '팔레트 감추기':'팔레트 보이기'"
+  >
+  <!-- {{ is_hidden }} -->
+  팔레트 
+  <!-- <span data-ng-hide="hidden">감추기</span>
+  <span data-ng-hide="!hidden">보이기</span> -->
+  <!-- <span>{{ hidden ? '감추기' : '보이기' }}</span> -->
+</button>
+
+<!--  팔레트 -->
+<div class="color-palette" data-ng-show="hidden">
+  <label><input type="radio" value="{{colors.pink}}" data-ng-model="view_color"> pink</label>
+  <label><input type="radio" value="{{colors.purple}}" data-ng-model="view_color"> purple</label>
+  <label><input type="radio" value="{{colors.green}}" data-ng-model="view_color"> green</label>
+  <label><input type="radio" value="{{colors.yellow}}" data-ng-model="view_color"> yellow</label>
+  <label><input type="radio" value="{{colors.gray}}" data-ng-model="view_color"> gray</label>
+</div>
+
+<!-- 팔레트 제어에 따른 뷰 -->
+<div class="color-place-view">
+  {{view_color}}
+</div>
+</body>
+</html>

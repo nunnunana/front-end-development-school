@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-ng-app>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8" />
+  <title>angular.demo-2 | Directive &amp; Expression </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../resources/libraries/angular.1.5.7.min.js"></script>
+</head>
+
+<body data-ng-init="
+  app = {
+    'name': 'DirectiveApp',
+    'switch': '',
+  }
+">
+
+<div data-ng-cloak class="demo-container" data-ng-switch="app.switch">
+  <h1 class="demo-app-title">{{app.name}}</h1>
+  <!-- {{app.switch}} -->
+  <div class="demo-app-swicher">
+    <button data-ng-click="app.switch = 'opened'">Choice Your..</button>
+    <button data-ng-click="app.switch = 'closed'">Open</button>
+    <button data-ng-click="app.switch = 'etc'">Close</button>
+  </div>
+  <!-- {{ app.switch }} -->
+  <!-- 상태 제어 -->
+  <p data-ng-switch-when="opened" class="switch-is-true">
+    App Switch Value is Opned.
+  </p>
+  <p data-ng-switch-when="closed" class="switch-is-false">
+    App Switch Value is Closed.
+  </p>
+  <p data-ng-switch-default class="switch-is-something">
+    App Switch Value is Something.
+  </p>
+</div>
+
+
+
+</body>
+
+</html>

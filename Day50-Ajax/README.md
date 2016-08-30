@@ -112,10 +112,10 @@ $.ajax({
 
 
 ## Todo
-- [x] Ajax 연습하기 (배운 것을 이용해 무언가 만들기[Tab-ui](https://github.com/yamoo9/NIA_A11y_UI_Components/tree/01-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%A0%9C%EC%9E%91-%EC%A4%80%EB%B9%84/UI/Tabs))
-- [x] Ajax 무한스크롤 페이지 만들기 (질문거리)
+- [-] Ajax 연습하기 (배운 것을 이용해 무언가 만들기[Tab-ui](https://github.com/yamoo9/NIA_A11y_UI_Components/tree/01-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%A0%9C%EC%9E%91-%EC%A4%80%EB%B9%84/UI/Tabs))
+- [-] Ajax 무한스크롤 페이지 만들기 (질문거리)
 - [ ] radioClass:[yamoo9 예제](http://yamoo9.net/demo/aria-tabs/) 참고하여 리팩토링하기
 - [ ] 우회메소드 이해하기[.bind()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
-- [ ] [HTTP 상태코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) 주요 코드 숙지하기
-- [ ]  Keynote 보고, 배운 내용 정리하기
+- [-] [HTTP 상태코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) 주요 코드 숙지하기
+- [-]  Keynote 보고, 배운 내용 정리하기
 - [ ] [DOM을 깨우치다.](http://www.javascriptenlightenment.com/JavaScript_Enlightenment.pdf)

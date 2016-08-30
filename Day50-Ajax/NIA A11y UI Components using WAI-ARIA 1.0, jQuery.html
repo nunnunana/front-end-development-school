@@ -1,160 +1,163 @@
 <!DOCTYPE html>
 <!-- saved from url=(0033)http://yamoo9.net/demo/aria-tabs/ -->
-<html lang="ko-KR" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<html lang="ko-KR" dir="ltr">
 
-<title>탭(Tabs) ─ NIA A11y UI Components using WAI-ARIA 1.0, jQuery</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/type-grid.css">
-<link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/demo.css">
-<link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/font-awesome.min.css">
-<link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiRipple.min.css">
-<link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.css">
-<script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery-2.2.3.min.js"></script>
-<script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiRipple.min.js"></script>
-<script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>탭(Tabs) ─ NIA A11y UI Components using WAI-ARIA 1.0, jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/type-grid.css">
+    <link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/demo.css">
+    <link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiRipple.min.css">
+    <link rel="stylesheet" href="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.css">
+    <script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery-2.2.3.min.js"></script>
+    <script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiRipple.min.js"></script>
+    <script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/jquery.uiTabs.min.js"></script>
 </head>
+
 <body>
-<div class="page container">
-<header class="page-header">
-<row class="row">
-<h1 class="headline col-12">Tabs UI 디자인, WAI-ARIA</h1>
-<p class="col-12">탭 메뉴 UI는 뷰(View)간 전환이 손 쉬워야 하며, 카테고리 별 데이터 세트(Categorized Data Sets)를 탐색하기 용이해야 한다.</p>
-</row>
-</header>
-<div class="a11y-hidden" aria-live="polite">
-<h2>스크린 리더 사용자를 위한 지침</h2>
-<p>이 페이지는 일반적으로 데스크톱 애플리케이션에서 사용되는 일부 인터랙티브 컨트롤을 포함하고 있습니다. 이러한 컨트롤은 탭 리스트, 메뉴 바, 슬라이더(캐러셀), 트리 뷰 등에서 사용됩니다. 해당 컨트롤은 화살표 키를 사용해서 탐색하는 기능을 수행합니다. 인터랙티브 기능을 사용하기 위해서는 일시적으로 스크린 리더의 가상 탐색 모드(Virtual Navigation Mode)를 작동하지 않도록 해야 합니다. 일부 스크린 리더는 자동적으로 컨트롤 모드를 전환할 수 있습니다만, 그렇지 못한 스크린 리더를 사용한다면 수동으로 가상 탐색 모드를 전환해주어야 합니다. 아래 목록은 자주 사용되는 스크린 리더에서 가상 탐색 모드를 전환하는 방법을 나열한 것입니다.
-</p>
-<dl>
-<dt>센스 리더</dt>
-<dd>가상커서 임시 해제: <code>ctrl + ↑</code> 또는 <code>ctrl + ↓</code>를 누르면 "가상커서 사용 해제" 메시지와 함께 임시 해제 됩니다.</dd>
-<dd>가상커서 즉시 사용: <code>escape</code> 또는 <code>tab</code>/<code>shift + tab</code>를 누르면 "가상커서 사용 선택" 메시지와 함께 가상 커서가 재게됩니다.</dd>
-<dt>JAWS</dt>
-<dd><code>JAWS KEY + Z</code></dd>
-<dt>NVDA</dt>
-<dd><code>NVDA KEY + SPACE</code></dd>
-<dt>WindowEyes</dt>
-<dd><code>Ctrl + Shift + A</code></dd>
-</dl>
-</div>
-<main>
-<div class="row">
-<div class="demo-tabs col-3">
-<ul role="tablist" class="uiTabs-tablist yamoo9-ui-ripple-container">
-<li role="presentation" class="yamoo9-ui-ripple-parent" style="overflow: hidden;"><a href="http://yamoo9.net/demo/aria-tabs/#demo-home" role="tab" id="uiTabs-tab-1" aria-controls="demo-home" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab yamoo9-ui-ripple"><i class="fa fa-home" aria-hidden="true"></i> 홈</a><span class="yamoo9-ui-ripple-ink animate" style="width: 90px; height: 90px; animation-duration: 0.6s; display: block; left: -14px; top: -26px; opacity: 1; background: rgba(54, 217, 242, 0.560784);"></span></li>
-<li role="presentation" class="yamoo9-ui-ripple-parent" style="overflow: hidden;"><a href="http://yamoo9.net/demo/aria-tabs/#demo-news" role="tab" id="uiTabs-tab-2" aria-controls="demo-news" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab yamoo9-ui-ripple"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 뉴스</a><span class="yamoo9-ui-ripple-ink animate" style="width: 90px; height: 90px; animation-duration: 0.6s; display: block; left: -31.9844px; top: -22px; opacity: 1; background: rgba(54, 217, 242, 0.560784);"></span></li>
-<li role="presentation" class="yamoo9-ui-ripple-parent" style="overflow: hidden;"><a href="http://yamoo9.net/demo/aria-tabs/#demo-accessibility" role="tab" id="uiTabs-tab-3" aria-controls="demo-accessibility" tabindex="0" aria-hidden="false" aria-selected="true" class="uiTabs-tab yamoo9-ui-ripple uiTabs-on"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i> 접근성</a><span class="yamoo9-ui-ripple-ink animate" style="width: 90px; height: 90px; animation-duration: 0.6s; display: block; left: 2.03125px; top: -26px; opacity: 1; background: rgba(54, 217, 242, 0.560784);"></span></li>
-</ul>
-<div id="demo-home" role="tabpanel" aria-labelledby="uiTabs-tab-1" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
-<h3 class="tabpanel-headine">홈</h3>
-<img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource" width="300" height="240" alt="">
-<p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로.</p>
-<p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의.</p>
-<p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한?</p>
-</div>
-<div id="demo-news" role="tabpanel" aria-labelledby="uiTabs-tab-2" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
-<h3 class="tabpanel-headine">뉴스</h3>
-<img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(1)" width="300" height="240" alt="">
-<p>장엄한 빛나는 가슴을 숨소리가. 가슴을 않고, 빛나는 엮어가는 소리 해도 내일의 너야말로, 청춘의 숨 죽여도 보기만 만들 땀 설레는 흐르는 티셔츠, 청춘 숨소리가 거추장스런 쉬지, 아름답다 쿵쿵대는 장엄한 고동소리 심장? 씩씩하게. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 피어나는 심장 거추장스런 어디에나 찬란한 꽃보다 눈부신 숨 죽여도!</p>
-<p>가슴을 않고 어디에나 숨소리가 꽃보다 티셔츠 <a href="http://yamoo9.net/demo/aria-tabs/#">빛나는 소리</a>, 씩씩하게, 숨 죽여도 꽃처럼 피어나는, 너 사명으로 보기만 쿵쿵대는 내일의 그대 쉬지 실수조차도 거추장스런 청춘아!. 흐르는 쿵쿵대는 빛나는 해도? 꽃처럼 거추장스런 장엄한 너야말로.</p>
-<p>야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 만들 내일의 다 들리는 너 쿵쿵대는 젊음의 땀 꽃처럼. 젊음의 운동화도 가슴을 장엄한 숨소리가 찬란한 햇볕처럼 <a href="http://yamoo9.net/demo/aria-tabs/#">고동소리</a>, 땀 하고, 설레게, 눈부신 청춘의 너 사명으로 만들 꽃보다 해도!</p>
-<p>아름답다 세상을 소리 만들, 꽃보다 눈부신 피어나는! <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 씩씩하게 너 꽃처럼</a>, 숨 죽여도 어디에나 쿵쿵대는 너야말로 소리 고동소리 빛나는 아름다운, 햇볕처럼 눈부신 젊음의 보기만 장엄한 가슴을 사명으로 해도, 설레게 티셔츠 만들.</p>
-</div>
-<div id="demo-accessibility" role="tabpanel" aria-labelledby="uiTabs-tab-3" aria-hidden="false" aria-expanded="true" class="uiTabs-tabpanel uiTabs-view">
-<h3 class="tabpanel-headine">접근성</h3>
-<img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(2)" width="300" height="240" alt="">
-<p>가슴을 않고 어디에나 숨소리가 꽃보다 티셔츠 <a href="http://yamoo9.net/demo/aria-tabs/#">빛나는 소리</a>, 씩씩하게, 숨 죽여도 꽃처럼 피어나는, 너 사명으로 보기만 쿵쿵대는 내일의 그대 쉬지 실수조차도 거추장스런 청춘아!. 흐르는 쿵쿵대는 빛나는 해도? 꽃처럼 거추장스런 장엄한 너야말로.</p>
-<p>아름답다 세상을 소리 만들, 꽃보다 눈부신 피어나는! <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 씩씩하게 너 꽃처럼</a>, 숨 죽여도 어디에나 쿵쿵대는 너야말로 소리 고동소리 빛나는 아름다운, 햇볕처럼 눈부신 젊음의 보기만 장엄한 가슴을 사명으로 해도, 설레게 티셔츠 만들.</p>
-<p>야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 만들 내일의 다 들리는 너 쿵쿵대는 젊음의 땀 꽃처럼. 젊음의 운동화도 가슴을 장엄한 숨소리가 찬란한 햇볕처럼 <a href="http://yamoo9.net/demo/aria-tabs/#">고동소리</a>, 땀 하고, 설레게, 눈부신 청춘의 너 사명으로 만들 꽃보다 해도!</p>
-</div>
-</div>
-<div class="demo-tabs-2 col-8 push-1">
-<ul role="tablist" class="uiTabs-tablist">
-<li role="presentation"><a href="http://yamoo9.net/demo/aria-tabs/#demo-role" role="tab" id="uiTabs-tab-1" aria-controls="demo-role" tabindex="0" aria-hidden="false" aria-selected="true" class="uiTabs-tab uiTabs-on">역할</a></li>
-<li role="presentation"><a href="http://yamoo9.net/demo/aria-tabs/#demo-props" role="tab" id="uiTabs-tab-2" aria-controls="demo-props" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab">속성</a></li>
-<li role="presentation"><a href="http://yamoo9.net/demo/aria-tabs/#demo-state" role="tab" id="uiTabs-tab-3" aria-controls="demo-state" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab">상태</a></li>
-</ul>
-<div id="demo-role" role="tabpanel" aria-labelledby="uiTabs-tab-1" aria-hidden="false" aria-expanded="true" class="uiTabs-tabpanel uiTabs-view">
-<h3>역할</h3>
-<ul class="demo-gallery clearfix">
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(3)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(4)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(5)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(6)" width="240" height="240" alt=""></a>
-</li>
-</ul>
-<p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 실수조차도 만들 아름답다 고동소리 숨 죽여도 빛나는 심장 너.야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 소리 쉬지 않고 젊음의! 보기만 땀 아름다운, 실수조차도.</p>
-<p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 가슴을 눈부신, 하고 꽃처럼 아름답다 설레게 쿵쿵대는. 흐르는.</p>
-<p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 티셔츠 설레게 청춘 땀 않고 고동소리 세상을 하고 설레는 청춘아! 햇볕처럼 꽃보다 청춘의 장엄한 운동화도 젊음의 찬란한 가슴을, 아름답다 피어나는, 쉬지 어디에나 쿵쿵대는 심장. 햇볕처럼, 찬란한.</p>
-</div>
-<div id="demo-props" role="tabpanel" aria-labelledby="uiTabs-tab-2" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
-<h3>속성</h3>
-<ul class="demo-gallery clearfix">
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(3)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(4)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(5)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(6)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(7)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(8)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(9)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(9)" width="240" height="240" alt=""></a>
-</li>
-</ul>
-<p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 엮어가는 거추장스런 청춘 다 들리는 고동소리 찬란한 쿵쿵대는 티셔츠 하루를 설레게 보기만 장엄한! 쉬지 어디에나 땀 피어나는, 청춘 세상을 만들 쿵쿵대는. 찬란한 사명으로 젊음의 만들 그대 가슴을!</p>
-<p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 만들 설레게 세상을 않고 실수조차도 청춘 하고 소리 설레는, 장엄한? 하루를 않고 숨소리가 청춘 티셔츠 너야말로 숨 죽여도 땀, 청춘아! 쿵쿵대는 실수조차도 청춘의 장엄한 사명으로 거추장스런 설레게!</p>
-<p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 흐르는 씩씩하게, 쉬지 설레는! 아름답다 보기만 청춘의 찬란한.</p>
-<p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 내일의 않고 가슴을 어디에나 다 들리는 장엄한 찬란한 쿵쿵대는 고동소리 거추장스런 청춘 그대 숨소리가 너야말로 햇볕처럼 사명으로 꽃처럼 세상을 눈부신, 실수조차도 심장 꽃보다, 운동화도 소리! 너야말로.</p>
-<p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 너, 땀 소리 숨 죽여도? 눈부신!</p>
-</div>
-<div id="demo-state" role="tabpanel" aria-labelledby="uiTabs-tab-3" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
-<h3>상태</h3>
-<ul class="demo-gallery clearfix">
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(3)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(4)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(5)" width="240" height="240" alt=""></a>
-</li>
-<li>
-<a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(9)" width="240" height="240" alt=""></a>
-</li>
-</ul>
-<p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 티셔츠 쿵쿵대는 거추장스런 청춘의 다 들리는 하고 세상을!</p>
-<p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 않고 세상을 심장, 하고 장엄한 엮어가는 설레는 운동화도 고동소리 젊음의 만들 설레게 내일의 햇볕처럼 피어나는 꽃처럼 아름답다 티셔츠 너, 어디에나 땀 가슴을 해도, 빛나는 찬란한 흐르는!</p>
-<p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 청춘아! 거추장스런 아름다운 땀 눈부신.</p>
-<p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!.</p>
-</div>
-</div>
-</div>
-</main>
-</div>
-<script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/demo.js"></script>
+    <div class="page container">
+        <header class="page-header">
+            <row class="row">
+                <h1 class="headline col-12">Tabs UI 디자인, WAI-ARIA</h1>
+                <p class="col-12">탭 메뉴 UI는 뷰(View)간 전환이 손 쉬워야 하며, 카테고리 별 데이터 세트(Categorized Data Sets)를 탐색하기 용이해야 한다.</p>
+            </row>
+        </header>
+        <div class="a11y-hidden" aria-live="polite">
+            <h2>스크린 리더 사용자를 위한 지침</h2>
+            <p>이 페이지는 일반적으로 데스크톱 애플리케이션에서 사용되는 일부 인터랙티브 컨트롤을 포함하고 있습니다. 이러한 컨트롤은 탭 리스트, 메뉴 바, 슬라이더(캐러셀), 트리 뷰 등에서 사용됩니다. 해당 컨트롤은 화살표 키를 사용해서 탐색하는 기능을 수행합니다. 인터랙티브 기능을 사용하기 위해서는 일시적으로 스크린 리더의 가상 탐색 모드(Virtual Navigation Mode)를 작동하지 않도록 해야 합니다. 일부 스크린 리더는 자동적으로 컨트롤 모드를 전환할 수 있습니다만, 그렇지 못한 스크린 리더를 사용한다면 수동으로 가상 탐색 모드를 전환해주어야 합니다. 아래 목록은 자주 사용되는 스크린 리더에서 가상 탐색 모드를 전환하는 방법을 나열한 것입니다.
+            </p>
+            <dl>
+                <dt>센스 리더</dt>
+                <dd>가상커서 임시 해제: <code>ctrl + ↑</code> 또는 <code>ctrl + ↓</code>를 누르면 "가상커서 사용 해제" 메시지와 함께 임시 해제 됩니다.</dd>
+                <dd>가상커서 즉시 사용: <code>escape</code> 또는 <code>tab</code>/<code>shift + tab</code>를 누르면 "가상커서 사용 선택" 메시지와 함께 가상 커서가 재게됩니다.</dd>
+                <dt>JAWS</dt>
+                <dd><code>JAWS KEY + Z</code></dd>
+                <dt>NVDA</dt>
+                <dd><code>NVDA KEY + SPACE</code></dd>
+                <dt>WindowEyes</dt>
+                <dd><code>Ctrl + Shift + A</code></dd>
+            </dl>
+        </div>
+        <main>
+            <div class="row">
+                <div class="demo-tabs col-3">
+                    <ul role="tablist" class="uiTabs-tablist yamoo9-ui-ripple-container">
+                        <li role="presentation" class="yamoo9-ui-ripple-parent" style="overflow: hidden;"><a href="http://yamoo9.net/demo/aria-tabs/#demo-home" role="tab" id="uiTabs-tab-1" aria-controls="demo-home" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab yamoo9-ui-ripple"><i class="fa fa-home" aria-hidden="true"></i> 홈</a><span class="yamoo9-ui-ripple-ink animate" style="width: 90px; height: 90px; animation-duration: 0.6s; display: block; left: -14px; top: -26px; opacity: 1; background: rgba(54, 217, 242, 0.560784);"></span></li>
+                        <li role="presentation" class="yamoo9-ui-ripple-parent" style="overflow: hidden;"><a href="http://yamoo9.net/demo/aria-tabs/#demo-news" role="tab" id="uiTabs-tab-2" aria-controls="demo-news" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab yamoo9-ui-ripple"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 뉴스</a><span class="yamoo9-ui-ripple-ink animate" style="width: 90px; height: 90px; animation-duration: 0.6s; display: block; left: -31.9844px; top: -22px; opacity: 1; background: rgba(54, 217, 242, 0.560784);"></span></li>
+                        <li role="presentation" class="yamoo9-ui-ripple-parent" style="overflow: hidden;"><a href="http://yamoo9.net/demo/aria-tabs/#demo-accessibility" role="tab" id="uiTabs-tab-3" aria-controls="demo-accessibility" tabindex="0" aria-hidden="false" aria-selected="true" class="uiTabs-tab yamoo9-ui-ripple uiTabs-on"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i> 접근성</a><span class="yamoo9-ui-ripple-ink animate" style="width: 90px; height: 90px; animation-duration: 0.6s; display: block; left: 2.03125px; top: -26px; opacity: 1; background: rgba(54, 217, 242, 0.560784);"></span></li>
+                    </ul>
+                    <div id="demo-home" role="tabpanel" aria-labelledby="uiTabs-tab-1" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
+                        <h3 class="tabpanel-headine">홈</h3>
+                        <img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource" width="300" height="240" alt="">
+                        <p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로.</p>
+                        <p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의.</p>
+                        <p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한?</p>
+                    </div>
+                    <div id="demo-news" role="tabpanel" aria-labelledby="uiTabs-tab-2" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
+                        <h3 class="tabpanel-headine">뉴스</h3>
+                        <img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(1)" width="300" height="240" alt="">
+                        <p>장엄한 빛나는 가슴을 숨소리가. 가슴을 않고, 빛나는 엮어가는 소리 해도 내일의 너야말로, 청춘의 숨 죽여도 보기만 만들 땀 설레는 흐르는 티셔츠, 청춘 숨소리가 거추장스런 쉬지, 아름답다 쿵쿵대는 장엄한 고동소리 심장? 씩씩하게. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 피어나는 심장 거추장스런 어디에나 찬란한 꽃보다 눈부신 숨 죽여도!</p>
+                        <p>가슴을 않고 어디에나 숨소리가 꽃보다 티셔츠 <a href="http://yamoo9.net/demo/aria-tabs/#">빛나는 소리</a>, 씩씩하게, 숨 죽여도 꽃처럼 피어나는, 너 사명으로 보기만 쿵쿵대는 내일의 그대 쉬지 실수조차도 거추장스런 청춘아!. 흐르는 쿵쿵대는 빛나는 해도? 꽃처럼 거추장스런 장엄한 너야말로.</p>
+                        <p>야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 만들 내일의 다 들리는 너 쿵쿵대는 젊음의 땀 꽃처럼. 젊음의 운동화도 가슴을 장엄한 숨소리가 찬란한 햇볕처럼 <a href="http://yamoo9.net/demo/aria-tabs/#">고동소리</a>, 땀 하고, 설레게, 눈부신 청춘의 너 사명으로 만들 꽃보다 해도!</p>
+                        <p>아름답다 세상을 소리 만들, 꽃보다 눈부신 피어나는! <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 씩씩하게 너 꽃처럼</a>, 숨 죽여도 어디에나 쿵쿵대는 너야말로 소리 고동소리 빛나는 아름다운, 햇볕처럼 눈부신 젊음의 보기만 장엄한 가슴을 사명으로 해도, 설레게 티셔츠 만들.</p>
+                    </div>
+                    <div id="demo-accessibility" role="tabpanel" aria-labelledby="uiTabs-tab-3" aria-hidden="false" aria-expanded="true" class="uiTabs-tabpanel uiTabs-view">
+                        <h3 class="tabpanel-headine">접근성</h3>
+                        <img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(2)" width="300" height="240" alt="">
+                        <p>가슴을 않고 어디에나 숨소리가 꽃보다 티셔츠 <a href="http://yamoo9.net/demo/aria-tabs/#">빛나는 소리</a>, 씩씩하게, 숨 죽여도 꽃처럼 피어나는, 너 사명으로 보기만 쿵쿵대는 내일의 그대 쉬지 실수조차도 거추장스런 청춘아!. 흐르는 쿵쿵대는 빛나는 해도? 꽃처럼 거추장스런 장엄한 너야말로.</p>
+                        <p>아름답다 세상을 소리 만들, 꽃보다 눈부신 피어나는! <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 씩씩하게 너 꽃처럼</a>, 숨 죽여도 어디에나 쿵쿵대는 너야말로 소리 고동소리 빛나는 아름다운, 햇볕처럼 눈부신 젊음의 보기만 장엄한 가슴을 사명으로 해도, 설레게 티셔츠 만들.</p>
+                        <p>야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 만들 내일의 다 들리는 너 쿵쿵대는 젊음의 땀 꽃처럼. 젊음의 운동화도 가슴을 장엄한 숨소리가 찬란한 햇볕처럼 <a href="http://yamoo9.net/demo/aria-tabs/#">고동소리</a>, 땀 하고, 설레게, 눈부신 청춘의 너 사명으로 만들 꽃보다 해도!</p>
+                    </div>
+                </div>
+                <div class="demo-tabs-2 col-8 push-1">
+                    <ul role="tablist" class="uiTabs-tablist">
+                        <li role="presentation"><a href="http://yamoo9.net/demo/aria-tabs/#demo-role" role="tab" id="uiTabs-tab-1" aria-controls="demo-role" tabindex="0" aria-hidden="false" aria-selected="true" class="uiTabs-tab uiTabs-on">역할</a></li>
+                        <li role="presentation"><a href="http://yamoo9.net/demo/aria-tabs/#demo-props" role="tab" id="uiTabs-tab-2" aria-controls="demo-props" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab">속성</a></li>
+                        <li role="presentation"><a href="http://yamoo9.net/demo/aria-tabs/#demo-state" role="tab" id="uiTabs-tab-3" aria-controls="demo-state" tabindex="-1" aria-hidden="true" aria-selected="false" class="uiTabs-tab">상태</a></li>
+                    </ul>
+                    <div id="demo-role" role="tabpanel" aria-labelledby="uiTabs-tab-1" aria-hidden="false" aria-expanded="true" class="uiTabs-tabpanel uiTabs-view">
+                        <h3>역할</h3>
+                        <ul class="demo-gallery clearfix">
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(3)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(4)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(5)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(6)" width="240" height="240" alt=""></a>
+                            </li>
+                        </ul>
+                        <p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 실수조차도 만들 아름답다 고동소리 숨 죽여도 빛나는 심장 너.야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 소리 쉬지 않고 젊음의! 보기만 땀 아름다운, 실수조차도.</p>
+                        <p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 가슴을 눈부신, 하고 꽃처럼 아름답다 설레게 쿵쿵대는. 흐르는.</p>
+                        <p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 티셔츠 설레게 청춘 땀 않고 고동소리 세상을 하고 설레는 청춘아! 햇볕처럼 꽃보다 청춘의 장엄한 운동화도 젊음의 찬란한 가슴을, 아름답다 피어나는, 쉬지 어디에나 쿵쿵대는 심장. 햇볕처럼, 찬란한.</p>
+                    </div>
+                    <div id="demo-props" role="tabpanel" aria-labelledby="uiTabs-tab-2" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
+                        <h3>속성</h3>
+                        <ul class="demo-gallery clearfix">
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(3)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(4)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(5)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(6)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(7)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(8)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(9)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(9)" width="240" height="240" alt=""></a>
+                            </li>
+                        </ul>
+                        <p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 엮어가는 거추장스런 청춘 다 들리는 고동소리 찬란한 쿵쿵대는 티셔츠 하루를 설레게 보기만 장엄한! 쉬지 어디에나 땀 피어나는, 청춘 세상을 만들 쿵쿵대는. 찬란한 사명으로 젊음의 만들 그대 가슴을!</p>
+                        <p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 만들 설레게 세상을 않고 실수조차도 청춘 하고 소리 설레는, 장엄한? 하루를 않고 숨소리가 청춘 티셔츠 너야말로 숨 죽여도 땀, 청춘아! 쿵쿵대는 실수조차도 청춘의 장엄한 사명으로 거추장스런 설레게!</p>
+                        <p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 흐르는 씩씩하게, 쉬지 설레는! 아름답다 보기만 청춘의 찬란한.</p>
+                        <p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 내일의 않고 가슴을 어디에나 다 들리는 장엄한 찬란한 쿵쿵대는 고동소리 거추장스런 청춘 그대 숨소리가 너야말로 햇볕처럼 사명으로 꽃처럼 세상을 눈부신, 실수조차도 심장 꽃보다, 운동화도 소리! 너야말로.</p>
+                        <p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 너, 땀 소리 숨 죽여도? 눈부신!</p>
+                    </div>
+                    <div id="demo-state" role="tabpanel" aria-labelledby="uiTabs-tab-3" aria-hidden="true" aria-expanded="false" class="uiTabs-tabpanel">
+                        <h3>상태</h3>
+                        <ul class="demo-gallery clearfix">
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(3)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(4)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(5)" width="240" height="240" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="http://yamoo9.net/demo/aria-tabs/#"><img class="rwd-image" src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/saved_resource(9)" width="240" height="240" alt=""></a>
+                            </li>
+                        </ul>
+                        <p>거추장스런, <a href="http://yamoo9.net/demo/aria-tabs/#">어디에나 숨 죽여도 너</a> 청춘 해도 엮어가는 그대, 심장 찬란한 젊음의 실수조차도 꽃보다 않고 쉬지 장엄한 내일의 빛나는 눈부신 청춘의. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 티셔츠 쿵쿵대는 거추장스런 청춘의 다 들리는 하고 세상을!</p>
+                        <p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 않고 세상을 심장, 하고 장엄한 엮어가는 설레는 운동화도 고동소리 젊음의 만들 설레게 내일의 햇볕처럼 피어나는 꽃처럼 아름답다 티셔츠 너, 어디에나 땀 가슴을 해도, 빛나는 찬란한 흐르는!</p>
+                        <p><a href="http://yamoo9.net/demo/aria-tabs/#">야무</a> 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 젊음의 거추장스런 운동화도, 어디에나 하루를 설레게 청춘? 운동화도 씩씩하게, 어디에나, 사명으로 장엄한 쿵쿵대는 꽃처럼 햇볕처럼 너야말로. 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 청춘아! 거추장스런 아름다운 땀 눈부신.</p>
+                        <p>피어나는 그대 숨 죽여도 하고, 설레게 너야말로 다 들리는 심장 티셔츠. 땀 햇볕처럼, <a href="http://yamoo9.net/demo/aria-tabs/#">청춘의 젊음의 청춘아!</a> 사명으로 하고 운동화도, 만들 않고 찬란한? 야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./NIA A11y UI Components using WAI-ARIA 1.0, jQuery_files/demo.js"></script>
+</body>
 
-
-</body></html>
+</html>

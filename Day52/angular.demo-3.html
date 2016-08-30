@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-ng-app>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>angular.demo-3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../resources/libraries/angular.1.5.7.min.js"></script>
+</head>
+<body data-ng-init="
+  people = [
+    {
+      'name'    : 'tommy',
+      'age'     : 23,
+      'mail'    : 'tommy@study.com',
+      'picture' : 'http://placehold.it/240x240/21CAFF/fff/?text=tommy'
+    },
+    {
+      'name'    : 'sunny',
+      'age'     : 32,
+      'mail'    : 'sunny@study.com',
+      'picture' : 'http://placehold.it/240x240/FF7072/fff/?text=sunny'
+    },
+    {
+      'name'    : 'zeus',
+      'age'     : 63,
+      'mail'    : 'zeus@study.com',
+      'picture' : 'http://placehold.it/240x240/1FD9B1/fff/?text=zeus'
+    }
+  ];
+">
+
+<ul data-ng-repeat="person in people">
+  <li>{{person.name}}</li>
+  <li>{{person.age}}</li>
+  <li>{{person.mail}}</li>
+  <li><img data-ng-src="{{person.picture}}" alt="{{person.name}}"></li>
+</ul>
+  
+</body>
+
+</html>

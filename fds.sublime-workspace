@@ -404,26 +404,34 @@
 	"buffers":
 	[
 		{
-			"file": "Day51-angular/README.md",
+			"file": "Day52/README.md",
 			"settings":
 			{
-				"buffer_size": 1555,
+				"buffer_size": 344,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Day51-angular/angularJS/angular.start.html",
+			"file": "Day52/angular.start.html",
 			"settings":
 			{
-				"buffer_size": 597,
+				"buffer_size": 828,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+			"file": "Day52/angular.demo.html",
 			"settings":
 			{
-				"buffer_size": 32,
+				"buffer_size": 1883,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day52/angular.demo-2.html",
+			"settings":
+			{
+				"buffer_size": 476,
 				"line_ending": "Unix"
 			}
 		}
@@ -436,16 +444,12 @@
 	"command_palette":
 	{
 		"height": 342.0,
-		"last_filter": "",
+		"last_filter": "insp",
 		"selected_items":
 		[
 			[
-				"ins",
+				"insp",
 				"Package Control: Install Package"
-			],
-			[
-				"js",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"html",
@@ -454,6 +458,14 @@
 			[
 				"css",
 				"Set Syntax: CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"package",
@@ -572,7 +584,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 503.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -596,14 +608,17 @@
 	"expanded_folders":
 	[
 		"/Users/eatdesignlove/Documents/program/FDS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular",
-		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS/lib",
-		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS/lib/angular"
+		"/Users/eatdesignlove/Documents/program/FDS/Day52",
+		"/Users/eatdesignlove/Documents/program/FDS/resources",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/libraries"
 	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/eatdesignlove/Documents/program/FDS/resources/libraries/angular.1.5.7.min.js",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/README.md",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/angularJS/angular.start.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day51-Angular/angularJS/bower.json",
 		"/Users/eatdesignlove/.bowerrc",
 		"/Users/eatdesignlove/Documents/program/FDS/Day51-angular/01-localstorage.html",
@@ -726,11 +741,7 @@
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/responsive-grid.html",
 		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/MQ.css",
 		"/Users/eatdesignlove/Documents/program/FDS/resources/grid-system/grid-fluid.css",
-		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/retina.sublime-snippet",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/02-flexible-video.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/01-fluid-vs-clipping-images.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/css/aware-style.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day17/demo-aware/index.html"
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/retina.sublime-snippet"
 	],
 	"find":
 	{
@@ -748,6 +759,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"view-color",
+			"value=\"",
+			"FF656C",
+			"''",
+			"purple",
+			"pink",
+			"color_place_",
+			"color-place-view-color",
+			"#",
+			"FF656C",
 			"'",
 			"Data",
 			"FDS",
@@ -865,17 +886,7 @@
 			"nt",
 			"   ",
 			"26",
-			"@\n",
-			"주석",
-			" * 2)",
-			" * 2",
-			"($gutter * 2)",
-			"* 2)",
-			")",
-			" + ($gutter * 2)",
-			"$column",
-			"mn*",
-			" *"
+			"@\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -902,29 +913,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Day51-angular/README.md",
+					"file": "Day52/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1555,
+						"buffer_size": 344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1088,
-								1088
+								343,
+								343
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
 							"open_with_edit": true,
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 806.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -933,67 +945,101 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 1,
-					"file": "Day51-angular/angularJS/angular.start.html",
+					"file": "Day52/angular.start.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 597,
+						"buffer_size": 828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
+								15,
+								15
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+					"file": "Day52/angular.demo.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 32,
+						"buffer_size": 1883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								1047,
+								1047
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Day52/angular.demo-2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								450
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1027,7 +1073,7 @@
 		"cols":
 		[
 			0.0,
-			0.460565176875,
+			0.111258257114,
 			1.0
 		],
 		"rows":
@@ -1111,7 +1157,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 212.0,
+	"side_bar_width": 169.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
