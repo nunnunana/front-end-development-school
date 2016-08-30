@@ -5,38 +5,124 @@
   <meta charset="UTF-8"/>
   <title>angular.demo-3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../resources/libraries/angular.1.5.7.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <script src="js/demo-try-4.js"></script>
+  <style>
+    pre {  
+      padding: 1rem;
+      background: #f2f2f2;
+    }
+
+    table {
+      width: 100%;
+      text-align: center;
+    }
+    table img {
+      width: 100%
+    }
+    table th {
+      border-top: 2px  solid #232323;
+      border-bottom: 1px solid #232323;
+      height: 42px;
+      vertical-align: middle;
+    }
+    table td {
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+    }
+  </style>
 </head>
 <body data-ng-init="
+sortBy = 'name';
+order_reverse = false;
+  peopel = $http.get('http://api.randomuser.me/?results=5000');
+
   people = [
     {
       'name'    : 'tommy',
       'age'     : 23,
       'mail'    : 'tommy@study.com',
-      'picture' : 'http://placehold.it/240x240/21CAFF/fff/?text=tommy'
+      'birthday': '1989-09-30',
+      'has-money': 13300,
+      'picture' : 'http://placehold.it/50x50/21CAFF/fff/?text=tommy'
     },
     {
       'name'    : 'sunny',
       'age'     : 32,
-      'mail'    : 'sunny@study.com',
-      'picture' : 'http://placehold.it/240x240/FF7072/fff/?text=sunny'
+      'mail'    : 'SUNNY@STUDY.COM',
+      'birthday': '1990-05-25',
+      'has-money': 2340,
+      'picture' : 'http://placehold.it/50x50/FF7072/fff/?text=sunny'
     },
     {
       'name'    : 'zeus',
       'age'     : 63,
       'mail'    : 'zeus@study.com',
-      'picture' : 'http://placehold.it/240x240/1FD9B1/fff/?text=zeus'
+      'birthday': '1988-05-14',
+      'has-money': 1003000,
+      'picture' : 'http://placehold.it/50x50/1FD9B1/fff/?text=zeus'
+    },
+    {
+      'name'    : 'aron',
+      'age'     : 3,
+      'mail'    : 'aron@study.com',
+      'birthday': '1988-05-14',
+      'has-money': 1003000,
+      'picture' : 'http://placehold.it/50x50/1FD9B1/fff/?text=zeus'
     }
   ];
+  limit_count = people.length;
 ">
+Name : <input type="search" data-ng-model="search.name">
+Age  : <input type="search" data-ng-model="search.age">
+<!-- Limit: <input type="search" data-ng-model="search.limit"> -->
 
-<ul data-ng-repeat="person in people">
-  <li>{{person.name}}</li>
-  <li>{{person.age}}</li>
-  <li>{{person.mail}}</li>
-  <li><img data-ng-src="{{person.picture}}" alt="{{person.name}}"></li>
+<!-- <button type="button" data-ng-click="order_reverse = !order_reverse">나이 순 정렬 토글</button> -->
+<label><input type="radio" name="sorting" data-ng-click="order_reverse = true">오름차순</label>
+<label><input type="radio" name="sorting" data-ng-click="order_reverse = false" >내림차순</label>
+<ul>
+  <li>sortBy : {{sortBy}}</li>
+  <li>status : {{order_reverse}}</li>
 </ul>
+
+
+<div>{{search | json }}</div>
+
+<table data-ng-controller="tableController">
+  <caption>People Table List</caption>
+  <thead>
+    <tr>
+      <th>사진</th>
+      <th>이름 <button type="button" 
+        data-ng-click="order_reverse = !order_reverse;
+                       sortBy = 'name'">{{ sortBy === 'name' && order_reverse === true ? '^':'v'}}</button>
+      </th>
+      <th>나이 <button type="button" 
+        data-ng-click="order_reverse = !order_reverse;
+                       sortBy = 'age'">{{ sortBy === 'age' && order_reverse === true ? '^':'v'}}</button>
+      </th>
+      <th>생일 <button type="button" 
+        data-ng-click="order_reverse = !order_reverse;
+                       sortBy = 'birthday'">{{ sortBy === 'birthday' && order_reverse === true ? '^':'v'}}</button>
+      </th>
+      <th>메일주소 <button type="button" 
+        data-ng-click="order_reverse = !order_reverse;
+                       sortBy = 'mail'">{{ sortBy === 'mail' && order_reverse === true ? '^':'v'}}</button>
+      </th>
+    </tr>
+  </thead> 
+  <tbody data-ng-repeat="person in people | filter: search | orderBy: sortBy : order_reverse">
+    <tr>
+      <td><img data-ng-src="{{person.picture}}" alt="{{person.name}}"></td>
+      <td>{{person.name | uppercase }}</td>
+      <td>{{person.age}}세</td>
+      <td>{{person.birthday | date:'yyyy년 MM월 dd일'}}</td>
+      <td>{{person.mail | lowercase}}</td>
+    </tr>
+  </tbody>
   
+</table>
+
 </body>
 
 </html>
