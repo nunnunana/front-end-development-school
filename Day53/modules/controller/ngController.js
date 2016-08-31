@@ -15,5 +15,7 @@
     ngTHeadline.text( content_text );
   };  
 
+  ngCtrl.$inject = ['$scope'];
+
   angular.module('ngApp').controller('ngController', ngCtrl);  
 }(this, this.angular, this.jQuery));

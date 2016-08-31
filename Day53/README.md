@@ -91,6 +91,19 @@ global.setTimeout(trigger, 3000);
   });
 ```
 
+## 코드 압축과정에서 발생하는 문제 이슈
+
+angular코드를 압축하면, 변수명이 바뀌면서 angular는 특정 부분을 압축하지 않도록 처리할 수 있다.
+
+```js
+//방법 1. 압축과정에서 주입된 $scope 모듈이름이 변경되는 것을 방지한다.
+ngCtrl.$inject = ['$scope'];
+
+//방법2. 
+angular.module('ngApp').controller('ngController', ['$scope', ngCtrl]);  
+
+```
+
 
 ## 유용한 정보
 - [크롬앱]ng-inspector for AngularJS
