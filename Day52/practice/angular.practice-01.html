@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-ng-app>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>angular - practice - 01</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../resources/libraries/angular.1.5.7.min.js"></script>
+
+  <style>
+    body {
+      background: {{view_color}}
+    }
+  </style>
+</head>
+<body data-ng-init="
+  isPalette = true;
+  colors = {
+    'red'     : '#EC554D',
+    'orange'  : '#EC7B43',
+    'sky'     : '#00C2EC',
+    'black'   : '#00232A',
+    'green'   : '#50CF52'
+  };
+  view_color = colors.red;
+">
+
+<button 
+  type="button"
+  data-ng-click="isPalette = !isPalette"
+>
+  팔레트 {{isPalette ? '감추기':'보이기'}}
+</button>
+
+<div class="color-palette-container" data-ng-show="isPalette">
+  <label><input type="radio" class="color-palette" value="{{colors.red}}" data-ng-model="view_color">red</label>
+    <label><input type="radio" class="color-palette" value="{{colors.orange}}" data-ng-model="view_color">orange</label>
+    <label><input type="radio" class="color-palette" value="{{colors.sky}}" data-ng-model="view_color">sky</label>
+    <label><input type="radio" class="color-palette" value="{{colors.black}}" data-ng-model="view_color">black</label>
+    <label><input type="radio" class="color-palette" value="{{colors.green}}" data-ng-model="view_color">green</label>  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>앵귤러 모듈/컨트롤러</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body data-ng-app="angularApp">
+  <div class="ng-template" data-ng-controller="moduleController as mCtrl">
+    <h1 class="ng-template-headline"></h1>
+    <p>{{ mCtrl.content }}</p>
+    <button type="button" data-ng-click="setContent()">Fire</button>
+  </div>
+
+<script>
+  (function(global, ng, jq){
+    'use strict';
+    
+    // angular 모듈 정의
+    var setNgApp = angular.module('ngApp', []);
+    // 정의된 angular 모듈을 가져올 때
+    var getNgApp = angular.module('ngApp');
+
+    // 지역 변수에 함수 데이터 할당
+    var moduleController = function($scope) {
+      console.log(angular.version.full)
+      console.log('this:', this); // moduleController 컨트롤러를 가리킴.
+      console.log('$scope:', $scope);
+      
+      // [v.1.2.x, IE 8호환]
+      // jQuery와 유사한 jqLite를 Angular컨트롤러 내부에서 사용하는 예
+      console.log('angular.element: ', ng.element);
+      var template_headline = document.querySelector('.ng-template-headline');
+      console.log('query:', template_headline); // 요소만 담긴다.
+
+      template_headline = angular.element(template_headline);
+      console.log('element:', template_headline); // 배열에 요소가 담긴다.
+
+      // jqLite를 이용한 DOM Controls.
+      template_headline.addClass('hello-angular').text('This is not jQuery');
+      var template_headline_content = template_headline.text();
+
+      // 외부에서 사용할 수 있도록 내보내기
+      // $scope.content = template_headline_content;
+      // jq('.ng-template-headline').hide(1000);
+    
+      // $scope 객체의 속성
+      this.content = '';
+
+      // this 객체의 메소드
+      this.setContent = function(){
+        this.content = template_headline_content;
+      }
+
+    }
+  }(this, this.angular, this.jQuery));
+</script>
+</body>
+</html>

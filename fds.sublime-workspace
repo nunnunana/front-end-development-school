@@ -403,46 +403,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Day52/README.md",
-			"settings":
-			{
-				"buffer_size": 1658,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day52/angular.start.html",
-			"settings":
-			{
-				"buffer_size": 828,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day52/angular.demo.html",
-			"settings":
-			{
-				"buffer_size": 1883,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day52/angular.demo-2.html",
-			"settings":
-			{
-				"buffer_size": 1188,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day52/angular.demo-3.html",
-			"settings":
-			{
-				"buffer_size": 3330,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -617,15 +577,19 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/eatdesignlove/Documents/program/FDS",
-		"/Users/eatdesignlove/Documents/program/FDS/Day52",
-		"/Users/eatdesignlove/Documents/program/FDS/resources",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/libraries"
-	],
 	"file_history":
 	[
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/practice/angular.practice-01.html",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/projects/demo-watcha-play/css/style.css",
+		"/Users/eatdesignlove/Documents/program/eatdesignlove.github.io/projects/demo-watcha-play/css/index.html",
+		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/my-html.sublime-snippet",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/README.md",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/angular.demo-4.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/angular.start.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/angular.demo-2.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/angular.demo.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/angular.demo-3.html",
+		"/Users/eatdesignlove/Documents/program/FDS/Day52/js/demo-try-4.js",
 		"/Users/eatdesignlove/Documents/program/fds.user.API/data.json",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/User/snippets/placehold.sublime-snippet",
 		"/Users/eatdesignlove/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
@@ -742,18 +706,7 @@
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/scss-start.scss",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/header.sass",
 		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/footer.sass",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/main.sass",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/style.sass",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/01-sass-practice.sass",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/css/scss-start.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day30/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/sass-start.sass",
-		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/css/sass-start.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/README.md",
-		"/Users/eatdesignlove/Documents/program/FDS/resources/common.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/rwd.css",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/responsive-grid.html",
-		"/Users/eatdesignlove/Documents/program/FDS/Day26/css/MQ.css"
+		"/Users/eatdesignlove/Documents/program/FDS/Day29-0722/sass/main.sass"
 	],
 	"find":
 	{
@@ -771,6 +724,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"영화 목록",
+			"<li>",
+			"section",
+			"header",
+			"<il>",
+			"colors",
+			"value=\"\"",
+			"class=\"color-palette\"",
+			"olors.",
+			"$scope",
+			">v<",
+			"v",
 			"order_target",
 			"people.",
 			"person",
@@ -886,19 +851,7 @@
 			"this",
 			"btn_1",
 			"$button-size/2",
-			"-element",
-			"255",
-			"5",
-			"#",
-			"or=\"",
-			"40px",
-			"on\">",
-			"\">",
-			">",
-			"-",
-			"onclick",
-			"var ",
-			"ton\">"
+			"-element"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -920,171 +873,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Day52/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1658,
-								1658
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 60.0,
-						"translation.y": 1085.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "Day52/angular.start.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 828,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Day52/angular.demo.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1883,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1047,
-								1047
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 830.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Day52/angular.demo-2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								614,
-								614
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Yesterday.tmTheme",
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Day52/angular.demo-3.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3330,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2236,
-								2246
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1435.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1105,18 +895,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.25081300813,
 			1.0
 		],
 		"rows":
@@ -1192,7 +975,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
