@@ -1,6 +1,6 @@
 (function(global, angular){
-  'use strict';
-  
+  'use starict';
+
   var app = angular.module('ngApp', []);
     
 }(this, this.angular));

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-ng-app="fdsApp">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8"/>
+  <title>Angular 1.5.x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="modules/main.js"></script>
+</head>
+<body>
+
+<div class="fds-members" data-ng-controller="fdsMemberListController as fdsCtrl">
+  <!-- <pre>{{fdsCtrl.members | json}}</pre> -->
+  
+  <article data-ng-repeat="person in fdsCtrl.members">
+    <ul>
+      <li><img width="120px" data-ng-src="{{person.picture.original}}" alt="{{person.name}}"></li>
+      <li>이름 : {{person.name}}</li>
+      <li>성별 : {{person.gender}}</li>
+      <li>주소 : {{person.location.state}} {{person.location.city}} {{person.location.street}}</li>
+    </ul>
+  </article>
+
+</div>
+  
+</body>
+</html>

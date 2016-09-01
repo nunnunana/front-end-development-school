@@ -108,8 +108,11 @@ angular.module('ngApp').controller('ngController', ['$scope', ngCtrl]);
 ## 유용한 정보
 - [크롬앱]ng-inspector for AngularJS
 - [크롬앱]AngularJS Graph
+- YUI Compressor
+- ngResource
 
 
 ## ToDo
 - [ ] [angular, as문법(v.1.2)](http://haruair.com/blog/3186)
 - [ ] gulp 환경 구축하고, 프로젝트에 활용하기 (모던웹사이트 제작 참고)
+- [ ] YUI Compressor활용하여 배포용 파일 압축
